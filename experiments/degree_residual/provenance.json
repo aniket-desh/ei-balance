@@ -1,0 +1,32 @@
+{
+  "source_files": {
+    "experiments/degree_residual/predict.py": "30c82929990116b479645c2c619e2181b54c902a9facb7dd76c7a50da3911006",
+    "experiments/degree_residual/evaluate.py": "68b2d96d820cc3a355f51b1dbb952f47e6fc48b4ddc9c88d041556162763d537",
+    "experiments/degree_residual/plot_holdout.py": "0945542bc392aeb1c60e936b46eac7e24913d6ca2d70eb274f4ef233d0976065",
+    "experiments/degree_residual/residuals.py": "d6f0e678fb54ae247c3ff50ab99073ca68f1335a422697793b426e03af2a509c",
+    "experiments/degree_residual/plot.py": "3084d6e1054e17466935c08b738ad554cd61f4b8c652546dfafd12f5b32d1d84",
+    "experiments/degree_residual/PROTOCOL.md": "62f2d6e25c3b69d590ee508907d638ab451085a05ba98bf851ece5ee12a0c68e",
+    "src/eicavity/network.py": "4fb0b526380727ac9eb5a80172270f5aa2dfaa1416f60853290b3432d2407899",
+    "src/eicavity/degree.py": "c6bac9219aaecd8f76cb1f212eff27b0035def399d043f449fe72137f4a24f57",
+    "src/eicavity/single_site.py": "54ff30f3db22dfe7a51d76dacc058fe36a1be7c7a48588c1ca779b0e2dafcf35",
+    "src/eicavity/multitype.py": "cc3ea3e8c08c74fee8a4974ab16c4621b362411be91c47ca3cc7c25b971e2501",
+    "src/eicavity/pair.py": "23d11707d7ace8700ce7df42e5e294ab8e6bbd95b6655521690b97a9491e52d0",
+    "experiments/degree/predictions.json": "61963ec8df3f2b6b8063bf1529bae0c8abc5402b1bc3ef92cc0619a7d4efc76a",
+    "experiments/degree/theory_curve.json": "a9a2fc375b774c819acf23171e8cd3142de9f61b42bf711ced1098ff30ad7120",
+    "experiments/figures/paper_style.py": "7d101b58592a4035e9ba77256029babdb87deb009e6f16d93087b3a1d5f7a377",
+    "experiments/figures/sweep_records.py": "7f9419fcb5bcf185eead1aa7d45ebae8acf1a114d23ab4de99126a17541ce053",
+    "experiments/degree/chi0_one_site.npz": "b6d9d6da12b6c268d9cda8a5152f8e8c8b12cb42edfd952e116607279d0b6df4",
+    "experiments/degree/chi1_one_site.npz": "fbe0e599f2a6cdd66ec912c3a4135bf42fe171bc813cfbfdf88d9e8b19eeb3af",
+    "experiments/degree/chi2_one_site.npz": "90089358d6ff1b1271acc492b7253d405f8cad5a697676daa775d18a8511a1ea"
+  },
+  "python": "3.11.4 (v3.11.4:d2340ef257, Jun  6 2023, 19:15:51) [Clang 13.0.0 (clang-1300.0.29.30)]",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "versions": {
+    "scipy": "1.17.1",
+    "numpy": "1.26.4",
+    "matplotlib": "3.7.2",
+    "threadpoolctl": "3.6.0"
+  },
+  "input_record_hashes": "residuals.json and holdout_scores.json",
+  "prediction_manifest_sha256": "65fe94019cecdc19a3753d7a9e71df49f18bd1250779711c550bc67a094260f2"
+}

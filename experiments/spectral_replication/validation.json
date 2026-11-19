@@ -1,0 +1,79 @@
+{
+  "eligible_primary_checked": [
+    "spectral_N250_seed73101",
+    "spectral_N250_seed73102",
+    "spectral_N250_seed73104",
+    "spectral_N250_seed73106",
+    "spectral_N250_seed73107",
+    "spectral_N250_seed73110",
+    "spectral_N250_seed73111",
+    "spectral_N250_seed73112",
+    "spectral_N500_seed73201",
+    "spectral_N500_seed73202",
+    "spectral_N500_seed73203",
+    "spectral_N500_seed73204",
+    "spectral_N500_seed73205",
+    "spectral_N500_seed73206",
+    "spectral_N500_seed73207",
+    "spectral_N500_seed73208",
+    "spectral_N500_seed73209",
+    "spectral_N500_seed73210",
+    "spectral_N500_seed73211",
+    "spectral_N500_seed73212"
+  ],
+  "quiet_draws": [
+    {
+      "name": "spectral_N250_seed73103",
+      "max_late_mean_input_variance": 0.0,
+      "final_drift_rms": 3.636077866667774e-15,
+      "first_root_distance_from_final_sample_inf": 4.6093738426122854e-07,
+      "first_root_max_real_coupling_eigenvalue": 0.7545997550562211
+    },
+    {
+      "name": "spectral_N250_seed73105",
+      "max_late_mean_input_variance": 0.0,
+      "final_drift_rms": 2.322049437671858e-15,
+      "first_root_distance_from_final_sample_inf": 4.6237351547517846e-07,
+      "first_root_max_real_coupling_eigenvalue": 0.73056148814003
+    },
+    {
+      "name": "spectral_N250_seed73108",
+      "max_late_mean_input_variance": 0.0,
+      "final_drift_rms": 1.7183727697607989e-15,
+      "first_root_distance_from_final_sample_inf": 2.3662325343565271e-07,
+      "first_root_max_real_coupling_eigenvalue": 0.9150560854859766
+    },
+    {
+      "name": "spectral_N250_seed73109",
+      "max_late_mean_input_variance": 0.0,
+      "final_drift_rms": 1.631567076361957e-15,
+      "first_root_distance_from_final_sample_inf": 4.723674305040504e-07,
+      "first_root_max_real_coupling_eigenvalue": 0.8691199523758726
+    }
+  ],
+  "max_abs_errors": {
+    "rho": 0.0,
+    "trace": 4.440892098500626e-16,
+    "energy": 2.5202062658991053e-14,
+    "complement_pr_ratio": 2.441156166099745e-10,
+    "null_rate_first": 3.83026943495679e-14
+  },
+  "sign_probability_direct": 9.5367431640625e-07,
+  "source_sha256": {
+    "experiments/spectral_replication/PROTOCOL.md": "04f38eed5d0ee72b31dcfa5d8db00fad674796b69164418a289dc1ebae905d50",
+    "experiments/spectral_replication/run_networks.py": "ae7161ffd315c57c977e457274be4363aad4c4c7e5ee14d81c6d953cb6490266",
+    "experiments/spectral_replication/measure.py": "ed7337cc3695e13e82542c6847ae385da3c28ed72e35baf5978a42814cb34d2a",
+    "experiments/spectral_replication/summarize.py": "a28b42689d02aafb4742d9a2a5773e92ef05bdc75955c9a53fad31be5b141960",
+    "experiments/spectral_replication/check.py": "61007e21b11f7f790fc1de0269f7675721df8c4edbab2caecdaa8dc8ea5fbbfb",
+    "experiments/spectral_replication/plot.py": "3ce6681a04043cf81a55a81ae4635a50476240da99f6a75b4257416ea42d10c6",
+    "experiments/spectral_pilot/simulate.py": "69e5ce6c1fb98ebdb465d065ec8cddbce04717bf3b61521cfb62b118f9232ff6",
+    "experiments/spectral_pilot/analyze.py": "29780df0e6116ed1beb97ebc26bae20d0f459725172b1a72e8fb7cffd988643b",
+    "experiments/runtime/mode_variance.py": "b55f23fac41a92e2ec5937b457c2ccf32d0ba2983ff0a0e5468253a109c70beb",
+    "experiments/runtime/engine_v4.py": "117f57b8341a1e36fa351f37d96cd779879b5c037aa11d52f7d44a4bd923f546",
+    "experiments/runtime/runs/composition_f80_N2000_seed3002.json": "668aa8c19b868e3e7e6c64345c44f14fb64cfc11991c86925dbef644a5785ed0",
+    "src/eicavity/network.py": "4fb0b526380727ac9eb5a80172270f5aa2dfaa1416f60853290b3432d2407899",
+    "src/eicavity/single_site.py": "54ff30f3db22dfe7a51d76dacc058fe36a1be7c7a48588c1ca779b0e2dafcf35"
+  },
+  "python": "3.11.4",
+  "numpy": "1.26.4"
+}

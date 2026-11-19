@@ -6,7 +6,16 @@ Excitatory and inhibitory neurons can share a transfer function and still operat
 
 ## Results
 
-In the latest sweep of 81 networks, increasing in-degree dispersion reduced joint activity dimension per neuron from 0.154 to 0.0187 at 2,000 neurons. The nonlinear theory tracked the intermediate settings. In a separate composition sweep, the network-level intervals left the proposed decrease in E–E covariance and increase in I–I covariance unresolved. [Degree sweep](experiments/degree/degree_validation.pdf) · [Composition sweep](experiments/figures/composition_main.pdf) · [Full results and seed-level comparisons](experiments/dense_sweeps/experiments/dense-ei/README.md)
+In the 81-network sweep, increasing in-degree dispersion reduced joint activity dimension per neuron from 0.154 to 0.0187 at 2,000 neurons. The nonlinear theory tracked the intermediate settings. In a separate composition sweep, the network-level intervals left the proposed decrease in E–E covariance and increase in I–I covariance unresolved. [Degree sweep](experiments/degree/degree_validation.pdf) · [Composition sweep](experiments/figures/composition_main.pdf) · [Full results and seed-level comparisons](experiments/dense_sweeps/experiments/dense-ei/README.md)
+
+The follow-up experiments supply editable figures, standalone captions, and the measurements behind them.
+
+| Research question | Results and figure |
+| --- | --- |
+| Which covariance terms account for the error in the degree sweep? | [Network-level decomposition](experiments/degree_residual/README.md) · [Degree figure](experiments/degree_residual/degree_residual.pdf) |
+| Does predicting each cell’s temporal variance improve the local gains and population dimension? | [Nine held-out networks](experiments/degree_holdout/README.md) · [Gain and dimension comparison](experiments/degree_residual/joint_variance.pdf) |
+| How does a fixed 100-cell readout differ from counting all excitatory dimensions? | [Derivation and effect sizes](experiments/readout_theory/README.md) · [Independent test design](experiments/readout_confirmation/EXPERIMENT.md) |
+| Do fixed-point modes identify directions of high rate covariance? | [24-network replication](experiments/spectral_replication/README.md) · [Spectral figure](experiments/spectral_replication/spectral_replication.pdf) |
 
 | Directory | Contents |
 | --- | --- |

@@ -1,0 +1,62 @@
+{
+  "name": "spectral_N250_seed73103",
+  "N": 250,
+  "seed": 73103,
+  "source_hashes": {
+    "measure.py": "ed7337cc3695e13e82542c6847ae385da3c28ed72e35baf5978a42814cb34d2a",
+    "analyze.py": "29780df0e6116ed1beb97ebc26bae20d0f459725172b1a72e8fb7cffd988643b",
+    "mode_variance.py": "b55f23fac41a92e2ec5937b457c2ccf32d0ba2983ff0a0e5468253a109c70beb",
+    "PROTOCOL.md": "04f38eed5d0ee72b31dcfa5d8db00fad674796b69164418a289dc1ebae905d50"
+  },
+  "run_sha256": "63d48d2413faa45254dfdd94d4541237567ffe6b7a34e163090b2f950743d77e",
+  "trajectory_sha256": "4f53b9740ebffb15100c3d00614bc92760dd4f0f27e8d1df7eca4ff0063a995d",
+  "connectivity_sha256": "b34511917c26868d9cc3d4d1041841e9e92de098d02f683a3af2579eaf831c06",
+  "state_fluctuating": false,
+  "input_mean_temporal_variance": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "rate_direct_pr": [
+    null,
+    null,
+    null
+  ],
+  "final_drift_rms": 3.636077866667774e-15,
+  "root_attempts": [
+    {
+      "initial": "record_mean",
+      "residual_inf": 2.220446049250313e-15,
+      "solver_status": "The solution converged.",
+      "nfev": 17,
+      "root_index": 0
+    },
+    {
+      "initial": "first_sample",
+      "residual_inf": 2.220446049250313e-15,
+      "solver_status": "The solution converged.",
+      "nfev": 17,
+      "root_index": 0
+    },
+    {
+      "initial": "population_offset",
+      "residual_inf": 0.048642711557074225,
+      "solver_status": "The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations.",
+      "nfev": 89
+    }
+  ],
+  "roots": [
+    {
+      "index": 0,
+      "root_residual": 2.220446049250313e-15,
+      "max_eigenpair_residual": 4.4193550316080285e-15,
+      "spatial_vs_time_input_error": 1.3362356152200231e-25,
+      "mode_file": "modes/spectral_N250_seed73103_root0.npz",
+      "mode_sha256": "4f131a97cae612885f7f0bffa02873b32014d949c9fdc599fd7b09c8a9e28c61",
+      "max_real_coupling_eigenvalue": 0.7545997550562211,
+      "unstable_mode_count": 0,
+      "rate_rank": 25,
+      "real_eigenvalue_cutoff": 0.08575588281600283
+    }
+  ]
+}

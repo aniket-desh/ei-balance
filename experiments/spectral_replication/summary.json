@@ -1,0 +1,2050 @@
+{
+  "measurement_order": "full record, first half, second half",
+  "rate_projection_order": [
+    "fraction of trace",
+    "fraction of squared Frobenius energy inside the projected block",
+    "complement PR / full PR"
+  ],
+  "network_results": [
+    {
+      "N": 250,
+      "seed": 73101,
+      "name": "spectral_N250_seed73101",
+      "fluctuating": true,
+      "mean_input_variance": [
+        2.551347535528801,
+        2.5480984467223435,
+        2.546245503062799
+      ],
+      "verified_roots": 2,
+      "rate_pr": 9.300215620843568,
+      "first_root_max_real": 1.2765686340877482,
+      "all_root_stats": [
+        {
+          "rho": 0.40845825340055725,
+          "shuffle_rho": -0.10269248937175249,
+          "excess_rho": 0.5111507427723098,
+          "rho_abs_real_above_1e_minus8": 0.482091744219155,
+          "rho_first_half": 0.3943836580451737,
+          "rho_second_half": 0.4212796313612833,
+          "half_projection_rank_agreement": 0.9672428253304156,
+          "subspace_trace": 0.342018111098389,
+          "subspace_energy": 0.13706373890238482,
+          "residual_pr_ratio": 0.906760044719722,
+          "pop_null_trace": 0.10269893201467357,
+          "pop_null_energy": 0.014916069251319443,
+          "pop_null_pr_ratio": 0.9956809562468705,
+          "gain_null_trace": 0.17795762031905765,
+          "gain_null_energy": 0.03866108451126793,
+          "gain_null_pr_ratio": 0.9610805824919044,
+          "excess_trace_gain": 0.16406049077933132,
+          "excess_energy_gain": 0.0984026543911169,
+          "excess_pr_ratio_gain": -0.054320537772182376,
+          "energy_first_half": 0.13422347142206403,
+          "energy_second_half": 0.137369012811421
+        },
+        {
+          "rho": 0.33693814619989115,
+          "shuffle_rho": -0.09231452929439507,
+          "excess_rho": 0.42925267549428625,
+          "rho_abs_real_above_1e_minus8": 0.3818359222135838,
+          "rho_first_half": 0.33628877199347,
+          "rho_second_half": 0.3264393252312715,
+          "half_projection_rank_agreement": 0.9850571376745872,
+          "subspace_trace": 0.41161573757753045,
+          "subspace_energy": 0.22895968529790497,
+          "residual_pr_ratio": 1.0235928349378318,
+          "pop_null_trace": 0.10563226398586378,
+          "pop_null_energy": 0.013953206400151272,
+          "pop_null_pr_ratio": 0.9875534565870991,
+          "gain_null_trace": 0.19186305642116336,
+          "gain_null_energy": 0.04741876225233219,
+          "gain_null_pr_ratio": 0.9800536022208302,
+          "excess_trace_gain": 0.2197526811563671,
+          "excess_energy_gain": 0.1815409230455728,
+          "excess_pr_ratio_gain": 0.043539232717001664,
+          "energy_first_half": 0.2301827197592876,
+          "energy_second_half": 0.22451306053686002
+        }
+      ],
+      "primary": {
+        "rho": 0.40845825340055725,
+        "shuffle_rho": -0.10269248937175249,
+        "excess_rho": 0.5111507427723098,
+        "rho_abs_real_above_1e_minus8": 0.482091744219155,
+        "rho_first_half": 0.3943836580451737,
+        "rho_second_half": 0.4212796313612833,
+        "half_projection_rank_agreement": 0.9672428253304156,
+        "subspace_trace": 0.342018111098389,
+        "subspace_energy": 0.13706373890238482,
+        "residual_pr_ratio": 0.906760044719722,
+        "pop_null_trace": 0.10269893201467357,
+        "pop_null_energy": 0.014916069251319443,
+        "pop_null_pr_ratio": 0.9956809562468705,
+        "gain_null_trace": 0.17795762031905765,
+        "gain_null_energy": 0.03866108451126793,
+        "gain_null_pr_ratio": 0.9610805824919044,
+        "excess_trace_gain": 0.16406049077933132,
+        "excess_energy_gain": 0.0984026543911169,
+        "excess_pr_ratio_gain": -0.054320537772182376,
+        "energy_first_half": 0.13422347142206403,
+        "energy_second_half": 0.137369012811421
+      },
+      "rate_rank": 25,
+      "root_mode_file": "modes/spectral_N250_seed73101_root0.npz"
+    },
+    {
+      "N": 250,
+      "seed": 73102,
+      "name": "spectral_N250_seed73102",
+      "fluctuating": true,
+      "mean_input_variance": [
+        2.4233879919063077,
+        1.431831768560739,
+        1.2815265726064868
+      ],
+      "verified_roots": 2,
+      "rate_pr": 3.680416050530202,
+      "first_root_max_real": 1.4459977606698655,
+      "all_root_stats": [
+        {
+          "rho": 0.26401048846557995,
+          "shuffle_rho": -0.03734780638755267,
+          "excess_rho": 0.3013582948531326,
+          "rho_abs_real_above_1e_minus8": 0.29025783376928416,
+          "rho_first_half": 0.1731425872191106,
+          "rho_second_half": 0.27905295325499124,
+          "half_projection_rank_agreement": 0.850184608562367,
+          "subspace_trace": 0.42727688361805877,
+          "subspace_energy": 0.15204269896502282,
+          "residual_pr_ratio": 0.7591756820858921,
+          "pop_null_trace": 0.10036034418339171,
+          "pop_null_energy": 0.011145988350272404,
+          "pop_null_pr_ratio": 0.995916431212398,
+          "gain_null_trace": 0.22846148216435921,
+          "gain_null_energy": 0.04628993045426041,
+          "gain_null_pr_ratio": 0.9061468645933486,
+          "excess_trace_gain": 0.19881540145369955,
+          "excess_energy_gain": 0.1057527685107624,
+          "excess_pr_ratio_gain": -0.14697118250745644,
+          "energy_first_half": 0.5574783713858931,
+          "energy_second_half": 0.11625899122094752
+        },
+        {
+          "rho": 0.3161741370619971,
+          "shuffle_rho": 0.0018878227266787384,
+          "excess_rho": 0.31428631433531834,
+          "rho_abs_real_above_1e_minus8": 0.3161741370619971,
+          "rho_first_half": 0.25316892863143353,
+          "rho_second_half": 0.3635540538017809,
+          "half_projection_rank_agreement": 0.873910243246775,
+          "subspace_trace": 0.44976050615304036,
+          "subspace_energy": 0.1668911865674821,
+          "residual_pr_ratio": 0.7613035138297277,
+          "pop_null_trace": 0.10361267587483339,
+          "pop_null_energy": 0.011896222362121636,
+          "pop_null_pr_ratio": 0.9903502656888621,
+          "gain_null_trace": 0.2066928400953373,
+          "gain_null_energy": 0.04005031368097555,
+          "gain_null_pr_ratio": 0.9241728463824668,
+          "excess_trace_gain": 0.24306766605770305,
+          "excess_energy_gain": 0.12684087288650656,
+          "excess_pr_ratio_gain": -0.16286933255273905,
+          "energy_first_half": 0.5449902337655644,
+          "energy_second_half": 0.16744861772790004
+        }
+      ],
+      "primary": {
+        "rho": 0.26401048846557995,
+        "shuffle_rho": -0.03734780638755267,
+        "excess_rho": 0.3013582948531326,
+        "rho_abs_real_above_1e_minus8": 0.29025783376928416,
+        "rho_first_half": 0.1731425872191106,
+        "rho_second_half": 0.27905295325499124,
+        "half_projection_rank_agreement": 0.850184608562367,
+        "subspace_trace": 0.42727688361805877,
+        "subspace_energy": 0.15204269896502282,
+        "residual_pr_ratio": 0.7591756820858921,
+        "pop_null_trace": 0.10036034418339171,
+        "pop_null_energy": 0.011145988350272404,
+        "pop_null_pr_ratio": 0.995916431212398,
+        "gain_null_trace": 0.22846148216435921,
+        "gain_null_energy": 0.04628993045426041,
+        "gain_null_pr_ratio": 0.9061468645933486,
+        "excess_trace_gain": 0.19881540145369955,
+        "excess_energy_gain": 0.1057527685107624,
+        "excess_pr_ratio_gain": -0.14697118250745644,
+        "energy_first_half": 0.5574783713858931,
+        "energy_second_half": 0.11625899122094752
+      },
+      "rate_rank": 26,
+      "root_mode_file": "modes/spectral_N250_seed73102_root0.npz"
+    },
+    {
+      "N": 250,
+      "seed": 73103,
+      "name": "spectral_N250_seed73103",
+      "fluctuating": false,
+      "mean_input_variance": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "verified_roots": 1,
+      "rate_pr": null,
+      "first_root_max_real": 0.7545997550562211
+    },
+    {
+      "N": 250,
+      "seed": 73104,
+      "name": "spectral_N250_seed73104",
+      "fluctuating": true,
+      "mean_input_variance": [
+        0.3729480930410404,
+        0.3727251299523317,
+        0.3731412487183183
+      ],
+      "verified_roots": 1,
+      "rate_pr": 3.186757548069236,
+      "first_root_max_real": 0.9939446660722407,
+      "all_root_stats": [
+        {
+          "rho": 0.1672351132233716,
+          "shuffle_rho": -0.07142567938842992,
+          "excess_rho": 0.2386607926118015,
+          "rho_abs_real_above_1e_minus8": 0.179746564493343,
+          "rho_first_half": 0.16778267282349882,
+          "rho_second_half": 0.16856545168846945,
+          "half_projection_rank_agreement": 0.9998843183943393,
+          "subspace_trace": 0.8779728662565303,
+          "subspace_energy": 0.818988988651591,
+          "residual_pr_ratio": 1.0167084029411066,
+          "pop_null_trace": 0.10686151911318131,
+          "pop_null_energy": 0.01488918348637263,
+          "pop_null_pr_ratio": 0.9970996330816503,
+          "gain_null_trace": 0.4508004457984357,
+          "gain_null_energy": 0.23073095736498106,
+          "gain_null_pr_ratio": 1.004650629729836,
+          "excess_trace_gain": 0.42717242045809456,
+          "excess_energy_gain": 0.5882580312866099,
+          "excess_pr_ratio_gain": 0.01205777321127055,
+          "energy_first_half": 0.8203825230026038,
+          "energy_second_half": 0.8175977844859231
+        }
+      ],
+      "primary": {
+        "rho": 0.1672351132233716,
+        "shuffle_rho": -0.07142567938842992,
+        "excess_rho": 0.2386607926118015,
+        "rho_abs_real_above_1e_minus8": 0.179746564493343,
+        "rho_first_half": 0.16778267282349882,
+        "rho_second_half": 0.16856545168846945,
+        "half_projection_rank_agreement": 0.9998843183943393,
+        "subspace_trace": 0.8779728662565303,
+        "subspace_energy": 0.818988988651591,
+        "residual_pr_ratio": 1.0167084029411066,
+        "pop_null_trace": 0.10686151911318131,
+        "pop_null_energy": 0.01488918348637263,
+        "pop_null_pr_ratio": 0.9970996330816503,
+        "gain_null_trace": 0.4508004457984357,
+        "gain_null_energy": 0.23073095736498106,
+        "gain_null_pr_ratio": 1.004650629729836,
+        "excess_trace_gain": 0.42717242045809456,
+        "excess_energy_gain": 0.5882580312866099,
+        "excess_pr_ratio_gain": 0.01205777321127055,
+        "energy_first_half": 0.8203825230026038,
+        "energy_second_half": 0.8175977844859231
+      },
+      "rate_rank": 26,
+      "root_mode_file": "modes/spectral_N250_seed73104_root0.npz"
+    },
+    {
+      "N": 250,
+      "seed": 73105,
+      "name": "spectral_N250_seed73105",
+      "fluctuating": false,
+      "mean_input_variance": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "verified_roots": 1,
+      "rate_pr": null,
+      "first_root_max_real": 0.73056148814003
+    },
+    {
+      "N": 250,
+      "seed": 73106,
+      "name": "spectral_N250_seed73106",
+      "fluctuating": true,
+      "mean_input_variance": [
+        2.0442644927080753,
+        2.050559859421258,
+        2.035050753383308
+      ],
+      "verified_roots": 2,
+      "rate_pr": 10.014419608385394,
+      "first_root_max_real": 1.56042989002162,
+      "all_root_stats": [
+        {
+          "rho": 0.279416627302787,
+          "shuffle_rho": -0.08186702881435994,
+          "excess_rho": 0.3612836561171469,
+          "rho_abs_real_above_1e_minus8": 0.2971594760665632,
+          "rho_first_half": 0.29352857817666506,
+          "rho_second_half": 0.26933160132262635,
+          "half_projection_rank_agreement": 0.9887498031806013,
+          "subspace_trace": 0.5741473674815033,
+          "subspace_energy": 0.5234779709468347,
+          "residual_pr_ratio": 1.3911579937696523,
+          "pop_null_trace": 0.10382551945900248,
+          "pop_null_energy": 0.016844149891270588,
+          "pop_null_pr_ratio": 0.9982731475795503,
+          "gain_null_trace": 0.2597855826166081,
+          "gain_null_energy": 0.11230167230883227,
+          "gain_null_pr_ratio": 1.0581255492760135,
+          "excess_trace_gain": 0.3143617848648952,
+          "excess_energy_gain": 0.4111762986380024,
+          "excess_pr_ratio_gain": 0.3330324444936388,
+          "energy_first_half": 0.5223060580026487,
+          "energy_second_half": 0.5186024377324012
+        },
+        {
+          "rho": 0.4202842072114627,
+          "shuffle_rho": -0.015682569674067073,
+          "excess_rho": 0.43596677688552976,
+          "rho_abs_real_above_1e_minus8": 0.45389718076285246,
+          "rho_first_half": 0.4261021886317115,
+          "rho_second_half": 0.4154581955597544,
+          "half_projection_rank_agreement": 0.9917729491418672,
+          "subspace_trace": 0.4809040435244282,
+          "subspace_energy": 0.3394507518866299,
+          "residual_pr_ratio": 1.1068364317047865,
+          "pop_null_trace": 0.10485222466662121,
+          "pop_null_energy": 0.016842447165398965,
+          "pop_null_pr_ratio": 0.9919852549930936,
+          "gain_null_trace": 0.23149601398431224,
+          "gain_null_energy": 0.08062047114349112,
+          "gain_null_pr_ratio": 1.014675175131865,
+          "excess_trace_gain": 0.24940802954011598,
+          "excess_energy_gain": 0.25883028074313874,
+          "excess_pr_ratio_gain": 0.09216125657292151,
+          "energy_first_half": 0.35514322692097305,
+          "energy_second_half": 0.321340398740049
+        }
+      ],
+      "primary": {
+        "rho": 0.279416627302787,
+        "shuffle_rho": -0.08186702881435994,
+        "excess_rho": 0.3612836561171469,
+        "rho_abs_real_above_1e_minus8": 0.2971594760665632,
+        "rho_first_half": 0.29352857817666506,
+        "rho_second_half": 0.26933160132262635,
+        "half_projection_rank_agreement": 0.9887498031806013,
+        "subspace_trace": 0.5741473674815033,
+        "subspace_energy": 0.5234779709468347,
+        "residual_pr_ratio": 1.3911579937696523,
+        "pop_null_trace": 0.10382551945900248,
+        "pop_null_energy": 0.016844149891270588,
+        "pop_null_pr_ratio": 0.9982731475795503,
+        "gain_null_trace": 0.2597855826166081,
+        "gain_null_energy": 0.11230167230883227,
+        "gain_null_pr_ratio": 1.0581255492760135,
+        "excess_trace_gain": 0.3143617848648952,
+        "excess_energy_gain": 0.4111762986380024,
+        "excess_pr_ratio_gain": 0.3330324444936388,
+        "energy_first_half": 0.5223060580026487,
+        "energy_second_half": 0.5186024377324012
+      },
+      "rate_rank": 25,
+      "root_mode_file": "modes/spectral_N250_seed73106_root0.npz"
+    },
+    {
+      "N": 250,
+      "seed": 73107,
+      "name": "spectral_N250_seed73107",
+      "fluctuating": true,
+      "mean_input_variance": [
+        0.4683999710310685,
+        0.47451864815352757,
+        0.4621586063540123
+      ],
+      "verified_roots": 1,
+      "rate_pr": 4.963150578606907,
+      "first_root_max_real": 1.2230834534193753,
+      "all_root_stats": [
+        {
+          "rho": 0.16434623913051527,
+          "shuffle_rho": -0.06731214161703136,
+          "excess_rho": 0.23165838074754663,
+          "rho_abs_real_above_1e_minus8": 0.21201709705171445,
+          "rho_first_half": 0.1686662693374103,
+          "rho_second_half": 0.16147732446869553,
+          "half_projection_rank_agreement": 0.9988561359606424,
+          "subspace_trace": 0.8627072179785901,
+          "subspace_energy": 0.8348594841234498,
+          "residual_pr_ratio": 1.2483024348973326,
+          "pop_null_trace": 0.10515547336242849,
+          "pop_null_energy": 0.015371293774994915,
+          "pop_null_pr_ratio": 0.9959735501140345,
+          "gain_null_trace": 0.4241988474234629,
+          "gain_null_energy": 0.21240304815816424,
+          "gain_null_pr_ratio": 1.001581695224455,
+          "excess_trace_gain": 0.43850837055512715,
+          "excess_energy_gain": 0.6224564359652855,
+          "excess_pr_ratio_gain": 0.24672073967287766,
+          "energy_first_half": 0.8319282198746002,
+          "energy_second_half": 0.8376132803758636
+        }
+      ],
+      "primary": {
+        "rho": 0.16434623913051527,
+        "shuffle_rho": -0.06731214161703136,
+        "excess_rho": 0.23165838074754663,
+        "rho_abs_real_above_1e_minus8": 0.21201709705171445,
+        "rho_first_half": 0.1686662693374103,
+        "rho_second_half": 0.16147732446869553,
+        "half_projection_rank_agreement": 0.9988561359606424,
+        "subspace_trace": 0.8627072179785901,
+        "subspace_energy": 0.8348594841234498,
+        "residual_pr_ratio": 1.2483024348973326,
+        "pop_null_trace": 0.10515547336242849,
+        "pop_null_energy": 0.015371293774994915,
+        "pop_null_pr_ratio": 0.9959735501140345,
+        "gain_null_trace": 0.4241988474234629,
+        "gain_null_energy": 0.21240304815816424,
+        "gain_null_pr_ratio": 1.001581695224455,
+        "excess_trace_gain": 0.43850837055512715,
+        "excess_energy_gain": 0.6224564359652855,
+        "excess_pr_ratio_gain": 0.24672073967287766,
+        "energy_first_half": 0.8319282198746002,
+        "energy_second_half": 0.8376132803758636
+      },
+      "rate_rank": 26,
+      "root_mode_file": "modes/spectral_N250_seed73107_root0.npz"
+    },
+    {
+      "N": 250,
+      "seed": 73108,
+      "name": "spectral_N250_seed73108",
+      "fluctuating": false,
+      "mean_input_variance": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "verified_roots": 2,
+      "rate_pr": null,
+      "first_root_max_real": 0.9150560854859766
+    },
+    {
+      "N": 250,
+      "seed": 73109,
+      "name": "spectral_N250_seed73109",
+      "fluctuating": false,
+      "mean_input_variance": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "verified_roots": 1,
+      "rate_pr": null,
+      "first_root_max_real": 0.8691199523758726
+    },
+    {
+      "N": 250,
+      "seed": 73110,
+      "name": "spectral_N250_seed73110",
+      "fluctuating": true,
+      "mean_input_variance": [
+        2.0736301872142926,
+        2.0766375897515634,
+        2.0704816822640844
+      ],
+      "verified_roots": 1,
+      "rate_pr": 3.4073125332681538,
+      "first_root_max_real": 1.2289491249620559,
+      "all_root_stats": [
+        {
+          "rho": 0.32585403102644483,
+          "shuffle_rho": -0.05679205851619645,
+          "excess_rho": 0.3826460895426413,
+          "rho_abs_real_above_1e_minus8": 0.3569367554903914,
+          "rho_first_half": 0.3258098223615465,
+          "rho_second_half": 0.32599871392974844,
+          "half_projection_rank_agreement": 0.9999075637006671,
+          "subspace_trace": 0.4919563980370981,
+          "subspace_energy": 0.3103831447714993,
+          "residual_pr_ratio": 1.144226168274935,
+          "pop_null_trace": 0.10133226866365894,
+          "pop_null_energy": 0.011794561529643208,
+          "pop_null_pr_ratio": 0.99834316821547,
+          "gain_null_trace": 0.21376273212414468,
+          "gain_null_energy": 0.052983650532789674,
+          "gain_null_pr_ratio": 0.9994155732698629,
+          "excess_trace_gain": 0.27819366591295347,
+          "excess_energy_gain": 0.2573994942387096,
+          "excess_pr_ratio_gain": 0.1448105950050722,
+          "energy_first_half": 0.3110162895382972,
+          "energy_second_half": 0.3097555072025412
+        }
+      ],
+      "primary": {
+        "rho": 0.32585403102644483,
+        "shuffle_rho": -0.05679205851619645,
+        "excess_rho": 0.3826460895426413,
+        "rho_abs_real_above_1e_minus8": 0.3569367554903914,
+        "rho_first_half": 0.3258098223615465,
+        "rho_second_half": 0.32599871392974844,
+        "half_projection_rank_agreement": 0.9999075637006671,
+        "subspace_trace": 0.4919563980370981,
+        "subspace_energy": 0.3103831447714993,
+        "residual_pr_ratio": 1.144226168274935,
+        "pop_null_trace": 0.10133226866365894,
+        "pop_null_energy": 0.011794561529643208,
+        "pop_null_pr_ratio": 0.99834316821547,
+        "gain_null_trace": 0.21376273212414468,
+        "gain_null_energy": 0.052983650532789674,
+        "gain_null_pr_ratio": 0.9994155732698629,
+        "excess_trace_gain": 0.27819366591295347,
+        "excess_energy_gain": 0.2573994942387096,
+        "excess_pr_ratio_gain": 0.1448105950050722,
+        "energy_first_half": 0.3110162895382972,
+        "energy_second_half": 0.3097555072025412
+      },
+      "rate_rank": 25,
+      "root_mode_file": "modes/spectral_N250_seed73110_root0.npz"
+    },
+    {
+      "N": 250,
+      "seed": 73111,
+      "name": "spectral_N250_seed73111",
+      "fluctuating": true,
+      "mean_input_variance": [
+        0.06294338704802056,
+        0.06296565754354033,
+        0.06292087568754509
+      ],
+      "verified_roots": 1,
+      "rate_pr": 1.7118875156893785,
+      "first_root_max_real": 1.0568549456434269,
+      "all_root_stats": [
+        {
+          "rho": 0.1125049882096862,
+          "shuffle_rho": -0.03245601306003991,
+          "excess_rho": 0.1449610012697261,
+          "rho_abs_real_above_1e_minus8": 0.13144067663955167,
+          "rho_first_half": 0.11237076002176674,
+          "rho_second_half": 0.11251587157627428,
+          "half_projection_rank_agreement": 0.9999891166334118,
+          "subspace_trace": 0.9886150088539097,
+          "subspace_energy": 0.9920110874144232,
+          "residual_pr_ratio": 1.4972907113691274,
+          "pop_null_trace": 0.10788773091000686,
+          "pop_null_energy": 0.012962090689718703,
+          "pop_null_pr_ratio": 1.0062472762978039,
+          "gain_null_trace": 0.5611954398121071,
+          "gain_null_energy": 0.3472272882561617,
+          "gain_null_pr_ratio": 1.0461672382530876,
+          "excess_trace_gain": 0.42741956904180267,
+          "excess_energy_gain": 0.6447837991582615,
+          "excess_pr_ratio_gain": 0.45112347311603984,
+          "energy_first_half": 0.9919983079745832,
+          "energy_second_half": 0.9920237818686756
+        }
+      ],
+      "primary": {
+        "rho": 0.1125049882096862,
+        "shuffle_rho": -0.03245601306003991,
+        "excess_rho": 0.1449610012697261,
+        "rho_abs_real_above_1e_minus8": 0.13144067663955167,
+        "rho_first_half": 0.11237076002176674,
+        "rho_second_half": 0.11251587157627428,
+        "half_projection_rank_agreement": 0.9999891166334118,
+        "subspace_trace": 0.9886150088539097,
+        "subspace_energy": 0.9920110874144232,
+        "residual_pr_ratio": 1.4972907113691274,
+        "pop_null_trace": 0.10788773091000686,
+        "pop_null_energy": 0.012962090689718703,
+        "pop_null_pr_ratio": 1.0062472762978039,
+        "gain_null_trace": 0.5611954398121071,
+        "gain_null_energy": 0.3472272882561617,
+        "gain_null_pr_ratio": 1.0461672382530876,
+        "excess_trace_gain": 0.42741956904180267,
+        "excess_energy_gain": 0.6447837991582615,
+        "excess_pr_ratio_gain": 0.45112347311603984,
+        "energy_first_half": 0.9919983079745832,
+        "energy_second_half": 0.9920237818686756
+      },
+      "rate_rank": 26,
+      "root_mode_file": "modes/spectral_N250_seed73111_root0.npz"
+    },
+    {
+      "N": 250,
+      "seed": 73112,
+      "name": "spectral_N250_seed73112",
+      "fluctuating": true,
+      "mean_input_variance": [
+        0.28007386360657827,
+        0.2804923382678816,
+        0.2796023888234259
+      ],
+      "verified_roots": 1,
+      "rate_pr": 2.9551234417379892,
+      "first_root_max_real": 1.0926559253323052,
+      "all_root_stats": [
+        {
+          "rho": 0.3576298361798536,
+          "shuffle_rho": -0.0853868943882886,
+          "excess_rho": 0.4430167305681422,
+          "rho_abs_real_above_1e_minus8": 0.42723235078847566,
+          "rho_first_half": 0.3556186824677588,
+          "rho_second_half": 0.36021261763680723,
+          "half_projection_rank_agreement": 0.9998396653886371,
+          "subspace_trace": 0.9448376017859469,
+          "subspace_energy": 0.9383738907864245,
+          "residual_pr_ratio": 1.4943034238294126,
+          "pop_null_trace": 0.09980246322442878,
+          "pop_null_energy": 0.012284809599360654,
+          "pop_null_pr_ratio": 0.9936424275978525,
+          "gain_null_trace": 0.391970250739968,
+          "gain_null_energy": 0.16752095646373608,
+          "gain_null_pr_ratio": 0.9849633738669308,
+          "excess_trace_gain": 0.552867351045979,
+          "excess_energy_gain": 0.7708529343226884,
+          "excess_pr_ratio_gain": 0.5093400499624818,
+          "energy_first_half": 0.9387825393877627,
+          "energy_second_half": 0.9379506393529708
+        }
+      ],
+      "primary": {
+        "rho": 0.3576298361798536,
+        "shuffle_rho": -0.0853868943882886,
+        "excess_rho": 0.4430167305681422,
+        "rho_abs_real_above_1e_minus8": 0.42723235078847566,
+        "rho_first_half": 0.3556186824677588,
+        "rho_second_half": 0.36021261763680723,
+        "half_projection_rank_agreement": 0.9998396653886371,
+        "subspace_trace": 0.9448376017859469,
+        "subspace_energy": 0.9383738907864245,
+        "residual_pr_ratio": 1.4943034238294126,
+        "pop_null_trace": 0.09980246322442878,
+        "pop_null_energy": 0.012284809599360654,
+        "pop_null_pr_ratio": 0.9936424275978525,
+        "gain_null_trace": 0.391970250739968,
+        "gain_null_energy": 0.16752095646373608,
+        "gain_null_pr_ratio": 0.9849633738669308,
+        "excess_trace_gain": 0.552867351045979,
+        "excess_energy_gain": 0.7708529343226884,
+        "excess_pr_ratio_gain": 0.5093400499624818,
+        "energy_first_half": 0.9387825393877627,
+        "energy_second_half": 0.9379506393529708
+      },
+      "rate_rank": 26,
+      "root_mode_file": "modes/spectral_N250_seed73112_root0.npz"
+    },
+    {
+      "N": 500,
+      "seed": 73201,
+      "name": "spectral_N500_seed73201",
+      "fluctuating": true,
+      "mean_input_variance": [
+        1.5909008053559748,
+        1.760560914225388,
+        1.3727814954481536
+      ],
+      "verified_roots": 1,
+      "rate_pr": 11.652620189300963,
+      "first_root_max_real": 1.2144831159943235,
+      "all_root_stats": [
+        {
+          "rho": 0.3876490277655709,
+          "shuffle_rho": -0.06135830092198934,
+          "excess_rho": 0.44900732868756027,
+          "rho_abs_real_above_1e_minus8": 0.45318495267142994,
+          "rho_first_half": 0.38678443111870225,
+          "rho_second_half": 0.39289643582871564,
+          "half_projection_rank_agreement": 0.9512802701480666,
+          "subspace_trace": 0.515438757769111,
+          "subspace_energy": 0.38734710871823236,
+          "residual_pr_ratio": 1.2435133003170582,
+          "pop_null_trace": 0.0990599260123212,
+          "pop_null_energy": 0.01293316123201274,
+          "pop_null_pr_ratio": 0.9920184394852749,
+          "gain_null_trace": 0.25030408245072433,
+          "gain_null_energy": 0.0832628623797809,
+          "gain_null_pr_ratio": 1.0172997367527992,
+          "excess_trace_gain": 0.26513467531838664,
+          "excess_energy_gain": 0.30408424633845144,
+          "excess_pr_ratio_gain": 0.22621356356425903,
+          "energy_first_half": 0.3837831629260168,
+          "energy_second_half": 0.3863995250167534
+        }
+      ],
+      "primary": {
+        "rho": 0.3876490277655709,
+        "shuffle_rho": -0.06135830092198934,
+        "excess_rho": 0.44900732868756027,
+        "rho_abs_real_above_1e_minus8": 0.45318495267142994,
+        "rho_first_half": 0.38678443111870225,
+        "rho_second_half": 0.39289643582871564,
+        "half_projection_rank_agreement": 0.9512802701480666,
+        "subspace_trace": 0.515438757769111,
+        "subspace_energy": 0.38734710871823236,
+        "residual_pr_ratio": 1.2435133003170582,
+        "pop_null_trace": 0.0990599260123212,
+        "pop_null_energy": 0.01293316123201274,
+        "pop_null_pr_ratio": 0.9920184394852749,
+        "gain_null_trace": 0.25030408245072433,
+        "gain_null_energy": 0.0832628623797809,
+        "gain_null_pr_ratio": 1.0172997367527992,
+        "excess_trace_gain": 0.26513467531838664,
+        "excess_energy_gain": 0.30408424633845144,
+        "excess_pr_ratio_gain": 0.22621356356425903,
+        "energy_first_half": 0.3837831629260168,
+        "energy_second_half": 0.3863995250167534
+      },
+      "rate_rank": 50,
+      "root_mode_file": "modes/spectral_N500_seed73201_root0.npz"
+    },
+    {
+      "N": 500,
+      "seed": 73202,
+      "name": "spectral_N500_seed73202",
+      "fluctuating": true,
+      "mean_input_variance": [
+        2.08121214135081,
+        2.0941766464491987,
+        2.0568406870884184
+      ],
+      "verified_roots": 1,
+      "rate_pr": 19.243093284675087,
+      "first_root_max_real": 1.4219167484911575,
+      "all_root_stats": [
+        {
+          "rho": 0.40135386195973227,
+          "shuffle_rho": -0.07445213395927569,
+          "excess_rho": 0.47580599591900796,
+          "rho_abs_real_above_1e_minus8": 0.43659596217735747,
+          "rho_first_half": 0.4050826900301081,
+          "rho_second_half": 0.3971307487050698,
+          "half_projection_rank_agreement": 0.9878660407243048,
+          "subspace_trace": 0.5749282098377448,
+          "subspace_energy": 0.5096328584740435,
+          "residual_pr_ratio": 1.404423976695137,
+          "pop_null_trace": 0.10411306533383974,
+          "pop_null_energy": 0.016144470901216203,
+          "pop_null_pr_ratio": 0.991713232797265,
+          "gain_null_trace": 0.23573340251347666,
+          "gain_null_energy": 0.07786495217092407,
+          "gain_null_pr_ratio": 1.005404247877221,
+          "excess_trace_gain": 0.3391948073242682,
+          "excess_energy_gain": 0.43176790630311945,
+          "excess_pr_ratio_gain": 0.39901972881791603,
+          "energy_first_half": 0.48906664205792477,
+          "energy_second_half": 0.5171626293759127
+        }
+      ],
+      "primary": {
+        "rho": 0.40135386195973227,
+        "shuffle_rho": -0.07445213395927569,
+        "excess_rho": 0.47580599591900796,
+        "rho_abs_real_above_1e_minus8": 0.43659596217735747,
+        "rho_first_half": 0.4050826900301081,
+        "rho_second_half": 0.3971307487050698,
+        "half_projection_rank_agreement": 0.9878660407243048,
+        "subspace_trace": 0.5749282098377448,
+        "subspace_energy": 0.5096328584740435,
+        "residual_pr_ratio": 1.404423976695137,
+        "pop_null_trace": 0.10411306533383974,
+        "pop_null_energy": 0.016144470901216203,
+        "pop_null_pr_ratio": 0.991713232797265,
+        "gain_null_trace": 0.23573340251347666,
+        "gain_null_energy": 0.07786495217092407,
+        "gain_null_pr_ratio": 1.005404247877221,
+        "excess_trace_gain": 0.3391948073242682,
+        "excess_energy_gain": 0.43176790630311945,
+        "excess_pr_ratio_gain": 0.39901972881791603,
+        "energy_first_half": 0.48906664205792477,
+        "energy_second_half": 0.5171626293759127
+      },
+      "rate_rank": 50,
+      "root_mode_file": "modes/spectral_N500_seed73202_root0.npz"
+    },
+    {
+      "N": 500,
+      "seed": 73203,
+      "name": "spectral_N500_seed73203",
+      "fluctuating": true,
+      "mean_input_variance": [
+        1.6114594314950788,
+        1.6399115561060067,
+        1.57311494485815
+      ],
+      "verified_roots": 2,
+      "rate_pr": 13.581101308373777,
+      "first_root_max_real": 1.2975434925654437,
+      "all_root_stats": [
+        {
+          "rho": 0.4206605804281278,
+          "shuffle_rho": -0.10278558989280576,
+          "excess_rho": 0.5234461703209335,
+          "rho_abs_real_above_1e_minus8": 0.45575952000709935,
+          "rho_first_half": 0.4164631310235913,
+          "rho_second_half": 0.42322199266622673,
+          "half_projection_rank_agreement": 0.9783778083051193,
+          "subspace_trace": 0.48108760207585155,
+          "subspace_energy": 0.3202386206851721,
+          "residual_pr_ratio": 1.0466738739308523,
+          "pop_null_trace": 0.10337050080922827,
+          "pop_null_energy": 0.01302780978651804,
+          "pop_null_pr_ratio": 0.9907781187897031,
+          "gain_null_trace": 0.22247257758946504,
+          "gain_null_energy": 0.06204374875039733,
+          "gain_null_pr_ratio": 0.9759360740801228,
+          "excess_trace_gain": 0.2586150244863865,
+          "excess_energy_gain": 0.2581948719347748,
+          "excess_pr_ratio_gain": 0.07073779985072948,
+          "energy_first_half": 0.32421724236330424,
+          "energy_second_half": 0.30946305381358513
+        },
+        {
+          "rho": 0.4285075471250687,
+          "shuffle_rho": -0.12008889200051039,
+          "excess_rho": 0.5485964391255791,
+          "rho_abs_real_above_1e_minus8": 0.4701165335716224,
+          "rho_first_half": 0.4419853224311148,
+          "rho_second_half": 0.41588402484730147,
+          "half_projection_rank_agreement": 0.98218885259082,
+          "subspace_trace": 0.5433887535382456,
+          "subspace_energy": 0.4426563424039136,
+          "residual_pr_ratio": 1.272744828902754,
+          "pop_null_trace": 0.10065591963149849,
+          "pop_null_energy": 0.013434996624009744,
+          "pop_null_pr_ratio": 0.989999431218449,
+          "gain_null_trace": 0.23351951933987236,
+          "gain_null_energy": 0.07148242712363517,
+          "gain_null_pr_ratio": 1.0044458031647205,
+          "excess_trace_gain": 0.3098692341983732,
+          "excess_energy_gain": 0.37117391528027843,
+          "excess_pr_ratio_gain": 0.26829902573803355,
+          "energy_first_half": 0.4464044007313168,
+          "energy_second_half": 0.4304586828803682
+        }
+      ],
+      "primary": {
+        "rho": 0.4206605804281278,
+        "shuffle_rho": -0.10278558989280576,
+        "excess_rho": 0.5234461703209335,
+        "rho_abs_real_above_1e_minus8": 0.45575952000709935,
+        "rho_first_half": 0.4164631310235913,
+        "rho_second_half": 0.42322199266622673,
+        "half_projection_rank_agreement": 0.9783778083051193,
+        "subspace_trace": 0.48108760207585155,
+        "subspace_energy": 0.3202386206851721,
+        "residual_pr_ratio": 1.0466738739308523,
+        "pop_null_trace": 0.10337050080922827,
+        "pop_null_energy": 0.01302780978651804,
+        "pop_null_pr_ratio": 0.9907781187897031,
+        "gain_null_trace": 0.22247257758946504,
+        "gain_null_energy": 0.06204374875039733,
+        "gain_null_pr_ratio": 0.9759360740801228,
+        "excess_trace_gain": 0.2586150244863865,
+        "excess_energy_gain": 0.2581948719347748,
+        "excess_pr_ratio_gain": 0.07073779985072948,
+        "energy_first_half": 0.32421724236330424,
+        "energy_second_half": 0.30946305381358513
+      },
+      "rate_rank": 51,
+      "root_mode_file": "modes/spectral_N500_seed73203_root0.npz"
+    },
+    {
+      "N": 500,
+      "seed": 73204,
+      "name": "spectral_N500_seed73204",
+      "fluctuating": true,
+      "mean_input_variance": [
+        1.843585684346444,
+        1.813187286876409,
+        1.8608200861442616
+      ],
+      "verified_roots": 2,
+      "rate_pr": 15.21210985986143,
+      "first_root_max_real": 1.0530509136952029,
+      "all_root_stats": [
+        {
+          "rho": 0.3377246065456374,
+          "shuffle_rho": -0.07906861056901235,
+          "excess_rho": 0.4167932171146498,
+          "rho_abs_real_above_1e_minus8": 0.43890570817792085,
+          "rho_first_half": 0.3392109593234608,
+          "rho_second_half": 0.33437689620676647,
+          "half_projection_rank_agreement": 0.9817898551913015,
+          "subspace_trace": 0.5296249128957699,
+          "subspace_energy": 0.39881390935803307,
+          "residual_pr_ratio": 1.2272054856045695,
+          "pop_null_trace": 0.09950499157703827,
+          "pop_null_energy": 0.01438357994810345,
+          "pop_null_pr_ratio": 0.9963790085770363,
+          "gain_null_trace": 0.24324446971953986,
+          "gain_null_energy": 0.08414615611558733,
+          "gain_null_pr_ratio": 1.0222638661136596,
+          "excess_trace_gain": 0.28638044317623,
+          "excess_energy_gain": 0.3146677532424457,
+          "excess_pr_ratio_gain": 0.20494161949090994,
+          "energy_first_half": 0.3867618744188946,
+          "energy_second_half": 0.4006485504425593
+        },
+        {
+          "rho": 0.3834224507593569,
+          "shuffle_rho": -0.034222297240273446,
+          "excess_rho": 0.4176447479996303,
+          "rho_abs_real_above_1e_minus8": 0.47726873176048656,
+          "rho_first_half": 0.38127237982711026,
+          "rho_second_half": 0.3820967411354786,
+          "half_projection_rank_agreement": 0.9812994064196698,
+          "subspace_trace": 0.4934998065579355,
+          "subspace_energy": 0.3408302512286798,
+          "residual_pr_ratio": 1.1144058580279745,
+          "pop_null_trace": 0.09872124263191476,
+          "pop_null_energy": 0.013526190433590228,
+          "pop_null_pr_ratio": 0.9933853902885332,
+          "gain_null_trace": 0.22756231114733708,
+          "gain_null_energy": 0.0706430573586494,
+          "gain_null_pr_ratio": 1.011920101239149,
+          "excess_trace_gain": 0.2659374954105984,
+          "excess_energy_gain": 0.27018719387003043,
+          "excess_pr_ratio_gain": 0.10248575678882554,
+          "energy_first_half": 0.3313685269737259,
+          "energy_second_half": 0.34211883867252973
+        }
+      ],
+      "primary": {
+        "rho": 0.3377246065456374,
+        "shuffle_rho": -0.07906861056901235,
+        "excess_rho": 0.4167932171146498,
+        "rho_abs_real_above_1e_minus8": 0.43890570817792085,
+        "rho_first_half": 0.3392109593234608,
+        "rho_second_half": 0.33437689620676647,
+        "half_projection_rank_agreement": 0.9817898551913015,
+        "subspace_trace": 0.5296249128957699,
+        "subspace_energy": 0.39881390935803307,
+        "residual_pr_ratio": 1.2272054856045695,
+        "pop_null_trace": 0.09950499157703827,
+        "pop_null_energy": 0.01438357994810345,
+        "pop_null_pr_ratio": 0.9963790085770363,
+        "gain_null_trace": 0.24324446971953986,
+        "gain_null_energy": 0.08414615611558733,
+        "gain_null_pr_ratio": 1.0222638661136596,
+        "excess_trace_gain": 0.28638044317623,
+        "excess_energy_gain": 0.3146677532424457,
+        "excess_pr_ratio_gain": 0.20494161949090994,
+        "energy_first_half": 0.3867618744188946,
+        "energy_second_half": 0.4006485504425593
+      },
+      "rate_rank": 50,
+      "root_mode_file": "modes/spectral_N500_seed73204_root0.npz"
+    },
+    {
+      "N": 500,
+      "seed": 73205,
+      "name": "spectral_N500_seed73205",
+      "fluctuating": true,
+      "mean_input_variance": [
+        0.8414327419632246,
+        0.8253923505544776,
+        0.8555422438475354
+      ],
+      "verified_roots": 1,
+      "rate_pr": 12.510477748207448,
+      "first_root_max_real": 1.1207656153576844,
+      "all_root_stats": [
+        {
+          "rho": 0.2839675389070367,
+          "shuffle_rho": -0.08603630662489922,
+          "excess_rho": 0.3700038455319359,
+          "rho_abs_real_above_1e_minus8": 0.31722949280608087,
+          "rho_first_half": 0.2854744735712536,
+          "rho_second_half": 0.2836921798301431,
+          "half_projection_rank_agreement": 0.9902116271347658,
+          "subspace_trace": 0.7273902263893074,
+          "subspace_energy": 0.6746910854038098,
+          "residual_pr_ratio": 1.224033997591001,
+          "pop_null_trace": 0.10431494963220822,
+          "pop_null_energy": 0.014639103857331482,
+          "pop_null_pr_ratio": 0.9962763510504029,
+          "gain_null_trace": 0.3190230778041826,
+          "gain_null_energy": 0.13368789155918281,
+          "gain_null_pr_ratio": 1.0158479302838288,
+          "excess_trace_gain": 0.4083671485851248,
+          "excess_energy_gain": 0.541003193844627,
+          "excess_pr_ratio_gain": 0.20818606730717226,
+          "energy_first_half": 0.6959833705104029,
+          "energy_second_half": 0.648668565937702
+        }
+      ],
+      "primary": {
+        "rho": 0.2839675389070367,
+        "shuffle_rho": -0.08603630662489922,
+        "excess_rho": 0.3700038455319359,
+        "rho_abs_real_above_1e_minus8": 0.31722949280608087,
+        "rho_first_half": 0.2854744735712536,
+        "rho_second_half": 0.2836921798301431,
+        "half_projection_rank_agreement": 0.9902116271347658,
+        "subspace_trace": 0.7273902263893074,
+        "subspace_energy": 0.6746910854038098,
+        "residual_pr_ratio": 1.224033997591001,
+        "pop_null_trace": 0.10431494963220822,
+        "pop_null_energy": 0.014639103857331482,
+        "pop_null_pr_ratio": 0.9962763510504029,
+        "gain_null_trace": 0.3190230778041826,
+        "gain_null_energy": 0.13368789155918281,
+        "gain_null_pr_ratio": 1.0158479302838288,
+        "excess_trace_gain": 0.4083671485851248,
+        "excess_energy_gain": 0.541003193844627,
+        "excess_pr_ratio_gain": 0.20818606730717226,
+        "energy_first_half": 0.6959833705104029,
+        "energy_second_half": 0.648668565937702
+      },
+      "rate_rank": 51,
+      "root_mode_file": "modes/spectral_N500_seed73205_root0.npz"
+    },
+    {
+      "N": 500,
+      "seed": 73206,
+      "name": "spectral_N500_seed73206",
+      "fluctuating": true,
+      "mean_input_variance": [
+        1.6597743524149753,
+        1.7179436618735093,
+        1.590322970479569
+      ],
+      "verified_roots": 1,
+      "rate_pr": 16.492594440016138,
+      "first_root_max_real": 1.4133263956500588,
+      "all_root_stats": [
+        {
+          "rho": 0.39192020263668675,
+          "shuffle_rho": -0.08001424952916306,
+          "excess_rho": 0.47193445216584984,
+          "rho_abs_real_above_1e_minus8": 0.436923398409191,
+          "rho_first_half": 0.3895868422362331,
+          "rho_second_half": 0.39357828204114026,
+          "half_projection_rank_agreement": 0.9848504454287562,
+          "subspace_trace": 0.5355861198649404,
+          "subspace_energy": 0.3909883287766672,
+          "residual_pr_ratio": 1.0646124254230758,
+          "pop_null_trace": 0.10030863148864266,
+          "pop_null_energy": 0.013987026283176728,
+          "pop_null_pr_ratio": 0.9940957043268717,
+          "gain_null_trace": 0.2507048748935986,
+          "gain_null_energy": 0.08931065952339018,
+          "gain_null_pr_ratio": 1.0144294511740664,
+          "excess_trace_gain": 0.2848812449713418,
+          "excess_energy_gain": 0.30167766925327705,
+          "excess_pr_ratio_gain": 0.050182974249009416,
+          "energy_first_half": 0.3641872208488538,
+          "energy_second_half": 0.4113846780474937
+        }
+      ],
+      "primary": {
+        "rho": 0.39192020263668675,
+        "shuffle_rho": -0.08001424952916306,
+        "excess_rho": 0.47193445216584984,
+        "rho_abs_real_above_1e_minus8": 0.436923398409191,
+        "rho_first_half": 0.3895868422362331,
+        "rho_second_half": 0.39357828204114026,
+        "half_projection_rank_agreement": 0.9848504454287562,
+        "subspace_trace": 0.5355861198649404,
+        "subspace_energy": 0.3909883287766672,
+        "residual_pr_ratio": 1.0646124254230758,
+        "pop_null_trace": 0.10030863148864266,
+        "pop_null_energy": 0.013987026283176728,
+        "pop_null_pr_ratio": 0.9940957043268717,
+        "gain_null_trace": 0.2507048748935986,
+        "gain_null_energy": 0.08931065952339018,
+        "gain_null_pr_ratio": 1.0144294511740664,
+        "excess_trace_gain": 0.2848812449713418,
+        "excess_energy_gain": 0.30167766925327705,
+        "excess_pr_ratio_gain": 0.050182974249009416,
+        "energy_first_half": 0.3641872208488538,
+        "energy_second_half": 0.4113846780474937
+      },
+      "rate_rank": 50,
+      "root_mode_file": "modes/spectral_N500_seed73206_root0.npz"
+    },
+    {
+      "N": 500,
+      "seed": 73207,
+      "name": "spectral_N500_seed73207",
+      "fluctuating": true,
+      "mean_input_variance": [
+        1.7387809017152962,
+        1.6465236285257054,
+        1.8166699090221137
+      ],
+      "verified_roots": 2,
+      "rate_pr": 17.413422224901353,
+      "first_root_max_real": 1.1489560774295111,
+      "all_root_stats": [
+        {
+          "rho": 0.414722490993872,
+          "shuffle_rho": -0.08608273064707458,
+          "excess_rho": 0.5008052216409465,
+          "rho_abs_real_above_1e_minus8": 0.46471611927663636,
+          "rho_first_half": 0.41817843886492717,
+          "rho_second_half": 0.41294586483428175,
+          "half_projection_rank_agreement": 0.9627422361436826,
+          "subspace_trace": 0.5338974895030593,
+          "subspace_energy": 0.428040082525824,
+          "residual_pr_ratio": 1.1997991208533885,
+          "pop_null_trace": 0.10221725112335268,
+          "pop_null_energy": 0.014739295402806774,
+          "pop_null_pr_ratio": 0.9923880030992414,
+          "gain_null_trace": 0.23383620614501077,
+          "gain_null_energy": 0.07574393624651105,
+          "gain_null_pr_ratio": 0.9988858106173807,
+          "excess_trace_gain": 0.3000612833580485,
+          "excess_energy_gain": 0.35229614627931294,
+          "excess_pr_ratio_gain": 0.20091331023600778,
+          "energy_first_half": 0.44160478349023646,
+          "energy_second_half": 0.3989968463119168
+        },
+        {
+          "rho": 0.360958503479454,
+          "shuffle_rho": -0.09065275978374358,
+          "excess_rho": 0.4516112632631976,
+          "rho_abs_real_above_1e_minus8": 0.39064516129032256,
+          "rho_first_half": 0.3540323947280669,
+          "rho_second_half": 0.3646063269757449,
+          "half_projection_rank_agreement": 0.9650359971792641,
+          "subspace_trace": 0.5436071226067063,
+          "subspace_energy": 0.4821594494018103,
+          "residual_pr_ratio": 1.3497230080520448,
+          "pop_null_trace": 0.10311948893384631,
+          "pop_null_energy": 0.014957510225676231,
+          "pop_null_pr_ratio": 0.9913013805231738,
+          "gain_null_trace": 0.23602642744184002,
+          "gain_null_energy": 0.07864219448918408,
+          "gain_null_pr_ratio": 1.011138654636241,
+          "excess_trace_gain": 0.3075806951648663,
+          "excess_energy_gain": 0.40351725491262624,
+          "excess_pr_ratio_gain": 0.33858435341580373,
+          "energy_first_half": 0.5061378032301207,
+          "energy_second_half": 0.44217350019155177
+        }
+      ],
+      "primary": {
+        "rho": 0.414722490993872,
+        "shuffle_rho": -0.08608273064707458,
+        "excess_rho": 0.5008052216409465,
+        "rho_abs_real_above_1e_minus8": 0.46471611927663636,
+        "rho_first_half": 0.41817843886492717,
+        "rho_second_half": 0.41294586483428175,
+        "half_projection_rank_agreement": 0.9627422361436826,
+        "subspace_trace": 0.5338974895030593,
+        "subspace_energy": 0.428040082525824,
+        "residual_pr_ratio": 1.1997991208533885,
+        "pop_null_trace": 0.10221725112335268,
+        "pop_null_energy": 0.014739295402806774,
+        "pop_null_pr_ratio": 0.9923880030992414,
+        "gain_null_trace": 0.23383620614501077,
+        "gain_null_energy": 0.07574393624651105,
+        "gain_null_pr_ratio": 0.9988858106173807,
+        "excess_trace_gain": 0.3000612833580485,
+        "excess_energy_gain": 0.35229614627931294,
+        "excess_pr_ratio_gain": 0.20091331023600778,
+        "energy_first_half": 0.44160478349023646,
+        "energy_second_half": 0.3989968463119168
+      },
+      "rate_rank": 51,
+      "root_mode_file": "modes/spectral_N500_seed73207_root0.npz"
+    },
+    {
+      "N": 500,
+      "seed": 73208,
+      "name": "spectral_N500_seed73208",
+      "fluctuating": true,
+      "mean_input_variance": [
+        2.637373518870967,
+        2.5501447121065675,
+        2.7103089794078095
+      ],
+      "verified_roots": 2,
+      "rate_pr": 20.394502688963605,
+      "first_root_max_real": 1.2855120226082204,
+      "all_root_stats": [
+        {
+          "rho": 0.504104918829913,
+          "shuffle_rho": -0.08253213097724586,
+          "excess_rho": 0.5866370498071589,
+          "rho_abs_real_above_1e_minus8": 0.5431652437867577,
+          "rho_first_half": 0.4991960348771674,
+          "rho_second_half": 0.5034971101459846,
+          "half_projection_rank_agreement": 0.9781117041850391,
+          "subspace_trace": 0.32034396788805647,
+          "subspace_energy": 0.15945702341927812,
+          "residual_pr_ratio": 1.0202980759603977,
+          "pop_null_trace": 0.10183248778159978,
+          "pop_null_energy": 0.015057367346789606,
+          "pop_null_pr_ratio": 0.9948433833646222,
+          "gain_null_trace": 0.16238499167177808,
+          "gain_null_energy": 0.03687392167883174,
+          "gain_null_pr_ratio": 0.9895880893423272,
+          "excess_trace_gain": 0.15795897621627839,
+          "excess_energy_gain": 0.12258310174044637,
+          "excess_pr_ratio_gain": 0.03070998661807045,
+          "energy_first_half": 0.15881207246380358,
+          "energy_second_half": 0.15487281855913326
+        },
+        {
+          "rho": 0.434565360510505,
+          "shuffle_rho": -0.06424624300828896,
+          "excess_rho": 0.49881160351879394,
+          "rho_abs_real_above_1e_minus8": 0.49937004212534347,
+          "rho_first_half": 0.4285536553883477,
+          "rho_second_half": 0.43596810898515864,
+          "half_projection_rank_agreement": 0.9700762543609096,
+          "subspace_trace": 0.30411098613507587,
+          "subspace_energy": 0.1478279276050634,
+          "residual_pr_ratio": 1.0366963672102434,
+          "pop_null_trace": 0.0995512986060819,
+          "pop_null_energy": 0.014671531567651991,
+          "pop_null_pr_ratio": 0.9916981865177377,
+          "gain_null_trace": 0.158594487908572,
+          "gain_null_energy": 0.03762814849332899,
+          "gain_null_pr_ratio": 1.0010071059300163,
+          "excess_trace_gain": 0.14551649822650387,
+          "excess_energy_gain": 0.1101997791117344,
+          "excess_pr_ratio_gain": 0.03568926128022709,
+          "energy_first_half": 0.14887145962593867,
+          "energy_second_half": 0.1422299210078789
+        }
+      ],
+      "primary": {
+        "rho": 0.504104918829913,
+        "shuffle_rho": -0.08253213097724586,
+        "excess_rho": 0.5866370498071589,
+        "rho_abs_real_above_1e_minus8": 0.5431652437867577,
+        "rho_first_half": 0.4991960348771674,
+        "rho_second_half": 0.5034971101459846,
+        "half_projection_rank_agreement": 0.9781117041850391,
+        "subspace_trace": 0.32034396788805647,
+        "subspace_energy": 0.15945702341927812,
+        "residual_pr_ratio": 1.0202980759603977,
+        "pop_null_trace": 0.10183248778159978,
+        "pop_null_energy": 0.015057367346789606,
+        "pop_null_pr_ratio": 0.9948433833646222,
+        "gain_null_trace": 0.16238499167177808,
+        "gain_null_energy": 0.03687392167883174,
+        "gain_null_pr_ratio": 0.9895880893423272,
+        "excess_trace_gain": 0.15795897621627839,
+        "excess_energy_gain": 0.12258310174044637,
+        "excess_pr_ratio_gain": 0.03070998661807045,
+        "energy_first_half": 0.15881207246380358,
+        "energy_second_half": 0.15487281855913326
+      },
+      "rate_rank": 50,
+      "root_mode_file": "modes/spectral_N500_seed73208_root0.npz"
+    },
+    {
+      "N": 500,
+      "seed": 73209,
+      "name": "spectral_N500_seed73209",
+      "fluctuating": true,
+      "mean_input_variance": [
+        1.7158854021557703,
+        1.7560002734502393,
+        1.6592940705956016
+      ],
+      "verified_roots": 1,
+      "rate_pr": 18.244745931747296,
+      "first_root_max_real": 1.1866827200872923,
+      "all_root_stats": [
+        {
+          "rho": 0.31161233133064115,
+          "shuffle_rho": -0.1647213424085181,
+          "excess_rho": 0.47633367373915925,
+          "rho_abs_real_above_1e_minus8": 0.4253829491120637,
+          "rho_first_half": 0.3080147428553655,
+          "rho_second_half": 0.3132716801360241,
+          "half_projection_rank_agreement": 0.9783641858512132,
+          "subspace_trace": 0.5322596186907819,
+          "subspace_energy": 0.42126507156181353,
+          "residual_pr_ratio": 1.1381481616921083,
+          "pop_null_trace": 0.10311420404466848,
+          "pop_null_energy": 0.015468223831349852,
+          "pop_null_pr_ratio": 0.9949932113826898,
+          "gain_null_trace": 0.24367095176572817,
+          "gain_null_energy": 0.08594907234358358,
+          "gain_null_pr_ratio": 1.0085737582022096,
+          "excess_trace_gain": 0.2885886669250537,
+          "excess_energy_gain": 0.33531599921822997,
+          "excess_pr_ratio_gain": 0.12957440348989868,
+          "energy_first_half": 0.3759874529396795,
+          "energy_second_half": 0.458404180457467
+        }
+      ],
+      "primary": {
+        "rho": 0.31161233133064115,
+        "shuffle_rho": -0.1647213424085181,
+        "excess_rho": 0.47633367373915925,
+        "rho_abs_real_above_1e_minus8": 0.4253829491120637,
+        "rho_first_half": 0.3080147428553655,
+        "rho_second_half": 0.3132716801360241,
+        "half_projection_rank_agreement": 0.9783641858512132,
+        "subspace_trace": 0.5322596186907819,
+        "subspace_energy": 0.42126507156181353,
+        "residual_pr_ratio": 1.1381481616921083,
+        "pop_null_trace": 0.10311420404466848,
+        "pop_null_energy": 0.015468223831349852,
+        "pop_null_pr_ratio": 0.9949932113826898,
+        "gain_null_trace": 0.24367095176572817,
+        "gain_null_energy": 0.08594907234358358,
+        "gain_null_pr_ratio": 1.0085737582022096,
+        "excess_trace_gain": 0.2885886669250537,
+        "excess_energy_gain": 0.33531599921822997,
+        "excess_pr_ratio_gain": 0.12957440348989868,
+        "energy_first_half": 0.3759874529396795,
+        "energy_second_half": 0.458404180457467
+      },
+      "rate_rank": 50,
+      "root_mode_file": "modes/spectral_N500_seed73209_root0.npz"
+    },
+    {
+      "N": 500,
+      "seed": 73210,
+      "name": "spectral_N500_seed73210",
+      "fluctuating": true,
+      "mean_input_variance": [
+        1.9684658449348238,
+        1.9754943183868199,
+        1.9550873348421736
+      ],
+      "verified_roots": 2,
+      "rate_pr": 12.020666130139745,
+      "first_root_max_real": 1.365402985155532,
+      "all_root_stats": [
+        {
+          "rho": 0.32400976095595035,
+          "shuffle_rho": -0.0828015659988098,
+          "excess_rho": 0.4068113269547602,
+          "rho_abs_real_above_1e_minus8": 0.35088249340999456,
+          "rho_first_half": 0.32184956790492886,
+          "rho_second_half": 0.32911834086333186,
+          "half_projection_rank_agreement": 0.9891645936115651,
+          "subspace_trace": 0.5081353154960544,
+          "subspace_energy": 0.3714244948437429,
+          "residual_pr_ratio": 1.0599922597770435,
+          "pop_null_trace": 0.09948385639843282,
+          "pop_null_energy": 0.013150882766908619,
+          "pop_null_pr_ratio": 0.9909079395362701,
+          "gain_null_trace": 0.2550441774296892,
+          "gain_null_energy": 0.09029110534900009,
+          "gain_null_pr_ratio": 1.0332830377535023,
+          "excess_trace_gain": 0.2530911380663652,
+          "excess_energy_gain": 0.2811333894947428,
+          "excess_pr_ratio_gain": 0.0267092220235412,
+          "energy_first_half": 0.3645551267784495,
+          "energy_second_half": 0.3717075472194867
+        },
+        {
+          "rho": 0.3775043997576527,
+          "shuffle_rho": -0.04308069588298087,
+          "excess_rho": 0.42058509564063357,
+          "rho_abs_real_above_1e_minus8": 0.415454483757126,
+          "rho_first_half": 0.3634072877297251,
+          "rho_second_half": 0.39389573295634867,
+          "half_projection_rank_agreement": 0.9774161160959004,
+          "subspace_trace": 0.4278620485834869,
+          "subspace_energy": 0.23414867907617593,
+          "residual_pr_ratio": 1.0289066083994587,
+          "pop_null_trace": 0.10163403352146617,
+          "pop_null_energy": 0.01316770037755239,
+          "pop_null_pr_ratio": 0.9945662208028823,
+          "gain_null_trace": 0.21263452455963489,
+          "gain_null_energy": 0.052805588707925025,
+          "gain_null_pr_ratio": 0.9678394733938884,
+          "excess_trace_gain": 0.21522752402385203,
+          "excess_energy_gain": 0.18134309036825091,
+          "excess_pr_ratio_gain": 0.06106713500557026,
+          "energy_first_half": 0.2381116233861982,
+          "energy_second_half": 0.22785826874476625
+        }
+      ],
+      "primary": {
+        "rho": 0.32400976095595035,
+        "shuffle_rho": -0.0828015659988098,
+        "excess_rho": 0.4068113269547602,
+        "rho_abs_real_above_1e_minus8": 0.35088249340999456,
+        "rho_first_half": 0.32184956790492886,
+        "rho_second_half": 0.32911834086333186,
+        "half_projection_rank_agreement": 0.9891645936115651,
+        "subspace_trace": 0.5081353154960544,
+        "subspace_energy": 0.3714244948437429,
+        "residual_pr_ratio": 1.0599922597770435,
+        "pop_null_trace": 0.09948385639843282,
+        "pop_null_energy": 0.013150882766908619,
+        "pop_null_pr_ratio": 0.9909079395362701,
+        "gain_null_trace": 0.2550441774296892,
+        "gain_null_energy": 0.09029110534900009,
+        "gain_null_pr_ratio": 1.0332830377535023,
+        "excess_trace_gain": 0.2530911380663652,
+        "excess_energy_gain": 0.2811333894947428,
+        "excess_pr_ratio_gain": 0.0267092220235412,
+        "energy_first_half": 0.3645551267784495,
+        "energy_second_half": 0.3717075472194867
+      },
+      "rate_rank": 50,
+      "root_mode_file": "modes/spectral_N500_seed73210_root0.npz"
+    },
+    {
+      "N": 500,
+      "seed": 73211,
+      "name": "spectral_N500_seed73211",
+      "fluctuating": true,
+      "mean_input_variance": [
+        2.663135987670534,
+        2.6169840596549103,
+        2.679929864733578
+      ],
+      "verified_roots": 2,
+      "rate_pr": 21.84164868254649,
+      "first_root_max_real": 1.4514374668085397,
+      "all_root_stats": [
+        {
+          "rho": 0.4462409795665771,
+          "shuffle_rho": -0.07285388279238361,
+          "excess_rho": 0.5190948623589607,
+          "rho_abs_real_above_1e_minus8": 0.4989201655109145,
+          "rho_first_half": 0.4311446695178419,
+          "rho_second_half": 0.4611864425510283,
+          "half_projection_rank_agreement": 0.9697112356197991,
+          "subspace_trace": 0.42772955148277064,
+          "subspace_energy": 0.31894832568193365,
+          "residual_pr_ratio": 1.2040067363419107,
+          "pop_null_trace": 0.10047397976683484,
+          "pop_null_energy": 0.015293933040189571,
+          "pop_null_pr_ratio": 0.9924984611331755,
+          "gain_null_trace": 0.19644777921850587,
+          "gain_null_energy": 0.06026177841443256,
+          "gain_null_pr_ratio": 1.0181960952704388,
+          "excess_trace_gain": 0.23128177226426477,
+          "excess_energy_gain": 0.25868654726750107,
+          "excess_pr_ratio_gain": 0.18581064107147194,
+          "energy_first_half": 0.33365234147781586,
+          "energy_second_half": 0.2945939966648771
+        },
+        {
+          "rho": 0.3773884361354112,
+          "shuffle_rho": -0.08435169930293404,
+          "excess_rho": 0.46174013543834524,
+          "rho_abs_real_above_1e_minus8": 0.4203691871694369,
+          "rho_first_half": 0.3893372509651986,
+          "rho_second_half": 0.36320659372674513,
+          "half_projection_rank_agreement": 0.9467161790893763,
+          "subspace_trace": 0.5012093713657642,
+          "subspace_energy": 0.39761606953028017,
+          "residual_pr_ratio": 1.3444050012172246,
+          "pop_null_trace": 0.101407297841871,
+          "pop_null_energy": 0.015746668653848623,
+          "pop_null_pr_ratio": 0.9932566144856343,
+          "gain_null_trace": 0.21070702241219777,
+          "gain_null_energy": 0.0640697651187408,
+          "gain_null_pr_ratio": 1.0018480934432694,
+          "excess_trace_gain": 0.2905023489535664,
+          "excess_energy_gain": 0.3335463044115394,
+          "excess_pr_ratio_gain": 0.3425569077739552,
+          "energy_first_half": 0.38933303330655167,
+          "energy_second_half": 0.3900219483092485
+        }
+      ],
+      "primary": {
+        "rho": 0.4462409795665771,
+        "shuffle_rho": -0.07285388279238361,
+        "excess_rho": 0.5190948623589607,
+        "rho_abs_real_above_1e_minus8": 0.4989201655109145,
+        "rho_first_half": 0.4311446695178419,
+        "rho_second_half": 0.4611864425510283,
+        "half_projection_rank_agreement": 0.9697112356197991,
+        "subspace_trace": 0.42772955148277064,
+        "subspace_energy": 0.31894832568193365,
+        "residual_pr_ratio": 1.2040067363419107,
+        "pop_null_trace": 0.10047397976683484,
+        "pop_null_energy": 0.015293933040189571,
+        "pop_null_pr_ratio": 0.9924984611331755,
+        "gain_null_trace": 0.19644777921850587,
+        "gain_null_energy": 0.06026177841443256,
+        "gain_null_pr_ratio": 1.0181960952704388,
+        "excess_trace_gain": 0.23128177226426477,
+        "excess_energy_gain": 0.25868654726750107,
+        "excess_pr_ratio_gain": 0.18581064107147194,
+        "energy_first_half": 0.33365234147781586,
+        "energy_second_half": 0.2945939966648771
+      },
+      "rate_rank": 50,
+      "root_mode_file": "modes/spectral_N500_seed73211_root0.npz"
+    },
+    {
+      "N": 500,
+      "seed": 73212,
+      "name": "spectral_N500_seed73212",
+      "fluctuating": true,
+      "mean_input_variance": [
+        2.0235720630169323,
+        2.018485514094822,
+        2.0195821018027464
+      ],
+      "verified_roots": 1,
+      "rate_pr": 18.809394099018114,
+      "first_root_max_real": 1.0770470127095766,
+      "all_root_stats": [
+        {
+          "rho": 0.4057134016289273,
+          "shuffle_rho": -0.13100874139398158,
+          "excess_rho": 0.5367221430229089,
+          "rho_abs_real_above_1e_minus8": 0.42317789274460677,
+          "rho_first_half": 0.4153090430881101,
+          "rho_second_half": 0.3942396313364055,
+          "half_projection_rank_agreement": 0.9601542728950481,
+          "subspace_trace": 0.4470781282369635,
+          "subspace_energy": 0.3287213543092005,
+          "residual_pr_ratio": 1.2509065084452928,
+          "pop_null_trace": 0.10670249251724706,
+          "pop_null_energy": 0.016025008495791304,
+          "pop_null_pr_ratio": 0.9890642831415553,
+          "gain_null_trace": 0.22153976853582763,
+          "gain_null_energy": 0.07733260891205833,
+          "gain_null_pr_ratio": 1.0502202554954332,
+          "excess_trace_gain": 0.2255383597011359,
+          "excess_energy_gain": 0.2513887453971422,
+          "excess_pr_ratio_gain": 0.20068625294985964,
+          "energy_first_half": 0.3114459748056198,
+          "energy_second_half": 0.32863419494425905
+        }
+      ],
+      "primary": {
+        "rho": 0.4057134016289273,
+        "shuffle_rho": -0.13100874139398158,
+        "excess_rho": 0.5367221430229089,
+        "rho_abs_real_above_1e_minus8": 0.42317789274460677,
+        "rho_first_half": 0.4153090430881101,
+        "rho_second_half": 0.3942396313364055,
+        "half_projection_rank_agreement": 0.9601542728950481,
+        "subspace_trace": 0.4470781282369635,
+        "subspace_energy": 0.3287213543092005,
+        "residual_pr_ratio": 1.2509065084452928,
+        "pop_null_trace": 0.10670249251724706,
+        "pop_null_energy": 0.016025008495791304,
+        "pop_null_pr_ratio": 0.9890642831415553,
+        "gain_null_trace": 0.22153976853582763,
+        "gain_null_energy": 0.07733260891205833,
+        "gain_null_pr_ratio": 1.0502202554954332,
+        "excess_trace_gain": 0.2255383597011359,
+        "excess_energy_gain": 0.2513887453971422,
+        "excess_pr_ratio_gain": 0.20068625294985964,
+        "energy_first_half": 0.3114459748056198,
+        "energy_second_half": 0.32863419494425905
+      },
+      "rate_rank": 51,
+      "root_mode_file": "modes/spectral_N500_seed73212_root0.npz"
+    }
+  ],
+  "all": {
+    "networks": 24,
+    "fluctuating": 20,
+    "quiet": 4,
+    "root_found": 24,
+    "eligible": 20,
+    "multiple_roots": 10,
+    "multiple_roots_among_eligible": 9,
+    "positive": 20,
+    "ties": 0,
+    "one_sided_sign_p": 9.5367431640625e-07,
+    "positive_fraction_exact95_ci": [
+      0.8315665290169145,
+      1.0
+    ],
+    "primary": {
+      "rho": {
+        "median": 0.3476772213627455,
+        "min": 0.1125049882096862,
+        "max": 0.504104918829913
+      },
+      "shuffle_rho": {
+        "median": -0.0809406391717615,
+        "min": -0.1647213424085181,
+        "max": -0.03245601306003991
+      },
+      "excess_rho": {
+        "median": 0.44601202962785125,
+        "min": 0.1449610012697261,
+        "max": 0.5866370498071589
+      },
+      "rho_abs_real_above_1e_minus8": {
+        "median": 0.4263076499502697,
+        "min": 0.13144067663955167,
+        "max": 0.5431652437867577
+      },
+      "rho_first_half": {
+        "median": 0.3474148208956098,
+        "min": 0.11237076002176674,
+        "max": 0.4991960348771674
+      },
+      "rho_second_half": {
+        "median": 0.34729475692178685,
+        "min": 0.11251587157627428,
+        "max": 0.5034971101459846
+      },
+      "half_projection_rank_agreement": {
+        "median": 0.9833201503100288,
+        "min": 0.850184608562367,
+        "max": 0.9999891166334118
+      },
+      "subspace_trace": {
+        "median": 0.5309422657932759,
+        "min": 0.32034396788805647,
+        "max": 0.9886150088539097
+      },
+      "subspace_energy": {
+        "median": 0.39490111906735015,
+        "min": 0.13706373890238482,
+        "max": 0.9920110874144232
+      },
+      "residual_pr_ratio": {
+        "median": 1.2019029285976495,
+        "min": 0.7591756820858921,
+        "max": 1.4972907113691274
+      },
+      "pop_null_trace": {
+        "median": 0.10245809156901313,
+        "min": 0.0990599260123212,
+        "max": 0.10788773091000686
+      },
+      "pop_null_energy": {
+        "median": 0.014689199630069129,
+        "min": 0.011145988350272404,
+        "max": 0.016844149891270588
+      },
+      "pop_null_pr_ratio": {
+        "median": 0.994918297373656,
+        "min": 0.9890642831415553,
+        "max": 1.0062472762978039
+      },
+      "gain_null_trace": {
+        "median": 0.243457710742634,
+        "min": 0.16238499167177808,
+        "max": 0.5611954398121071
+      },
+      "gain_null_energy": {
+        "median": 0.0837045092476841,
+        "min": 0.03687392167883174,
+        "max": 0.3472272882561617
+      },
+      "gain_null_pr_ratio": {
+        "median": 1.0069890030397153,
+        "min": 0.9061468645933486,
+        "max": 1.0581255492760135
+      },
+      "excess_trace_gain": {
+        "median": 0.2856308440737859,
+        "min": 0.15795897621627839,
+        "max": 0.552867351045979
+      },
+      "excess_energy_gain": {
+        "median": 0.3093759997904486,
+        "min": 0.0984026543911169,
+        "max": 0.7708529343226884
+      },
+      "excess_pr_ratio_gain": {
+        "median": 0.1932484470106658,
+        "min": -0.14697118250745644,
+        "max": 0.5093400499624818
+      },
+      "energy_first_half": {
+        "median": 0.3852725186724557,
+        "min": 0.13422347142206403,
+        "max": 0.9919983079745832
+      },
+      "energy_second_half": {
+        "median": 0.39982269837723805,
+        "min": 0.11625899122094752,
+        "max": 0.9920237818686756
+      }
+    },
+    "root_sensitivity": {
+      "rho": {
+        "range_within_multiple_root_networks": {
+          "median": 0.053763987514417966,
+          "min": 0.007846966696940905,
+          "max": 0.1408675799086757
+        },
+        "networks_positive_at_every_found_root": 20
+      },
+      "excess_rho": {
+        "range_within_multiple_root_networks": {
+          "median": 0.049193958377748925,
+          "min": 0.0008515308849805225,
+          "max": 0.08782544628836497
+        },
+        "networks_positive_at_every_found_root": 20
+      },
+      "subspace_energy": {
+        "range_within_multiple_root_networks": {
+          "median": 0.07866774384834652,
+          "min": 0.01162909581421473,
+          "max": 0.1840272190602048
+        },
+        "networks_positive_at_every_found_root": 20
+      },
+      "excess_energy_gain": {
+        "range_within_multiple_root_networks": {
+          "median": 0.07485975714403831,
+          "min": 0.012383322628711974,
+          "max": 0.15234601789486368
+        },
+        "networks_positive_at_every_found_root": 20
+      },
+      "residual_pr_ratio": {
+        "range_within_multiple_root_networks": {
+          "median": 0.11683279021810977,
+          "min": 0.002127831743835573,
+          "max": 0.2843215620648658
+        },
+        "networks_positive_at_every_found_root": 20
+      }
+    }
+  },
+  "by_size": {
+    "250": {
+      "networks": 12,
+      "fluctuating": 8,
+      "quiet": 4,
+      "root_found": 12,
+      "eligible": 8,
+      "multiple_roots": 4,
+      "multiple_roots_among_eligible": 3,
+      "positive": 8,
+      "ties": 0,
+      "one_sided_sign_p": 0.00390625,
+      "positive_fraction_exact95_ci": [
+        0.6305833524471808,
+        1.0
+      ],
+      "primary": {
+        "rho": {
+          "median": 0.2717135578841835,
+          "min": 0.1125049882096862,
+          "max": 0.40845825340055725
+        },
+        "shuffle_rho": {
+          "median": -0.06936891050273064,
+          "min": -0.10269248937175249,
+          "max": -0.03245601306003991
+        },
+        "excess_rho": {
+          "median": 0.3313209754851397,
+          "min": 0.1449610012697261,
+          "max": 0.5111507427723098
+        },
+        "rho_abs_real_above_1e_minus8": {
+          "median": 0.29370865491792364,
+          "min": 0.13144067663955167,
+          "max": 0.482091744219155
+        },
+        "rho_first_half": {
+          "median": 0.23333558269788784,
+          "min": 0.11237076002176674,
+          "max": 0.3943836580451737
+        },
+        "rho_second_half": {
+          "median": 0.2741922772888088,
+          "min": 0.11251587157627428,
+          "max": 0.4212796313612833
+        },
+        "half_projection_rank_agreement": {
+          "median": 0.9993479006746397,
+          "min": 0.850184608562367,
+          "max": 0.9999891166334118
+        },
+        "subspace_trace": {
+          "median": 0.7184272927300467,
+          "min": 0.342018111098389,
+          "max": 0.9886150088539097
+        },
+        "subspace_energy": {
+          "median": 0.6712334797992128,
+          "min": 0.13706373890238482,
+          "max": 0.9920110874144232
+        },
+        "residual_pr_ratio": {
+          "median": 1.1962643015861338,
+          "min": 0.7591756820858921,
+          "max": 1.4972907113691274
+        },
+        "pop_null_trace": {
+          "median": 0.10326222573683802,
+          "min": 0.09980246322442878,
+          "max": 0.10788773091000686
+        },
+        "pop_null_energy": {
+          "median": 0.013925637088045666,
+          "min": 0.011145988350272404,
+          "max": 0.016844149891270588
+        },
+        "pop_null_pr_ratio": {
+          "median": 0.9965365915978424,
+          "min": 0.9936424275978525,
+          "max": 1.0062472762978039
+        },
+        "gain_null_trace": {
+          "median": 0.325877916678288,
+          "min": 0.17795762031905765,
+          "max": 0.5611954398121071
+        },
+        "gain_null_energy": {
+          "median": 0.13991131438628418,
+          "min": 0.03866108451126793,
+          "max": 0.3472272882561617
+        },
+        "gain_null_pr_ratio": {
+          "median": 1.000498634247159,
+          "min": 0.9061468645933486,
+          "max": 1.0581255492760135
+        },
+        "excess_trace_gain": {
+          "median": 0.3707671026614949,
+          "min": 0.16406049077933132,
+          "max": 0.552867351045979
+        },
+        "excess_energy_gain": {
+          "median": 0.49971716496230617,
+          "min": 0.0984026543911169,
+          "max": 0.7708529343226884
+        },
+        "excess_pr_ratio_gain": {
+          "median": 0.19576566733897494,
+          "min": -0.14697118250745644,
+          "max": 0.5093400499624818
+        },
+        "energy_first_half": {
+          "median": 0.6889304471942485,
+          "min": 0.13422347142206403,
+          "max": 0.9919983079745832
+        },
+        "energy_second_half": {
+          "median": 0.6681001111091622,
+          "min": 0.11625899122094752,
+          "max": 0.9920237818686756
+        }
+      },
+      "root_sensitivity": {
+        "rho": {
+          "range_within_multiple_root_networks": {
+            "median": 0.0715201072006661,
+            "min": 0.052163648596417145,
+            "max": 0.1408675799086757
+          },
+          "networks_positive_at_every_found_root": 8
+        },
+        "excess_rho": {
+          "range_within_multiple_root_networks": {
+            "median": 0.07468312076838285,
+            "min": 0.012928019482185749,
+            "max": 0.08189806727802351
+          },
+          "networks_positive_at_every_found_root": 8
+        },
+        "subspace_energy": {
+          "range_within_multiple_root_networks": {
+            "median": 0.09189594639552015,
+            "min": 0.014848487602459298,
+            "max": 0.1840272190602048
+          },
+          "networks_positive_at_every_found_root": 8
+        },
+        "excess_energy_gain": {
+          "range_within_multiple_root_networks": {
+            "median": 0.0831382686544559,
+            "min": 0.021088104375744154,
+            "max": 0.15234601789486368
+          },
+          "networks_positive_at_every_found_root": 8
+        },
+        "residual_pr_ratio": {
+          "range_within_multiple_root_networks": {
+            "median": 0.11683279021810977,
+            "min": 0.002127831743835573,
+            "max": 0.2843215620648658
+          },
+          "networks_positive_at_every_found_root": 8
+        }
+      }
+    },
+    "500": {
+      "networks": 12,
+      "fluctuating": 12,
+      "quiet": 0,
+      "root_found": 12,
+      "eligible": 12,
+      "multiple_roots": 6,
+      "multiple_roots_among_eligible": 6,
+      "positive": 12,
+      "ties": 0,
+      "one_sided_sign_p": 0.000244140625,
+      "positive_fraction_exact95_ci": [
+        0.7353515306029488,
+        1.0
+      ],
+      "primary": {
+        "rho": {
+          "median": 0.3966370322982095,
+          "min": 0.2839675389070367,
+          "max": 0.504104918829913
+        },
+        "shuffle_rho": {
+          "median": -0.08266684848802783,
+          "min": -0.1647213424085181,
+          "max": -0.06135830092198934
+        },
+        "excess_rho": {
+          "median": 0.4760698348290836,
+          "min": 0.3700038455319359,
+          "max": 0.5866370498071589
+        },
+        "rho_abs_real_above_1e_minus8": {
+          "median": 0.4379145532935559,
+          "min": 0.31722949280608087,
+          "max": 0.5431652437867577
+        },
+        "rho_first_half": {
+          "median": 0.3973347661331706,
+          "min": 0.2854744735712536,
+          "max": 0.4991960348771674
+        },
+        "rho_second_half": {
+          "median": 0.3939089566887729,
+          "min": 0.2836921798301431,
+          "max": 0.5034971101459846
+        },
+        "half_projection_rank_agreement": {
+          "median": 0.9783709970781662,
+          "min": 0.9512802701480666,
+          "max": 0.9902116271347658
+        },
+        "subspace_trace": {
+          "median": 0.5225318353324404,
+          "min": 0.32034396788805647,
+          "max": 0.7273902263893074
+        },
+        "subspace_energy": {
+          "median": 0.3891677187474498,
+          "min": 0.15945702341927812,
+          "max": 0.6746910854038098
+        },
+        "residual_pr_ratio": {
+          "median": 1.2019029285976495,
+          "min": 1.0202980759603977,
+          "max": 1.404423976695137
+        },
+        "pop_null_trace": {
+          "median": 0.10202486945247624,
+          "min": 0.0990599260123212,
+          "max": 0.10670249251724706
+        },
+        "pop_null_energy": {
+          "median": 0.014689199630069129,
+          "min": 0.01293316123201274,
+          "max": 0.016144470901216203
+        },
+        "pop_null_pr_ratio": {
+          "median": 0.9924432321162084,
+          "min": 0.9890642831415553,
+          "max": 0.9963790085770363
+        },
+        "gain_null_trace": {
+          "median": 0.23948893611650826,
+          "min": 0.16238499167177808,
+          "max": 0.3190230778041826
+        },
+        "gain_null_energy": {
+          "median": 0.08056390727535248,
+          "min": 0.03687392167883174,
+          "max": 0.13368789155918281
+        },
+        "gain_null_pr_ratio": {
+          "median": 1.0151386907289477,
+          "min": 0.9759360740801228,
+          "max": 1.0502202554954332
+        },
+        "excess_trace_gain": {
+          "median": 0.2750079601448642,
+          "min": 0.15795897621627839,
+          "max": 0.4083671485851248
+        },
+        "excess_energy_gain": {
+          "median": 0.3028809577958642,
+          "min": 0.12258310174044637,
+          "max": 0.541003193844627
+        },
+        "excess_pr_ratio_gain": {
+          "median": 0.1932484470106658,
+          "min": 0.0267092220235412,
+          "max": 0.39901972881791603
+        },
+        "energy_first_half": {
+          "median": 0.3702712898590645,
+          "min": 0.15881207246380358,
+          "max": 0.6959833705104029
+        },
+        "energy_second_half": {
+          "median": 0.3926981856643351,
+          "min": 0.15487281855913326,
+          "max": 0.648668565937702
+        }
+      },
+      "root_sensitivity": {
+        "rho": {
+          "range_within_multiple_root_networks": {
+            "median": 0.05362931315806016,
+            "min": 0.007846966696940905,
+            "max": 0.06953955831940806
+          },
+          "networks_positive_at_every_found_root": 12
+        },
+        "excess_rho": {
+          "range_within_multiple_root_networks": {
+            "median": 0.03717211359119724,
+            "min": 0.0008515308849805225,
+            "max": 0.08782544628836497
+          },
+          "networks_positive_at_every_found_root": 12
+        },
+        "subspace_energy": {
+          "range_within_multiple_root_networks": {
+            "median": 0.06832570098884988,
+            "min": 0.01162909581421473,
+            "max": 0.13727581576756698
+          },
+          "networks_positive_at_every_found_root": 12
+        },
+        "excess_energy_gain": {
+          "range_within_multiple_root_networks": {
+            "median": 0.06304043288867581,
+            "min": 0.012383322628711974,
+            "max": 0.11297904334550363
+          },
+          "networks_positive_at_every_found_root": 12
+        },
+        "residual_pr_ratio": {
+          "range_within_multiple_root_networks": {
+            "median": 0.12659894622595447,
+            "min": 0.01639829124984571,
+            "max": 0.22607095497190177
+          },
+          "networks_positive_at_every_found_root": 12
+        }
+      }
+    }
+  }
+}

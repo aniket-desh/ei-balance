@@ -1,0 +1,77 @@
+{
+  "finite_subset_algebra": {
+    "all_subsets_of_eight_max_absolute_error": 1.1368683772161603e-13,
+    "four_cell_counterexample": [
+      {
+        "mean_trace": 2.0,
+        "mean_squared_trace": 4.0,
+        "mean_energy": 2.08,
+        "ratio_of_means": 1.923076923076923,
+        "mean_ratio": 1.9230769230769231
+      },
+      {
+        "mean_trace": 2.0,
+        "mean_squared_trace": 4.0,
+        "mean_energy": 2.08,
+        "ratio_of_means": 1.923076923076923,
+        "mean_ratio": 1.935483870967742
+      }
+    ]
+  },
+  "pilot_packed_blocks": {
+    "status": "verified",
+    "name": "readout_f0.94_N2000_seed6104",
+    "population": "I",
+    "subset_label_zero_based": 4,
+    "number_of_four_window_pairings": 5460,
+    "source_sha256": "7193505d146016d0987603453344e4c34bae73a59c0c46324170094b23b0ddd7",
+    "values": {
+      "trace": 17.539999392811925,
+      "frobenius_energy": 13.927718934374832,
+      "PR": 22.089157610765074
+    },
+    "absolute_errors": {
+      "trace": 0.0,
+      "frobenius_energy": 0.0,
+      "PR": 0.0
+    }
+  },
+  "paired_design": {
+    "normal_mixture_integrals": {
+      "readout_PR_E_0.8": {
+        "correct_direction": 0.9994974224571855,
+        "opposite_direction": 2.8170903114993797e-13,
+        "estimated_quadrature_error": 3.4604541454541504e-11
+      },
+      "readout_PR_I_0.8": {
+        "correct_direction": 0.9999999089959968,
+        "opposite_direction": 1.719527133749504e-25,
+        "estimated_quadrature_error": 1.2686998516397808e-08
+      },
+      "pair_energy_E_0.8": {
+        "correct_direction": 0.9979660562285445,
+        "opposite_direction": 5.089991104131966e-16,
+        "estimated_quadrature_error": 1.9325041566986556e-10
+      },
+      "pair_energy_I_0.8": {
+        "correct_direction": 0.9999999986085688,
+        "opposite_direction": 6.565591511598694e-29,
+        "estimated_quadrature_error": 2.2474021579045102e-10
+      },
+      "D_E_over_N_E_0.8": {
+        "correct_direction": 0.9999935425575518,
+        "opposite_direction": 9.22187854978667e-22,
+        "estimated_quadrature_error": 5.5303206458745535e-11
+      },
+      "D_E_over_N_E_0.88": {
+        "correct_direction": 0.9038316376414619,
+        "opposite_direction": 5.3962627800660806e-11,
+        "estimated_quadrature_error": 2.1833368446522172e-09
+      }
+    },
+    "joint_correct_direction_union_lower_bounds": {
+      "both_total_E_flanks": 0.9038251801990138,
+      "both_pair_directions": 0.9979660548371134
+    }
+  }
+}

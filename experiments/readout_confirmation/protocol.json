@@ -1,0 +1,11 @@
+{
+  "network_size": 2000, "seed_first": 20001, "seed_last": 20624,
+  "fractions": [0.80, 0.88, 0.94], "reference_config_seed": 6101,
+  "subset_seed": 20261119, "readout_size": 100, "draws_per_class": 8,
+  "block_duration": 500, "prefixes": [4000, 8000], "primary_window": "T8000_gap0",
+  "primary_metric": "E subset PR, 0.88 minus 0.80", "uncertainty_unit": "independent matched seed triplet",
+  "secondary_metrics": ["I subset PR, 0.88 minus 0.80", "P_EE and P_II, 0.88 minus 0.80", "D_E/N, 0.88 minus 0.80 and 0.94 minus 0.88"],
+  "intervals": "two-sided paired t; pointwise primary 95%, secondary pointwise 95% and simultaneous Bonferroni across five contrasts",
+  "pilot_excluded": true, "primary_tolerance": "Report effect and interval; no optional stopping. Compare primary 95% interval with zero and +0.4554 to +0.4623 pilot-independent moment predictions.",
+  "maximum_workers": 12, "maximum_hours_per_worker": 4, "maximum_compute_usd_per_worker": 4.48
+}

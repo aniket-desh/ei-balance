@@ -1,0 +1,42 @@
+{
+  "chi": 1,
+  "seed": 15101,
+  "graph_sha256": "31bdd705e7ace2c71917f84f8d01bf9863bacd5d91280801ba374cc0697ed469",
+  "source_sha256": "30c82929990116b479645c2c619e2181b54c902a9facb7dd76c7a50da3911006",
+  "shared": {
+    "iterations": 425,
+    "residual": 1.9956420671540798e-06,
+    "converged": true,
+    "covariance_quadrature_error": 1.9991872601821115e-09,
+    "response_radius": 0.8234022908180396,
+    "min_spectral_mass": -1.8699572994927334e-12,
+    "gain_second": [
+      0.0553292535915317,
+      0.041813591618231394
+    ],
+    "pr_admitted": true,
+    "dimensions": [
+      0.04799586002891644,
+      0.1719889846722644,
+      0.04112240271541022
+    ]
+  },
+  "joint": {
+    "iterations": 362,
+    "residual": 1.9818544267913296e-06,
+    "converged": true,
+    "covariance_quadrature_error": 6.562540733057176e-09,
+    "response_radius": 0.7930219634217376,
+    "min_spectral_mass": -1.8778699943621946e-12,
+    "gain_second": [
+      0.053110191492667054,
+      0.04111382663523248
+    ],
+    "pr_admitted": true,
+    "dimensions": [
+      0.057220030965155835,
+      0.1887155535215269,
+      0.04869187122742774
+    ]
+  }
+}

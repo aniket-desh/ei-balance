@@ -1,0 +1,75 @@
+{
+  "name": "spectral_N250_seed73108",
+  "N": 250,
+  "seed": 73108,
+  "source_hashes": {
+    "measure.py": "ed7337cc3695e13e82542c6847ae385da3c28ed72e35baf5978a42814cb34d2a",
+    "analyze.py": "29780df0e6116ed1beb97ebc26bae20d0f459725172b1a72e8fb7cffd988643b",
+    "mode_variance.py": "b55f23fac41a92e2ec5937b457c2ccf32d0ba2983ff0a0e5468253a109c70beb",
+    "PROTOCOL.md": "04f38eed5d0ee72b31dcfa5d8db00fad674796b69164418a289dc1ebae905d50"
+  },
+  "run_sha256": "880c74efedcca614a0322a557bbe9017063230502acb7877e6dc851a9a525fe2",
+  "trajectory_sha256": "085ee32a708ff4fb5be0bc8801b8f3aa9f93f48db01908e2f3634dcd0fe1584c",
+  "connectivity_sha256": "fd7624744a69fc709b986a38c99603891d9d384cee2612ab6eebe6e85d6a8ce3",
+  "state_fluctuating": false,
+  "input_mean_temporal_variance": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "rate_direct_pr": [
+    null,
+    null,
+    null
+  ],
+  "final_drift_rms": 1.7183727697607989e-15,
+  "root_attempts": [
+    {
+      "initial": "record_mean",
+      "residual_inf": 1.5543122344752192e-15,
+      "solver_status": "The solution converged.",
+      "nfev": 16,
+      "root_index": 0
+    },
+    {
+      "initial": "first_sample",
+      "residual_inf": 1.5543122344752192e-15,
+      "solver_status": "The solution converged.",
+      "nfev": 16,
+      "root_index": 0
+    },
+    {
+      "initial": "population_offset",
+      "residual_inf": 3.2960301155071647e-12,
+      "solver_status": "The solution converged.",
+      "nfev": 52,
+      "root_index": 1
+    }
+  ],
+  "roots": [
+    {
+      "index": 0,
+      "root_residual": 1.5543122344752192e-15,
+      "max_eigenpair_residual": 8.611135245040397e-15,
+      "spatial_vs_time_input_error": 8.366674694502159e-26,
+      "mode_file": "modes/spectral_N250_seed73108_root0.npz",
+      "mode_sha256": "d4e859cdd5d986a65dafdff521d2fe5a068055b5c6da27cd6f746bc5bcad94c6",
+      "max_real_coupling_eigenvalue": 0.9150560854859766,
+      "unstable_mode_count": 0,
+      "rate_rank": 25,
+      "real_eigenvalue_cutoff": 0.23432841500563842
+    },
+    {
+      "index": 1,
+      "root_residual": 3.2960301155071647e-12,
+      "max_eigenpair_residual": 9.133363758689746e-15,
+      "spatial_vs_time_input_error": 1.5035611588057807e-25,
+      "mode_file": "modes/spectral_N250_seed73108_root1.npz",
+      "mode_sha256": "5d3b48082b647d90abef6071fc27a2c1dea2e00c2ffa17b14036e7ceeb589e44",
+      "max_real_coupling_eigenvalue": 1.1788629829917623,
+      "unstable_mode_count": 4,
+      "rate_rank": 25,
+      "real_eigenvalue_cutoff": 0.38176485911949676
+    }
+  ]
+}
