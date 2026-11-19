@@ -45,7 +45,7 @@ def make_figure(theory, old, window, cohort_label="Independent confirmation"):
     old_f = np.array([g["control"] for g in old])
     # Dodge only the shared settings; all population colors at a setting use its same x.
     overlap = np.isin(old_f,new_f)
-    old_x, new_x = old_f-.0025*overlap, new_f+.0025
+    old_x, new_x = old_f+.0025*overlap, new_f-.0025
 
     total.plot(f,[r["D_E_over_N"] for r in curve],color=E)
     estimate_points(total,old_x,[g["estimate"]["D_E_by_N"] for g in old],E,historical=True)

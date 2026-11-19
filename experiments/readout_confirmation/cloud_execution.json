@@ -1,0 +1,455 @@
+{
+  "account": "CBAI fellowship",
+  "coordinator_worker_source_commit": "19883776948a2b1acd437271a54738db52e07d55",
+  "checked_utc": "2026-11-19T20:26:42.041776+00:00",
+  "workers": [
+    {
+      "worker": "aniket-rr-readout-01",
+      "flavor": "cpu5c",
+      "region": "EUR-IS-1",
+      "vcpus": 32,
+      "ram_gb": 64,
+      "allocated_utc": "2026-11-19T20:06:54.388226+00:00",
+      "released_utc": "2026-11-19T20:14:49.144643+00:00",
+      "elapsed_seconds": 474.76,
+      "compute_usd_per_hour": 1.12,
+      "compute_estimate_usd": 0.14770199641121762,
+      "provider_status_after_release": 404,
+      "environment": {
+        "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+        "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+        "machine": "x86_64",
+        "cpu": "AMD EPYC 9575F 64-Core Processor",
+        "dependencies": {
+          "numpy": "2.5.5",
+          "scipy": "1.18.1",
+          "psutil": "7.2.2",
+          "threadpoolctl": "3.8.0"
+        },
+        "memory_limit": "64000000000",
+        "cpu_quota": "max 100000"
+      }
+    },
+    {
+      "worker": "aniket-rr-readout-02",
+      "flavor": "cpu3c",
+      "region": "US-CA-2",
+      "vcpus": 32,
+      "ram_gb": 64,
+      "allocated_utc": "2026-11-19T20:07:04.626248+00:00",
+      "released_utc": "2026-11-19T20:25:32.191768+00:00",
+      "elapsed_seconds": 1107.57,
+      "compute_usd_per_hour": 0.96,
+      "compute_estimate_usd": 0.29535080540974934,
+      "provider_status_after_release": 404,
+      "environment": {
+        "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+        "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+        "machine": "x86_64",
+        "cpu": "AMD EPYC 7713 64-Core Processor",
+        "dependencies": {
+          "numpy": "2.5.5",
+          "scipy": "1.18.1",
+          "psutil": "7.2.2",
+          "threadpoolctl": "3.8.0"
+        },
+        "memory_limit": "64000000000",
+        "cpu_quota": "max 100000"
+      }
+    },
+    {
+      "worker": "aniket-rr-readout-03",
+      "flavor": "cpu5c",
+      "region": "EUR-IS-1",
+      "vcpus": 32,
+      "ram_gb": 64,
+      "allocated_utc": "2026-11-19T20:06:56.241545+00:00",
+      "released_utc": "2026-11-19T20:14:43.576999+00:00",
+      "elapsed_seconds": 467.34,
+      "compute_usd_per_hour": 1.12,
+      "compute_estimate_usd": 0.14539325235154896,
+      "provider_status_after_release": 404,
+      "environment": {
+        "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+        "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+        "machine": "x86_64",
+        "cpu": "AMD EPYC 9575F 64-Core Processor",
+        "dependencies": {
+          "numpy": "2.5.5",
+          "scipy": "1.18.1",
+          "psutil": "7.2.2",
+          "threadpoolctl": "3.8.0"
+        },
+        "memory_limit": "64000000000",
+        "cpu_quota": "max 100000"
+      }
+    },
+    {
+      "worker": "aniket-rr-readout-04",
+      "flavor": "cpu5c",
+      "region": "EUR-IS-1",
+      "vcpus": 32,
+      "ram_gb": 64,
+      "allocated_utc": "2026-11-19T20:06:48.660306+00:00",
+      "released_utc": "2026-11-19T20:24:33.796627+00:00",
+      "elapsed_seconds": 1065.14,
+      "compute_usd_per_hour": 1.12,
+      "compute_estimate_usd": 0.33137574433220757,
+      "provider_status_after_release": 404,
+      "environment": null
+    },
+    {
+      "worker": "aniket-rr-readout-05",
+      "flavor": "cpu3c",
+      "region": "EU-RO-1",
+      "vcpus": 32,
+      "ram_gb": 64,
+      "allocated_utc": "2026-11-19T20:07:09.300725+00:00",
+      "released_utc": "2026-11-19T20:14:58.332770+00:00",
+      "elapsed_seconds": 469.03,
+      "compute_usd_per_hour": 0.96,
+      "compute_estimate_usd": 0.12507521203358968,
+      "provider_status_after_release": 404,
+      "environment": {
+        "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+        "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+        "machine": "x86_64",
+        "cpu": "AMD EPYC 9655 96-Core Processor",
+        "dependencies": {
+          "numpy": "2.5.5",
+          "scipy": "1.18.1",
+          "psutil": "7.2.2",
+          "threadpoolctl": "3.8.0"
+        },
+        "memory_limit": "64000000000",
+        "cpu_quota": "max 100000"
+      }
+    },
+    {
+      "worker": "aniket-rr-readout-06",
+      "flavor": "cpu3c",
+      "region": "US-CA-2",
+      "vcpus": 32,
+      "ram_gb": 64,
+      "allocated_utc": "2026-11-19T20:07:06.228950+00:00",
+      "released_utc": "2026-11-19T20:26:05.531925+00:00",
+      "elapsed_seconds": 1139.3,
+      "compute_usd_per_hour": 0.96,
+      "compute_estimate_usd": 0.30381412665049234,
+      "provider_status_after_release": 404,
+      "environment": {
+        "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+        "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+        "machine": "x86_64",
+        "cpu": "AMD EPYC 7713 64-Core Processor",
+        "dependencies": {
+          "numpy": "2.5.5",
+          "scipy": "1.18.1",
+          "psutil": "7.2.2",
+          "threadpoolctl": "3.8.0"
+        },
+        "memory_limit": "64000000000",
+        "cpu_quota": "max 100000"
+      }
+    },
+    {
+      "worker": "aniket-rr-readout-07",
+      "flavor": "cpu3c",
+      "region": "EU-RO-1",
+      "vcpus": 32,
+      "ram_gb": 64,
+      "allocated_utc": "2026-11-19T20:07:10.949398+00:00",
+      "released_utc": "2026-11-19T20:15:06.357159+00:00",
+      "elapsed_seconds": 475.41,
+      "compute_usd_per_hour": 0.96,
+      "compute_estimate_usd": 0.12677540289560954,
+      "provider_status_after_release": 404,
+      "environment": {
+        "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+        "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+        "machine": "x86_64",
+        "cpu": "AMD EPYC 9655 96-Core Processor",
+        "dependencies": {
+          "numpy": "2.5.5",
+          "scipy": "1.18.1",
+          "psutil": "7.2.2",
+          "threadpoolctl": "3.8.0"
+        },
+        "memory_limit": "64000000000",
+        "cpu_quota": "max 100000"
+      }
+    },
+    {
+      "worker": "aniket-rr-readout-08",
+      "flavor": "cpu3c",
+      "region": "EU-RO-1",
+      "vcpus": 32,
+      "ram_gb": 64,
+      "allocated_utc": "2026-11-19T20:07:03.008926+00:00",
+      "released_utc": "2026-11-19T20:14:22.400326+00:00",
+      "elapsed_seconds": 439.39,
+      "compute_usd_per_hour": 0.96,
+      "compute_estimate_usd": 0.11717103996276855,
+      "provider_status_after_release": 404,
+      "environment": {
+        "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+        "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+        "machine": "x86_64",
+        "cpu": "AMD EPYC 9655 96-Core Processor",
+        "dependencies": {
+          "numpy": "2.5.5",
+          "scipy": "1.18.1",
+          "psutil": "7.2.2",
+          "threadpoolctl": "3.8.0"
+        },
+        "memory_limit": "64000000000",
+        "cpu_quota": "max 100000"
+      }
+    },
+    {
+      "worker": "aniket-rr-readout-09",
+      "flavor": "cpu3c",
+      "region": "US-CA-2",
+      "vcpus": 32,
+      "ram_gb": 64,
+      "allocated_utc": "2026-11-19T20:07:07.759477+00:00",
+      "released_utc": "2026-11-19T20:26:12.092904+00:00",
+      "elapsed_seconds": 1144.33,
+      "compute_usd_per_hour": 0.96,
+      "compute_estimate_usd": 0.30515558052062985,
+      "provider_status_after_release": 404,
+      "environment": {
+        "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+        "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+        "machine": "x86_64",
+        "cpu": "AMD EPYC 7713 64-Core Processor",
+        "dependencies": {
+          "numpy": "2.5.5",
+          "scipy": "1.18.1",
+          "psutil": "7.2.2",
+          "threadpoolctl": "3.8.0"
+        },
+        "memory_limit": "64000000000",
+        "cpu_quota": "max 100000"
+      }
+    },
+    {
+      "worker": "aniket-rr-readout-10",
+      "flavor": "cpu5c",
+      "region": "EUR-IS-1",
+      "vcpus": 32,
+      "ram_gb": 64,
+      "allocated_utc": "2026-11-19T20:06:52.563147+00:00",
+      "released_utc": "2026-11-19T20:24:38.195551+00:00",
+      "elapsed_seconds": 1065.63,
+      "compute_usd_per_hour": 1.12,
+      "compute_estimate_usd": 0.33153008119795063,
+      "provider_status_after_release": 404,
+      "environment": {
+        "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+        "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+        "machine": "x86_64",
+        "cpu": "AMD EPYC 9575F 64-Core Processor",
+        "dependencies": {
+          "numpy": "2.5.5",
+          "scipy": "1.18.1",
+          "psutil": "7.2.2",
+          "threadpoolctl": "3.8.0"
+        },
+        "memory_limit": "64000000000",
+        "cpu_quota": "max 100000"
+      }
+    },
+    {
+      "worker": "aniket-rr-readout-11",
+      "flavor": "cpu5c",
+      "region": "EUR-IS-1",
+      "vcpus": 32,
+      "ram_gb": 64,
+      "allocated_utc": "2026-11-19T20:06:47.066922+00:00",
+      "released_utc": "2026-11-19T20:24:34.970144+00:00",
+      "elapsed_seconds": 1067.9,
+      "compute_usd_per_hour": 1.12,
+      "compute_estimate_usd": 0.33223655798170304,
+      "provider_status_after_release": 404,
+      "environment": null
+    },
+    {
+      "worker": "aniket-rr-readout-12",
+      "flavor": "cpu5c",
+      "region": "EUR-IS-1",
+      "vcpus": 32,
+      "ram_gb": 64,
+      "allocated_utc": "2026-11-19T20:06:50.185492+00:00",
+      "released_utc": "2026-11-19T20:24:37.174287+00:00",
+      "elapsed_seconds": 1066.99,
+      "compute_usd_per_hour": 1.12,
+      "compute_estimate_usd": 0.33195206956863405,
+      "provider_status_after_release": 404,
+      "environment": {
+        "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+        "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+        "machine": "x86_64",
+        "cpu": "AMD EPYC 9575F 64-Core Processor",
+        "dependencies": {
+          "numpy": "2.5.5",
+          "scipy": "1.18.1",
+          "psutil": "7.2.2",
+          "threadpoolctl": "3.8.0"
+        },
+        "memory_limit": "64000000000",
+        "cpu_quota": "max 100000"
+      }
+    }
+  ],
+  "stripes": [
+    {
+      "stripe": 1,
+      "executed_by": "aniket-rr-readout-01",
+      "networks": 156,
+      "first_seed": 20001,
+      "seed_stride": 12,
+      "archive": "stripe-01.tgz",
+      "archive_sha256": "c632aa7213da1ed75f67d369c113a4bfd067a637e69cb53ff1880477cec12162",
+      "binary_sha256_counts": {
+        "b0320fb8c5babce9e2b7e50a0b2d4b21d68061e88fcc9e9997dcc2ab156afc4b": 156
+      }
+    },
+    {
+      "stripe": 2,
+      "executed_by": "aniket-rr-readout-02",
+      "networks": 156,
+      "first_seed": 20002,
+      "seed_stride": 12,
+      "archive": "stripe-02.tgz",
+      "archive_sha256": "4ed8d99e88e5fedf581a14a3e5288cbbe03b999011c820301c6347a29b234de2",
+      "binary_sha256_counts": {
+        "27f46514c5c1181db3afbccb711f4aebdf0ba31302d9e2fd1372e6b621c35ec4": 156
+      }
+    },
+    {
+      "stripe": 3,
+      "executed_by": "aniket-rr-readout-03",
+      "networks": 156,
+      "first_seed": 20003,
+      "seed_stride": 12,
+      "archive": "stripe-03.tgz",
+      "archive_sha256": "e0c0161deb05ace9b5b7508b07842b23ded6de69c42a16fbc01637300b81768b",
+      "binary_sha256_counts": {
+        "b0320fb8c5babce9e2b7e50a0b2d4b21d68061e88fcc9e9997dcc2ab156afc4b": 156
+      }
+    },
+    {
+      "stripe": 4,
+      "executed_by": "aniket-rr-readout-12",
+      "networks": 156,
+      "first_seed": 20004,
+      "seed_stride": 12,
+      "archive": "stripe-04.tgz",
+      "archive_sha256": "fc519ae1745491834e4c8edcf0219747d65f70eff8cebedce2372447a83c8df8",
+      "binary_sha256_counts": {
+        "b0320fb8c5babce9e2b7e50a0b2d4b21d68061e88fcc9e9997dcc2ab156afc4b": 156
+      }
+    },
+    {
+      "stripe": 5,
+      "executed_by": "aniket-rr-readout-05",
+      "networks": 156,
+      "first_seed": 20005,
+      "seed_stride": 12,
+      "archive": "stripe-05.tgz",
+      "archive_sha256": "51cc414d1070b82eee1a8a9b7ad959e1528ed4c948119ff1e00a200bf2323fb1",
+      "binary_sha256_counts": {
+        "b0320fb8c5babce9e2b7e50a0b2d4b21d68061e88fcc9e9997dcc2ab156afc4b": 156
+      }
+    },
+    {
+      "stripe": 6,
+      "executed_by": "aniket-rr-readout-06",
+      "networks": 156,
+      "first_seed": 20006,
+      "seed_stride": 12,
+      "archive": "stripe-06.tgz",
+      "archive_sha256": "b92685bb7d139d64e897767fd98f199d20a3987a3d94d49c3c5f7fde71b20f72",
+      "binary_sha256_counts": {
+        "27f46514c5c1181db3afbccb711f4aebdf0ba31302d9e2fd1372e6b621c35ec4": 156
+      }
+    },
+    {
+      "stripe": 7,
+      "executed_by": "aniket-rr-readout-07",
+      "networks": 156,
+      "first_seed": 20007,
+      "seed_stride": 12,
+      "archive": "stripe-07.tgz",
+      "archive_sha256": "0543736f7b2c992de60d45fb5f0cc2e9b200c3e59e943a132bf928c5e1c069ec",
+      "binary_sha256_counts": {
+        "b0320fb8c5babce9e2b7e50a0b2d4b21d68061e88fcc9e9997dcc2ab156afc4b": 156
+      }
+    },
+    {
+      "stripe": 8,
+      "executed_by": "aniket-rr-readout-08",
+      "networks": 156,
+      "first_seed": 20008,
+      "seed_stride": 12,
+      "archive": "stripe-08.tgz",
+      "archive_sha256": "4758263471af44b53fcd6fe346f122da3cf59ba5ecba97169be0c2b33d42e334",
+      "binary_sha256_counts": {
+        "b0320fb8c5babce9e2b7e50a0b2d4b21d68061e88fcc9e9997dcc2ab156afc4b": 156
+      }
+    },
+    {
+      "stripe": 9,
+      "executed_by": "aniket-rr-readout-09",
+      "networks": 156,
+      "first_seed": 20009,
+      "seed_stride": 12,
+      "archive": "stripe-09.tgz",
+      "archive_sha256": "a45e81828dbff2efbe54d8b07551ddfedba7cd23d220466ab2837d4e18919e01",
+      "binary_sha256_counts": {
+        "27f46514c5c1181db3afbccb711f4aebdf0ba31302d9e2fd1372e6b621c35ec4": 156
+      }
+    },
+    {
+      "stripe": 10,
+      "executed_by": "aniket-rr-readout-10",
+      "networks": 156,
+      "first_seed": 20010,
+      "seed_stride": 12,
+      "archive": "stripe-10.tgz",
+      "archive_sha256": "88e98a00caadd209280c515303f56dfaf655fa342920a103d6bcdd4d5e23534f",
+      "binary_sha256_counts": {
+        "b0320fb8c5babce9e2b7e50a0b2d4b21d68061e88fcc9e9997dcc2ab156afc4b": 156
+      }
+    },
+    {
+      "stripe": 11,
+      "executed_by": "aniket-rr-readout-10",
+      "networks": 156,
+      "first_seed": 20011,
+      "seed_stride": 12,
+      "archive": "stripe-11.tgz",
+      "archive_sha256": "132d9128c1ea0da6532652da45d325d36475efd6619d34a771ebe650d988351e",
+      "binary_sha256_counts": {
+        "b0320fb8c5babce9e2b7e50a0b2d4b21d68061e88fcc9e9997dcc2ab156afc4b": 156
+      }
+    },
+    {
+      "stripe": 12,
+      "executed_by": "aniket-rr-readout-12",
+      "networks": 156,
+      "first_seed": 20012,
+      "seed_stride": 12,
+      "archive": "stripe-12.tgz",
+      "archive_sha256": "a4eb0b50d7262427e9025593a38a10e3fc50467b5cbbc812e97890bb0c22e411",
+      "binary_sha256_counts": {
+        "b0320fb8c5babce9e2b7e50a0b2d4b21d68061e88fcc9e9997dcc2ab156afc4b": 156
+      }
+    }
+  ],
+  "total_networks": 1872,
+  "estimated_worker_compute_usd": 2.893531869316101,
+  "cost_scope": "Worker compute estimate using individual placement request and verified release times. Disk, existing coordinator and volumes, and provider invoice adjustments are excluded.",
+  "operations": "Twelve worker allocations. Two unstarted assignments were transferred to named ready workers with intact seed triplets when their original machines had no SSH endpoint. The original allocations were released after verification of the reassigned results. The coordinator kept a checksummed independent copy before releasing each executor."
+}

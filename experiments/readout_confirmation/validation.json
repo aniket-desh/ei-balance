@@ -1,0 +1,25 @@
+{
+  "complete_cohort": true,
+  "checked_records": 1872,
+  "checked_csv_rows": 7488,
+  "checked_per_record_windows": [
+    "T8000_gap0",
+    "T4000_gap0",
+    "T8000_gap1",
+    "T4000_gap1"
+  ],
+  "pilot_seeds_excluded": [
+    6101,
+    6102,
+    6103,
+    6104
+  ],
+  "independently_regenerated_graphs": 36,
+  "record_set_sha256": "5698656cc6f9f68641d5aa25698542856ede6b19a36add91da01f72a43ba9f73",
+  "summary_sha256": "0feb1351d591f5234527042c10e0f8282ee33f47fc7df14ed0898fb3b67d8ccd",
+  "csv_sha256": "e316d29d1dc1153c287d36dcbe44ade21a178df859a094b76fbd2b1c26477291",
+  "analysis_sha256": "2d80def9a28b768b345ec1fb0816d33fdef4f4da82a59f9ad0d4411f61c5aee6",
+  "validator_sha256": "8affc5bd79be074c2f5942c9d18e38fbc9a02254b5d3a3a4e8efd5da3fd06294",
+  "theory_sha256": "fce6f19dae3fd743ed70ba017d9bc79fae2c92c60186d15a1066f18fe75cae67",
+  "verified": "All subset indices, finite traces and energies, population and subset PRs, network-level pair contrasts and intervals, moment-ratio expansion, contrast imputation bounds, duration/gap sensitivities and archive/CSV hashes."
+}

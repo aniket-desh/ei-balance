@@ -6,7 +6,9 @@ Excitatory and inhibitory neurons can share a transfer function and still operat
 
 ## Results
 
-In the 81-network sweep, increasing in-degree dispersion reduced joint activity dimension per neuron from 0.154 to 0.0187 at 2,000 neurons. The nonlinear theory tracked the intermediate settings. In a separate composition sweep, the network-level intervals left the proposed decrease in E–E covariance and increase in I–I covariance unresolved. [Degree sweep](experiments/degree/degree_validation.pdf) · [Composition sweep](experiments/figures/composition_main.pdf) · [Full results and seed-level comparisons](experiments/dense_sweeps/experiments/dense-ei/README.md)
+Increasing the excitatory fraction from 80% to 88% raised the participation ratio of a fixed 100-cell excitatory readout by 0.59 dimensions and lowered it by 0.73 for an inhibitory readout of the same size. Across 624 fresh matched network triplets, distinct E–E pairs lost squared covariance and I–I pairs gained it. Total excitatory dimension per network neuron was highest at 88% among the three tested fractions. The theory predicted all six contrast directions and overestimated the inhibitory readout change. [Independent composition experiment](experiments/readout_confirmation/README.md)
+
+In the original 81-network sweep, increasing in-degree dispersion reduced joint activity dimension per neuron from 0.154 to 0.0187 at 2,000 neurons. The nonlinear theory tracked the intermediate settings. Excess squared covariance between distinct excitatory cells explains most of the low-dispersion discrepancy. [Degree sweep](experiments/degree/degree_validation.pdf) · [Dense sweep measurements](experiments/dense_sweeps/experiments/dense-ei/README.md) · [Degree residuals](experiments/degree_residual/README.md)
 
 The follow-up experiments supply editable figures, standalone captions, and the measurements behind them.
 
@@ -14,7 +16,7 @@ The follow-up experiments supply editable figures, standalone captions, and the 
 | --- | --- |
 | Which covariance terms account for the error in the degree sweep? | [Network-level decomposition](experiments/degree_residual/README.md) · [Degree figure](experiments/degree_residual/degree_residual.pdf) |
 | Does predicting each cell’s temporal variance improve the local gains and population dimension? | [Nine held-out networks](experiments/degree_holdout/README.md) · [Gain and dimension comparison](experiments/degree_residual/joint_variance.pdf) |
-| How does a fixed 100-cell readout differ from counting all excitatory dimensions? | [Derivation and effect sizes](experiments/readout_theory/README.md) · [Independent test design](experiments/readout_confirmation/EXPERIMENT.md) |
+| How does a fixed 100-cell readout differ from counting all excitatory dimensions? | [Derivation](experiments/readout_theory/README.md) · [624-triplet result](experiments/readout_confirmation/README.md) · [Readout figure](experiments/readout_confirmation/composition_readout.pdf) |
 | Do fixed-point modes identify directions of high rate covariance? | [24-network replication](experiments/spectral_replication/README.md) · [Spectral figure](experiments/spectral_replication/spectral_replication.pdf) |
 
 | Directory | Contents |
@@ -55,7 +57,7 @@ latexmk -pdf -cd paper/main.tex
 
 ## Data and provenance
 
-The repository includes the run configurations, seeds, per-network JSON, compact theory kernels, plot inputs, and source snapshots. Large trajectory recordings, per-neuron statistics, and covariance-block arrays stay local. The published figures can be read or redrawn directly from the checkout. Independent cell-level checks require the corresponding raw arrays. The [dense-sweep definition](experiments/dense_sweeps/experiments/dense-ei/EXPERIMENT.md) and [checksums](experiments/dense_sweeps/experiments/dense-ei/cloud_execution.json) identify the original runs.
+The repository includes the run configurations, seeds, compact theory kernels, plot inputs, and source snapshots. The [readout records](experiments/readout_confirmation/data) reproduce the confirmatory contrasts, and the [held-out cell measurements](experiments/degree_holdout/measured) reproduce the primary gain and variance comparisons. Large trajectory recordings and covariance-block arrays stay local. The [dense-sweep definition](experiments/dense_sweeps/experiments/dense-ei/EXPERIMENT.md) and [checksums](experiments/dense_sweeps/experiments/dense-ei/cloud_execution.json) identify the original runs.
 
 To regenerate the dense sweep's per-neuron arrays, use a separate disposable checkout. The runner skips networks with completed JSON records, so move its published output directory aside there before running. The command below runs all 81 cases under an 8 GiB memory budget. The native backend requires a C++ compiler.
 
