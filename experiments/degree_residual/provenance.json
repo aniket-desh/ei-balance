@@ -28,5 +28,14 @@
     "threadpoolctl": "3.6.0"
   },
   "input_record_hashes": "residuals.json and holdout_scores.json",
-  "prediction_manifest_sha256": "65fe94019cecdc19a3753d7a9e71df49f18bd1250779711c550bc67a094260f2"
+  "prediction_manifest_sha256": "65fe94019cecdc19a3753d7a9e71df49f18bd1250779711c550bc67a094260f2",
+  "compact_measurement_replay": {
+    "description": "Post-unblinding input packaging and evaluator fallback. The source snapshot and original scoring hash above identify the full-capsule analysis. The prediction protocol, predicted arrays, and original scores are unchanged.",
+    "original_source_snapshot_sha256": "4b0a278e00df4294e64f8ed781930c054da9ea1eaa855eaa9c3a21c081472b0a",
+    "files_sha256": {
+      "experiments/degree_residual/evaluate.py": "2488bb8ce2ce442776463ae73ec6bfa1e8462098c5a49096a783fa85a8b93e9c",
+      "experiments/degree_holdout/export_measured.py": "1567608667aacd62d8a1c13c38b08ab85ff27b3ec29239401e09b44a7534eacf",
+      "experiments/degree_holdout/measured/manifest.json": "f941e8f9c2496bc0d01b72ddc96407e92c44a8e55b59d66d901cd921bb0b28d3"
+    }
+  }
 }

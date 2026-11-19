@@ -56,9 +56,19 @@ def score(path):
     pre = next(p for p in est['prefixes'] if p['duration']==8000)
     main = next(g for g in pre['gaps'] if g['empty_blocks']==0)
     filename = path.with_name(path.stem+'_B500_neuron_statistics.npz')
+    if filename.exists():
+        capsule_hash = sha(filename)
+    else:
+        directory = path.parent.parent/'measured'
+        source = json.loads((directory/'manifest.json').read_text())[record['name']]
+        filename = directory/(path.stem+'.npz')
+        if (sha(filename) != source['compact_sha256'] or sha(path) != source['record_sha256']
+                or record['connectivity_sha256'] != source['connectivity_sha256']):
+            raise ValueError(f'Compact measurements do not match this network record: {path.name}')
+        capsule_hash = source['cell_statistics_sha256']
     ref = next(row for row in SOURCE['rows'] if row['chi']==chi)
     dims = [*(F*np.array(main['nu_by_population'])**2/np.diag(main['population_energy'])),main['d']]
-    row = {'name':record['name'],'chi':chi,'seed':seed,'record_sha256':sha(path),'capsule_sha256':sha(filename),
+    row = {'name':record['name'],'chi':chi,'seed':seed,'record_sha256':sha(path),'capsule_sha256':capsule_hash,
            'graph_sha256':record['connectivity_sha256'],'dimensions':dims,'local_observed':[],
            'secondary_Gaussian_degree_residual':terms(main,ref)}
     with np.load(filename) as truth, np.load(pred_path.with_suffix('.npz')) as predicted:
@@ -66,6 +76,7 @@ def score(path):
         np.testing.assert_array_equal(truth['labels'],labels)
         observed_q = truth['q_x']
         observed_gain = truth['mean_gain']
+        observed_mu = truth['mean_x'] if 'mean_x' in truth else None
         for a in range(2):
             mask = labels==a
             row['local_observed'].append({'mean_q':float(np.mean(observed_q[mask])),
@@ -94,7 +105,7 @@ def score(path):
                 correlation = None if np.ptp(q)<1e-12 else float(spearmanr(q,observed_q[mask]).statistic)
                 local.append({'gain_mse':float(np.mean((observed_gain[mask]-gain)**2)),
                               'q_mse':float(np.mean((observed_q[mask]-q)**2)),
-                              'mu_mse':float(np.mean((truth['mean_x'][mask]-mu)**2)),
+                              'mu_mse':None if observed_mu is None else float(np.mean((observed_mu[mask]-mu)**2)),
                               'gain_second_error':float(a2-obs['gain_second']),
                               'q_spearman':correlation,'q_predicted_sd':float(np.std(q))})
             row[mode]={'dimensions':d,'dimension_log_errors':None if d is None else np.log(np.asarray(d)/dims).tolist(),
@@ -146,6 +157,7 @@ def contrasts(rows):
 if __name__=='__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--runs',type=Path,default=EXP/'degree_holdout/runs')
+    parser.add_argument('--out',type=Path,help='Output JSON (defaults to a separate file for compact-only scores)')
     args=parser.parse_args()
     manifest=json.loads((HERE/'prediction_hashes.json').read_text())
     assert manifest['protocol_sha256']==sha(HERE/'PROTOCOL.md') and manifest['prediction_script_sha256']==sha(HERE/'predict.py')
@@ -163,4 +175,7 @@ if __name__=='__main__':
     assert {(r['chi'],r['seed']) for r in rows}=={(chi,seed) for chi in CHI for seed in SEEDS}
     result={'prediction_manifest_sha256':sha(HERE/'prediction_hashes.json'),'numerical_checks':checks,
             'networks':rows,'by_chi':summarize(rows),'paired_contrasts':contrasts(rows)}
-    (HERE/'holdout_scores.json').write_text(json.dumps(result,indent=2,allow_nan=False)+'\n')
+    full = all(r['joint']['local'][0]['mu_mse'] is not None for r in rows)
+    out = args.out or HERE/('holdout_scores.json' if full else 'holdout_compact_scores.json')
+    out.write_text(json.dumps(result,indent=2,allow_nan=False)+'\n')
+    print(f'Scored {len(rows)} networks. Results in {out}')
