@@ -1,0 +1,888 @@
+[
+  {
+    "name": "composition_f60_N4000_seed3001",
+    "experiment": "composition",
+    "config": {
+      "n": 4000,
+      "g": 4.0,
+      "mean_rate": 0.3,
+      "seed": 3001,
+      "fraction_e": 0.6,
+      "ensemble": "bernoulli",
+      "dt": 0.05,
+      "burn": 500.0,
+      "duration": 8000.0,
+      "sample_dt": 0.25,
+      "variance_profile": [
+        [
+          21.333333333333336,
+          4.5
+        ],
+        [
+          33.333333333333336,
+          6.0
+        ]
+      ],
+      "mean_connectivity": [
+        [
+          1.3333333333333335,
+          -3.0
+        ],
+        [
+          2.666666666666667,
+          -5.0
+        ]
+      ]
+    },
+    "mean_input": [
+      -2.6712782365825896,
+      -3.2189749212858354
+    ],
+    "blocks": [
+      500.0,
+      1000.0
+    ],
+    "prefixes": [
+      4000.0,
+      8000.0
+    ],
+    "retain_temporary_trajectory": true,
+    "native_library": "/workspace/scratch/f157098d3e38/next_round/runtime/tmp/constant_csr.so"
+  },
+  {
+    "name": "composition_f80_N4000_seed3001",
+    "experiment": "composition",
+    "config": {
+      "n": 4000,
+      "g": 4.0,
+      "mean_rate": 0.3,
+      "seed": 3001,
+      "fraction_e": 0.8,
+      "ensemble": "bernoulli",
+      "dt": 0.05,
+      "burn": 500.0,
+      "duration": 8000.0,
+      "sample_dt": 0.25,
+      "variance_profile": [
+        [
+          16.0,
+          9.000000000000002
+        ],
+        [
+          25.0,
+          12.000000000000004
+        ]
+      ],
+      "mean_connectivity": [
+        [
+          1.0,
+          -6.000000000000002
+        ],
+        [
+          2.0,
+          -10.000000000000002
+        ]
+      ]
+    },
+    "mean_input": [
+      -2.6712782365825896,
+      -3.2189749212858354
+    ],
+    "blocks": [
+      500.0,
+      1000.0
+    ],
+    "prefixes": [
+      4000.0,
+      8000.0
+    ],
+    "retain_temporary_trajectory": true,
+    "native_library": "/workspace/scratch/f157098d3e38/next_round/runtime/tmp/constant_csr.so"
+  },
+  {
+    "name": "composition_f60_N2000_seed3005",
+    "experiment": "composition",
+    "config": {
+      "n": 2000,
+      "g": 4.0,
+      "mean_rate": 0.3,
+      "seed": 3005,
+      "fraction_e": 0.6,
+      "ensemble": "bernoulli",
+      "dt": 0.05,
+      "burn": 500.0,
+      "duration": 8000.0,
+      "sample_dt": 0.25,
+      "variance_profile": [
+        [
+          21.333333333333336,
+          4.5
+        ],
+        [
+          33.333333333333336,
+          6.0
+        ]
+      ],
+      "mean_connectivity": [
+        [
+          1.3333333333333335,
+          -3.0
+        ],
+        [
+          2.666666666666667,
+          -5.0
+        ]
+      ]
+    },
+    "mean_input": [
+      -2.6712782365825896,
+      -3.2189749212858354
+    ],
+    "blocks": [
+      500.0,
+      1000.0
+    ],
+    "prefixes": [
+      4000.0,
+      8000.0
+    ],
+    "retain_temporary_trajectory": true,
+    "native_library": "/workspace/scratch/f157098d3e38/next_round/runtime/tmp/constant_csr.so"
+  },
+  {
+    "name": "composition_f80_N2000_seed3005",
+    "experiment": "composition",
+    "config": {
+      "n": 2000,
+      "g": 4.0,
+      "mean_rate": 0.3,
+      "seed": 3005,
+      "fraction_e": 0.8,
+      "ensemble": "bernoulli",
+      "dt": 0.05,
+      "burn": 500.0,
+      "duration": 8000.0,
+      "sample_dt": 0.25,
+      "variance_profile": [
+        [
+          16.0,
+          9.000000000000002
+        ],
+        [
+          25.0,
+          12.000000000000004
+        ]
+      ],
+      "mean_connectivity": [
+        [
+          1.0,
+          -6.000000000000002
+        ],
+        [
+          2.0,
+          -10.000000000000002
+        ]
+      ]
+    },
+    "mean_input": [
+      -2.6712782365825896,
+      -3.2189749212858354
+    ],
+    "blocks": [
+      500.0,
+      1000.0
+    ],
+    "prefixes": [
+      4000.0,
+      8000.0
+    ],
+    "retain_temporary_trajectory": true,
+    "native_library": "/workspace/scratch/f157098d3e38/next_round/runtime/tmp/constant_csr.so"
+  },
+  {
+    "name": "composition_f60_N2000_seed3006",
+    "experiment": "composition",
+    "config": {
+      "n": 2000,
+      "g": 4.0,
+      "mean_rate": 0.3,
+      "seed": 3006,
+      "fraction_e": 0.6,
+      "ensemble": "bernoulli",
+      "dt": 0.05,
+      "burn": 500.0,
+      "duration": 8000.0,
+      "sample_dt": 0.25,
+      "variance_profile": [
+        [
+          21.333333333333336,
+          4.5
+        ],
+        [
+          33.333333333333336,
+          6.0
+        ]
+      ],
+      "mean_connectivity": [
+        [
+          1.3333333333333335,
+          -3.0
+        ],
+        [
+          2.666666666666667,
+          -5.0
+        ]
+      ]
+    },
+    "mean_input": [
+      -2.6712782365825896,
+      -3.2189749212858354
+    ],
+    "blocks": [
+      500.0
+    ],
+    "prefixes": [
+      4000.0,
+      8000.0
+    ],
+    "retain_temporary_trajectory": false,
+    "native_library": "/workspace/scratch/f157098d3e38/next_round/runtime/tmp/constant_csr.so"
+  },
+  {
+    "name": "composition_f80_N2000_seed3006",
+    "experiment": "composition",
+    "config": {
+      "n": 2000,
+      "g": 4.0,
+      "mean_rate": 0.3,
+      "seed": 3006,
+      "fraction_e": 0.8,
+      "ensemble": "bernoulli",
+      "dt": 0.05,
+      "burn": 500.0,
+      "duration": 8000.0,
+      "sample_dt": 0.25,
+      "variance_profile": [
+        [
+          16.0,
+          9.000000000000002
+        ],
+        [
+          25.0,
+          12.000000000000004
+        ]
+      ],
+      "mean_connectivity": [
+        [
+          1.0,
+          -6.000000000000002
+        ],
+        [
+          2.0,
+          -10.000000000000002
+        ]
+      ]
+    },
+    "mean_input": [
+      -2.6712782365825896,
+      -3.2189749212858354
+    ],
+    "blocks": [
+      500.0
+    ],
+    "prefixes": [
+      4000.0,
+      8000.0
+    ],
+    "retain_temporary_trajectory": false,
+    "native_library": "/workspace/scratch/f157098d3e38/next_round/runtime/tmp/constant_csr.so"
+  },
+  {
+    "name": "composition_f60_N2000_seed3007",
+    "experiment": "composition",
+    "config": {
+      "n": 2000,
+      "g": 4.0,
+      "mean_rate": 0.3,
+      "seed": 3007,
+      "fraction_e": 0.6,
+      "ensemble": "bernoulli",
+      "dt": 0.05,
+      "burn": 500.0,
+      "duration": 8000.0,
+      "sample_dt": 0.25,
+      "variance_profile": [
+        [
+          21.333333333333336,
+          4.5
+        ],
+        [
+          33.333333333333336,
+          6.0
+        ]
+      ],
+      "mean_connectivity": [
+        [
+          1.3333333333333335,
+          -3.0
+        ],
+        [
+          2.666666666666667,
+          -5.0
+        ]
+      ]
+    },
+    "mean_input": [
+      -2.6712782365825896,
+      -3.2189749212858354
+    ],
+    "blocks": [
+      500.0
+    ],
+    "prefixes": [
+      4000.0,
+      8000.0
+    ],
+    "retain_temporary_trajectory": false,
+    "native_library": "/workspace/scratch/f157098d3e38/next_round/runtime/tmp/constant_csr.so"
+  },
+  {
+    "name": "composition_f80_N2000_seed3007",
+    "experiment": "composition",
+    "config": {
+      "n": 2000,
+      "g": 4.0,
+      "mean_rate": 0.3,
+      "seed": 3007,
+      "fraction_e": 0.8,
+      "ensemble": "bernoulli",
+      "dt": 0.05,
+      "burn": 500.0,
+      "duration": 8000.0,
+      "sample_dt": 0.25,
+      "variance_profile": [
+        [
+          16.0,
+          9.000000000000002
+        ],
+        [
+          25.0,
+          12.000000000000004
+        ]
+      ],
+      "mean_connectivity": [
+        [
+          1.0,
+          -6.000000000000002
+        ],
+        [
+          2.0,
+          -10.000000000000002
+        ]
+      ]
+    },
+    "mean_input": [
+      -2.6712782365825896,
+      -3.2189749212858354
+    ],
+    "blocks": [
+      500.0
+    ],
+    "prefixes": [
+      4000.0,
+      8000.0
+    ],
+    "retain_temporary_trajectory": false,
+    "native_library": "/workspace/scratch/f157098d3e38/next_round/runtime/tmp/constant_csr.so"
+  },
+  {
+    "name": "composition_f60_N2000_seed3008",
+    "experiment": "composition",
+    "config": {
+      "n": 2000,
+      "g": 4.0,
+      "mean_rate": 0.3,
+      "seed": 3008,
+      "fraction_e": 0.6,
+      "ensemble": "bernoulli",
+      "dt": 0.05,
+      "burn": 500.0,
+      "duration": 8000.0,
+      "sample_dt": 0.25,
+      "variance_profile": [
+        [
+          21.333333333333336,
+          4.5
+        ],
+        [
+          33.333333333333336,
+          6.0
+        ]
+      ],
+      "mean_connectivity": [
+        [
+          1.3333333333333335,
+          -3.0
+        ],
+        [
+          2.666666666666667,
+          -5.0
+        ]
+      ]
+    },
+    "mean_input": [
+      -2.6712782365825896,
+      -3.2189749212858354
+    ],
+    "blocks": [
+      500.0
+    ],
+    "prefixes": [
+      4000.0,
+      8000.0
+    ],
+    "retain_temporary_trajectory": false,
+    "native_library": "/workspace/scratch/f157098d3e38/next_round/runtime/tmp/constant_csr.so"
+  },
+  {
+    "name": "composition_f80_N2000_seed3008",
+    "experiment": "composition",
+    "config": {
+      "n": 2000,
+      "g": 4.0,
+      "mean_rate": 0.3,
+      "seed": 3008,
+      "fraction_e": 0.8,
+      "ensemble": "bernoulli",
+      "dt": 0.05,
+      "burn": 500.0,
+      "duration": 8000.0,
+      "sample_dt": 0.25,
+      "variance_profile": [
+        [
+          16.0,
+          9.000000000000002
+        ],
+        [
+          25.0,
+          12.000000000000004
+        ]
+      ],
+      "mean_connectivity": [
+        [
+          1.0,
+          -6.000000000000002
+        ],
+        [
+          2.0,
+          -10.000000000000002
+        ]
+      ]
+    },
+    "mean_input": [
+      -2.6712782365825896,
+      -3.2189749212858354
+    ],
+    "blocks": [
+      500.0
+    ],
+    "prefixes": [
+      4000.0,
+      8000.0
+    ],
+    "retain_temporary_trajectory": false,
+    "native_library": "/workspace/scratch/f157098d3e38/next_round/runtime/tmp/constant_csr.so"
+  },
+  {
+    "name": "composition_f60_N2000_seed3009",
+    "experiment": "composition",
+    "config": {
+      "n": 2000,
+      "g": 4.0,
+      "mean_rate": 0.3,
+      "seed": 3009,
+      "fraction_e": 0.6,
+      "ensemble": "bernoulli",
+      "dt": 0.05,
+      "burn": 500.0,
+      "duration": 8000.0,
+      "sample_dt": 0.25,
+      "variance_profile": [
+        [
+          21.333333333333336,
+          4.5
+        ],
+        [
+          33.333333333333336,
+          6.0
+        ]
+      ],
+      "mean_connectivity": [
+        [
+          1.3333333333333335,
+          -3.0
+        ],
+        [
+          2.666666666666667,
+          -5.0
+        ]
+      ]
+    },
+    "mean_input": [
+      -2.6712782365825896,
+      -3.2189749212858354
+    ],
+    "blocks": [
+      500.0
+    ],
+    "prefixes": [
+      4000.0,
+      8000.0
+    ],
+    "retain_temporary_trajectory": false,
+    "native_library": "/workspace/scratch/f157098d3e38/next_round/runtime/tmp/constant_csr.so"
+  },
+  {
+    "name": "composition_f80_N2000_seed3009",
+    "experiment": "composition",
+    "config": {
+      "n": 2000,
+      "g": 4.0,
+      "mean_rate": 0.3,
+      "seed": 3009,
+      "fraction_e": 0.8,
+      "ensemble": "bernoulli",
+      "dt": 0.05,
+      "burn": 500.0,
+      "duration": 8000.0,
+      "sample_dt": 0.25,
+      "variance_profile": [
+        [
+          16.0,
+          9.000000000000002
+        ],
+        [
+          25.0,
+          12.000000000000004
+        ]
+      ],
+      "mean_connectivity": [
+        [
+          1.0,
+          -6.000000000000002
+        ],
+        [
+          2.0,
+          -10.000000000000002
+        ]
+      ]
+    },
+    "mean_input": [
+      -2.6712782365825896,
+      -3.2189749212858354
+    ],
+    "blocks": [
+      500.0
+    ],
+    "prefixes": [
+      4000.0,
+      8000.0
+    ],
+    "retain_temporary_trajectory": false,
+    "native_library": "/workspace/scratch/f157098d3e38/next_round/runtime/tmp/constant_csr.so"
+  },
+  {
+    "name": "composition_f60_N2000_seed3010",
+    "experiment": "composition",
+    "config": {
+      "n": 2000,
+      "g": 4.0,
+      "mean_rate": 0.3,
+      "seed": 3010,
+      "fraction_e": 0.6,
+      "ensemble": "bernoulli",
+      "dt": 0.05,
+      "burn": 500.0,
+      "duration": 8000.0,
+      "sample_dt": 0.25,
+      "variance_profile": [
+        [
+          21.333333333333336,
+          4.5
+        ],
+        [
+          33.333333333333336,
+          6.0
+        ]
+      ],
+      "mean_connectivity": [
+        [
+          1.3333333333333335,
+          -3.0
+        ],
+        [
+          2.666666666666667,
+          -5.0
+        ]
+      ]
+    },
+    "mean_input": [
+      -2.6712782365825896,
+      -3.2189749212858354
+    ],
+    "blocks": [
+      500.0
+    ],
+    "prefixes": [
+      4000.0,
+      8000.0
+    ],
+    "retain_temporary_trajectory": false,
+    "native_library": "/workspace/scratch/f157098d3e38/next_round/runtime/tmp/constant_csr.so"
+  },
+  {
+    "name": "composition_f80_N2000_seed3010",
+    "experiment": "composition",
+    "config": {
+      "n": 2000,
+      "g": 4.0,
+      "mean_rate": 0.3,
+      "seed": 3010,
+      "fraction_e": 0.8,
+      "ensemble": "bernoulli",
+      "dt": 0.05,
+      "burn": 500.0,
+      "duration": 8000.0,
+      "sample_dt": 0.25,
+      "variance_profile": [
+        [
+          16.0,
+          9.000000000000002
+        ],
+        [
+          25.0,
+          12.000000000000004
+        ]
+      ],
+      "mean_connectivity": [
+        [
+          1.0,
+          -6.000000000000002
+        ],
+        [
+          2.0,
+          -10.000000000000002
+        ]
+      ]
+    },
+    "mean_input": [
+      -2.6712782365825896,
+      -3.2189749212858354
+    ],
+    "blocks": [
+      500.0
+    ],
+    "prefixes": [
+      4000.0,
+      8000.0
+    ],
+    "retain_temporary_trajectory": false,
+    "native_library": "/workspace/scratch/f157098d3e38/next_round/runtime/tmp/constant_csr.so"
+  },
+  {
+    "name": "composition_f60_N2000_seed3011",
+    "experiment": "composition",
+    "config": {
+      "n": 2000,
+      "g": 4.0,
+      "mean_rate": 0.3,
+      "seed": 3011,
+      "fraction_e": 0.6,
+      "ensemble": "bernoulli",
+      "dt": 0.05,
+      "burn": 500.0,
+      "duration": 8000.0,
+      "sample_dt": 0.25,
+      "variance_profile": [
+        [
+          21.333333333333336,
+          4.5
+        ],
+        [
+          33.333333333333336,
+          6.0
+        ]
+      ],
+      "mean_connectivity": [
+        [
+          1.3333333333333335,
+          -3.0
+        ],
+        [
+          2.666666666666667,
+          -5.0
+        ]
+      ]
+    },
+    "mean_input": [
+      -2.6712782365825896,
+      -3.2189749212858354
+    ],
+    "blocks": [
+      500.0
+    ],
+    "prefixes": [
+      4000.0,
+      8000.0
+    ],
+    "retain_temporary_trajectory": false,
+    "native_library": "/workspace/scratch/f157098d3e38/next_round/runtime/tmp/constant_csr.so"
+  },
+  {
+    "name": "composition_f80_N2000_seed3011",
+    "experiment": "composition",
+    "config": {
+      "n": 2000,
+      "g": 4.0,
+      "mean_rate": 0.3,
+      "seed": 3011,
+      "fraction_e": 0.8,
+      "ensemble": "bernoulli",
+      "dt": 0.05,
+      "burn": 500.0,
+      "duration": 8000.0,
+      "sample_dt": 0.25,
+      "variance_profile": [
+        [
+          16.0,
+          9.000000000000002
+        ],
+        [
+          25.0,
+          12.000000000000004
+        ]
+      ],
+      "mean_connectivity": [
+        [
+          1.0,
+          -6.000000000000002
+        ],
+        [
+          2.0,
+          -10.000000000000002
+        ]
+      ]
+    },
+    "mean_input": [
+      -2.6712782365825896,
+      -3.2189749212858354
+    ],
+    "blocks": [
+      500.0
+    ],
+    "prefixes": [
+      4000.0,
+      8000.0
+    ],
+    "retain_temporary_trajectory": false,
+    "native_library": "/workspace/scratch/f157098d3e38/next_round/runtime/tmp/constant_csr.so"
+  },
+  {
+    "name": "composition_f60_N2000_seed3012",
+    "experiment": "composition",
+    "config": {
+      "n": 2000,
+      "g": 4.0,
+      "mean_rate": 0.3,
+      "seed": 3012,
+      "fraction_e": 0.6,
+      "ensemble": "bernoulli",
+      "dt": 0.05,
+      "burn": 500.0,
+      "duration": 8000.0,
+      "sample_dt": 0.25,
+      "variance_profile": [
+        [
+          21.333333333333336,
+          4.5
+        ],
+        [
+          33.333333333333336,
+          6.0
+        ]
+      ],
+      "mean_connectivity": [
+        [
+          1.3333333333333335,
+          -3.0
+        ],
+        [
+          2.666666666666667,
+          -5.0
+        ]
+      ]
+    },
+    "mean_input": [
+      -2.6712782365825896,
+      -3.2189749212858354
+    ],
+    "blocks": [
+      500.0
+    ],
+    "prefixes": [
+      4000.0,
+      8000.0
+    ],
+    "retain_temporary_trajectory": false,
+    "native_library": "/workspace/scratch/f157098d3e38/next_round/runtime/tmp/constant_csr.so"
+  },
+  {
+    "name": "composition_f80_N2000_seed3012",
+    "experiment": "composition",
+    "config": {
+      "n": 2000,
+      "g": 4.0,
+      "mean_rate": 0.3,
+      "seed": 3012,
+      "fraction_e": 0.8,
+      "ensemble": "bernoulli",
+      "dt": 0.05,
+      "burn": 500.0,
+      "duration": 8000.0,
+      "sample_dt": 0.25,
+      "variance_profile": [
+        [
+          16.0,
+          9.000000000000002
+        ],
+        [
+          25.0,
+          12.000000000000004
+        ]
+      ],
+      "mean_connectivity": [
+        [
+          1.0,
+          -6.000000000000002
+        ],
+        [
+          2.0,
+          -10.000000000000002
+        ]
+      ]
+    },
+    "mean_input": [
+      -2.6712782365825896,
+      -3.2189749212858354
+    ],
+    "blocks": [
+      500.0
+    ],
+    "prefixes": [
+      4000.0,
+      8000.0
+    ],
+    "retain_temporary_trajectory": false,
+    "native_library": "/workspace/scratch/f157098d3e38/next_round/runtime/tmp/constant_csr.so"
+  }
+]

@@ -1,0 +1,870 @@
+{
+  "scope": "Original nonuniform two-population degree test",
+  "primary_control": "Hold G,J0,f,targetpopulationmeans fixed; recompute leading Gaussian h for each intended chi, with no measured-statistic fit.",
+  "planned_networks": [
+    {
+      "n": 1000,
+      "seed": 4001,
+      "fraction_e": 0.8,
+      "ensemble": "degree",
+      "degree_dispersion": 0.0,
+      "variance_profile": [
+        [
+          16.0,
+          9.0
+        ],
+        [
+          25.0,
+          12.0
+        ]
+      ],
+      "mean_connectivity": [
+        [
+          1.0,
+          -6.0
+        ],
+        [
+          2.0,
+          -10.0
+        ]
+      ],
+      "mean_input": [
+        -2.1353610549010207,
+        -2.5317224347376492
+      ],
+      "mean_rate": 0.3,
+      "dt": 0.05,
+      "burn": 1000.0,
+      "duration": 8000.0,
+      "sample_dt": 0.25,
+      "block_duration": 500.0,
+      "expected_degree_dispersion": [
+        [
+          0.001249999999999925,
+          0.0
+        ],
+        [
+          0.002374999999999978,
+          0.012799999999999916
+        ]
+      ]
+    },
+    {
+      "n": 1000,
+      "seed": 4002,
+      "fraction_e": 0.8,
+      "ensemble": "degree",
+      "degree_dispersion": 0.0,
+      "variance_profile": [
+        [
+          16.0,
+          9.0
+        ],
+        [
+          25.0,
+          12.0
+        ]
+      ],
+      "mean_connectivity": [
+        [
+          1.0,
+          -6.0
+        ],
+        [
+          2.0,
+          -10.0
+        ]
+      ],
+      "mean_input": [
+        -2.1353610549010207,
+        -2.5317224347376492
+      ],
+      "mean_rate": 0.3,
+      "dt": 0.05,
+      "burn": 1000.0,
+      "duration": 8000.0,
+      "sample_dt": 0.25,
+      "block_duration": 500.0,
+      "expected_degree_dispersion": [
+        [
+          0.001249999999999925,
+          0.0
+        ],
+        [
+          0.002374999999999978,
+          0.012799999999999916
+        ]
+      ]
+    },
+    {
+      "n": 1000,
+      "seed": 4003,
+      "fraction_e": 0.8,
+      "ensemble": "degree",
+      "degree_dispersion": 0.0,
+      "variance_profile": [
+        [
+          16.0,
+          9.0
+        ],
+        [
+          25.0,
+          12.0
+        ]
+      ],
+      "mean_connectivity": [
+        [
+          1.0,
+          -6.0
+        ],
+        [
+          2.0,
+          -10.0
+        ]
+      ],
+      "mean_input": [
+        -2.1353610549010207,
+        -2.5317224347376492
+      ],
+      "mean_rate": 0.3,
+      "dt": 0.05,
+      "burn": 1000.0,
+      "duration": 8000.0,
+      "sample_dt": 0.25,
+      "block_duration": 500.0,
+      "expected_degree_dispersion": [
+        [
+          0.001249999999999925,
+          0.0
+        ],
+        [
+          0.002374999999999978,
+          0.012799999999999916
+        ]
+      ]
+    },
+    {
+      "n": 1000,
+      "seed": 4001,
+      "fraction_e": 0.8,
+      "ensemble": "degree",
+      "degree_dispersion": 0.5,
+      "variance_profile": [
+        [
+          16.0,
+          9.0
+        ],
+        [
+          25.0,
+          12.0
+        ]
+      ],
+      "mean_connectivity": [
+        [
+          1.0,
+          -6.0
+        ],
+        [
+          2.0,
+          -10.0
+        ]
+      ],
+      "mean_input": [
+        -2.4574311353731924,
+        -2.9459992543883895
+      ],
+      "mean_rate": 0.3,
+      "dt": 0.05,
+      "burn": 1000.0,
+      "duration": 8000.0,
+      "sample_dt": 0.25,
+      "block_duration": 500.0,
+      "expected_degree_dispersion": [
+        [
+          0.505625,
+          0.5
+        ],
+        [
+          0.5015,
+          0.5106666666666668
+        ]
+      ]
+    },
+    {
+      "n": 1000,
+      "seed": 4002,
+      "fraction_e": 0.8,
+      "ensemble": "degree",
+      "degree_dispersion": 0.5,
+      "variance_profile": [
+        [
+          16.0,
+          9.0
+        ],
+        [
+          25.0,
+          12.0
+        ]
+      ],
+      "mean_connectivity": [
+        [
+          1.0,
+          -6.0
+        ],
+        [
+          2.0,
+          -10.0
+        ]
+      ],
+      "mean_input": [
+        -2.4574311353731924,
+        -2.9459992543883895
+      ],
+      "mean_rate": 0.3,
+      "dt": 0.05,
+      "burn": 1000.0,
+      "duration": 8000.0,
+      "sample_dt": 0.25,
+      "block_duration": 500.0,
+      "expected_degree_dispersion": [
+        [
+          0.505625,
+          0.5
+        ],
+        [
+          0.5015,
+          0.5106666666666668
+        ]
+      ]
+    },
+    {
+      "n": 1000,
+      "seed": 4003,
+      "fraction_e": 0.8,
+      "ensemble": "degree",
+      "degree_dispersion": 0.5,
+      "variance_profile": [
+        [
+          16.0,
+          9.0
+        ],
+        [
+          25.0,
+          12.0
+        ]
+      ],
+      "mean_connectivity": [
+        [
+          1.0,
+          -6.0
+        ],
+        [
+          2.0,
+          -10.0
+        ]
+      ],
+      "mean_input": [
+        -2.4574311353731924,
+        -2.9459992543883895
+      ],
+      "mean_rate": 0.3,
+      "dt": 0.05,
+      "burn": 1000.0,
+      "duration": 8000.0,
+      "sample_dt": 0.25,
+      "block_duration": 500.0,
+      "expected_degree_dispersion": [
+        [
+          0.505625,
+          0.5
+        ],
+        [
+          0.5015,
+          0.5106666666666668
+        ]
+      ]
+    },
+    {
+      "n": 1000,
+      "seed": 4001,
+      "fraction_e": 0.8,
+      "ensemble": "degree",
+      "degree_dispersion": 1.0,
+      "variance_profile": [
+        [
+          16.0,
+          9.0
+        ],
+        [
+          25.0,
+          12.0
+        ]
+      ],
+      "mean_connectivity": [
+        [
+          1.0,
+          -6.0
+        ],
+        [
+          2.0,
+          -10.0
+        ]
+      ],
+      "mean_input": [
+        -2.6712782365825896,
+        -3.2189749212858354
+      ],
+      "mean_rate": 0.3,
+      "dt": 0.05,
+      "burn": 1000.0,
+      "duration": 8000.0,
+      "sample_dt": 0.25,
+      "block_duration": 500.0,
+      "expected_degree_dispersion": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "n": 1000,
+      "seed": 4002,
+      "fraction_e": 0.8,
+      "ensemble": "degree",
+      "degree_dispersion": 1.0,
+      "variance_profile": [
+        [
+          16.0,
+          9.0
+        ],
+        [
+          25.0,
+          12.0
+        ]
+      ],
+      "mean_connectivity": [
+        [
+          1.0,
+          -6.0
+        ],
+        [
+          2.0,
+          -10.0
+        ]
+      ],
+      "mean_input": [
+        -2.6712782365825896,
+        -3.2189749212858354
+      ],
+      "mean_rate": 0.3,
+      "dt": 0.05,
+      "burn": 1000.0,
+      "duration": 8000.0,
+      "sample_dt": 0.25,
+      "block_duration": 500.0,
+      "expected_degree_dispersion": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "n": 1000,
+      "seed": 4003,
+      "fraction_e": 0.8,
+      "ensemble": "degree",
+      "degree_dispersion": 1.0,
+      "variance_profile": [
+        [
+          16.0,
+          9.0
+        ],
+        [
+          25.0,
+          12.0
+        ]
+      ],
+      "mean_connectivity": [
+        [
+          1.0,
+          -6.0
+        ],
+        [
+          2.0,
+          -10.0
+        ]
+      ],
+      "mean_input": [
+        -2.6712782365825896,
+        -3.2189749212858354
+      ],
+      "mean_rate": 0.3,
+      "dt": 0.05,
+      "burn": 1000.0,
+      "duration": 8000.0,
+      "sample_dt": 0.25,
+      "block_duration": 500.0,
+      "expected_degree_dispersion": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "n": 1000,
+      "seed": 4001,
+      "fraction_e": 0.8,
+      "ensemble": "degree",
+      "degree_dispersion": 2.0,
+      "variance_profile": [
+        [
+          16.0,
+          9.0
+        ],
+        [
+          25.0,
+          12.0
+        ]
+      ],
+      "mean_connectivity": [
+        [
+          1.0,
+          -6.0
+        ],
+        [
+          2.0,
+          -10.0
+        ]
+      ],
+      "mean_input": [
+        -3.001289520343916,
+        -3.637918993939567
+      ],
+      "mean_rate": 0.3,
+      "dt": 0.05,
+      "burn": 1000.0,
+      "duration": 8000.0,
+      "sample_dt": 0.25,
+      "block_duration": 500.0,
+      "expected_degree_dispersion": [
+        [
+          2.0,
+          2.0
+        ],
+        [
+          2.0,
+          2.0
+        ]
+      ]
+    },
+    {
+      "n": 1000,
+      "seed": 4002,
+      "fraction_e": 0.8,
+      "ensemble": "degree",
+      "degree_dispersion": 2.0,
+      "variance_profile": [
+        [
+          16.0,
+          9.0
+        ],
+        [
+          25.0,
+          12.0
+        ]
+      ],
+      "mean_connectivity": [
+        [
+          1.0,
+          -6.0
+        ],
+        [
+          2.0,
+          -10.0
+        ]
+      ],
+      "mean_input": [
+        -3.001289520343916,
+        -3.637918993939567
+      ],
+      "mean_rate": 0.3,
+      "dt": 0.05,
+      "burn": 1000.0,
+      "duration": 8000.0,
+      "sample_dt": 0.25,
+      "block_duration": 500.0,
+      "expected_degree_dispersion": [
+        [
+          2.0,
+          2.0
+        ],
+        [
+          2.0,
+          2.0
+        ]
+      ]
+    },
+    {
+      "n": 1000,
+      "seed": 4003,
+      "fraction_e": 0.8,
+      "ensemble": "degree",
+      "degree_dispersion": 2.0,
+      "variance_profile": [
+        [
+          16.0,
+          9.0
+        ],
+        [
+          25.0,
+          12.0
+        ]
+      ],
+      "mean_connectivity": [
+        [
+          1.0,
+          -6.0
+        ],
+        [
+          2.0,
+          -10.0
+        ]
+      ],
+      "mean_input": [
+        -3.001289520343916,
+        -3.637918993939567
+      ],
+      "mean_rate": 0.3,
+      "dt": 0.05,
+      "burn": 1000.0,
+      "duration": 8000.0,
+      "sample_dt": 0.25,
+      "block_duration": 500.0,
+      "expected_degree_dispersion": [
+        [
+          2.0,
+          2.0
+        ],
+        [
+          2.0,
+          2.0
+        ]
+      ]
+    },
+    {
+      "n": 2000,
+      "seed": 4001,
+      "fraction_e": 0.8,
+      "ensemble": "degree",
+      "degree_dispersion": 0.0,
+      "variance_profile": [
+        [
+          16.0,
+          9.0
+        ],
+        [
+          25.0,
+          12.0
+        ]
+      ],
+      "mean_connectivity": [
+        [
+          1.0,
+          -6.0
+        ],
+        [
+          2.0,
+          -10.0
+        ]
+      ],
+      "mean_input": [
+        -2.1353610549010207,
+        -2.5317224347376492
+      ],
+      "mean_rate": 0.3,
+      "dt": 0.05,
+      "burn": 1000.0,
+      "duration": 8000.0,
+      "sample_dt": 0.25,
+      "block_duration": 500.0,
+      "expected_degree_dispersion": [
+        [
+          0.0011718749999999351,
+          0.0
+        ],
+        [
+          0.0011250000000000277,
+          0.0032000000000004564
+        ]
+      ]
+    },
+    {
+      "n": 2000,
+      "seed": 4002,
+      "fraction_e": 0.8,
+      "ensemble": "degree",
+      "degree_dispersion": 0.0,
+      "variance_profile": [
+        [
+          16.0,
+          9.0
+        ],
+        [
+          25.0,
+          12.0
+        ]
+      ],
+      "mean_connectivity": [
+        [
+          1.0,
+          -6.0
+        ],
+        [
+          2.0,
+          -10.0
+        ]
+      ],
+      "mean_input": [
+        -2.1353610549010207,
+        -2.5317224347376492
+      ],
+      "mean_rate": 0.3,
+      "dt": 0.05,
+      "burn": 1000.0,
+      "duration": 8000.0,
+      "sample_dt": 0.25,
+      "block_duration": 500.0,
+      "expected_degree_dispersion": [
+        [
+          0.0011718749999999351,
+          0.0
+        ],
+        [
+          0.0011250000000000277,
+          0.0032000000000004564
+        ]
+      ]
+    },
+    {
+      "n": 2000,
+      "seed": 4003,
+      "fraction_e": 0.8,
+      "ensemble": "degree",
+      "degree_dispersion": 0.0,
+      "variance_profile": [
+        [
+          16.0,
+          9.0
+        ],
+        [
+          25.0,
+          12.0
+        ]
+      ],
+      "mean_connectivity": [
+        [
+          1.0,
+          -6.0
+        ],
+        [
+          2.0,
+          -10.0
+        ]
+      ],
+      "mean_input": [
+        -2.1353610549010207,
+        -2.5317224347376492
+      ],
+      "mean_rate": 0.3,
+      "dt": 0.05,
+      "burn": 1000.0,
+      "duration": 8000.0,
+      "sample_dt": 0.25,
+      "block_duration": 500.0,
+      "expected_degree_dispersion": [
+        [
+          0.0011718749999999351,
+          0.0
+        ],
+        [
+          0.0011250000000000277,
+          0.0032000000000004564
+        ]
+      ]
+    },
+    {
+      "n": 2000,
+      "seed": 4001,
+      "fraction_e": 0.8,
+      "ensemble": "degree",
+      "degree_dispersion": 2.0,
+      "variance_profile": [
+        [
+          16.0,
+          9.0
+        ],
+        [
+          25.0,
+          12.0
+        ]
+      ],
+      "mean_connectivity": [
+        [
+          1.0,
+          -6.0
+        ],
+        [
+          2.0,
+          -10.0
+        ]
+      ],
+      "mean_input": [
+        -3.001289520343916,
+        -3.637918993939567
+      ],
+      "mean_rate": 0.3,
+      "dt": 0.05,
+      "burn": 1000.0,
+      "duration": 8000.0,
+      "sample_dt": 0.25,
+      "block_duration": 500.0,
+      "expected_degree_dispersion": [
+        [
+          2.0,
+          2.0
+        ],
+        [
+          2.0,
+          2.0
+        ]
+      ]
+    },
+    {
+      "n": 2000,
+      "seed": 4002,
+      "fraction_e": 0.8,
+      "ensemble": "degree",
+      "degree_dispersion": 2.0,
+      "variance_profile": [
+        [
+          16.0,
+          9.0
+        ],
+        [
+          25.0,
+          12.0
+        ]
+      ],
+      "mean_connectivity": [
+        [
+          1.0,
+          -6.0
+        ],
+        [
+          2.0,
+          -10.0
+        ]
+      ],
+      "mean_input": [
+        -3.001289520343916,
+        -3.637918993939567
+      ],
+      "mean_rate": 0.3,
+      "dt": 0.05,
+      "burn": 1000.0,
+      "duration": 8000.0,
+      "sample_dt": 0.25,
+      "block_duration": 500.0,
+      "expected_degree_dispersion": [
+        [
+          2.0,
+          2.0
+        ],
+        [
+          2.0,
+          2.0
+        ]
+      ]
+    },
+    {
+      "n": 2000,
+      "seed": 4003,
+      "fraction_e": 0.8,
+      "ensemble": "degree",
+      "degree_dispersion": 2.0,
+      "variance_profile": [
+        [
+          16.0,
+          9.0
+        ],
+        [
+          25.0,
+          12.0
+        ]
+      ],
+      "mean_connectivity": [
+        [
+          1.0,
+          -6.0
+        ],
+        [
+          2.0,
+          -10.0
+        ]
+      ],
+      "mean_input": [
+        -3.001289520343916,
+        -3.637918993939567
+      ],
+      "mean_rate": 0.3,
+      "dt": 0.05,
+      "burn": 1000.0,
+      "duration": 8000.0,
+      "sample_dt": 0.25,
+      "block_duration": 500.0,
+      "expected_degree_dispersion": [
+        [
+          2.0,
+          2.0
+        ],
+        [
+          2.0,
+          2.0
+        ]
+      ]
+    }
+  ],
+  "sampling": "Fresh prespecified seed labels; no outcome-based exclusions. N2000 degree endpoint jobs are priority after N1000 pilot.",
+  "rounding": "Save exact expected finite-M dispersion, empirical block count means and variances. Leading h follows intended chi; do not silently retune h using finite-N outcomes.",
+  "primary_estimator": "Four-window mean-free covariance energy under stationary independent-window assumptions; scalar PR ratio retains finite-record/network bias.",
+  "measurement": [
+    "nu",
+    "covariance_energy",
+    "dimension_fraction",
+    "block_energies_EE_EI_II",
+    "population_mean_rates",
+    "input_means",
+    "static_variances",
+    "dynamic_variances",
+    "gain_moments",
+    "input_kernel",
+    "population_mode_covariance"
+  ],
+  "fixed_point_policy": "Report undefined centered PR separately; retain all outcomes and count states.",
+  "comparison": "Parameter-only conditional closure primary; measured-input or measured-gain substitution is diagnostic only."
+}

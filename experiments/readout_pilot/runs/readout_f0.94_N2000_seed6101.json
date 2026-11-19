@@ -1,0 +1,104 @@
+{
+  "name": "readout_f0.94_N2000_seed6101",
+  "job": {
+    "name": "readout_f0.94_N2000_seed6101",
+    "config": {
+      "n": 2000,
+      "g": 4.0,
+      "mean_rate": 0.3,
+      "seed": 6101,
+      "fraction_e": 0.94,
+      "ensemble": "bernoulli",
+      "dt": 0.05,
+      "burn": 500.0,
+      "duration": 8000.0,
+      "sample_dt": 0.25,
+      "variance_profile": [
+        [
+          13.617021276595747,
+          29.99999999999997
+        ],
+        [
+          21.276595744680854,
+          39.999999999999964
+        ]
+      ],
+      "mean_connectivity": [
+        [
+          0.8510638297872342,
+          -19.999999999999982
+        ],
+        [
+          1.7021276595744683,
+          -33.3333333333333
+        ]
+      ]
+    },
+    "mean_input": [
+      -2.6712782365825896,
+      -3.2189749212858354
+    ],
+    "blocks": [],
+    "prefixes": [
+      4000.0,
+      8000.0
+    ],
+    "retain_temporary_trajectory": true,
+    "native_library": "/Users/aniket/Documents/research/ei-balance/final/next_round/dense_sweeps/tmp/Anikets-MacBook-Pro.local_local_1of1_54711/constant_csr.dylib"
+  },
+  "status": "complete",
+  "started_unix": 1795114889.774233,
+  "action_backend": "compiled_constant_CSR",
+  "engine_source_sha256": "117f57b8341a1e36fa351f37d96cd779879b5c037aa11d52f7d44a4bd923f546",
+  "connectivity_sha256": "9930fbd4ab31538734d514cac181ea68272eb839ca4a9de604abd7cb39fbc1ce",
+  "native_library_sha256": "6881ced44d2882c864246b9d8dc4704fd89fef039d3758028d59cc5ff2a64fdf",
+  "network_info": {
+    "j0": [
+      [
+        0.8510638297872342,
+        -19.999999999999982
+      ],
+      [
+        1.7021276595744683,
+        -33.3333333333333
+      ]
+    ],
+    "probabilities": [
+      [
+        0.05050505050505051,
+        0.9302325581395348
+      ],
+      [
+        0.1198501872659176,
+        0.9652509652509652
+      ]
+    ],
+    "nonzero_weights_scaled": [
+      [
+        16.851063829787233,
+        21.499999999999982
+      ],
+      [
+        14.20212765957447,
+        34.5333333333333
+      ]
+    ],
+    "fractions": [
+      0.94,
+      0.06
+    ],
+    "external": [
+      2.69528490941689,
+      2.1475882247136298
+    ]
+  },
+  "sparse_nnz": 221916,
+  "recorded_duration": 8000.0,
+  "elapsed_seconds": 37.543276500015054,
+  "simulation_seconds": 37.5429893329856,
+  "final_drift_rms": 0.4499354414608812,
+  "state_description": "Persistent temporal fluctuations unless vanishing variance and drift; Lyapunov sign not measured by this runner.",
+  "estimators": [],
+  "finished_unix": 1795114927.317672,
+  "max_rss_bytes": 473890816
+}

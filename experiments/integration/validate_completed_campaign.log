@@ -1,0 +1,19 @@
+{
+  "expected_primary_networks": 64,
+  "completed_primary_networks": 64,
+  "identical_schedule_references_deduplicated": [
+    "degree_chi0_N4000_seed4001",
+    "degree_chi2_N4000_seed4001",
+    "degree_chi0_N4000_seed4002",
+    "degree_chi2_N4000_seed4002",
+    "degree_chi0_N4000_seed4003",
+    "degree_chi2_N4000_seed4003"
+  ],
+  "missing_or_failed": [],
+  "all_primary_complete": true,
+  "maximum_primary_normalization_error": 5.551115123125783e-17,
+  "python_sources_syntax_checked": 53,
+  "exact_geometry_identity_checks": "check_population_gram_geometry.json",
+  "original_model_tests": "original_unittest.log: 13 passed",
+  "scope": "Integrity and normalization checks are not tests of theoretical accuracy."
+}

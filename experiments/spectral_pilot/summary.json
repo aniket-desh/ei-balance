@@ -1,0 +1,468 @@
+{
+  "cases": [
+    {
+      "name": "spectral_N250_seed7101",
+      "N": 250,
+      "seed": 7101,
+      "trajectory_sha256": "c644be32e808838e59ec980feb8ab395e68ce0432d3e72b51cae1e05a0b3a0bf",
+      "connectivity_sha256": "5cba0650b7e1b502f02c58b92e7f3de508fdbcb31b0ec3d7267659deb274ecd0",
+      "record_sha256": "fffd1c47f34f109f3360306b96960b0f84490e8d8ab6a3a1ad395f270bea5b06",
+      "mean_input_variance_full_half1_half2": [
+        2.8148965219206676,
+        2.860408186970134,
+        2.75883175762283
+      ],
+      "fluctuating": true,
+      "final_drift_rms": 0.4291724651464765,
+      "attempts": [
+        {
+          "initial": "record_mean",
+          "residual_inf": 0.019748941716863255,
+          "solver_status": "The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations.",
+          "nfev": 164
+        },
+        {
+          "initial": "first_sample",
+          "residual_inf": 0.2391363459395508,
+          "solver_status": "The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations.",
+          "nfev": 61
+        },
+        {
+          "initial": "population_offset",
+          "residual_inf": 0.22002185174767053,
+          "solver_status": "The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations.",
+          "nfev": 72
+        },
+        {
+          "initial": "continuation_record_mean",
+          "steps": 37,
+          "min_lambda": 0.0,
+          "max_lambda": 1.0025042622832034,
+          "residual_inf": 4.440892098500626e-15,
+          "root_index": 0
+        },
+        {
+          "initial": "continuation_population_offset",
+          "steps": 43,
+          "min_lambda": 0.0,
+          "max_lambda": 1.0005518831137035,
+          "residual_inf": 1.0658141036401503e-14,
+          "root_index": 1
+        }
+      ],
+      "roots": [
+        {
+          "index": 0,
+          "residual_inf": 4.440892098500626e-15,
+          "max_eigenpair_residual": 1.1031067348607776e-13,
+          "spatial_vs_temporal_variance_max_abs_error": 2.842170943040401e-14,
+          "variance_file": "modes/spectral_N250_seed7101_root0.npz",
+          "unstable_eigenvalues_with_conjugates": 6,
+          "representative_modes": 138,
+          "real_part_variance_spearman": [
+            0.39992556890698167,
+            0.3895234811833173,
+            0.402683629040912
+          ],
+          "half_variance_spearman": 0.9834242412480678,
+          "half_relative_l2": 0.10957764958141518,
+          "within_type_shuffle_full_spearman": [
+            -0.0950822965873572,
+            -0.02023566801905984,
+            -0.1997744235585825,
+            -0.19216236024192385,
+            -0.20674263508900906,
+            -0.08763005463607533,
+            0.1163522371566409,
+            0.04234124601302772,
+            -0.13450794426344037,
+            -0.003924756101180623,
+            -0.15097867754669636,
+            -0.187623433465224,
+            0.1384669478000589,
+            -0.060012922698971884,
+            0.013212660591932674,
+            0.036167574984759886,
+            -0.096429362381247,
+            -0.045551372294737984,
+            -0.1454945215519111,
+            -0.06641034363876717,
+            -0.05104009461424829,
+            0.021057606469568866,
+            -0.16865948688209062,
+            0.07316850423184142,
+            -0.29006436234699956,
+            -0.11823356294336157,
+            -0.12213320425855442,
+            -0.01687941934614796,
+            -0.1440469966140702,
+            -0.1928564416001315,
+            -0.30741182997746513,
+            0.0023128434732379117
+          ]
+        },
+        {
+          "index": 1,
+          "residual_inf": 1.0658141036401503e-14,
+          "max_eigenpair_residual": 2.3805925807814544e-14,
+          "spatial_vs_temporal_variance_max_abs_error": 4.263256414560601e-14,
+          "variance_file": "modes/spectral_N250_seed7101_root1.npz",
+          "unstable_eigenvalues_with_conjugates": 8,
+          "representative_modes": 142,
+          "real_part_variance_spearman": [
+            0.5337422541498058,
+            0.5431137636711506,
+            0.5225266193201465
+          ],
+          "half_variance_spearman": 0.9880383326592497,
+          "half_relative_l2": 0.0930766204649841,
+          "within_type_shuffle_full_spearman": [
+            -0.18736103572783228,
+            -0.17351752233382442,
+            -0.15155147519546683,
+            -0.09403991273934338,
+            -0.3208757080498166,
+            -0.14176922867363384,
+            -0.00278504833494345,
+            0.07090452250775896,
+            -0.17234398804671508,
+            -0.2106598825208355,
+            -0.19091516814022058,
+            -0.16235637302463796,
+            -0.03073612033755876,
+            -0.18916324909732163,
+            0.01227391128499909,
+            -0.1809652738630863,
+            -0.07854506895561736,
+            -0.03400944275981735,
+            -0.1421170977658841,
+            -0.103025832423495,
+            -0.13755707882168777,
+            -0.09308012934024322,
+            -0.10646261140717239,
+            -0.15333692378942604,
+            -0.22765098252062596,
+            -0.2335815218644107,
+            -0.2896848431760029,
+            -0.37860521258783175,
+            0.00509439616421936,
+            -0.04641118545823371,
+            -0.24006110760680738,
+            -0.01506524641076634
+          ]
+        }
+      ]
+    },
+    {
+      "name": "spectral_N250_seed7102",
+      "N": 250,
+      "seed": 7102,
+      "trajectory_sha256": "cc618c97fdc38d34118bd92a60ea1313de1dfd8201537661371bfd21f8deb6b8",
+      "connectivity_sha256": "af05ff2de1256caa105c2bf78c75e3d669313f2ecf522061b3930c506f8c4c1d",
+      "record_sha256": "355dd54495ac7eff826ba459dd938a64710223aa4f2fbb8907a1dd54a618ae5c",
+      "mean_input_variance_full_half1_half2": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "fluctuating": false,
+      "final_drift_rms": 1.922347239836713e-15,
+      "attempts": [
+        {
+          "initial": "record_mean",
+          "residual_inf": 1.5543122344752192e-15,
+          "solver_status": "The solution converged.",
+          "nfev": 17,
+          "root_index": 0
+        },
+        {
+          "initial": "first_sample",
+          "residual_inf": 1.5543122344752192e-15,
+          "solver_status": "The solution converged.",
+          "nfev": 17,
+          "root_index": 0
+        },
+        {
+          "initial": "population_offset",
+          "residual_inf": 0.12006251147339309,
+          "solver_status": "The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations.",
+          "nfev": 94
+        }
+      ],
+      "roots": [
+        {
+          "index": 0,
+          "residual_inf": 1.5543122344752192e-15,
+          "max_eigenpair_residual": 1.3847986894369856e-10,
+          "spatial_vs_temporal_variance_max_abs_error": 1.5318063091283962e-25,
+          "variance_file": "modes/spectral_N250_seed7102_root0.npz",
+          "unstable_eigenvalues_with_conjugates": 0,
+          "representative_modes": 148
+        }
+      ]
+    },
+    {
+      "name": "spectral_N500_seed7101",
+      "N": 500,
+      "seed": 7101,
+      "trajectory_sha256": "9571dbe156ebb0dcc80f4c957429441c5a43388604e935fdb864f8f0283246ad",
+      "connectivity_sha256": "e4d843a8cda786ce2c892d1e5b75db733711475a028bc4087d7591608942b2b8",
+      "record_sha256": "e7c3bfc2cfb80ee317ae74135f942c78d152366c63708bc8c2a5fdc156a3a041",
+      "mean_input_variance_full_half1_half2": [
+        2.5257410465291947,
+        2.4566134506688733,
+        2.578753993148347
+      ],
+      "fluctuating": true,
+      "final_drift_rms": 0.6251192250158125,
+      "attempts": [
+        {
+          "initial": "record_mean",
+          "residual_inf": 0.36877976993533756,
+          "solver_status": "The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations.",
+          "nfev": 75
+        },
+        {
+          "initial": "first_sample",
+          "residual_inf": 0.5239101402310087,
+          "solver_status": "The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations.",
+          "nfev": 56
+        },
+        {
+          "initial": "population_offset",
+          "residual_inf": 1.129269456238334,
+          "solver_status": "The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations.",
+          "nfev": 116
+        },
+        {
+          "initial": "continuation_record_mean",
+          "steps": 350,
+          "min_lambda": 0.0,
+          "max_lambda": 0.9832663516618603
+        },
+        {
+          "initial": "continuation_population_offset",
+          "steps": 57,
+          "min_lambda": 0.0,
+          "max_lambda": 1.0100020648918233,
+          "residual_inf": 2.986499936241671e-14,
+          "root_index": 0
+        }
+      ],
+      "roots": [
+        {
+          "index": 0,
+          "residual_inf": 2.986499936241671e-14,
+          "max_eigenpair_residual": 1.1297560951942255e-13,
+          "spatial_vs_temporal_variance_max_abs_error": 2.842170943040401e-14,
+          "variance_file": "modes/spectral_N500_seed7101_root0.npz",
+          "unstable_eigenvalues_with_conjugates": 8,
+          "representative_modes": 274,
+          "real_part_variance_spearman": [
+            0.5026065904898022,
+            0.47276781612548036,
+            0.5259350868109993
+          ],
+          "half_variance_spearman": 0.9499087773540328,
+          "half_relative_l2": 0.1208601462046897,
+          "within_type_shuffle_full_spearman": [
+            -0.08221296951223958,
+            -0.06314590518970081,
+            -0.0019802095714504474,
+            -0.1643381436082166,
+            -0.19922238345596013,
+            -0.1794138708007321,
+            -0.05406943421541962,
+            -0.10024923981128361,
+            -0.09947337334198648,
+            -0.07380152694021307,
+            -0.04511138496539956,
+            -0.15935043059130652,
+            0.04405667325375355,
+            -0.018862597256757842,
+            0.03315487432275754,
+            -0.16575628750811236,
+            -0.21348549260958025,
+            -0.15019345617885765,
+            -0.1568402400519189,
+            -0.051516075165710204,
+            -0.07127966923587362,
+            -0.12267936443118924,
+            -0.1968469486717662,
+            -0.07990462092651875,
+            -0.16863749389296837,
+            0.01278575439159381,
+            0.009283854831300087,
+            0.0052475991162122555,
+            -0.06616128397150295,
+            -0.060604796663190824,
+            -0.00031122162509023823,
+            -0.058749134077601226
+          ]
+        }
+      ]
+    },
+    {
+      "name": "spectral_N500_seed7102",
+      "N": 500,
+      "seed": 7102,
+      "trajectory_sha256": "c97ad458a91ba752ed7e161473e3f8f06233a346d0632a62ab8427b8bc4c9a57",
+      "connectivity_sha256": "71d2151da9a43a490401344495a85acfcef463d56c3864a8e9fe11b5e9a5d09c",
+      "record_sha256": "83ae9126a130a6d67835e2c22f92e07053f46c1ce2e74326dd32ff73904edd12",
+      "mean_input_variance_full_half1_half2": [
+        2.43120718597416,
+        2.2113138376291217,
+        2.6071489088436746
+      ],
+      "fluctuating": true,
+      "final_drift_rms": 0.3519552035301284,
+      "attempts": [
+        {
+          "initial": "record_mean",
+          "residual_inf": 0.29466768079652994,
+          "solver_status": "The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations.",
+          "nfev": 103
+        },
+        {
+          "initial": "first_sample",
+          "residual_inf": 0.034178394935872936,
+          "solver_status": "The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations.",
+          "nfev": 122
+        },
+        {
+          "initial": "population_offset",
+          "residual_inf": 0.6725139517821703,
+          "solver_status": "The iteration is not making good progress, as measured by the \n improvement from the last five Jacobian evaluations.",
+          "nfev": 79
+        },
+        {
+          "initial": "continuation_record_mean",
+          "steps": 57,
+          "min_lambda": 0.0,
+          "max_lambda": 1.009956060697958,
+          "residual_inf": 3.552713678800501e-15,
+          "root_index": 0
+        },
+        {
+          "initial": "continuation_population_offset",
+          "steps": 92,
+          "min_lambda": 0.0,
+          "max_lambda": 1.003509639527018,
+          "residual_inf": 4.440892098500626e-15,
+          "root_index": 1
+        }
+      ],
+      "roots": [
+        {
+          "index": 0,
+          "residual_inf": 3.552713678800501e-15,
+          "max_eigenpair_residual": 1.0339408183686079e-10,
+          "spatial_vs_temporal_variance_max_abs_error": 5.417888360170764e-14,
+          "variance_file": "modes/spectral_N500_seed7102_root0.npz",
+          "unstable_eigenvalues_with_conjugates": 8,
+          "representative_modes": 280,
+          "real_part_variance_spearman": [
+            0.3127441494333929,
+            0.30629417649277596,
+            0.3190131798328331
+          ],
+          "half_variance_spearman": 0.9488566727345283,
+          "half_relative_l2": 0.1465609578394313,
+          "within_type_shuffle_full_spearman": [
+            -0.18015153254505797,
+            -0.17228791183561015,
+            -0.025499778605047804,
+            -0.14100781168856016,
+            -0.1629811240303721,
+            -0.13110134422268505,
+            -0.1732822758307777,
+            -0.15202398718642549,
+            0.007082451853431075,
+            0.11214993631478536,
+            -0.16859690265728605,
+            -0.12217776101371557,
+            -0.1242599668727553,
+            -0.1446605550726777,
+            -0.09240533315840399,
+            0.003852818822397516,
+            -0.2539613296816833,
+            -0.09999508011217344,
+            -0.15825912502528275,
+            -0.1943656351301857,
+            -0.15612717363377449,
+            -0.0871088005860133,
+            -0.10154375146913318,
+            -0.11099704260076203,
+            -0.1425340702231989,
+            0.003215420021756837,
+            0.057726137177405684,
+            -0.11097244316162926,
+            -0.22339679988629593,
+            -0.07198725202398717,
+            -0.14901082921976044,
+            -0.13186611345261326
+          ]
+        },
+        {
+          "index": 1,
+          "residual_inf": 4.440892098500626e-15,
+          "max_eigenpair_residual": 8.317039404418363e-12,
+          "spatial_vs_temporal_variance_max_abs_error": 4.440892098500626e-14,
+          "variance_file": "modes/spectral_N500_seed7102_root1.npz",
+          "unstable_eigenvalues_with_conjugates": 7,
+          "representative_modes": 281,
+          "real_part_variance_spearman": [
+            0.4560957933563369,
+            0.42648595441811155,
+            0.4702673906694501
+          ],
+          "half_variance_spearman": 0.9526695799846401,
+          "half_relative_l2": 0.12466811668939351,
+          "within_type_shuffle_full_spearman": [
+            0.02584451968112148,
+            -0.19922119222490234,
+            -0.17300944304427304,
+            -0.010715096972384772,
+            -0.09693506690175122,
+            0.06718893660288373,
+            -0.20664961221862863,
+            -0.020216551828575752,
+            -0.13513180239916062,
+            -0.01974602213112094,
+            -0.05419258185594219,
+            -0.18128103062228904,
+            -0.24795833378403226,
+            -0.12699001611699423,
+            0.03415612932535776,
+            -0.05477560600979999,
+            -0.04971011043926922,
+            -0.052595485078259355,
+            -0.10779186362210515,
+            -0.12832102023818537,
+            0.037429285335698594,
+            0.03778623889928501,
+            -0.024820711960107728,
+            0.012127226903481917,
+            0.048058929788315705,
+            -0.002835076636848424,
+            -0.14902216357126627,
+            -0.165705956797802,
+            -0.07731451935661823,
+            0.12025224718493438,
+            -0.02326796395850685,
+            -0.04407294832826747
+          ]
+        }
+      ]
+    }
+  ],
+  "source_sha256": {
+    "next_round/spectral_pilot/simulate.py": "69e5ce6c1fb98ebdb465d065ec8cddbce04717bf3b61521cfb62b118f9232ff6",
+    "next_round/spectral_pilot/analyze.py": "29780df0e6116ed1beb97ebc26bae20d0f459725172b1a72e8fb7cffd988643b",
+    "next_round/runtime/engine_v4.py": "117f57b8341a1e36fa351f37d96cd779879b5c037aa11d52f7d44a4bd923f546",
+    "next_round/runtime/mode_variance.py": "b55f23fac41a92e2ec5937b457c2ccf32d0ba2983ff0a0e5468253a109c70beb",
+    "recovered/bundle/ei_full/ei_balance_handoff/src/eicavity/network.py": "4fb0b526380727ac9eb5a80172270f5aa2dfaa1416f60853290b3432d2407899",
+    "recovered/bundle/ei_full/ei_balance_handoff/src/eicavity/single_site.py": "54ff30f3db22dfe7a51d76dacc058fe36a1be7c7a48588c1ca779b0e2dafcf35"
+  },
+  "analysis_peak_rss_bytes": 490651648
+}

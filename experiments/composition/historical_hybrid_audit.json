@@ -1,0 +1,187 @@
+[
+  {
+    "run": "checkpoint60_n1000_s11_t16000",
+    "source": "recovered/bundle/diagnosis/runs/checkpoint60_n1000_s11_t16000/hybrid/summary_2048.json",
+    "scope": "Prior short/own-block-centered heldout estimator, not correctedlongrecordnewcampaign; measuredsourcesarecalibrateddiagnostics.",
+    "heldout_energy": 1.1881581244726744,
+    "heldout_d": 0.013425424674528052,
+    "cases": {
+      "parameter_only_on_same_grid": {
+        "status": "regular",
+        "response_radius": 0.8558354994358974,
+        "dimension_fraction": 0.029924163403207086,
+        "covariance_energy": 0.7814702097062572,
+        "energy_prediction_over_heldout": 0.6577156639425308
+      },
+      "measured_spectra_only": {
+        "status": "regular",
+        "response_radius": 0.8558354994358974,
+        "dimension_fraction": 0.015494462127682185,
+        "covariance_energy": 0.9651818767654371,
+        "energy_prediction_over_heldout": 0.8123345343396965
+      },
+      "measured_gains_only": {
+        "status": "regular",
+        "response_radius": 0.7818770776398325,
+        "dimension_fraction": 0.04789693588828748,
+        "covariance_energy": 0.48823253129449107,
+        "energy_prediction_over_heldout": 0.41091545076222685
+      },
+      "measured_local_laws": {
+        "status": "regular",
+        "response_radius": 0.7818770776398325,
+        "dimension_fraction": 0.026932548278617005,
+        "covariance_energy": 0.5552751221740396,
+        "energy_prediction_over_heldout": 0.4673410977351862
+      }
+    }
+  },
+  {
+    "run": "checkpoint60_n1000_s22_t16000",
+    "source": "recovered/bundle/diagnosis/runs/checkpoint60_n1000_s22_t16000/hybrid/summary_2048.json",
+    "scope": "Prior short/own-block-centered heldout estimator, not correctedlongrecordnewcampaign; measuredsourcesarecalibrateddiagnostics.",
+    "heldout_energy": 0.44305227868594615,
+    "heldout_d": 0.01451367477409614,
+    "cases": {
+      "parameter_only_on_same_grid": {
+        "status": "regular",
+        "response_radius": 0.8558354994358974,
+        "dimension_fraction": 0.029924163403207086,
+        "covariance_energy": 0.7814702097062572,
+        "energy_prediction_over_heldout": 1.763832954485707
+      },
+      "measured_spectra_only": {
+        "status": "regular",
+        "response_radius": 0.8558354994358974,
+        "dimension_fraction": 0.022509409833680178,
+        "covariance_energy": 0.27317930601685797,
+        "energy_prediction_over_heldout": 0.6165848121289064
+      },
+      "measured_gains_only": {
+        "status": "regular",
+        "response_radius": 0.8888230639629706,
+        "dimension_fraction": 0.018936100778701385,
+        "covariance_energy": 1.2349343998153486,
+        "energy_prediction_over_heldout": 2.7873333672451808
+      },
+      "measured_local_laws": {
+        "status": "regular",
+        "response_radius": 0.8888230639629706,
+        "dimension_fraction": 0.014282320558727683,
+        "covariance_energy": 0.4305396263813849,
+        "energy_prediction_over_heldout": 0.9717580680508568
+      }
+    }
+  },
+  {
+    "run": "checkpoint60_n2000_s11_t8000",
+    "source": "recovered/bundle/diagnosis/runs/checkpoint60_n2000_s11_t8000/hybrid/summary_2048.json",
+    "scope": "Prior short/own-block-centered heldout estimator, not correctedlongrecordnewcampaign; measuredsourcesarecalibrateddiagnostics.",
+    "heldout_energy": 0.8932851320810796,
+    "heldout_d": 0.030074955688284857,
+    "cases": {
+      "parameter_only_on_same_grid": {
+        "status": "regular",
+        "response_radius": 0.8558354994358974,
+        "dimension_fraction": 0.029924163403207086,
+        "covariance_energy": 0.7814702097062572,
+        "energy_prediction_over_heldout": 0.8748272882205842
+      },
+      "measured_spectra_only": {
+        "status": "regular",
+        "response_radius": 0.8558354994358974,
+        "dimension_fraction": 0.028898434396489956,
+        "covariance_energy": 0.9291679982508718,
+        "energy_prediction_over_heldout": 1.0401695549171361
+      },
+      "measured_gains_only": {
+        "status": "regular",
+        "response_radius": 0.7851237284666668,
+        "dimension_fraction": 0.04550519611853441,
+        "covariance_energy": 0.5138938900312492,
+        "energy_prediction_over_heldout": 0.5752853949712948
+      },
+      "measured_local_laws": {
+        "status": "regular",
+        "response_radius": 0.7851237284666668,
+        "dimension_fraction": 0.04429417074729107,
+        "covariance_energy": 0.6062084465688499,
+        "energy_prediction_over_heldout": 0.6786281611522746
+      }
+    }
+  },
+  {
+    "run": "checkpoint60_n2000_s22_t8000",
+    "source": "recovered/bundle/diagnosis/runs/checkpoint60_n2000_s22_t8000/hybrid/summary_2048.json",
+    "scope": "Prior short/own-block-centered heldout estimator, not correctedlongrecordnewcampaign; measuredsourcesarecalibrateddiagnostics.",
+    "heldout_energy": 0.9108731353447556,
+    "heldout_d": 0.0270987693967736,
+    "cases": {
+      "parameter_only_on_same_grid": {
+        "status": "regular",
+        "response_radius": 0.8558354994358974,
+        "dimension_fraction": 0.029924163403207086,
+        "covariance_energy": 0.7814702097062572,
+        "energy_prediction_over_heldout": 0.8579352923944554
+      },
+      "measured_spectra_only": {
+        "status": "regular",
+        "response_radius": 0.8558354994358974,
+        "dimension_fraction": 0.025832805017630543,
+        "covariance_energy": 0.9773581179864177,
+        "energy_prediction_over_heldout": 1.072990386983472
+      },
+      "measured_gains_only": {
+        "status": "regular",
+        "response_radius": 0.7650352140992336,
+        "dimension_fraction": 0.0526926483090449,
+        "covariance_energy": 0.44379705709296163,
+        "energy_prediction_over_heldout": 0.48722158978263125
+      },
+      "measured_local_laws": {
+        "status": "regular",
+        "response_radius": 0.7650352140992336,
+        "dimension_fraction": 0.046576348520875895,
+        "covariance_energy": 0.54207559192892,
+        "energy_prediction_over_heldout": 0.5951164557331579
+      }
+    }
+  },
+  {
+    "run": "control80_n1000_s77_t8000",
+    "source": "recovered/bundle/diagnosis/runs/control80_n1000_s77_t8000/hybrid/summary_2048.json",
+    "scope": "Prior short/own-block-centered heldout estimator, not correctedlongrecordnewcampaign; measuredsourcesarecalibrateddiagnostics.",
+    "heldout_energy": 0.6517344540047881,
+    "heldout_d": 0.033753831232657815,
+    "cases": {
+      "parameter_only_on_same_grid": {
+        "status": "regular",
+        "response_radius": 0.8558354994358974,
+        "dimension_fraction": 0.03436072278673125,
+        "covariance_energy": 0.641254725412326,
+        "energy_prediction_over_heldout": 0.983920247689736
+      },
+      "measured_spectra_only": {
+        "status": "regular",
+        "response_radius": 0.8558354994358974,
+        "dimension_fraction": 0.033058293109720194,
+        "covariance_energy": 0.6706382832427163,
+        "energy_prediction_over_heldout": 1.0290054164265334
+      },
+      "measured_gains_only": {
+        "status": "regular",
+        "response_radius": 0.7920870257928279,
+        "dimension_fraction": 0.05099355919622545,
+        "covariance_energy": 0.4320933114471711,
+        "energy_prediction_over_heldout": 0.6629898247546027
+      },
+      "measured_local_laws": {
+        "status": "regular",
+        "response_radius": 0.7920870257928279,
+        "dimension_fraction": 0.048624262780927366,
+        "covariance_energy": 0.45594844363858217,
+        "energy_prediction_over_heldout": 0.6995923582631899
+      }
+    }
+  }
+]

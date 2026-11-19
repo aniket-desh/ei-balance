@@ -1,0 +1,27 @@
+{
+  "source": "recovered/bundle/ei_full/ei_balance_handoff/figures/closing_lag_validation.pdf",
+  "copied_to": "next_round/manuscript/figures/historical_lag_validation.pdf",
+  "sha256": "a36100462af5ca185f5344b68f388b29e287b049b5552d575f45cbe420d0fc85",
+  "bytes": 80362,
+  "unmodified_copy": true,
+  "network_seeds": {
+    "N1000": [
+      77,
+      88,
+      99
+    ],
+    "N2000": [
+      77,
+      88
+    ]
+  },
+  "record_duration": {
+    "N1000": 6000,
+    "N2000": 8000
+  },
+  "burn": 1000,
+  "dt": 0.05,
+  "sample_dt": 0.25,
+  "estimator": "8 separately centered blocks; products of block pairs whose index separation is at least2;12000 distinct sampled pairs perclass; withinclassorientationaverage",
+  "new_mean_difference_repair_applied": false
+}

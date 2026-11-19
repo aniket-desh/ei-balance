@@ -1,0 +1,55 @@
+\section{A frozen-source dimensionality diagnostic for variance concentration}
+\label{sec:source-concentration-diagnostic}
+
+The conditional closure assigns one centered input covariance kernel to each
+population. A useful diagnostic asks when an incoming connectivity row samples
+enough independent temporal directions for its local variance to concentrate.
+This calculation concerns an independent frozen reservoir, not the full
+endogenous network.
+
+Let $y_j(t)=(H*\delta r_j)(t)$ and
+$S_{jk}=\langle y_j(t)y_k(t)\rangle_t$. The filtered covariance $S$ is symmetric
+positive semidefinite. For a centered Gaussian row $w\sim{\cal N}(0,\Sigma)$,
+independent of $S$, set $q(w)=w^T S w$. Then
+\begin{align}
+ E_w q&=\sum_{jk}S_{jk}\Sigma_{jk}=\operatorname{tr}(\Sigma S),\\
+ E_w q^2&=\sum_{jklm}S_{jk}S_{lm}
+ (\Sigma_{jk}\Sigma_{lm}+\Sigma_{jl}\Sigma_{km}
+  +\Sigma_{jm}\Sigma_{kl})\\
+ &=[\operatorname{tr}(\Sigma S)]^2+2\operatorname{tr}(\Sigma S\Sigma S).
+\end{align}
+Consequently, with $B=\Sigma^{1/2}S\Sigma^{1/2}$,
+\begin{equation}
+ \frac{\operatorname{Var}_w q}{(E_w q)^2}
+ =\frac{2\operatorname{tr}B^2}{(\operatorname{tr}B)^2}
+ =\frac{2}{D_{\rm source}},\qquad
+ D_{\rm source}=\frac{(\operatorname{tr}B)^2}{\operatorname{tr}B^2}.
+\end{equation}
+The relevant dimension is that of the population-weighted, leak-filtered
+reservoir covariance. It is not automatically the participation ratio of the
+unfiltered whole-network rate covariance. Low source dimensionality makes
+row-to-row variance concentration weak even when the number of neurons is
+large. This explains why checking only $N$ can miss an important finite-size
+scale.
+
+For independent non-Gaussian centered entries with diagonal $\Sigma$ and
+fourth cumulants $\kappa_{4j}$, the exact frozen-row identity becomes
+\begin{equation}
+ \operatorname{Var}_w q
+ =2\operatorname{tr}(\Sigma S\Sigma S)
+  +\sum_j\kappa_{4j}S_{jj}^2.
+\end{equation}
+For Bernoulli synapses both terms can contribute at order $N^{-1}$.
+Fixed-count rows have additional inter-entry cumulants. For a full row
+$J=\bar j+w$, a Gaussian row adds
+$4\bar j^T S\Sigma S\bar j$; non-Gaussian rows can also give a mixed
+linear--quadratic third-moment contribution. The exact fixed-subset formulas
+are derived in the separate quadratic-variance note.
+
+This identity motivates a source-dimension diagnostic, but does not prove a
+validity bound for the strict Dale network. Conditioning on an endogenous
+operating point, retaining coherent feedback, and reinserting the neuron can
+change the fluctuations at the order being examined. Zero-lag concentration
+also does not establish concentration of the entire temporal kernel. The
+partial fixed-degree numerical candidate is retained with these missing
+terms and is not adopted as a repaired prediction.

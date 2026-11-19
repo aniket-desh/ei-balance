@@ -1,0 +1,421 @@
+{
+  "scope": "Exploratory deterministic conditional theory at fixed population size fractions and fixed edge moments. Networks have not tested this path.",
+  "G": [
+    [
+      16.0,
+      9.0
+    ],
+    [
+      25.0,
+      12.0
+    ]
+  ],
+  "J0": [
+    [
+      1.0,
+      -6.0
+    ],
+    [
+      2.0,
+      -10.0
+    ]
+  ],
+  "fractions": [
+    0.8,
+    0.2
+  ],
+  "mean_rates": [
+    0.3,
+    0.3
+  ],
+  "direct_source_budget": 1.4544,
+  "bernoulli_fraction_of_direct_source_to_I": 0.27722772277227725,
+  "control": "Both inputs to each target population share its chi. Sum_a f_a chi_a sum_b W_ab m_b² remains at its chi=1 value. Use predicted finite drive offset h at each point.",
+  "observables": "Scaled squared off-diagonal covariance is N times the within-type pair mean of C_ij², divided by the square of the population mean temporal variance. The diagonal cost plus f_a times that scaled pair mean equals 1/d_a.",
+  "numerics": {
+    "dt": 0.08,
+    "horizon": 100.0,
+    "n_hermite": 96,
+    "max_frequency": 12.0
+  },
+  "source_sha256": {
+    "next_round/degree/predictions.json": "61963ec8df3f2b6b8063bf1529bae0c8abc5402b1bc3ef92cc0619a7d4efc76a",
+    "pr-plots/degree_allocation.py": "edfb914ce49bfe4d35ecd57ad1bf4399038cc7434c27eb4da9f53961577e8c57",
+    "recovered/bundle/ei_full/ei_balance_handoff/src/eicavity/multitype.py": "cc3ea3e8c08c74fee8a4974ab16c4621b362411be91c47ca3cc7c25b971e2501",
+    "recovered/bundle/ei_full/ei_balance_handoff/src/eicavity/degree.py": "c6bac9219aaecd8f76cb1f212eff27b0035def399d043f449fe72137f4a24f57",
+    "recovered/bundle/ei_full/ei_balance_handoff/src/eicavity/pair.py": "23d11707d7ace8700ce7df42e5e294ab8e6bbd95b6655521690b97a9491e52d0",
+    "recovered/bundle/ei_full/ei_balance_handoff/src/eicavity/single_site.py": "54ff30f3db22dfe7a51d76dacc058fe36a1be7c7a48588c1ca779b0e2dafcf35"
+  },
+  "rows": [
+    {
+      "fraction_of_direct_source_to_I": 0.0,
+      "chi_by_target": [
+        1.3835616438356164,
+        0.0
+      ],
+      "mean_input_offset": [
+        -2.789987816609137,
+        -2.8933927648506708
+      ],
+      "static_input_variance": [
+        4.444034776845241,
+        4.04230849504068
+      ],
+      "dynamic_input_variance": [
+        1.802357195858376,
+        2.7511816567506195
+      ],
+      "mean_rate_variance_by_population": [
+        0.13034792175806748,
+        0.174148568467711
+      ],
+      "diagonal_inverse_dimension": [
+        2.3393814785458256,
+        2.0263338764133274
+      ],
+      "scaled_mean_squared_offdiagonal_covariance": [
+        31.803944171172617,
+        25.438595504193305
+      ],
+      "d_E": 0.03599383334363745,
+      "d_I": 0.14056684750558035,
+      "d_joint": 0.030764909101524913,
+      "response_radius": 0.8610855656687364,
+      "max_bvp_residual": 1.8729051341223745e-07,
+      "static_residual": 2.6272317654729704e-11
+    },
+    {
+      "fraction_of_direct_source_to_I": 0.125,
+      "chi_by_target": [
+        1.2106164383561644,
+        0.4508928571428571
+      ],
+      "mean_input_offset": [
+        -2.7383639070044756,
+        -3.046210038453254
+      ],
+      "static_input_variance": [
+        4.126419938227345,
+        4.804309779009006
+      ],
+      "dynamic_input_variance": [
+        1.8542890347121244,
+        2.8341615980653594
+      ],
+      "mean_rate_variance_by_population": [
+        0.13571653401043718,
+        0.1695022761335479
+      ],
+      "diagonal_inverse_dimension": [
+        2.2658849579101505,
+        2.119814576488271
+      ],
+      "scaled_mean_squared_offdiagonal_covariance": [
+        30.39115211290043,
+        24.500890417427552
+      ],
+      "d_E": 0.03762396157340554,
+      "d_I": 0.14245029139442644,
+      "d_joint": 0.031995082515720814,
+      "response_radius": 0.8592253118979855,
+      "max_bvp_residual": 1.913386449231482e-07,
+      "static_residual": 1.070787902790471e-11
+    },
+    {
+      "fraction_of_direct_source_to_I": 0.25,
+      "chi_by_target": [
+        1.0376712328767124,
+        0.9017857142857142
+      ],
+      "mean_input_offset": [
+        -2.683635572902726,
+        -3.189059669222648
+      ],
+      "static_input_variance": [
+        3.7819703840896945,
+        5.525752578681582
+      ],
+      "dynamic_input_variance": [
+        1.922497098171255,
+        2.9419040608467664
+      ],
+      "mean_rate_variance_by_population": [
+        0.14234040876105383,
+        0.16675111685396765
+      ],
+      "diagonal_inverse_dimension": [
+        2.182670980254166,
+        2.1932340220570166
+      ],
+      "scaled_mean_squared_offdiagonal_covariance": [
+        28.557348971014488,
+        23.158646732492347
+      ],
+      "d_E": 0.03995437185632154,
+      "d_I": 0.14652093293383517,
+      "d_joint": 0.033838193671575416,
+      "response_radius": 0.8565312919584886,
+      "max_bvp_residual": 1.991613766229504e-07,
+      "static_residual": 8.388489902699803e-11
+    },
+    {
+      "fraction_of_direct_source_to_I": 0.27722772277227725,
+      "chi_by_target": [
+        1.0,
+        1.0
+      ],
+      "mean_input_offset": [
+        -2.6712782365825896,
+        -3.218974921285835
+      ],
+      "static_input_variance": [
+        3.7033583765780396,
+        5.677453501537602
+      ],
+      "dynamic_input_variance": [
+        1.939507141434378,
+        2.968660604252773
+      ],
+      "mean_rate_variance_by_population": [
+        0.14395566172581542,
+        0.16636851242580675
+      ],
+      "diagonal_inverse_dimension": [
+        2.1633106100346873,
+        2.206821535903094
+      ],
+      "scaled_mean_squared_offdiagonal_covariance": [
+        28.111938650525758,
+        22.8239531446283
+      ],
+      "d_E": 0.040563242476522834,
+      "d_I": 0.14767532098101024,
+      "d_joint": 0.034326225162807464,
+      "response_radius": 0.8558354994358971,
+      "max_bvp_residual": 1.9822889817984764e-07,
+      "static_residual": 4.440892098500626e-16
+    },
+    {
+      "fraction_of_direct_source_to_I": 0.375,
+      "chi_by_target": [
+        0.8647260273972602,
+        1.3526785714285714
+      ],
+      "mean_input_offset": [
+        -2.6255155442941596,
+        -3.3230893831483237
+      ],
+      "static_input_variance": [
+        3.410143875912211,
+        6.205526353798015
+      ],
+      "dynamic_input_variance": [
+        2.0070682635159454,
+        3.0746663227056805
+      ],
+      "mean_rate_variance_by_population": [
+        0.15029162599517162,
+        0.16556829605402837
+      ],
+      "diagonal_inverse_dimension": [
+        2.09015932139869,
+        2.24898940965563
+      ],
+      "scaled_mean_squared_offdiagonal_covariance": [
+        26.397177771849382,
+        21.520254338388863
+      ],
+      "d_E": 0.04308877294764399,
+      "d_I": 0.152600923796996,
+      "d_joint": 0.03636417406053437,
+      "response_radius": 0.8530015158344164,
+      "max_bvp_residual": 1.9697059102338965e-07,
+      "static_residual": 1.7763568394002505e-15
+    },
+    {
+      "fraction_of_direct_source_to_I": 0.5,
+      "chi_by_target": [
+        0.6917808219178082,
+        1.8035714285714284
+      ],
+      "mean_input_offset": [
+        -2.5635129305588493,
+        -3.449010858863958
+      ],
+      "static_input_variance": [
+        3.008882831684215,
+        6.840243635105385
+      ],
+      "dynamic_input_variance": [
+        2.1088179745824696,
+        3.233802591625263
+      ],
+      "mean_rate_variance_by_population": [
+        0.15970234370479397,
+        0.16575038996249983
+      ],
+      "diagonal_inverse_dimension": [
+        1.9880320684009292,
+        2.2885528210461024
+      ],
+      "scaled_mean_squared_offdiagonal_covariance": [
+        23.975689456094273,
+        19.660796178860014
+      ],
+      "d_E": 0.0472398161976237,
+      "d_I": 0.16075330136908797,
+      "d_joint": 0.039736700999379385,
+      "response_radius": 0.8485344408350373,
+      "max_bvp_residual": 1.9446947686011947e-07,
+      "static_residual": 5.687272874865812e-11
+    },
+    {
+      "fraction_of_direct_source_to_I": 0.625,
+      "chi_by_target": [
+        0.5188356164383562,
+        2.2544642857142856
+      ],
+      "mean_input_offset": [
+        -2.4968634479202367,
+        -3.5671544451867168
+      ],
+      "static_input_variance": [
+        2.5744904277343212,
+        7.4240189978560265
+      ],
+      "dynamic_input_variance": [
+        2.2292341191815743,
+        3.4216893303288582
+      ],
+      "mean_rate_variance_by_population": [
+        0.1707705548691814,
+        0.1671827059711412
+      ],
+      "diagonal_inverse_dimension": [
+        1.8749740237277084,
+        2.312815585959513
+      ],
+      "scaled_mean_squared_offdiagonal_covariance": [
+        21.330103877148225,
+        17.62873459146868
+      ],
+      "d_E": 0.05280093900009479,
+      "d_I": 0.17127503546832368,
+      "d_joint": 0.04426702941820984,
+      "response_radius": 0.842893944260509,
+      "max_bvp_residual": 1.9573863713034168e-07,
+      "static_residual": 5.346123543858994e-11
+    },
+    {
+      "fraction_of_direct_source_to_I": 0.75,
+      "chi_by_target": [
+        0.3458904109589041,
+        2.705357142857143
+      ],
+      "mean_input_offset": [
+        -2.4243792645403874,
+        -3.6774364897397342
+      ],
+      "static_input_variance": [
+        2.101241919386369,
+        7.947845801239022
+      ],
+      "dynamic_input_variance": [
+        2.3704083444025166,
+        3.6416277808720725
+      ],
+      "mean_rate_variance_by_population": [
+        0.18376993966476646,
+        0.1698174989982382
+      ],
+      "diagonal_inverse_dimension": [
+        1.7480181055751816,
+        2.3222637250663354
+      ],
+      "scaled_mean_squared_offdiagonal_covariance": [
+        18.4672433280013,
+        15.447326263004346
+      ],
+      "d_E": 0.06052604602433655,
+      "d_I": 0.18478382862976686,
+      "d_joint": 0.05055388650823124,
+      "response_radius": 0.8356124882181069,
+      "max_bvp_residual": 1.885338648167854e-07,
+      "static_residual": 0.0
+    },
+    {
+      "fraction_of_direct_source_to_I": 0.875,
+      "chi_by_target": [
+        0.17294520547945205,
+        3.15625
+      ],
+      "mean_input_offset": [
+        -2.3441304838496815,
+        -3.7791988434840937
+      ],
+      "static_input_variance": [
+        1.58064265873629,
+        8.398426559141877
+      ],
+      "dynamic_input_variance": [
+        2.534771178341639,
+        3.89744143759951
+      ],
+      "mean_rate_variance_by_population": [
+        0.19905719650119474,
+        0.17365523822306023
+      ],
+      "diagonal_inverse_dimension": [
+        1.6009212338258165,
+        2.3171105820185045
+      ],
+      "scaled_mean_squared_offdiagonal_covariance": [
+        15.3549001491775,
+        13.110738667508135
+      ],
+      "d_E": 0.07202098854171285,
+      "d_I": 0.20245954678211525,
+      "d_joint": 0.059865363344857404,
+      "response_radius": 0.825752239589649,
+      "max_bvp_residual": 1.9949843879704903e-07,
+      "static_residual": 2.2808421817899216e-12
+    },
+    {
+      "fraction_of_direct_source_to_I": 1.0,
+      "chi_by_target": [
+        0.0,
+        3.6071428571428568
+      ],
+      "mean_input_offset": [
+        -2.252697177843174,
+        -3.870762118111965
+      ],
+      "static_input_variance": [
+        1.000146639830346,
+        8.756158639294226
+      ],
+      "dynamic_input_variance": [
+        2.7239942210451593,
+        4.191784648323024
+      ],
+      "mean_rate_variance_by_population": [
+        0.21704798502179853,
+        0.17870875625146573
+      ],
+      "diagonal_inverse_dimension": [
+        1.4196903425088403,
+        2.297534022696829
+      ],
+      "scaled_mean_squared_offdiagonal_covariance": [
+        11.903068542475319,
+        10.571610745957642
+      ],
+      "d_E": 0.09138975802922591,
+      "d_I": 0.2266619674439616,
+      "d_joint": 0.0753994611897851,
+      "response_radius": 0.8112576771030198,
+      "max_bvp_residual": 1.992026263821105e-07,
+      "static_residual": 1.7763568394002505e-15
+    }
+  ]
+}

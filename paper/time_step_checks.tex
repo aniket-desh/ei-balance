@@ -1,0 +1,21 @@
+\begin{table}[htp]
+\centering
+\small
+\caption{Selected time-step checks at the same connectivity and initial
+condition. Entries are percentage changes from midpoint step 0.05 to 0.025.
+The largest-size comparison uses matched 4000-time prefixes; the others use
+8000 recorded times. These changes combine integration and finite-trajectory
+sampling effects; one selected outlier is retained rather than averaged away.}
+\label{tab:time_step_checks}
+\begin{tabular}{rrrrrrr}
+\toprule
+Control&$N$&Seed&Duration&$\Delta\nu$(\%)&$\Delta\energy$(\%)&$\Delta d$(\%)\\
+\midrule
+$\chi=0$&4000&4001&4000&-0.054&-1.150&+1.054\\
+60:40&1000&3001&8000&-0.512&-1.504&+0.490\\
+80:20&1000&3001&8000&-10.833&-36.058&+24.344\\
+60:40&1000&3003&8000&-3.890&-7.577&-0.056\\
+80:20&1000&3003&8000&+1.486&+3.319&-0.314\\
+\bottomrule
+\end{tabular}
+\end{table}

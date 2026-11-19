@@ -1,0 +1,210 @@
+{
+  "scope": "Exact finite-pool moment identities only. Leading one-site degree closure does not determine the finite-N skewness corrections; replacing a Bernoulli static variance by chi is insufficient for a finite-size correction.",
+  "cases": [
+    {
+      "M": 8,
+      "p": 0.3,
+      "chi": 0.0,
+      "kappa111": 0.084,
+      "kappa112": -0.010285714285714287,
+      "kappa123": 0.0032857142857142876,
+      "centered_source_cubic_coefficient": 0.12142857142857144,
+      "rows": [
+        {
+          "source": "constant",
+          "third_moment_enumerated": 0.0012959999999999985,
+          "third_moment_formula": 0.0012960000000000055,
+          "absolute_error": -6.938893903907228e-18
+        },
+        {
+          "source": "noncentered",
+          "third_moment_enumerated": 0.039184653061224414,
+          "third_moment_formula": 0.039184653061224484,
+          "absolute_error": -6.938893903907228e-17
+        },
+        {
+          "source": "centered",
+          "third_moment_enumerated": 0.06377124466700587,
+          "third_moment_formula": 0.06377124466700586,
+          "absolute_error": 1.3877787807814457e-17
+        }
+      ]
+    },
+    {
+      "M": 8,
+      "p": 0.3,
+      "chi": 0.15,
+      "kappa111": 0.084,
+      "kappa112": -0.009857142857142854,
+      "kappa123": 0.003392857142857135,
+      "centered_source_cubic_coefficient": 0.12035714285714284,
+      "rows": [
+        {
+          "source": "constant",
+          "third_moment_enumerated": 0.004212000000000002,
+          "third_moment_formula": 0.004211999999999945,
+          "absolute_error": 5.724587470723463e-17
+        },
+        {
+          "source": "noncentered",
+          "third_moment_enumerated": 0.07187779591836732,
+          "third_moment_formula": 0.0718777959183669,
+          "absolute_error": 4.163336342344337e-16
+        },
+        {
+          "source": "centered",
+          "third_moment_enumerated": 0.06320855721406171,
+          "third_moment_formula": 0.06320855721406167,
+          "absolute_error": 4.163336342344337e-17
+        }
+      ]
+    },
+    {
+      "M": 8,
+      "p": 0.3,
+      "chi": 0.5,
+      "kappa111": 0.084,
+      "kappa112": -0.004857142857142855,
+      "kappa123": 0.0017142857142857099,
+      "centered_source_cubic_coefficient": 0.102,
+      "rows": [
+        {
+          "source": "constant",
+          "third_moment_enumerated": 0.01166399999999999,
+          "third_moment_formula": 0.011663999999999973,
+          "absolute_error": 1.734723475976807e-17
+        },
+        {
+          "source": "noncentered",
+          "third_moment_enumerated": 0.2186037551020405,
+          "third_moment_formula": 0.21860375510204053,
+          "absolute_error": -2.7755575615628914e-17
+        },
+        {
+          "source": "centered",
+          "third_moment_enumerated": 0.0535678455202849,
+          "third_moment_formula": 0.053567845520284915,
+          "absolute_error": -1.3877787807814457e-17
+        }
+      ]
+    },
+    {
+      "M": 8,
+      "p": 0.3,
+      "chi": 1.0,
+      "kappa111": 0.084,
+      "kappa112": -1.665334536937735e-17,
+      "kappa123": 2.7755575615628914e-17,
+      "centered_source_cubic_coefficient": 0.08400000000000012,
+      "rows": [
+        {
+          "source": "constant",
+          "third_moment_enumerated": 0.018143999999999966,
+          "third_moment_formula": 0.018144000000000177,
+          "absolute_error": -2.1163626406917047e-16
+        },
+        {
+          "source": "noncentered",
+          "third_moment_enumerated": 0.3544319999999995,
+          "third_moment_formula": 0.3544320000000012,
+          "absolute_error": -1.6653345369377348e-15
+        },
+        {
+          "source": "centered",
+          "third_moment_enumerated": 0.044114696310822876,
+          "third_moment_formula": 0.04411469631082293,
+          "absolute_error": -5.551115123125783e-17
+        }
+      ]
+    },
+    {
+      "M": 8,
+      "p": 0.3,
+      "chi": 2.0,
+      "kappa111": 0.084,
+      "kappa112": 0.011999999999999922,
+      "kappa123": 0.0030000000000001276,
+      "centered_source_cubic_coefficient": 0.05400000000000049,
+      "rows": [
+        {
+          "source": "constant",
+          "third_moment_enumerated": 0.09979200000000006,
+          "third_moment_formula": 0.0997920000000008,
+          "absolute_error": -7.355227538141662e-16
+        },
+        {
+          "source": "noncentered",
+          "third_moment_enumerated": 1.2698399999999999,
+          "third_moment_formula": 1.2698400000000054,
+          "absolute_error": -5.551115123125783e-15
+        },
+        {
+          "source": "centered",
+          "third_moment_enumerated": 0.028359447628386047,
+          "third_moment_formula": 0.02835944762838639,
+          "absolute_error": -3.434752482434078e-16
+        }
+      ]
+    },
+    {
+      "M": 8,
+      "p": 0.3,
+      "chi": 5.0,
+      "kappa111": 0.084,
+      "kappa112": 0.04799999999999996,
+      "kappa123": 0.03490909090909092,
+      "centered_source_cubic_coefficient": 0.009818181818181962,
+      "rows": [
+        {
+          "source": "constant",
+          "third_moment_enumerated": 0.552567272727272,
+          "third_moment_formula": 0.5525672727272726,
+          "absolute_error": -5.551115123125783e-16
+        },
+        {
+          "source": "noncentered",
+          "third_moment_enumerated": 5.851985454545446,
+          "third_moment_formula": 5.851985454545451,
+          "absolute_error": -5.329070518200751e-15
+        },
+        {
+          "source": "centered",
+          "third_moment_enumerated": 0.005156263205161132,
+          "third_moment_formula": 0.0051562632051611905,
+          "absolute_error": -5.811323644522304e-17
+        }
+      ]
+    },
+    {
+      "M": 8,
+      "p": 0.375,
+      "chi": 0.0,
+      "kappa111": 0.05859375,
+      "kappa112": -0.008370535714285716,
+      "kappa123": 0.0027901785714285754,
+      "centered_source_cubic_coefficient": 0.0892857142857143,
+      "rows": [
+        {
+          "source": "constant",
+          "third_moment_enumerated": 1.7105694144590052e-49,
+          "third_moment_formula": 1.3877787807814457e-17,
+          "absolute_error": -1.3877787807814457e-17
+        },
+        {
+          "source": "noncentered",
+          "third_moment_enumerated": -2.7755575615628914e-17,
+          "third_moment_formula": 1.1102230246251565e-16,
+          "absolute_error": -1.3877787807814457e-16
+        },
+        {
+          "source": "centered",
+          "third_moment_enumerated": 0.04689062107868078,
+          "third_moment_formula": 0.046890621078680784,
+          "absolute_error": -6.938893903907228e-18
+        }
+      ]
+    }
+  ],
+  "fixed_integer_count_centered_source_factor": 1.5238095238095237,
+  "status": "Exact enumeration and fixed-count cancellation pass."
+}

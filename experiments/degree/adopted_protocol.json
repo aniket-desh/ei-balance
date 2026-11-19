@@ -1,0 +1,1219 @@
+{
+  "selection": "Adopt sole-runner campaign controls before degree outcomes; all runs retained.",
+  "changes_from_initial_proposal": {
+    "burn": "500 common to composition and degree campaign, rather than initial degree-only proposal1000.",
+    "primary": "T8000 B500 gap0 follows the sole-runner timestamped campaign protocol. Gap1 and B1000 are sensitivity checks.",
+    "sizes": "Aslisted in campaign_jobs.json; no result-conditioned selection."
+  },
+  "jobs": [
+    {
+      "name": "degree_chi0.5_N1000_seed4001",
+      "experiment": "degree",
+      "config": {
+        "n": 1000,
+        "g": 4.0,
+        "mean_rate": 0.3,
+        "seed": 4001,
+        "fraction_e": 0.8,
+        "ensemble": "degree",
+        "dt": 0.05,
+        "burn": 500.0,
+        "duration": 8000.0,
+        "sample_dt": 0.25,
+        "variance_profile": [
+          [
+            16.0,
+            9.0
+          ],
+          [
+            25.0,
+            12.0
+          ]
+        ],
+        "mean_connectivity": [
+          [
+            1.0,
+            -6.0
+          ],
+          [
+            2.0,
+            -10.0
+          ]
+        ],
+        "degree_dispersion": 0.5
+      },
+      "mean_input": [
+        -2.4574311353731924,
+        -2.9459992543883895
+      ],
+      "blocks": [
+        500.0
+      ],
+      "prefixes": [
+        4000.0,
+        8000.0
+      ],
+      "retain_temporary_trajectory": false
+    },
+    {
+      "name": "degree_chi0.5_N1000_seed4002",
+      "experiment": "degree",
+      "config": {
+        "n": 1000,
+        "g": 4.0,
+        "mean_rate": 0.3,
+        "seed": 4002,
+        "fraction_e": 0.8,
+        "ensemble": "degree",
+        "dt": 0.05,
+        "burn": 500.0,
+        "duration": 8000.0,
+        "sample_dt": 0.25,
+        "variance_profile": [
+          [
+            16.0,
+            9.0
+          ],
+          [
+            25.0,
+            12.0
+          ]
+        ],
+        "mean_connectivity": [
+          [
+            1.0,
+            -6.0
+          ],
+          [
+            2.0,
+            -10.0
+          ]
+        ],
+        "degree_dispersion": 0.5
+      },
+      "mean_input": [
+        -2.4574311353731924,
+        -2.9459992543883895
+      ],
+      "blocks": [
+        500.0
+      ],
+      "prefixes": [
+        4000.0,
+        8000.0
+      ],
+      "retain_temporary_trajectory": false
+    },
+    {
+      "name": "degree_chi0.5_N1000_seed4003",
+      "experiment": "degree",
+      "config": {
+        "n": 1000,
+        "g": 4.0,
+        "mean_rate": 0.3,
+        "seed": 4003,
+        "fraction_e": 0.8,
+        "ensemble": "degree",
+        "dt": 0.05,
+        "burn": 500.0,
+        "duration": 8000.0,
+        "sample_dt": 0.25,
+        "variance_profile": [
+          [
+            16.0,
+            9.0
+          ],
+          [
+            25.0,
+            12.0
+          ]
+        ],
+        "mean_connectivity": [
+          [
+            1.0,
+            -6.0
+          ],
+          [
+            2.0,
+            -10.0
+          ]
+        ],
+        "degree_dispersion": 0.5
+      },
+      "mean_input": [
+        -2.4574311353731924,
+        -2.9459992543883895
+      ],
+      "blocks": [
+        500.0
+      ],
+      "prefixes": [
+        4000.0,
+        8000.0
+      ],
+      "retain_temporary_trajectory": false
+    },
+    {
+      "name": "degree_chi0_N1000_seed4001",
+      "experiment": "degree",
+      "config": {
+        "n": 1000,
+        "g": 4.0,
+        "mean_rate": 0.3,
+        "seed": 4001,
+        "fraction_e": 0.8,
+        "ensemble": "degree",
+        "dt": 0.05,
+        "burn": 500.0,
+        "duration": 8000.0,
+        "sample_dt": 0.25,
+        "variance_profile": [
+          [
+            16.0,
+            9.0
+          ],
+          [
+            25.0,
+            12.0
+          ]
+        ],
+        "mean_connectivity": [
+          [
+            1.0,
+            -6.0
+          ],
+          [
+            2.0,
+            -10.0
+          ]
+        ],
+        "degree_dispersion": 0.0
+      },
+      "mean_input": [
+        -2.1353610549010207,
+        -2.5317224347376492
+      ],
+      "blocks": [
+        500.0,
+        1000.0
+      ],
+      "prefixes": [
+        4000.0,
+        8000.0
+      ],
+      "retain_temporary_trajectory": true
+    },
+    {
+      "name": "degree_chi0_N1000_seed4002",
+      "experiment": "degree",
+      "config": {
+        "n": 1000,
+        "g": 4.0,
+        "mean_rate": 0.3,
+        "seed": 4002,
+        "fraction_e": 0.8,
+        "ensemble": "degree",
+        "dt": 0.05,
+        "burn": 500.0,
+        "duration": 8000.0,
+        "sample_dt": 0.25,
+        "variance_profile": [
+          [
+            16.0,
+            9.0
+          ],
+          [
+            25.0,
+            12.0
+          ]
+        ],
+        "mean_connectivity": [
+          [
+            1.0,
+            -6.0
+          ],
+          [
+            2.0,
+            -10.0
+          ]
+        ],
+        "degree_dispersion": 0.0
+      },
+      "mean_input": [
+        -2.1353610549010207,
+        -2.5317224347376492
+      ],
+      "blocks": [
+        500.0
+      ],
+      "prefixes": [
+        4000.0,
+        8000.0
+      ],
+      "retain_temporary_trajectory": false
+    },
+    {
+      "name": "degree_chi0_N1000_seed4003",
+      "experiment": "degree",
+      "config": {
+        "n": 1000,
+        "g": 4.0,
+        "mean_rate": 0.3,
+        "seed": 4003,
+        "fraction_e": 0.8,
+        "ensemble": "degree",
+        "dt": 0.05,
+        "burn": 500.0,
+        "duration": 8000.0,
+        "sample_dt": 0.25,
+        "variance_profile": [
+          [
+            16.0,
+            9.0
+          ],
+          [
+            25.0,
+            12.0
+          ]
+        ],
+        "mean_connectivity": [
+          [
+            1.0,
+            -6.0
+          ],
+          [
+            2.0,
+            -10.0
+          ]
+        ],
+        "degree_dispersion": 0.0
+      },
+      "mean_input": [
+        -2.1353610549010207,
+        -2.5317224347376492
+      ],
+      "blocks": [
+        500.0
+      ],
+      "prefixes": [
+        4000.0,
+        8000.0
+      ],
+      "retain_temporary_trajectory": false
+    },
+    {
+      "name": "degree_chi0_N2000_seed4001",
+      "experiment": "degree",
+      "config": {
+        "n": 2000,
+        "g": 4.0,
+        "mean_rate": 0.3,
+        "seed": 4001,
+        "fraction_e": 0.8,
+        "ensemble": "degree",
+        "dt": 0.05,
+        "burn": 500.0,
+        "duration": 8000.0,
+        "sample_dt": 0.25,
+        "variance_profile": [
+          [
+            16.0,
+            9.0
+          ],
+          [
+            25.0,
+            12.0
+          ]
+        ],
+        "mean_connectivity": [
+          [
+            1.0,
+            -6.0
+          ],
+          [
+            2.0,
+            -10.0
+          ]
+        ],
+        "degree_dispersion": 0.0
+      },
+      "mean_input": [
+        -2.1353610549010207,
+        -2.5317224347376492
+      ],
+      "blocks": [
+        500.0,
+        1000.0
+      ],
+      "prefixes": [
+        4000.0,
+        8000.0
+      ],
+      "retain_temporary_trajectory": true
+    },
+    {
+      "name": "degree_chi0_N2000_seed4002",
+      "experiment": "degree",
+      "config": {
+        "n": 2000,
+        "g": 4.0,
+        "mean_rate": 0.3,
+        "seed": 4002,
+        "fraction_e": 0.8,
+        "ensemble": "degree",
+        "dt": 0.05,
+        "burn": 500.0,
+        "duration": 8000.0,
+        "sample_dt": 0.25,
+        "variance_profile": [
+          [
+            16.0,
+            9.0
+          ],
+          [
+            25.0,
+            12.0
+          ]
+        ],
+        "mean_connectivity": [
+          [
+            1.0,
+            -6.0
+          ],
+          [
+            2.0,
+            -10.0
+          ]
+        ],
+        "degree_dispersion": 0.0
+      },
+      "mean_input": [
+        -2.1353610549010207,
+        -2.5317224347376492
+      ],
+      "blocks": [
+        500.0
+      ],
+      "prefixes": [
+        4000.0,
+        8000.0
+      ],
+      "retain_temporary_trajectory": false
+    },
+    {
+      "name": "degree_chi0_N2000_seed4003",
+      "experiment": "degree",
+      "config": {
+        "n": 2000,
+        "g": 4.0,
+        "mean_rate": 0.3,
+        "seed": 4003,
+        "fraction_e": 0.8,
+        "ensemble": "degree",
+        "dt": 0.05,
+        "burn": 500.0,
+        "duration": 8000.0,
+        "sample_dt": 0.25,
+        "variance_profile": [
+          [
+            16.0,
+            9.0
+          ],
+          [
+            25.0,
+            12.0
+          ]
+        ],
+        "mean_connectivity": [
+          [
+            1.0,
+            -6.0
+          ],
+          [
+            2.0,
+            -10.0
+          ]
+        ],
+        "degree_dispersion": 0.0
+      },
+      "mean_input": [
+        -2.1353610549010207,
+        -2.5317224347376492
+      ],
+      "blocks": [
+        500.0
+      ],
+      "prefixes": [
+        4000.0,
+        8000.0
+      ],
+      "retain_temporary_trajectory": false
+    },
+    {
+      "name": "degree_chi1_N1000_seed4001",
+      "experiment": "degree",
+      "config": {
+        "n": 1000,
+        "g": 4.0,
+        "mean_rate": 0.3,
+        "seed": 4001,
+        "fraction_e": 0.8,
+        "ensemble": "degree",
+        "dt": 0.05,
+        "burn": 500.0,
+        "duration": 8000.0,
+        "sample_dt": 0.25,
+        "variance_profile": [
+          [
+            16.0,
+            9.0
+          ],
+          [
+            25.0,
+            12.0
+          ]
+        ],
+        "mean_connectivity": [
+          [
+            1.0,
+            -6.0
+          ],
+          [
+            2.0,
+            -10.0
+          ]
+        ],
+        "degree_dispersion": 1.0
+      },
+      "mean_input": [
+        -2.6712782365825896,
+        -3.2189749212858354
+      ],
+      "blocks": [
+        500.0
+      ],
+      "prefixes": [
+        4000.0,
+        8000.0
+      ],
+      "retain_temporary_trajectory": false
+    },
+    {
+      "name": "degree_chi1_N1000_seed4002",
+      "experiment": "degree",
+      "config": {
+        "n": 1000,
+        "g": 4.0,
+        "mean_rate": 0.3,
+        "seed": 4002,
+        "fraction_e": 0.8,
+        "ensemble": "degree",
+        "dt": 0.05,
+        "burn": 500.0,
+        "duration": 8000.0,
+        "sample_dt": 0.25,
+        "variance_profile": [
+          [
+            16.0,
+            9.0
+          ],
+          [
+            25.0,
+            12.0
+          ]
+        ],
+        "mean_connectivity": [
+          [
+            1.0,
+            -6.0
+          ],
+          [
+            2.0,
+            -10.0
+          ]
+        ],
+        "degree_dispersion": 1.0
+      },
+      "mean_input": [
+        -2.6712782365825896,
+        -3.2189749212858354
+      ],
+      "blocks": [
+        500.0
+      ],
+      "prefixes": [
+        4000.0,
+        8000.0
+      ],
+      "retain_temporary_trajectory": false
+    },
+    {
+      "name": "degree_chi1_N1000_seed4003",
+      "experiment": "degree",
+      "config": {
+        "n": 1000,
+        "g": 4.0,
+        "mean_rate": 0.3,
+        "seed": 4003,
+        "fraction_e": 0.8,
+        "ensemble": "degree",
+        "dt": 0.05,
+        "burn": 500.0,
+        "duration": 8000.0,
+        "sample_dt": 0.25,
+        "variance_profile": [
+          [
+            16.0,
+            9.0
+          ],
+          [
+            25.0,
+            12.0
+          ]
+        ],
+        "mean_connectivity": [
+          [
+            1.0,
+            -6.0
+          ],
+          [
+            2.0,
+            -10.0
+          ]
+        ],
+        "degree_dispersion": 1.0
+      },
+      "mean_input": [
+        -2.6712782365825896,
+        -3.2189749212858354
+      ],
+      "blocks": [
+        500.0
+      ],
+      "prefixes": [
+        4000.0,
+        8000.0
+      ],
+      "retain_temporary_trajectory": false
+    },
+    {
+      "name": "degree_chi2_N1000_seed4001",
+      "experiment": "degree",
+      "config": {
+        "n": 1000,
+        "g": 4.0,
+        "mean_rate": 0.3,
+        "seed": 4001,
+        "fraction_e": 0.8,
+        "ensemble": "degree",
+        "dt": 0.05,
+        "burn": 500.0,
+        "duration": 8000.0,
+        "sample_dt": 0.25,
+        "variance_profile": [
+          [
+            16.0,
+            9.0
+          ],
+          [
+            25.0,
+            12.0
+          ]
+        ],
+        "mean_connectivity": [
+          [
+            1.0,
+            -6.0
+          ],
+          [
+            2.0,
+            -10.0
+          ]
+        ],
+        "degree_dispersion": 2.0
+      },
+      "mean_input": [
+        -3.001289520343916,
+        -3.637918993939567
+      ],
+      "blocks": [
+        500.0,
+        1000.0
+      ],
+      "prefixes": [
+        4000.0,
+        8000.0
+      ],
+      "retain_temporary_trajectory": true
+    },
+    {
+      "name": "degree_chi2_N1000_seed4002",
+      "experiment": "degree",
+      "config": {
+        "n": 1000,
+        "g": 4.0,
+        "mean_rate": 0.3,
+        "seed": 4002,
+        "fraction_e": 0.8,
+        "ensemble": "degree",
+        "dt": 0.05,
+        "burn": 500.0,
+        "duration": 8000.0,
+        "sample_dt": 0.25,
+        "variance_profile": [
+          [
+            16.0,
+            9.0
+          ],
+          [
+            25.0,
+            12.0
+          ]
+        ],
+        "mean_connectivity": [
+          [
+            1.0,
+            -6.0
+          ],
+          [
+            2.0,
+            -10.0
+          ]
+        ],
+        "degree_dispersion": 2.0
+      },
+      "mean_input": [
+        -3.001289520343916,
+        -3.637918993939567
+      ],
+      "blocks": [
+        500.0
+      ],
+      "prefixes": [
+        4000.0,
+        8000.0
+      ],
+      "retain_temporary_trajectory": false
+    },
+    {
+      "name": "degree_chi2_N1000_seed4003",
+      "experiment": "degree",
+      "config": {
+        "n": 1000,
+        "g": 4.0,
+        "mean_rate": 0.3,
+        "seed": 4003,
+        "fraction_e": 0.8,
+        "ensemble": "degree",
+        "dt": 0.05,
+        "burn": 500.0,
+        "duration": 8000.0,
+        "sample_dt": 0.25,
+        "variance_profile": [
+          [
+            16.0,
+            9.0
+          ],
+          [
+            25.0,
+            12.0
+          ]
+        ],
+        "mean_connectivity": [
+          [
+            1.0,
+            -6.0
+          ],
+          [
+            2.0,
+            -10.0
+          ]
+        ],
+        "degree_dispersion": 2.0
+      },
+      "mean_input": [
+        -3.001289520343916,
+        -3.637918993939567
+      ],
+      "blocks": [
+        500.0
+      ],
+      "prefixes": [
+        4000.0,
+        8000.0
+      ],
+      "retain_temporary_trajectory": false
+    },
+    {
+      "name": "degree_chi2_N2000_seed4001",
+      "experiment": "degree",
+      "config": {
+        "n": 2000,
+        "g": 4.0,
+        "mean_rate": 0.3,
+        "seed": 4001,
+        "fraction_e": 0.8,
+        "ensemble": "degree",
+        "dt": 0.05,
+        "burn": 500.0,
+        "duration": 8000.0,
+        "sample_dt": 0.25,
+        "variance_profile": [
+          [
+            16.0,
+            9.0
+          ],
+          [
+            25.0,
+            12.0
+          ]
+        ],
+        "mean_connectivity": [
+          [
+            1.0,
+            -6.0
+          ],
+          [
+            2.0,
+            -10.0
+          ]
+        ],
+        "degree_dispersion": 2.0
+      },
+      "mean_input": [
+        -3.001289520343916,
+        -3.637918993939567
+      ],
+      "blocks": [
+        500.0,
+        1000.0
+      ],
+      "prefixes": [
+        4000.0,
+        8000.0
+      ],
+      "retain_temporary_trajectory": true
+    },
+    {
+      "name": "degree_chi2_N2000_seed4002",
+      "experiment": "degree",
+      "config": {
+        "n": 2000,
+        "g": 4.0,
+        "mean_rate": 0.3,
+        "seed": 4002,
+        "fraction_e": 0.8,
+        "ensemble": "degree",
+        "dt": 0.05,
+        "burn": 500.0,
+        "duration": 8000.0,
+        "sample_dt": 0.25,
+        "variance_profile": [
+          [
+            16.0,
+            9.0
+          ],
+          [
+            25.0,
+            12.0
+          ]
+        ],
+        "mean_connectivity": [
+          [
+            1.0,
+            -6.0
+          ],
+          [
+            2.0,
+            -10.0
+          ]
+        ],
+        "degree_dispersion": 2.0
+      },
+      "mean_input": [
+        -3.001289520343916,
+        -3.637918993939567
+      ],
+      "blocks": [
+        500.0
+      ],
+      "prefixes": [
+        4000.0,
+        8000.0
+      ],
+      "retain_temporary_trajectory": false
+    },
+    {
+      "name": "degree_chi2_N2000_seed4003",
+      "experiment": "degree",
+      "config": {
+        "n": 2000,
+        "g": 4.0,
+        "mean_rate": 0.3,
+        "seed": 4003,
+        "fraction_e": 0.8,
+        "ensemble": "degree",
+        "dt": 0.05,
+        "burn": 500.0,
+        "duration": 8000.0,
+        "sample_dt": 0.25,
+        "variance_profile": [
+          [
+            16.0,
+            9.0
+          ],
+          [
+            25.0,
+            12.0
+          ]
+        ],
+        "mean_connectivity": [
+          [
+            1.0,
+            -6.0
+          ],
+          [
+            2.0,
+            -10.0
+          ]
+        ],
+        "degree_dispersion": 2.0
+      },
+      "mean_input": [
+        -3.001289520343916,
+        -3.637918993939567
+      ],
+      "blocks": [
+        500.0
+      ],
+      "prefixes": [
+        4000.0,
+        8000.0
+      ],
+      "retain_temporary_trajectory": false
+    },
+    {
+      "name": "degree_chi0_N4000_seed4001",
+      "experiment": "degree",
+      "config": {
+        "n": 4000,
+        "g": 4.0,
+        "mean_rate": 0.3,
+        "seed": 4001,
+        "fraction_e": 0.8,
+        "ensemble": "degree",
+        "dt": 0.05,
+        "burn": 500.0,
+        "duration": 8000.0,
+        "sample_dt": 0.25,
+        "variance_profile": [
+          [
+            16.0,
+            9.0
+          ],
+          [
+            25.0,
+            12.0
+          ]
+        ],
+        "mean_connectivity": [
+          [
+            1.0,
+            -6.0
+          ],
+          [
+            2.0,
+            -10.0
+          ]
+        ],
+        "degree_dispersion": 0.0
+      },
+      "mean_input": [
+        -2.1353610549010207,
+        -2.5317224347376492
+      ],
+      "blocks": [
+        500.0,
+        1000.0
+      ],
+      "prefixes": [
+        4000.0,
+        8000.0
+      ],
+      "retain_temporary_trajectory": true,
+      "native_library": "/workspace/scratch/f157098d3e38/next_round/runtime/tmp/constant_csr.so"
+    },
+    {
+      "name": "degree_chi2_N4000_seed4001",
+      "experiment": "degree",
+      "config": {
+        "n": 4000,
+        "g": 4.0,
+        "mean_rate": 0.3,
+        "seed": 4001,
+        "fraction_e": 0.8,
+        "ensemble": "degree",
+        "dt": 0.05,
+        "burn": 500.0,
+        "duration": 8000.0,
+        "sample_dt": 0.25,
+        "variance_profile": [
+          [
+            16.0,
+            9.0
+          ],
+          [
+            25.0,
+            12.0
+          ]
+        ],
+        "mean_connectivity": [
+          [
+            1.0,
+            -6.0
+          ],
+          [
+            2.0,
+            -10.0
+          ]
+        ],
+        "degree_dispersion": 2.0
+      },
+      "mean_input": [
+        -3.001289520343916,
+        -3.637918993939567
+      ],
+      "blocks": [
+        500.0,
+        1000.0
+      ],
+      "prefixes": [
+        4000.0,
+        8000.0
+      ],
+      "retain_temporary_trajectory": true,
+      "native_library": "/workspace/scratch/f157098d3e38/next_round/runtime/tmp/constant_csr.so"
+    },
+    {
+      "name": "degree_chi0_N4000_seed4002",
+      "experiment": "degree",
+      "config": {
+        "n": 4000,
+        "g": 4.0,
+        "mean_rate": 0.3,
+        "seed": 4002,
+        "fraction_e": 0.8,
+        "ensemble": "degree",
+        "dt": 0.05,
+        "burn": 500.0,
+        "duration": 8000.0,
+        "sample_dt": 0.25,
+        "variance_profile": [
+          [
+            16.0,
+            9.0
+          ],
+          [
+            25.0,
+            12.0
+          ]
+        ],
+        "mean_connectivity": [
+          [
+            1.0,
+            -6.0
+          ],
+          [
+            2.0,
+            -10.0
+          ]
+        ],
+        "degree_dispersion": 0.0
+      },
+      "mean_input": [
+        -2.1353610549010207,
+        -2.5317224347376492
+      ],
+      "blocks": [
+        500.0
+      ],
+      "prefixes": [
+        4000.0,
+        8000.0
+      ],
+      "retain_temporary_trajectory": false,
+      "native_library": "/workspace/scratch/f157098d3e38/next_round/runtime/tmp/constant_csr.so"
+    },
+    {
+      "name": "degree_chi2_N4000_seed4002",
+      "experiment": "degree",
+      "config": {
+        "n": 4000,
+        "g": 4.0,
+        "mean_rate": 0.3,
+        "seed": 4002,
+        "fraction_e": 0.8,
+        "ensemble": "degree",
+        "dt": 0.05,
+        "burn": 500.0,
+        "duration": 8000.0,
+        "sample_dt": 0.25,
+        "variance_profile": [
+          [
+            16.0,
+            9.0
+          ],
+          [
+            25.0,
+            12.0
+          ]
+        ],
+        "mean_connectivity": [
+          [
+            1.0,
+            -6.0
+          ],
+          [
+            2.0,
+            -10.0
+          ]
+        ],
+        "degree_dispersion": 2.0
+      },
+      "mean_input": [
+        -3.001289520343916,
+        -3.637918993939567
+      ],
+      "blocks": [
+        500.0
+      ],
+      "prefixes": [
+        4000.0,
+        8000.0
+      ],
+      "retain_temporary_trajectory": false,
+      "native_library": "/workspace/scratch/f157098d3e38/next_round/runtime/tmp/constant_csr.so"
+    },
+    {
+      "name": "degree_chi0_N4000_seed4003",
+      "experiment": "degree",
+      "config": {
+        "n": 4000,
+        "g": 4.0,
+        "mean_rate": 0.3,
+        "seed": 4003,
+        "fraction_e": 0.8,
+        "ensemble": "degree",
+        "dt": 0.05,
+        "burn": 500.0,
+        "duration": 8000.0,
+        "sample_dt": 0.25,
+        "variance_profile": [
+          [
+            16.0,
+            9.0
+          ],
+          [
+            25.0,
+            12.0
+          ]
+        ],
+        "mean_connectivity": [
+          [
+            1.0,
+            -6.0
+          ],
+          [
+            2.0,
+            -10.0
+          ]
+        ],
+        "degree_dispersion": 0.0
+      },
+      "mean_input": [
+        -2.1353610549010207,
+        -2.5317224347376492
+      ],
+      "blocks": [
+        500.0
+      ],
+      "prefixes": [
+        4000.0,
+        8000.0
+      ],
+      "retain_temporary_trajectory": false,
+      "native_library": "/workspace/scratch/f157098d3e38/next_round/runtime/tmp/constant_csr.so"
+    },
+    {
+      "name": "degree_chi2_N4000_seed4003",
+      "experiment": "degree",
+      "config": {
+        "n": 4000,
+        "g": 4.0,
+        "mean_rate": 0.3,
+        "seed": 4003,
+        "fraction_e": 0.8,
+        "ensemble": "degree",
+        "dt": 0.05,
+        "burn": 500.0,
+        "duration": 8000.0,
+        "sample_dt": 0.25,
+        "variance_profile": [
+          [
+            16.0,
+            9.0
+          ],
+          [
+            25.0,
+            12.0
+          ]
+        ],
+        "mean_connectivity": [
+          [
+            1.0,
+            -6.0
+          ],
+          [
+            2.0,
+            -10.0
+          ]
+        ],
+        "degree_dispersion": 2.0
+      },
+      "mean_input": [
+        -3.001289520343916,
+        -3.637918993939567
+      ],
+      "blocks": [
+        500.0
+      ],
+      "prefixes": [
+        4000.0,
+        8000.0
+      ],
+      "retain_temporary_trajectory": false,
+      "native_library": "/workspace/scratch/f157098d3e38/next_round/runtime/tmp/constant_csr.so"
+    }
+  ],
+  "main_estimator": {
+    "block_duration": 500.0,
+    "duration": 8000.0,
+    "empty_blocks": 0
+  },
+  "created_unix": 1794402169.9473765,
+  "editorial_correction": "An intermediate scope draft followed a root message calling gap1 primary. The runner campaign protocol prespecified gap0 and remains authoritative. The draft is retained alongside this record; the estimator choice was not changed on observing degree results.",
+  "sensitivity_coverage": "T4000 and gap1 cover all24scheduleddegree networks; B1000 covers endpointseed4001 at allthree sizes (sixrecords). Final executed job metadata determines coverage.",
+  "stages": [
+    {
+      "name": "initial_nonuniform_degree_test",
+      "networks": 18,
+      "selection": "Fresh seedlabels4001..4003, alloutcomesretained."
+    },
+    {
+      "name": "N4000_endpoint_extension",
+      "networks": 6,
+      "selection": "Authorized after N2000 endpoint residuals; all sixjobs sealed before their outcomes. This is a staged extension, not part of the original18-network protocol.",
+      "protocol_source": "../runtime/degree_extension_protocol.json"
+    }
+  ]
+}

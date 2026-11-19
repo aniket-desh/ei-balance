@@ -1,0 +1,60 @@
+\section{A partial fixed-degree source and why it is not a repair}
+At nominal zero degree dispersion, the leading conditional law has
+$\Delta_a=0$. Finite-network temporal variances can still vary across neurons.
+Write their shifts as $\delta q_i$ and the mean-input shifts as $\delta\mu_i$.
+For $m(\mu,q)=E_Y\phi(\mu+\sqrt qY)$, Gaussian differentiation gives
+\begin{equation}
+ \partial_\mu m=\alpha,\qquad
+ \partial_q m=\tfrac12 E_Y\phi''(\mu+\sqrt qY)=\tfrac12\beta.
+\end{equation}
+Therefore
+\begin{align}
+ \delta m_i&=\alpha_a\delta\mu_i+\tfrac12\beta_a\delta q_i+\cdots,\\
+ \operatorname{Var}_i m_i
+ &=\alpha_a^2\Delta_a+\alpha_a\beta_a
+     \operatorname{Cov}_i(\mu_i,q_i)
+       +\tfrac14\beta_a^2\operatorname{Var}_i q_i+\cdots.
+ \label{eq:partial-static-mixed}
+\end{align}
+Here the reference values are common within each population. For positive erf,
+$\beta_a=-h_a\alpha_a/(1+q_a)$.
+
+Let $S$ be the leak-filtered centered rate covariance of a frozen reservoir.
+Let $\mathcal E^H_{bc}=N^{-1}\sum_{j\in b,k\in c}S_{jk}^2$, and $s_b=S_{jj}$
+at the homogeneous leading law within population $b$. Under the independent
+fixed-subset assumptions stated in the exact quadratic-variance note, a partial
+leading source is
+\begin{equation}
+ V_{q,a}^{\rm frozen}=\frac2N\sum_{bc}G_{ab}G_{ac}
+ [\mathcal E^H_{bc}-\delta_{bc}f_bs_b^2].
+ \label{eq:partial-vq}
+\end{equation}
+The subtraction removes the diagonal covariance contribution whose incoming
+weight sum is fixed by the count constraint. The filtered energy is computed
+from the leading population resolvent, multiplying both frequency integrands
+by $|H(\omega_1)|^2|H(\omega_2)|^2$ before integration.
+
+If the mixed covariance in Eq.~\eqref{eq:partial-static-mixed} is discarded
+and the independent static contraction $\Delta=W\operatorname{Var}(m)$ is
+used, the algebra is
+\begin{align}
+ \Delta&=W\operatorname{diag}(\alpha^2)\Delta
+       +W\operatorname{diag}(\beta^2/4)V_q^{\rm frozen},\\
+ [I-W\operatorname{diag}(\alpha^2)]\Delta
+       &=W\operatorname{diag}(\beta^2/4)V_q^{\rm frozen},\\
+ \Delta^{\rm partial}
+       &=[I-W\operatorname{diag}(\alpha^2)]^{-1}
+         W\operatorname{diag}(\beta^2/4)V_q^{\rm frozen}.
+\end{align}
+No measured amplitude appears in this candidate. At $N=1000$ it gives
+$V_q^{\rm frozen}=(.12190,.28683)$ and
+$\Delta^{\rm partial}=(.02421,.03708)$ before rounding. In the selected
+degree seed4001 case, cross-window measurements are approximately
+$(.2076,.5473)$ and $(.0607,.0965)$, respectively. The nonzero measured mixed
+covariances, approximately $(.01962,.05572)$, already contradict discarding
+the middle term of Eq.~\eqref{eq:partial-static-mixed} at this order.
+
+The independent frozen-row source also omits coherent noncentral terms and
+endogenous source--row and probe-reinsertion effects. The calculation is
+retained as an explicit partial source, with its assumptions and numerical
+undershoot, and rejected as a complete stationary finite-size correction.

@@ -1,0 +1,28 @@
+{
+  "Gaussian_integrals": {
+    "Price_vs_independent_Gauss_Hermite_max_abs": 4.063416270128073e-14,
+    "mean_formula_max_abs": 2.220446049250313e-16,
+    "gain_formula_max_abs": 5.551115123125783e-17,
+    "minimum_Hermite_residual_spectral_mass": 7.004984290006824e-07,
+    "spectral_mass_sum_error": 0.0
+  },
+  "population_closure": {
+    "full_cavity_equation_max_abs": 3.9983445677392e-15,
+    "independent_SciPy_Lyapunov_max_abs": 1.7763570286252052e-15,
+    "Hermitian_max_abs": 8.881784197001252e-16
+  },
+  "nonnegative_population_path_expansion": {
+    "relative_path_series_vs_resolvent": 1.788180952857664e-15,
+    "real_moment_imaginary_error": 5.337949980126407e-15,
+    "minimum_integrated_X_eigenvalue": 0.6200907676490458
+  },
+  "limits": {
+    "uniform_fraction_null_max_abs": 8.88191295740748e-16,
+    "isolated_directed_edge_phase_error": 2.7755575615628914e-17,
+    "uncoupled_diagonal_energy_error": 0.0,
+    "FFT_lag_orientation_error": 1.1102230246251565e-16,
+    "finite_covariance_cross_overlap": 0.33284082630993184,
+    "finite_covariance_cross_share": 0.18671854167231094
+  },
+  "status": "All algebra and independent numerical constraints pass; no nonlinear cavity theorem is claimed."
+}

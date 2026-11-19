@@ -1,0 +1,435 @@
+{
+  "finite_pool_exact_enumeration": [
+    {
+      "M": 8,
+      "p": 0.3,
+      "chi_requested": 0.0,
+      "chi_effective": 0.14285714285714285,
+      "probability_sum_error": 0.0,
+      "mean_count_error": 0.0,
+      "edge_covariance_max_error": 1.3877787807814457e-16,
+      "input_variance_measured": 0.5949883687566284,
+      "input_variance_predicted": 0.5949883687566284,
+      "input_variance_relative_error": 0.0
+    },
+    {
+      "M": 8,
+      "p": 0.3,
+      "chi_requested": 0.15,
+      "chi_effective": 0.17857142857142863,
+      "probability_sum_error": 0.0,
+      "mean_count_error": 4.440892098500626e-16,
+      "edge_covariance_max_error": 8.881784197001252e-16,
+      "input_variance_measured": 0.6252389885892722,
+      "input_variance_predicted": 0.625238988589272,
+      "input_variance_relative_error": 4.440892098500626e-16
+    },
+    {
+      "M": 8,
+      "p": 0.3,
+      "chi_requested": 0.5,
+      "chi_effective": 0.5952380952380952,
+      "probability_sum_error": 2.220446049250313e-16,
+      "mean_count_error": 4.440892098500626e-16,
+      "edge_covariance_max_error": 4.996003610813204e-16,
+      "input_variance_measured": 0.9781628866367802,
+      "input_variance_predicted": 0.9781628866367801,
+      "input_variance_relative_error": 2.220446049250313e-16
+    },
+    {
+      "M": 8,
+      "p": 0.3,
+      "chi_requested": 1.0,
+      "chi_effective": 0.9999999999999994,
+      "probability_sum_error": -2.220446049250313e-16,
+      "mean_count_error": -8.881784197001252e-16,
+      "edge_covariance_max_error": 4.440892098500626e-16,
+      "input_variance_measured": 1.3210032447400732,
+      "input_variance_predicted": 1.3210032447400732,
+      "input_variance_relative_error": 0.0
+    },
+    {
+      "M": 8,
+      "p": 0.3,
+      "chi_requested": 2.0,
+      "chi_effective": 1.9999999999999962,
+      "probability_sum_error": -2.4424906541753444e-15,
+      "mean_count_error": -4.440892098500626e-15,
+      "edge_covariance_max_error": 8.881784197001252e-16,
+      "input_variance_measured": 2.1680206000540885,
+      "input_variance_predicted": 2.1680206000540903,
+      "input_variance_relative_error": -7.771561172376096e-16
+    },
+    {
+      "M": 8,
+      "p": 0.3,
+      "chi_requested": 5.0,
+      "chi_effective": 4.999999999999998,
+      "probability_sum_error": 2.220446049250313e-16,
+      "mean_count_error": -4.440892098500626e-16,
+      "edge_covariance_max_error": 3.608224830031759e-16,
+      "input_variance_measured": 4.70907266599615,
+      "input_variance_predicted": 4.70907266599615,
+      "input_variance_relative_error": 0.0
+    }
+  ],
+  "refinement": [
+    {
+      "chi": 0.0,
+      "refined": {
+        "chi": 0.0,
+        "static_variances": [
+          0.0,
+          0.0
+        ],
+        "dynamic_variances": [
+          3.244825524558283,
+          4.966908646913244
+        ],
+        "mean_inputs": [
+          -2.135361054901021,
+          -2.5317224347376492
+        ],
+        "alpha_second": [
+          0.05122756086277924,
+          0.036443001020918755
+        ],
+        "alpha_fourth": [
+          0.002624262991949753,
+          0.0013280923234106862
+        ],
+        "bvp_residual": 1.9784323202332925e-07,
+        "static_residual": 0.0,
+        "boundary_residual": 4.440892098500626e-16,
+        "nu": 0.263147160588437,
+        "block_energies": [
+          [
+            0.2614787355261871,
+            0.0531576224073189
+          ],
+          [
+            0.05315762240731889,
+            0.030423939185993808
+          ]
+        ],
+        "block_energy_sum_check": 0.0,
+        "prediction": {
+          "dimension_fraction": 0.17389078876218964,
+          "covariance_energy": 0.3982179195268187,
+          "mean_variances": [
+            0.25520678580946543,
+            0.2949086597043233
+          ],
+          "variance_seconds": [
+            0.06513050352319838,
+            0.08697111756860038
+          ],
+          "pair_covariance_energy": [
+            [
+              0.3271473948556693,
+              0.33223514004574306
+            ],
+            [
+              0.332235140045743,
+              0.3257428918068432
+            ]
+          ],
+          "within_population_dimension_fractions": [
+            0.199268222380326,
+            0.5717281844202412
+          ],
+          "response_radius": 0.7562109141747684,
+          "min_spectral_mass": -2.5499495605932123e-13,
+          "imaginary_energy_residual": 5.4643789493269423e-17
+        },
+        "quadrature": {
+          "dt": 0.04,
+          "horizon": 150.0,
+          "n_hermite": 160,
+          "frequency_cutoff": 20.0
+        }
+      },
+      "dimension_relative_difference": -6.041733779937886e-11,
+      "energy_relative_difference": 6.041656064326162e-11,
+      "block_relative_differences": [
+        [
+          3.1343150297402644e-11,
+          -7.697398274331135e-12
+        ],
+        [
+          -7.697509296633598e-12,
+          5.48312062420564e-10
+        ]
+      ],
+      "elapsed_seconds": 3.9264137550001124
+    },
+    {
+      "chi": 0.5,
+      "refined": {
+        "chi": 0.5,
+        "static_variances": [
+          2.141316787175784,
+          3.282368411837668
+        ],
+        "dynamic_variances": [
+          2.4805418571327693,
+          3.797094167937936
+        ],
+        "mean_inputs": [
+          -2.4574311353731924,
+          -2.9459992543883895
+        ],
+        "alpha_second": [
+          0.05625999275329598,
+          0.040172072040980236
+        ],
+        "alpha_fourth": [
+          0.006598104789746004,
+          0.003459620036865742
+        ],
+        "bvp_residual": 1.9440931729933672e-07,
+        "static_residual": 4.440892098500626e-16,
+        "boundary_residual": 4.440892098500626e-16,
+        "nu": 0.19347093322030634,
+        "block_energies": [
+          [
+            0.42995586540699415,
+            0.09881212902049366
+          ],
+          [
+            0.09881212902049366,
+            0.04152853216628871
+          ]
+        ],
+        "block_energy_sum_check": 0.0,
+        "prediction": {
+          "dimension_fraction": 0.05594158988538713,
+          "covariance_energy": 0.6691086556142701,
+          "mean_variances": [
+            0.1877695999281687,
+            0.2162762663888569
+          ],
+          "variance_seconds": [
+            0.06128134050223917,
+            0.08210382554508985
+          ],
+          "pair_covariance_energy": [
+            [
+              0.5952043640706293,
+              0.6175758063780853
+            ],
+            [
+              0.6175758063780853,
+              0.6276941764317683
+            ]
+          ],
+          "within_population_dimension_fractions": [
+            0.06560193823393483,
+            0.22526884993577656
+          ],
+          "response_radius": 0.8309026409017495,
+          "min_spectral_mass": -1.1494434653282555e-12,
+          "imaginary_energy_residual": 4.0766001685454967e-17
+        },
+        "quadrature": {
+          "dt": 0.04,
+          "horizon": 150.0,
+          "n_hermite": 160,
+          "frequency_cutoff": 20.0
+        }
+      },
+      "dimension_relative_difference": 1.1923351195264331e-11,
+      "energy_relative_difference": -1.1926903908943132e-11,
+      "block_relative_differences": [
+        [
+          -1.1831757795732756e-11,
+          -1.4243606294428446e-11
+        ],
+        [
+          -1.4243495272125983e-11,
+          -1.8879342533750787e-12
+        ]
+      ],
+      "elapsed_seconds": 4.002963002999877
+    },
+    {
+      "chi": 1.0,
+      "refined": {
+        "chi": 1.0,
+        "static_variances": [
+          3.7033583765780422,
+          5.677453501537606
+        ],
+        "dynamic_variances": [
+          1.9395071414343703,
+          2.9686606042527615
+        ],
+        "mean_inputs": [
+          -2.6712782365825896,
+          -3.218974921285835
+        ],
+        "alpha_second": [
+          0.05791908279867622,
+          0.04151530006090111
+        ],
+        "alpha_fourth": [
+          0.008542544773706811,
+          0.004564127434809114
+        ],
+        "bvp_residual": 1.9822889820420378e-07,
+        "static_residual": 4.440892098500626e-16,
+        "boundary_residual": 2.220446049250313e-16,
+        "nu": 0.1484382318658128,
+        "block_energies": [
+          [
+            0.40870958587656425,
+            0.09785102511005109
+          ],
+          [
+            0.09785102511005109,
+            0.0374855889843011
+          ]
+        ],
+        "block_energy_sum_check": 0.0,
+        "prediction": {
+          "dimension_fraction": 0.034326225162711194,
+          "covariance_energy": 0.6418972250809675,
+          "mean_variances": [
+            0.1439556617258145,
+            0.16636851242580583
+          ],
+          "variance_seconds": [
+            0.04483078883430888,
+            0.0610814699971126
+          ],
+          "pair_covariance_energy": [
+            [
+              0.5825702418892454,
+              0.6115689069378192
+            ],
+            [
+              0.6115689069378192,
+              0.6317323746219644
+            ]
+          ],
+          "within_population_dimension_fractions": [
+            0.040563242476384355,
+            0.14767532097930866
+          ],
+          "response_radius": 0.8558354994358953,
+          "min_spectral_mass": -1.3893365340821322e-12,
+          "imaginary_energy_residual": 8.066464163292153e-17
+        },
+        "quadrature": {
+          "dt": 0.04,
+          "horizon": 150.0,
+          "n_hermite": 160,
+          "frequency_cutoff": 20.0
+        }
+      },
+      "dimension_relative_difference": -2.795097486796294e-12,
+      "energy_relative_difference": 2.7893243270682433e-12,
+      "block_relative_differences": [
+        [
+          3.398392678377604e-12,
+          -1.5354384430565915e-13
+        ],
+        [
+          -1.5354384430565915e-13,
+          1.1511236408523473e-11
+        ]
+      ],
+      "elapsed_seconds": 4.3872128309999425
+    },
+    {
+      "chi": 2.0,
+      "refined": {
+        "chi": 2.0,
+        "static_variances": [
+          6.136301554493162,
+          9.408615491199885
+        ],
+        "dynamic_variances": [
+          1.2492762388911205,
+          1.9117405165975785
+        ],
+        "mean_inputs": [
+          -3.0012895203439163,
+          -3.6379189939395675
+        ],
+        "alpha_second": [
+          0.05990456489627866,
+          0.04352799510533145
+        ],
+        "alpha_fourth": [
+          0.011848738413210687,
+          0.006668758362227552
+        ],
+        "bvp_residual": 1.8907278035682606e-07,
+        "static_residual": 2.69491096105412e-11,
+        "boundary_residual": 2.9267255285958527e-11,
+        "nu": 0.09324565268173321,
+        "block_energies": [
+          [
+            0.3243310803022772,
+            0.08216450825373371
+          ],
+          [
+            0.08216450825373371,
+            0.02856000010995548
+          ]
+        ],
+        "block_energy_sum_check": 1.1102230246251565e-16,
+        "prediction": {
+          "dimension_fraction": 0.01681054505774996,
+          "covariance_energy": 0.5172200969197001,
+          "mean_variances": [
+            0.09021203947507285,
+            0.10538010550837468
+          ],
+          "variance_seconds": [
+            0.0235441358808076,
+            0.03351200810496751
+          ],
+          "pair_covariance_energy": [
+            [
+              0.47733714312129855,
+              0.5135281765858356
+            ],
+            [
+              0.5135281765858356,
+              0.5464399622240493
+            ]
+          ],
+          "within_population_dimension_fractions": [
+            0.020073838273328037,
+            0.07776587250841921
+          ],
+          "response_radius": 0.8867713075562347,
+          "min_spectral_mass": -1.5207693444850538e-12,
+          "imaginary_energy_residual": 1.3010426069826053e-17
+        },
+        "quadrature": {
+          "dt": 0.04,
+          "horizon": 150.0,
+          "n_hermite": 160,
+          "frequency_cutoff": 20.0
+        }
+      },
+      "dimension_relative_difference": 3.282613181276872e-08,
+      "energy_relative_difference": -3.282609251087365e-08,
+      "block_relative_differences": [
+        [
+          -2.7180663164649843e-08,
+          -3.9429379539157594e-08
+        ],
+        [
+          -3.9429379539157594e-08,
+          -5.894221588587101e-08
+        ]
+      ],
+      "elapsed_seconds": 5.3990777439998965
+    }
+  ],
+  "status": "Exact finite-pool identities pass; refinements compare deterministic conditional closure only."
+}

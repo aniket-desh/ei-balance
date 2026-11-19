@@ -1,0 +1,147 @@
+{
+  "name": "composition_f80_N2000_seed3011",
+  "config": {
+    "n": 2000,
+    "g": 4.0,
+    "mean_rate": 0.3,
+    "seed": 3011,
+    "fraction_e": 0.8,
+    "ensemble": "bernoulli",
+    "dt": 0.05,
+    "burn": 500.0,
+    "duration": 8000.0,
+    "sample_dt": 0.25,
+    "variance_profile": [
+      [
+        16.0,
+        9.000000000000002
+      ],
+      [
+        25.0,
+        12.000000000000004
+      ]
+    ],
+    "mean_connectivity": [
+      [
+        1.0,
+        -6.000000000000002
+      ],
+      [
+        2.0,
+        -10.000000000000002
+      ]
+    ]
+  },
+  "scope": "Prespecified selected trajectories; cross-block estimates exact only for stationary independent blocks. Gaussianized substitutions are calibrated local diagnostics, not new predictions.",
+  "block_duration": 500.0,
+  "duration": 8000.0,
+  "groups": [
+    {
+      "mean_rate_squared_measured": 0.1973680898666825,
+      "mean_rate_squared_Gaussian_individual_mu_q": 0.19830277343459757,
+      "mean_rate_squared_Gaussian_individual_mu_common_q": 0.1991645859665566,
+      "mean_rate_squared_Gaussian_population_h_Delta_q": 0.19862878924823552,
+      "static_mu_standardized_skewness": 0.05594921005899106,
+      "static_mu_excess_kurtosis": -0.18851598691970928,
+      "population": 0,
+      "h": -2.681829421412092,
+      "Delta_own_record": 2.9305196255940995,
+      "q_own_record": 2.0761679164508955,
+      "total_input_variance": 5.006687542044995,
+      "A_full_record": 0.05200043940188947,
+      "A_Gaussian_individual_mu_q": 0.052562746383381626,
+      "A_Gaussian_individual_mu_common_q": 0.05483177410317799,
+      "A_Gaussian_population_h_Delta_q": 0.054297035190881006,
+      "nu_measured_own_record": 0.15727497946419297,
+      "nu_Gaussian_individual_mu_q": 0.154204092555902,
+      "cross_block": [
+        {
+          "empty_blocks": 0,
+          "pairs": 120,
+          "A_cross": 0.051964181421628196,
+          "Delta_cross": 2.9283268374377025,
+          "q_cross": 2.0783621085760178,
+          "nu_cross": 0.1574236814899164
+        },
+        {
+          "empty_blocks": 1,
+          "pairs": 105,
+          "A_cross": 0.05196035580220174,
+          "Delta_cross": 2.9280504438472033,
+          "q_cross": 2.078555477261318,
+          "nu_cross": 0.1574463143516778
+        },
+        {
+          "empty_blocks": 2,
+          "pairs": 91,
+          "A_cross": 0.051968805231965017,
+          "Delta_cross": 2.928582019834452,
+          "q_cross": 2.078080632556775,
+          "nu_cross": 0.1574107220557202
+        }
+      ]
+    },
+    {
+      "mean_rate_squared_measured": 0.24712175083157142,
+      "mean_rate_squared_Gaussian_individual_mu_q": 0.24722466869284512,
+      "mean_rate_squared_Gaussian_individual_mu_common_q": 0.25136533598021993,
+      "mean_rate_squared_Gaussian_population_h_Delta_q": 0.23255057143459398,
+      "static_mu_standardized_skewness": 0.22554812697928658,
+      "static_mu_excess_kurtosis": -0.05691004217890061,
+      "population": 1,
+      "h": -3.2989919778409638,
+      "Delta_own_record": 5.259484373411481,
+      "q_own_record": 3.1946485791021018,
+      "total_input_variance": 8.454132952513582,
+      "A_full_record": 0.0350655238903726,
+      "A_Gaussian_individual_mu_q": 0.034996335229225045,
+      "A_Gaussian_individual_mu_common_q": 0.03571229693209955,
+      "A_Gaussian_population_h_Delta_q": 0.03867535093530137,
+      "nu_measured_own_record": 0.16573671942507567,
+      "nu_Gaussian_individual_mu_q": 0.16441430369886617,
+      "cross_block": [
+        {
+          "empty_blocks": 0,
+          "pairs": 120,
+          "A_cross": 0.03503459285007282,
+          "Delta_cross": 5.256178392446936,
+          "q_cross": 3.1979602099237283,
+          "nu_cross": 0.16588723806057068
+        },
+        {
+          "empty_blocks": 1,
+          "pairs": 105,
+          "A_cross": 0.035026733890296265,
+          "Delta_cross": 5.2556127178832615,
+          "q_cross": 3.1982425351921258,
+          "nu_cross": 0.16592458163922671
+        },
+        {
+          "empty_blocks": 2,
+          "pairs": 91,
+          "A_cross": 0.03502306783982795,
+          "Delta_cross": 5.256439409559912,
+          "q_cross": 3.197285571386729,
+          "nu_cross": 0.16590773602508052
+        }
+      ]
+    }
+  ],
+  "coherent_balance_inferred_centered_input_mean": [
+    0.02303963762055479,
+    0.2667395529424376
+  ],
+  "coherent_balance_caveat": "Inferred using the mean dynamical equation; includes finite-record endpoint derivative. It is a diagnostic, not an independent validation of that identity.",
+  "diagonal_energy_four_window": {
+    "by_population_total_N_normalization": [
+      0.042058792597496696,
+      0.012146762951004683
+    ],
+    "total": 0.05420555554850138,
+    "d_uncorrelated": 0.46707438384831446,
+    "correlation_energy_penalty_factor": 12.178023398197857,
+    "d_reconstructed": 0.038353874727932745,
+    "primary_d": 0.03835387472793275,
+    "scope": "Samequadruplepairingsasprimarygap0; ratiosremainfinite-recordestimates."
+  }
+}

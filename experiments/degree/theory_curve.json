@@ -1,0 +1,1175 @@
+{
+  "G": [
+    [
+      16.0,
+      9.0
+    ],
+    [
+      25.0,
+      12.0
+    ]
+  ],
+  "J0": [
+    [
+      1.0,
+      -6.0
+    ],
+    [
+      2.0,
+      -10.0
+    ]
+  ],
+  "fractions": [
+    0.8,
+    0.2
+  ],
+  "rows": [
+    {
+      "chi": 0.0,
+      "static_variances": [
+        0.0,
+        0.0
+      ],
+      "dynamic_variances": [
+        3.2448255245582818,
+        4.966908646913242
+      ],
+      "mean_inputs": [
+        -2.1353610549010207,
+        -2.5317224347376492
+      ],
+      "alpha_second": [
+        0.05122756086277929,
+        0.03644300102091878
+      ],
+      "alpha_fourth": [
+        0.0026242629919497567,
+        0.0013280923234106877
+      ],
+      "bvp_residual": 1.9784323199320685e-07,
+      "static_residual": 0.0,
+      "boundary_residual": 1.0897335405016167e-43,
+      "nu": 0.2631471605884371,
+      "block_energies": [
+        [
+          0.26147873551799156,
+          0.053157622407728075
+        ],
+        [
+          0.05315762240772807,
+          0.030423939169311992
+        ]
+      ],
+      "block_energy_sum_check": 5.551115123125783e-17,
+      "prediction": {
+        "dimension_fraction": 0.17389078877269565,
+        "covariance_energy": 0.3982179195027597,
+        "mean_variances": [
+          0.25520678580946554,
+          0.29490865970432334
+        ],
+        "variance_seconds": [
+          0.06513050352319844,
+          0.08697111756860039
+        ],
+        "pair_covariance_energy": [
+          [
+            0.3271473948428637,
+            0.3322351400483004
+          ],
+          [
+            0.33223514004830035,
+            0.32574289138979784
+          ]
+        ],
+        "within_population_dimension_fractions": [
+          0.19926822238657182,
+          0.571728184733727
+        ],
+        "response_radius": 0.7562109141747689,
+        "min_spectral_mass": -4.785033951102552e-14,
+        "imaginary_energy_residual": 6.418476861114186e-17
+      },
+      "quadrature": {
+        "dt": 0.08,
+        "horizon": 100.0,
+        "n_hermite": 96,
+        "frequency_cutoff": 12.0
+      },
+      "expected_finite_count_dispersion": {
+        "1000": [
+          [
+            0.001249999999999925,
+            0.0
+          ],
+          [
+            0.002374999999999978,
+            0.012799999999999916
+          ]
+        ],
+        "2000": [
+          [
+            0.0011718749999999351,
+            0.0
+          ],
+          [
+            0.0011250000000000277,
+            0.0032000000000004564
+          ]
+        ],
+        "4000": [
+          [
+            0.0010156249999999551,
+            0.0
+          ],
+          [
+            0.0006187499999999827,
+            0.0026666666666669407
+          ]
+        ]
+      },
+      "elapsed_seconds": 1.5587103920001937,
+      "decomposition": {
+        "diagonal_energy": 0.06949862633227882,
+        "uncorrelated_dimension_fraction": 0.9963711771033238,
+        "correlation_reduction_factor": 0.17452410584400432
+      }
+    },
+    {
+      "chi": 0.025,
+      "static_variances": [
+        0.1326606541611882,
+        0.20331473366559985
+      ],
+      "dynamic_variances": [
+        3.2038455237833823,
+        4.904220564902629
+      ],
+      "mean_inputs": [
+        -2.1582978613333164,
+        -2.5613822081112643
+      ],
+      "alpha_second": [
+        0.05179343612599513,
+        0.03687804830117512
+      ],
+      "alpha_fourth": [
+        0.00302030881746584,
+        0.0015456067876116174
+      ],
+      "bvp_residual": 1.9922328386813207e-07,
+      "static_residual": 1.1886963635632242e-11,
+      "boundary_residual": 1.7744028468769102e-11,
+      "nu": 0.25891257691580144,
+      "block_energies": [
+        [
+          0.2846908639428708,
+          0.05878954167167869
+        ],
+        [
+          0.058789541671678686,
+          0.032428631024743707
+        ]
+      ],
+      "block_energy_sum_check": 0.0,
+      "prediction": {
+        "dimension_fraction": 0.15421196624486128,
+        "covariance_energy": 0.4346985783109719,
+        "mean_variances": [
+          0.25113532040526854,
+          0.29002160295793317
+        ],
+        "variance_seconds": [
+          0.06720943192355464,
+          0.0897670186535511
+        ],
+        "pair_covariance_energy": [
+          [
+            0.36081768500629224,
+            0.36743463544799176
+          ],
+          [
+            0.3674346354479917,
+            0.36188068235083704
+          ]
+        ],
+        "within_population_dimension_fractions": [
+          0.17722788369552459,
+          0.5187547394036428
+        ],
+        "response_radius": 0.7646523195068458,
+        "min_spectral_mass": -6.312980763579363e-13,
+        "imaginary_energy_residual": 6.331740687315346e-17
+      },
+      "quadrature": {
+        "dt": 0.08,
+        "horizon": 100.0,
+        "n_hermite": 96,
+        "frequency_cutoff": 12.0
+      },
+      "decomposition": {
+        "diagonal_energy": 0.07172094926955394,
+        "uncorrelated_dimension_fraction": 0.9346742223563672,
+        "correlation_reduction_factor": 0.16499007093197038
+      }
+    },
+    {
+      "chi": 0.05,
+      "static_variances": [
+        0.261379277837487,
+        0.4005927038426793
+      ],
+      "dynamic_variances": [
+        3.1622233219866795,
+        4.840541702523347
+      ],
+      "mean_inputs": [
+        -2.1798642450670136,
+        -2.589245102120907
+      ],
+      "alpha_second": [
+        0.05228465522578041,
+        0.0372506775908982
+      ],
+      "alpha_fourth": [
+        0.0033721168715691147,
+        0.0017371172470067415
+      ],
+      "bvp_residual": 1.945754753162961e-07,
+      "static_residual": 5.551115123125783e-17,
+      "boundary_residual": 5.551115123125783e-17,
+      "nu": 0.25474072584899254,
+      "block_energies": [
+        [
+          0.3051218712061294,
+          0.06383294754882547
+        ],
+        [
+          0.06383294754882546,
+          0.03411894194926547
+        ]
+      ],
+      "block_energy_sum_check": -5.551115123125783e-17,
+      "prediction": {
+        "dimension_fraction": 0.13898458998130758,
+        "covariance_energy": 0.4669067082530458,
+        "mean_variances": [
+          0.24711836048224417,
+          0.28523018731598593
+        ],
+        "variance_seconds": [
+          0.06867619318105105,
+          0.09171834247454956
+        ],
+        "pair_covariance_energy": [
+          [
+            0.3909076822832633,
+            0.39895592218015913
+          ],
+          [
+            0.3989559221801591,
+            0.394381836358889
+          ]
+        ],
+        "within_population_dimension_fractions": [
+          0.16011302984223608,
+          0.47689790543498306
+        ],
+        "response_radius": 0.7719664310191269,
+        "min_spectral_mass": -6.98151401825935e-13,
+        "imaginary_energy_residual": 4.683753385137379e-17
+      },
+      "quadrature": {
+        "dt": 0.08,
+        "horizon": 100.0,
+        "n_hermite": 96,
+        "frequency_cutoff": 12.0
+      },
+      "decomposition": {
+        "diagonal_energy": 0.07328462303975075,
+        "uncorrelated_dimension_fraction": 0.8854904987485938,
+        "correlation_reduction_factor": 0.15695774283035843
+      }
+    },
+    {
+      "chi": 0.1,
+      "static_variances": [
+        0.5083094739561365,
+        0.7790587360098404
+      ],
+      "dynamic_variances": [
+        3.078464183337978,
+        4.712377234490553
+      ],
+      "mean_inputs": [
+        -2.2197039274886343,
+        -2.640655729171597
+      ],
+      "alpha_second": [
+        0.05309840190465658,
+        0.03785837541505431
+      ],
+      "alpha_fourth": [
+        0.003969188554521262,
+        0.002058519703126524
+      ],
+      "bvp_residual": 1.9585218346063259e-07,
+      "static_residual": 3.9084513403508936e-11,
+      "boundary_residual": 3.9084513403508936e-11,
+      "nu": 0.24662472265793695,
+      "block_energies": [
+        [
+          0.3388346737497724,
+          0.07235507592134069
+        ],
+        [
+          0.07235507592134072,
+          0.036744324451028
+        ]
+      ],
+      "block_energy_sum_check": 2.220446049250313e-16,
+      "prediction": {
+        "dimension_fraction": 0.11690375211749303,
+        "covariance_energy": 0.5202891500434816,
+        "mean_variances": [
+          0.2392902638180798,
+          0.27596255801736547
+        ],
+        "variance_seconds": [
+          0.07026385821642478,
+          0.09379540930023741
+        ],
+        "pair_covariance_energy": [
+          [
+            0.44159935496348823,
+            0.45221922450837926
+          ],
+          [
+            0.45221922450837937,
+            0.4496310647745128
+          ]
+        ],
+        "within_population_dimension_fractions": [
+          0.1351923750292742,
+          0.41451481046541433
+        ],
+        "response_radius": 0.7840568744937018,
+        "min_spectral_mass": -4.3218714391339974e-13,
+        "imaginary_energy_residual": 3.9898639947466563e-17
+      },
+      "quadrature": {
+        "dt": 0.08,
+        "horizon": 100.0,
+        "n_hermite": 96,
+        "frequency_cutoff": 12.0
+      },
+      "decomposition": {
+        "diagonal_energy": 0.07497016843318731,
+        "uncorrelated_dimension_fraction": 0.8113060847703691,
+        "correlation_reduction_factor": 0.14409327664611477
+      }
+    },
+    {
+      "chi": 0.2,
+      "static_variances": [
+        0.9667928004252248,
+        1.4818160175531452
+      ],
+      "dynamic_variances": [
+        2.9142901834050514,
+        4.461114069196319
+      ],
+      "mean_inputs": [
+        -2.2898102298449614,
+        -2.7309439810911584
+      ],
+      "alpha_second": [
+        0.05428304742577889,
+        0.0387257106315361
+      ],
+      "alpha_fourth": [
+        0.0048751245391078744,
+        0.002539705177634244
+      ],
+      "bvp_residual": 1.9064794649126314e-07,
+      "static_residual": 2.220446049250313e-16,
+      "boundary_residual": 4.440892098500626e-16,
+      "nu": 0.23141119656365353,
+      "block_energies": [
+        [
+          0.3844928794057207,
+          0.08444956140582766
+        ],
+        [
+          0.08444956140582766,
+          0.03988447969527546
+        ]
+      ],
+      "block_energy_sum_check": -1.1102230246251565e-16,
+      "prediction": {
+        "dimension_fraction": 0.09026338229754109,
+        "covariance_energy": 0.5932764819126515,
+        "mean_variances": [
+          0.2245804102319302,
+          0.2587343418905467
+        ],
+        "variance_seconds": [
+          0.07017435276080307,
+          0.0936232980248316
+        ],
+        "pair_covariance_energy": [
+          [
+            0.5130521831204347,
+            0.5278097587864228
+          ],
+          [
+            0.5278097587864228,
+            0.5289955022577285
+          ]
+        ],
+        "within_population_dimension_fractions": [
+          0.10494105532023883,
+          0.3356867643002706
+        ],
+        "response_radius": 0.8016110165573576,
+        "min_spectral_mass": -9.265718886319614e-13,
+        "imaginary_energy_residual": 1.1622647289044608e-16
+      },
+      "quadrature": {
+        "dt": 0.08,
+        "horizon": 100.0,
+        "n_hermite": 96,
+        "frequency_cutoff": 12.0
+      },
+      "decomposition": {
+        "diagonal_energy": 0.07486414181360877,
+        "uncorrelated_dimension_fraction": 0.7153109699480638,
+        "correlation_reduction_factor": 0.1261876108290284
+      }
+    },
+    {
+      "chi": 0.3,
+      "static_variances": [
+        1.3870803840265176,
+        2.126079039126948
+      ],
+      "dynamic_variances": [
+        2.759137578900232,
+        4.223615956928132
+      ],
+      "mean_inputs": [
+        -2.351177861783007,
+        -2.809804178647248
+      ],
+      "alpha_second": [
+        0.05511870518138432,
+        0.039331713339888885
+      ],
+      "alpha_fourth": [
+        0.005556814215950728,
+        0.0029004885181952234
+      ],
+      "bvp_residual": 1.963722404141164e-07,
+      "static_residual": 2.2224444506946384e-11,
+      "boundary_residual": 2.0104806708332035e-11,
+      "nu": 0.21755998625700088,
+      "block_energies": [
+        [
+          0.41051771488546157,
+          0.09190874918784496
+        ],
+        [
+          0.09190874918784496,
+          0.04129166078951391
+        ]
+      ],
+      "block_energy_sum_check": 1.1102230246251565e-16,
+      "prediction": {
+        "dimension_fraction": 0.07446561741247835,
+        "covariance_energy": 0.6356268740506653,
+        "mean_variances": [
+          0.21115820018005704,
+          0.24316713056477612
+        ],
+        "variance_seconds": [
+          0.06792117648525144,
+          0.09066469604986523
+        ],
+        "pair_covariance_energy": [
+          [
+            0.5565324589019693,
+            0.5744296824240309
+          ],
+          [
+            0.5744296824240309,
+            0.5789680394885216
+          ]
+        ],
+        "within_population_dimension_fractions": [
+          0.08689083834683523,
+          0.28640288259910884
+        ],
+        "response_radius": 0.8139780565328183,
+        "min_spectral_mass": -1.3589694704130982e-12,
+        "imaginary_energy_residual": 5.204170427930421e-18
+      },
+      "quadrature": {
+        "dt": 0.08,
+        "horizon": 100.0,
+        "n_hermite": 96,
+        "frequency_cutoff": 12.0
+      },
+      "decomposition": {
+        "diagonal_energy": 0.07246988039817419,
+        "uncorrelated_dimension_fraction": 0.6531313058623305,
+        "correlation_reduction_factor": 0.11401324166227382
+      }
+    },
+    {
+      "chi": 0.5,
+      "static_variances": [
+        2.1413167871757834,
+        3.282368411837667
+      ],
+      "dynamic_variances": [
+        2.48054185713277,
+        3.7970941679379377
+      ],
+      "mean_inputs": [
+        -2.4574311353731924,
+        -2.9459992543883895
+      ],
+      "alpha_second": [
+        0.0562599927532961,
+        0.04017207204098032
+      ],
+      "alpha_fourth": [
+        0.006598104789746028,
+        0.0034596200368657544
+      ],
+      "bvp_residual": 1.944093172852273e-07,
+      "static_residual": 8.881784197001252e-16,
+      "boundary_residual": 4.147814209552608e-16,
+      "nu": 0.19347093322030667,
+      "block_energies": [
+        [
+          0.4299558654120813,
+          0.0988121290219011
+        ],
+        [
+          0.09881212902190109,
+          0.041528532166367114
+        ]
+      ],
+      "block_energy_sum_check": 0.0,
+      "prediction": {
+        "dimension_fraction": 0.055941589884720117,
+        "covariance_energy": 0.6691086556222505,
+        "mean_variances": [
+          0.18776959992816902,
+          0.21627626638885725
+        ],
+        "variance_seconds": [
+          0.061281340502239386,
+          0.08210382554509013
+        ],
+        "pair_covariance_energy": [
+          [
+            0.5952043640785777,
+            0.6175758063868818
+          ],
+          [
+            0.6175758063868817,
+            0.627694176433727
+          ]
+        ],
+        "within_population_dimension_fractions": [
+          0.06560193823315887,
+          0.22526884993535193
+        ],
+        "response_radius": 0.830902640901751,
+        "min_spectral_mass": -1.6361413078156644e-12,
+        "imaginary_energy_residual": 1.249000902703301e-16
+      },
+      "quadrature": {
+        "dt": 0.08,
+        "horizon": 100.0,
+        "n_hermite": 96,
+        "frequency_cutoff": 12.0
+      },
+      "expected_finite_count_dispersion": {
+        "1000": [
+          [
+            0.505625,
+            0.5
+          ],
+          [
+            0.5015,
+            0.5106666666666668
+          ]
+        ],
+        "2000": [
+          [
+            0.500625,
+            0.5
+          ],
+          [
+            0.5011875,
+            0.5064
+          ]
+        ],
+        "4000": [
+          [
+            0.5005859375,
+            0.5
+          ],
+          [
+            0.5005625,
+            0.5016000000000002
+          ]
+        ]
+      },
+      "elapsed_seconds": 1.398928708000085,
+      "decomposition": {
+        "diagonal_energy": 0.06544583751080954,
+        "uncorrelated_dimension_fraction": 0.5719386201598226,
+        "correlation_reduction_factor": 0.09781047810530402
+      }
+    },
+    {
+      "chi": 0.75,
+      "static_variances": [
+        2.9674689682627817,
+        4.549054141123723
+      ],
+      "dynamic_variances": [
+        2.186182595413936,
+        3.3463834797162226
+      ],
+      "mean_inputs": [
+        -2.5710341575308173,
+        -3.0911854100868075
+      ],
+      "alpha_second": [
+        0.057211164807576924,
+        0.04091447924126301
+      ],
+      "alpha_fourth": [
+        0.0076322578930766525,
+        0.004035394488839638
+      ],
+      "bvp_residual": 1.9262529789426158e-07,
+      "static_residual": 8.881784197001252e-16,
+      "boundary_residual": 4.440892098500626e-16,
+      "nu": 0.16874281999598428,
+      "block_energies": [
+        [
+          0.42546910144058864,
+          0.10003652286779831
+        ],
+        [
+          0.10003652286779828,
+          0.03983502977142318
+        ]
+      ],
+      "block_energy_sum_check": 1.1102230246251565e-16,
+      "prediction": {
+        "dimension_fraction": 0.04279398255110154,
+        "covariance_energy": 0.6653771769476083,
+        "mean_variances": [
+          0.16372068872799586,
+          0.18883134506793792
+        ],
+        "variance_seconds": [
+          0.05259529936154771,
+          0.07100048473596857
+        ],
+        "pair_covariance_energy": [
+          [
+            0.599051346798985,
+            0.6252282679237393
+          ],
+          [
+            0.6252282679237391,
+            0.6408733206057367
+          ]
+        ],
+        "within_population_dimension_fractions": [
+          0.05039983176557364,
+          0.1790247281589654
+        ],
+        "response_radius": 0.8451218692278362,
+        "min_spectral_mass": -1.9132358969949515e-12,
+        "imaginary_energy_residual": 3.469446951953614e-17
+      },
+      "quadrature": {
+        "dt": 0.08,
+        "horizon": 100.0,
+        "n_hermite": 96,
+        "frequency_cutoff": 12.0
+      },
+      "decomposition": {
+        "diagonal_energy": 0.05627633643643188,
+        "uncorrelated_dimension_fraction": 0.5059700240501745,
+        "correlation_reduction_factor": 0.08457809853743009
+      }
+    },
+    {
+      "chi": 1.0,
+      "static_variances": [
+        3.7033583765780422,
+        5.677453501537606
+      ],
+      "dynamic_variances": [
+        1.939507141434371,
+        2.968660604252763
+      ],
+      "mean_inputs": [
+        -2.6712782365825896,
+        -3.2189749212858354
+      ],
+      "alpha_second": [
+        0.0579190827986764,
+        0.04151530006090122
+      ],
+      "alpha_fourth": [
+        0.008542544773706941,
+        0.004564127434810997
+      ],
+      "bvp_residual": 1.982288982583171e-07,
+      "static_residual": 4.440892098500626e-16,
+      "boundary_residual": 4.440892098500626e-16,
+      "nu": 0.1484382318658132,
+      "block_energies": [
+        [
+          0.4087095858751753,
+          0.09785102511006612
+        ],
+        [
+          0.09785102511006612,
+          0.03748558898386959
+        ]
+      ],
+      "block_energy_sum_check": 1.1102230246251565e-16,
+      "prediction": {
+        "dimension_fraction": 0.03432622516280714,
+        "covariance_energy": 0.641897225079177,
+        "mean_variances": [
+          0.14395566172581495,
+          0.16636851242580614
+        ],
+        "variance_seconds": [
+          0.04483078883430911,
+          0.061081469997113114
+        ],
+        "pair_covariance_energy": [
+          [
+            0.5825702418870748,
+            0.6115689069379131
+          ],
+          [
+            0.6115689069379131,
+            0.631732374611174
+          ]
+        ],
+        "within_population_dimension_fractions": [
+          0.04056324247652246,
+          0.1476753209810092
+        ],
+        "response_radius": 0.8558354994358981,
+        "min_spectral_mass": -1.8468936522341863e-12,
+        "imaginary_energy_residual": 2.862293735361732e-17
+      },
+      "quadrature": {
+        "dt": 0.08,
+        "horizon": 100.0,
+        "n_hermite": 96,
+        "frequency_cutoff": 12.0
+      },
+      "expected_finite_count_dispersion": {
+        "1000": [
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ]
+        ],
+        "2000": [
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ]
+        ],
+        "4000": [
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ]
+        ]
+      },
+      "elapsed_seconds": 1.3907269129999804,
+      "decomposition": {
+        "diagonal_energy": 0.048080925066869916,
+        "uncorrelated_dimension_fraction": 0.45826715373725935,
+        "correlation_reduction_factor": 0.07490439775766161
+      }
+    },
+    {
+      "chi": 1.25,
+      "static_variances": [
+        4.374479800384,
+        6.706613172214603
+      ],
+      "dynamic_variances": [
+        1.7295157799809908,
+        2.647103823105967
+      ],
+      "mean_inputs": [
+        -2.762439255843669,
+        -3.3349516402914263
+      ],
+      "alpha_second": [
+        0.058501826410615736,
+        0.04205220918694558
+      ],
+      "alpha_fourth": [
+        0.009396683735522514,
+        0.0050800556243169315
+      ],
+      "bvp_residual": 1.9765870607214333e-07,
+      "static_residual": 7.029932191926491e-12,
+      "boundary_residual": 6.687539411132093e-12,
+      "nu": 0.13140507419227243,
+      "block_energies": [
+        [
+          0.38784483129522157,
+          0.09433024752560928
+        ],
+        [
+          0.09433024752560931,
+          0.03505025734008607
+        ]
+      ],
+      "block_energy_sum_check": 1.1102230246251565e-16,
+      "prediction": {
+        "dimension_fraction": 0.02823503534934213,
+        "covariance_energy": 0.6115555836865261,
+        "mean_variances": [
+          0.1273686651520672,
+          0.14755071035309325
+        ],
+        "variance_seconds": [
+          0.03816858915638987,
+          0.052537198763389636
+        ],
+        "pair_covariance_energy": [
+          [
+            0.5582968124532962,
+            0.5895640470350579
+          ],
+          [
+            0.589564047035058,
+            0.6135704396852035
+          ]
+        ],
+        "within_population_dimension_fractions": [
+          0.03346240672269451,
+          0.12422854368491755
+        ],
+        "response_radius": 0.8647694374753032,
+        "min_spectral_mass": -2.577736170143494e-12,
+        "imaginary_energy_residual": 4.85722573273506e-17
+      },
+      "quadrature": {
+        "dt": 0.08,
+        "horizon": 100.0,
+        "n_hermite": 96,
+        "frequency_cutoff": 12.0
+      },
+      "decomposition": {
+        "diagonal_energy": 0.04104231107778983,
+        "uncorrelated_dimension_fraction": 0.42071932768963566,
+        "correlation_reduction_factor": 0.06711133406775906
+      }
+    },
+    {
+      "chi": 1.5,
+      "static_variances": [
+        4.996978567275243,
+        7.661264170399291
+      ],
+      "dynamic_variances": [
+        1.5481317104504064,
+        2.3693542853093033
+      ],
+      "mean_inputs": [
+        -2.8469129735224703,
+        -3.4422414276276845
+      ],
+      "alpha_second": [
+        0.059011368762565464,
+        0.04255742810275442
+      ],
+      "alpha_fourth": [
+        0.010223681682300485,
+        0.00559800242467478
+      ],
+      "bvp_residual": 1.913508781079677e-07,
+      "static_residual": 1.0910383707596338e-11,
+      "boundary_residual": 1.1160183888136999e-11,
+      "nu": 0.11686444743646147,
+      "block_energies": [
+        [
+          0.3660850092504442,
+          0.09032831312191898
+        ],
+        [
+          0.09032831312191898,
+          0.032719840313672255
+        ]
+      ],
+      "block_energy_sum_check": -1.1102230246251565e-16,
+      "prediction": {
+        "dimension_fraction": 0.023568950904953305,
+        "covariance_energy": 0.5794614758079545,
+        "mean_variances": [
+          0.11320782527774081,
+          0.13149093607134402
+        ],
+        "variance_seconds": [
+          0.03249932973563585,
+          0.04521883741606038
+        ],
+        "pair_covariance_energy": [
+          [
+            0.5313836647842741,
+            0.5645519570119936
+          ],
+          [
+            0.5645519570119936,
+            0.5919018207615043
+          ]
+        ],
+        "within_population_dimension_fractions": [
+          0.028006635355774145,
+          0.10568429493033661
+        ],
+        "response_radius": 0.8726780064643317,
+        "min_spectral_mass": -1.4525348821022263e-12,
+        "imaginary_energy_residual": 1.9949319973733282e-17
+      },
+      "quadrature": {
+        "dt": 0.08,
+        "horizon": 100.0,
+        "n_hermite": 96,
+        "frequency_cutoff": 12.0
+      },
+      "decomposition": {
+        "diagonal_energy": 0.03504323127172076,
+        "uncorrelated_dimension_fraction": 0.3897271621082116,
+        "correlation_reduction_factor": 0.060475515171840015
+      }
+    },
+    {
+      "chi": 1.75,
+      "static_variances": [
+        5.581707035013304,
+        8.558031751856381
+      ],
+      "dynamic_variances": [
+        1.3894920403034134,
+        2.1264380143198287
+      ],
+      "mean_inputs": [
+        -2.9261947271927404,
+        -3.54279399801741
+      ],
+      "alpha_second": [
+        0.05947403460964738,
+        0.043046541522788084
+      ],
+      "alpha_fourth": [
+        0.011038237703890293,
+        0.006125900243362873
+      ],
+      "bvp_residual": 1.9132356002634963e-07,
+      "static_residual": 1.7061907442439406e-11,
+      "boundary_residual": 1.8176793403767988e-11,
+      "nu": 0.1042743724364923,
+      "block_energies": [
+        [
+          0.3447408947437297,
+          0.0862179343684273
+        ],
+        [
+          0.0862179343684273,
+          0.030553217419140057
+        ]
+      ],
+      "block_energy_sum_check": 1.1102230246251565e-16,
+      "prediction": {
+        "dimension_fraction": 0.01985128644804804,
+        "covariance_energy": 0.5477299808997242,
+        "mean_variances": [
+          0.10094821613878967,
+          0.11757899762730284
+        ],
+        "variance_seconds": [
+          0.02767085068206075,
+          0.0389343312725366
+        ],
+        "pair_covariance_energy": [
+          [
+            0.5040690846845016,
+            0.5388620898026705
+          ],
+          [
+            0.5388620898026705,
+            0.5691587791158182
+          ]
+        ],
+        "within_population_dimension_fractions": [
+          0.02364800346458263,
+          0.0904966602592939
+        ],
+        "response_radius": 0.8799412767765284,
+        "min_spectral_mass": -1.393606461930272e-12,
+        "imaginary_energy_residual": 1.9949319973733282e-17
+      },
+      "quadrature": {
+        "dt": 0.08,
+        "horizon": 100.0,
+        "n_hermite": 96,
+        "frequency_cutoff": 12.0
+      },
+      "decomposition": {
+        "diagonal_energy": 0.029923546800155923,
+        "uncorrelated_dimension_fraction": 0.3633641700176949,
+        "correlation_reduction_factor": 0.05463193150574348
+      }
+    },
+    {
+      "chi": 2.0,
+      "static_variances": [
+        6.136301554493155,
+        9.408615491199877
+      ],
+      "dynamic_variances": [
+        1.2492762388911254,
+        1.9117405165975858
+      ],
+      "mean_inputs": [
+        -3.001289520343916,
+        -3.637918993939567
+      ],
+      "alpha_second": [
+        0.059904564896278004,
+        0.04352799510529818
+      ],
+      "alpha_fourth": [
+        0.011848740614550587,
+        0.006668770742990335
+      ],
+      "bvp_residual": 1.890727806482261e-07,
+      "static_residual": 2.69491096105412e-11,
+      "boundary_residual": 2.92670332413536e-11,
+      "nu": 0.09324565268173143,
+      "block_energies": [
+        [
+          0.3243310891178113,
+          0.08216451149342942
+        ],
+        [
+          0.08216451149342942,
+          0.028560001793345273
+        ]
+      ],
+      "block_energy_sum_check": 0.0,
+      "prediction": {
+        "dimension_fraction": 0.016810544505924813,
+        "covariance_energy": 0.5172201138980154,
+        "mean_variances": [
+          0.09021203947507324,
+          0.1053801055083642
+        ],
+        "variance_seconds": [
+          0.023544136106984893,
+          0.03351201093440895
+        ],
+        "pair_covariance_energy": [
+          [
+            0.47733715661284887,
+            0.5135281968339338
+          ],
+          [
+            0.5135281968339338,
+            0.546439990161587
+          ]
+        ],
+        "within_population_dimension_fractions": [
+          0.02007383772770798,
+          0.0777658679247109
+        ],
+        "response_radius": 0.8867713075561362,
+        "min_spectral_mass": -2.3715516747757437e-12,
+        "imaginary_energy_residual": 4.683753385137379e-17
+      },
+      "quadrature": {
+        "dt": 0.08,
+        "horizon": 100.0,
+        "n_hermite": 96,
+        "frequency_cutoff": 12.0
+      },
+      "expected_finite_count_dispersion": {
+        "1000": [
+          [
+            2.0,
+            2.0
+          ],
+          [
+            2.0,
+            2.0
+          ]
+        ],
+        "2000": [
+          [
+            2.0,
+            2.0
+          ],
+          [
+            2.0,
+            2.0
+          ]
+        ],
+        "4000": [
+          [
+            2.0,
+            2.0
+          ],
+          [
+            2.0,
+            2.0
+          ]
+        ]
+      },
+      "elapsed_seconds": 1.5917785250001089,
+      "decomposition": {
+        "diagonal_energy": 0.02553771107246971,
+        "uncorrelated_dimension_fraction": 0.3404671514752647,
+        "correlation_reduction_factor": 0.04937493803171234
+      }
+    }
+  ],
+  "source": "Parameter-only conditional DMFT and two-site closure, no network fit."
+}

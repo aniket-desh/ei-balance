@@ -1,0 +1,61 @@
+{
+  "build_command": [
+    "/usr/bin/c++",
+    "-O3",
+    "-std=c++11",
+    "-fPIC",
+    "-shared",
+    "-ffast-math",
+    "-march=native",
+    "/workspace/scratch/f157098d3e38/next_round/runtime/constant_csr.cpp",
+    "-o",
+    "/workspace/scratch/f157098d3e38/next_round/runtime/tmp/constant_csr.so"
+  ],
+  "fast_math": true,
+  "cases": [
+    {
+      "N": 1000,
+      "fe": 0.8,
+      "max_action_error": 7.105427357601002e-15,
+      "trajectory50error": 5.329070518200751e-15,
+      "seconds_per_midpoint_step": {
+        "scipy_sparse": 0.0006307647159997032,
+        "constant_native": 0.00033985013799974693
+      },
+      "estimated_T8000_seconds": 57.77452345995698
+    },
+    {
+      "N": 2000,
+      "fe": 0.6,
+      "max_action_error": 1.7763568394002505e-14,
+      "trajectory50error": 1.366962099069724e-14,
+      "seconds_per_midpoint_step": {
+        "scipy_sparse": 0.0018867256620001172,
+        "constant_native": 0.0008318617859999904
+      },
+      "estimated_T8000_seconds": 141.41650361999837
+    },
+    {
+      "N": 4000,
+      "fe": 0.8,
+      "max_action_error": 1.0658141036401503e-14,
+      "trajectory50error": 1.9539925233402755e-14,
+      "seconds_per_midpoint_step": {
+        "scipy_sparse": 0.0029540127039999788,
+        "constant_native": 0.0017091750200002025
+      },
+      "estimated_T8000_seconds": 290.5597534000344
+    },
+    {
+      "N": 4000,
+      "fe": 0.6,
+      "max_action_error": 1.7763568394002505e-14,
+      "trajectory50error": 3.13915560212763e-14,
+      "seconds_per_midpoint_step": {
+        "scipy_sparse": 0.008862463760000083,
+        "constant_native": 0.004794697944000291
+      },
+      "estimated_T8000_seconds": 815.0986504800494
+    }
+  ]
+}

@@ -1,0 +1,267 @@
+\section{Finite-record covariance energy: centering and collective memory}
+This calculation concerns one fixed connectivity and one specified stationary
+measure. Statistical variation of temporal windows is not independent sampling
+of connectivity realizations. No decay model or infinite-record extrapolation
+is fitted to the neuronal data below.
+
+\subsection{Exact centering bias of one covariance block}
+Write $z(t)=r(t)-m$ and
+$C(\tau)=\mathbb E[z(t+\tau)z(t)^\top]$, with $C=C(0)$. For a block $B$
+containing $L$ equally spaced samples, define
+\[
+ \widehat C_B=\frac1L\sum_{t\in B}z(t)z(t)^\top-
+               \bar z_B\bar z_B^\top,
+ \qquad \bar z_B=\frac1L\sum_{t\in B}z(t).
+\]
+This equals the covariance computed after subtracting the block's empirical
+mean from the raw rates; knowledge of the true $m$ is not required. Stationarity
+gives the exact expectation
+\[
+ M_B=\mathbb E[\bar z_B\bar z_B^\top]
+     =\frac1{L^2}\sum_{t,u\in B}C(t-u),\qquad
+ \boxed{\mathbb E\widehat C_B=C-M_B.}
+\]
+For a continuous block of duration $B$,
+\[
+ M_B=\frac1{B^2}\int_{-B}^{B}(B-|\tau|)C(\tau)\,\mathrm d\tau.
+\]
+The symmetric integral is a positive semidefinite matrix, even if the lagged
+matrix is not symmetric. Moreover $0\preceq M_B\preceq C$ because
+$C-M_B$ is an expected sample covariance.
+
+The full-record variance numerator has the corresponding bias
+\[
+ \mathbb E\widehat\nu_T=\nu-\frac1N\operatorname{tr}M_T,
+ \qquad \nu=N^{-1}\operatorname{tr}C.
+\]
+It is essential to distinguish the full record $T$, used in this numerator,
+from the shorter blocks $B$, used in the energy denominator.
+
+\subsection{Exact mean cross energy and its four-time term}
+For blocks $B,D$ of equal duration, the separated-block estimator is
+$\widehat{\mathcal E}_{BD}=N^{-1}\operatorname{tr}
+(\widehat C_B\widehat C_D)$. Add and subtract the product of expectations:
+\begin{align*}
+ \mathbb E\widehat{\mathcal E}_{BD}
+ &=\frac1N\operatorname{tr}[(C-M_B)(C-M_D)]+\chi_{BD},\\
+ \chi_{BD}&=\frac1N\sum_{ij}
+       \operatorname{Cov}(\widehat C_{B,ij},\widehat C_{D,ij}).
+\end{align*}
+At a large enough gap $\chi_{BD}$ may become negligible under mixing. The
+centering bias remains. For independent equal-duration blocks,
+\[
+ \mathbb E\widehat{\mathcal E}_{BD}
+ =\frac{\|C-M_B\|_F^2}{N}
+ =\mathcal E-\frac{2\operatorname{tr}(CM_B)-\operatorname{tr}M_B^2}{N},
+ \qquad\mathcal E=N^{-1}\operatorname{tr}C^2.
+\]
+Consequently increasing the gap alone does not produce an unbiased estimate.
+Since $0\preceq M_B\preceq C$, the independent-block energy is biased downward.
+If $\beta_B=\|M_B\|_F/\|C\|_F$, Cauchy--Schwarz gives
+\[
+ 0\le\frac{\mathcal E-
+       N^{-1}\|C-M_B\|_F^2}{\mathcal E}\le2\beta_B.
+\]
+Thus $\beta_B\le\eta/2$ is a sufficient centering-error criterion at relative
+energy tolerance $\eta$, separate from the gap criterion for $\chi_{BD}$.
+
+To show which correlation function controls $\chi$, introduce the centering
+kernel $A_B(t,u)=\delta_{tu}/L-1/L^2$ on the block, zero outside. Then
+\[
+ \widehat C_{B,ij}=\sum_{t,u}A_B(t,u)z_i(t)z_j(u).
+\]
+Writing the fourth moment as its three pairings plus a fourth cumulant gives
+\begin{align*}
+ \chi_{BD}=\frac1N\sum_{t,u,s,v}A_B(t,u)A_D(s,v)
+ \Big\{&\operatorname{tr}C(t-s)\operatorname{tr}C(u-v)\\
+ &+\operatorname{tr}[C(t-v)C(u-s)]\\
+ &+\sum_{ij}\operatorname{cum}[z_i(t),z_j(u),z_i(s),z_j(v)]\Big\}.
+\end{align*}
+This is exact on the discrete grid. It does not assume Gaussian rate
+trajectories. Even a conditionally Gaussian input has nonlinear, non-Gaussian
+rate outputs, so dropping the last term requires an additional approximation.
+The formula makes explicit why a local two-time autocorrelation alone cannot
+bound energy convergence: the estimator involves collective matrix pairings
+and a four-time cumulant.
+
+For bounded rates, a generic strong-mixing bound can make $|\chi_{BD}|$ at
+most a constant times $N\alpha(G)$, where $G$ is the empty inter-block gap and
+$\alpha$ is the mixing coefficient of the entire network. This is too crude
+to set a useful record length without an $N$-uniform mixing estimate. We do
+not replace that unknown coefficient by the decay time of an average neuron.
+
+\subsection{An explicit collective-time criterion in a solvable illustration}
+Before specializing the lag profile, suppose the matrix integrals and their
+first absolute moments converge. With $S_C(0)=\int_{-\infty}^{\infty}C(\tau)
+\,\mathrm d\tau$, the triangular window gives
+\[
+ M_B=B^{-1}S_C(0)+O(B^{-2}).
+\]
+Thus the general leading centering coefficients are
+\begin{align*}
+ \frac{\mathbb E\widehat{\mathcal E}_{BD}}{\mathcal E}
+ &=1-\frac{4\tau_{\rm cent,E}}B+O(B^{-2}),\qquad
+ \tau_{\rm cent,E}=\frac{\operatorname{tr}[C S_C(0)]}
+                         {2\operatorname{tr}C^2},\\
+ \frac{\mathbb E\widehat\nu_T}{\nu}
+ &=1-\frac{2\tau_{\rm cent,\nu}}T+O(T^{-2}),\qquad
+ \tau_{\rm cent,\nu}=\frac{\operatorname{tr}S_C(0)}{2\operatorname{tr}C}.
+\end{align*}
+These concern independent-block expectation bias. They are not automatically
+the correlation time of a fourth-order pair process, nor the autocorrelation
+time governing statistical fluctuations of a covariance-energy estimator.
+
+The leading conditional theory can evaluate $\tau_{\rm cent,E}$ directly.
+If $F(\omega_1,\omega_2)$ is its two-frequency energy density, then
+\[
+ \mathcal E=\iint F\,\frac{\mathrm d\omega_1\mathrm d\omega_2}{(2\pi)^2},
+ \qquad J=\int F(\omega,0)\frac{\mathrm d\omega}{2\pi},\qquad
+ \tau_{\rm cent,E}=\frac{J}{2\mathcal E}.
+\]
+This is a frequency \emph{slice}, not the width of the narrow anti-diagonal
+resonance in the two-frequency plane. Likewise, before expansion the exact
+independent-block centering prediction is obtained by multiplying the density
+by $[1-a_B(\omega_1)][1-a_B(\omega_2)]$, where
+$a_B(\omega)=\operatorname{sinc}^2(\omega B/2)$ uses $\operatorname{sinc}x=
+\sin x/x$. Resolving $a_B$ needs a sufficiently fine frequency quadrature;
+we do not multiply an unresolved narrow sinc on the coarse FFT grid.
+
+At the archived coupling point, the leading conditional theory gives
+$\tau_{\rm cent,E}=6.946$ (60:40), $6.889$ (80:20), while
+$\tau_{\rm cent,\nu}=4.232,4.252$. At $B=500,T=4000$, the corresponding
+first large-window estimates are a $5.56\%/5.51\%$ downward energy bias
+and $5.13\%/5.09\%$ upward PR bias when ratio noise is ignored. These are
+parameter-only estimates within the leading closure, not individual-network
+corrections. A one-percent energy-centering target suggests $B\gtrsim2780$
+in that approximation; gap and variance errors still require separate checks.
+
+Consider commuting exponential covariance modes
+\[
+ C(\tau)=\sum_\alpha\lambda_\alpha
+    e^{-|\tau|/\tau_\alpha}u_\alpha u_\alpha^\top.
+\]
+This is a stationary Gaussian illustration of estimator bias, not an assumed
+EI covariance model. Performing the window integral gives
+\begin{align*}
+ M_B&=\sum_\alpha\lambda_\alpha b_\alpha(B)
+               u_\alpha u_\alpha^\top,\\
+ b_\alpha(B)&=\frac{2\tau_\alpha}{B}
+       -\frac{2\tau_\alpha^2}{B^2}
+          (1-e^{-B/\tau_\alpha}).
+\end{align*}
+For independent blocks,
+\[
+ \frac{\mathbb E\widehat{\mathcal E}_{BD}}{\mathcal E}
+ =\frac{\sum_\alpha\lambda_\alpha^2[1-b_\alpha(B)]^2}
+        {\sum_\alpha\lambda_\alpha^2}
+ =1-\frac{4\tau_{\mathcal E}}B+O(B^{-2}),\quad
+ \tau_{\mathcal E}=\frac{\sum_\alpha\lambda_\alpha^2\tau_\alpha}
+                        {\sum_\alpha\lambda_\alpha^2}.
+\]
+The numerator instead has
+\[
+ \frac{\mathbb E\widehat\nu_T}{\nu}
+ =1-\frac{2\tau_\nu}{T}+O(T^{-2}),\quad
+ \tau_\nu=\frac{\sum_\alpha\lambda_\alpha\tau_\alpha}
+                   {\sum_\alpha\lambda_\alpha}.
+\]
+Ignoring ratio fluctuations for this illustration, their combination gives
+$\widehat d/d\simeq1+4\tau_{\mathcal E}/B-4\tau_\nu/T$. Shorter denominator
+blocks can therefore bias PR upward even with an arbitrarily large block gap.
+A sufficient asymptotic energy-centering rule in this illustration is
+$B\gg4\tau_{\mathcal E}/\eta$, not merely $B\gg$ a local rate correlation time.
+
+\subsection{Ratio fluctuations and practical diagnostics}
+Let $b_\nu=\mathbb E\widehat\nu-\nu$ and
+$b_E=\mathbb E\widehat E-\mathcal E$. A second-order delta expansion of
+$\widehat d=\widehat\nu^2/\widehat E$ gives
+\begin{align*}
+ \frac{\mathbb E\widehat d-d}{d}
+ \simeq{}&\frac{2b_\nu}{\nu}-\frac{b_E}{\mathcal E}
+  +\frac{\operatorname{Var}\widehat\nu}{\nu^2}
+  -\frac{2\operatorname{Cov}(\widehat\nu,\widehat E)}{\nu\mathcal E}
+  +\frac{\operatorname{Var}\widehat E}{\mathcal E^2},\\
+ \frac{\operatorname{Var}\widehat d}{d^2}
+ \simeq{}&\frac{4\operatorname{Var}\widehat\nu}{\nu^2}
+  -\frac{4\operatorname{Cov}(\widehat\nu,\widehat E)}{\nu\mathcal E}
+  +\frac{\operatorname{Var}\widehat E}{\mathcal E^2}.
+\end{align*}
+Terms quadratic in the mean biases may be added when they are not small.
+The cross-energy estimator is a product of covariance estimates, not the
+squared Frobenius norm of the covariance used by its numerator. Its finite-T
+ratio is not subject to the exact physical bound $d\le1$. An enormous value
+signals an ill-conditioned ratio estimate, but alone does not prove a fixed
+point, multistability or nonstationarity.
+
+Our numerical tests vary block duration, empty gap and record duration
+separately on one fixed network. They retain both fixed-number-of-block and
+fixed-block-duration comparisons. The four-time quantity
+\[
+ K_{\rm outer}(\tau)=N^{-1}\langle[z(t)\cdot z(t+\tau)]^2\rangle-
+                   N^{-1}\operatorname{tr}C^2
+\]
+is also measured as a diagnostic of instantaneous outer-product memory. It
+does not by itself equal the full centered-block $\chi_{BD}$ above.
+No empirical power law for required $T(N,\delta)$ is inferred from one network
+and one coupling point. A critical scaling claim still needs matched duration
+checks at several distances from onset and sizes, or a uniform theoretical
+bound on the collective four-time integrals.
+
+\subsection{A four-window mean-free repair}
+The centering bias can be removed without knowing the true mean by using
+independent copies. For mutually independent stationary draws $r^1,r^2$,
+\[
+ C=\frac12\mathbb E[(r^1-r^2)(r^1-r^2)^\top].
+\]
+For four independent draws this gives
+\[
+ \boxed{\mathcal E=\frac1{4N}\mathbb E\left[
+       (r^1-r^2)^\top(r^3-r^4)\right]^2.}
+\]
+This is a mean-free independent-copy covariance identity, not a claim of a
+new general statistical estimator. It suggests using four separated temporal
+windows from the same stationary network. For two windows set
+\begin{align*}
+ \widehat C^{\rm diff}_{AB}
+ &=\frac12\left(\widehat C_A+\widehat C_B\right)
+    +\frac12(\bar r_A-\bar r_B)(\bar r_A-\bar r_B)^\top\\
+ &=\frac1{2|A||B|}\sum_{t\in A,u\in B}
+            [r(t)-r(u)][r(t)-r(u)]^\top.
+\end{align*}
+If the two windows are independent stationary records,
+$\mathbb E\widehat C^{\rm diff}_{AB}=C$ exactly, regardless of their
+internal temporal autocorrelation. If they are dependent, the expectation is
+instead
+\[
+ \mathbb E\widehat C^{\rm diff}_{AB}
+ =C-\frac12\left[
+       \operatorname{Cov}(\bar r_A,\bar r_B)
+      +\operatorname{Cov}(\bar r_B,\bar r_A)\right].
+\]
+Thus the mean-bias term now depends on the inter-window gap rather than an
+unavoidable own-window $M_B$. For four independent stationary windows,
+\[
+ \widehat{\mathcal E}_{AB;CD}^{\rm diff}
+ =N^{-1}\operatorname{tr}(\widehat C^{\rm diff}_{AB}
+                         \widehat C^{\rm diff}_{CD})
+\]
+is exactly unbiased for $\mathcal E$. At finite gaps the remaining dependence
+must still be assessed. Its variance can be larger for short windows, and
+the ratio of averaged unbiased moments is not exactly unbiased for $d$.
+Our implementation averages all three pairings of separated four-window
+sets and does not count overlapping sets as independent observations.
+Delete-one-window results are reported as sensitivity diagnostics; interpreting
+them as temporal standard errors needs the mixing/independence approximation.
+
+For $d_{AB}=\bar r_A-\bar r_B$, the compressed energy formula is
+\begin{align*}
+ 4N\widehat{\mathcal E}_{AB;CD}^{\rm diff}
+ ={}&\operatorname{tr}[(\widehat C_A+\widehat C_B)
+                       (\widehat C_C+\widehat C_D)]\\
+ &+d_{CD}^\top(\widehat C_A+\widehat C_B)d_{CD}
+  +d_{AB}^\top(\widehat C_C+\widehat C_D)d_{AB}
+  +(d_{AB}^\top d_{CD})^2.
+\end{align*}
+It allows the calculation from block means, covariance cross products and
+quadratic forms without rebuilding a dense covariance for every quadruple.
+The code verifies it against a direct dense product.

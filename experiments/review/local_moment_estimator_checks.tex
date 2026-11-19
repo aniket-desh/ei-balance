@@ -1,0 +1,48 @@
+\section{Local-moment estimators for the degree and composition checks}
+The mean-free energy estimator should be accompanied by compatible local
+moment estimates. This matters especially at nominally fixed degree, where
+the leading static input variance can vanish while a finite-time estimate
+of each neuron's mean still fluctuates.
+
+Fix one stationary network and one population containing $M$ neurons.
+Let $\mu_i=\mathbb E_t x_i(t)$ and write the input mean in temporal window
+$A$ as $\bar x_A=\mu+e_A$, with $\mathbb E e_A=0$. Set
+$P=I-\mathbf1\mathbf1^\top/M$. The desired finite-population static
+variance is $\Delta_{\rm emp}=M^{-1}\mu^\top P\mu$. Direct squaring gives
+\[
+ \mathbb E\left[\frac1M\bar x_A^\top P\bar x_A\right]
+ =\Delta_{\rm emp}+\frac1M\operatorname{tr}
+       [P\operatorname{Cov}(e_A)],
+\]
+which is positively biased. For two stationary windows,
+\[
+ \mathbb E\left[\frac1M\bar x_A^\top P\bar x_B\right]
+ =\Delta_{\rm emp}+\frac1M\operatorname{tr}
+       [P\mathbb E(e_Be_A^\top)].
+\]
+The cross-window estimator is unbiased if the windows are independent.
+It can be slightly negative in one finite record; clipping it at zero would
+reintroduce bias. This finite-population statistic should be distinguished
+from the infinite-population Gaussian variance $\Delta_a$.
+
+For local gain $g_i(t)=\phi'(x_i(t))$ and time-averaged gain
+$\alpha_i=\mathbb E_tg_i(t)$, independent windows give
+\[
+ \mathbb E\left[\frac1M\sum_i\bar g_{A,i}\bar g_{B,i}\right]
+ =\frac1M\sum_i\alpha_i^2.
+\]
+Squaring one window instead adds $M^{-1}\sum_i\operatorname{Var}\bar g_{A,i}$.
+This averaging order is also distinct from the instantaneous statistic
+$M^{-1}\sum_i\mathbb E_t g_i(t)^2$ and from the squared population mean gain.
+
+Finally let $v_{A,i}$ be the input variance computed within window $A$.
+For independent equal-law windows,
+\[
+ \mathbb E\left[\frac{v_{A,i}+v_{B,i}}2+
+                 \frac{(\bar x_{A,i}-\bar x_{B,i})^2}{2}\right]
+ =\operatorname{Var}_t x_i(t).
+\]
+The same expression applies to the output rate variance. Its proof is the
+variance decomposition already used for the matrix mean-free covariance
+estimate. None of these identities certifies independence of separated
+windows in a nonlinear trajectory; gap sensitivity remains a diagnostic.

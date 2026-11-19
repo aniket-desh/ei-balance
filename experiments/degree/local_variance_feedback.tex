@@ -1,0 +1,128 @@
+\section{Degree-test diagnostics of finite-network local heterogeneity}
+\label{sec:degree-local-diagnostics}
+
+The limiting fixed-count prediction has no static disorder at this
+away-from-onset control point. A finite network may nevertheless have
+distributed temporal variances and correlated changes of its local input
+mean and variance. A positive input-mean spread must first be separated from
+finite-record noise; it cannot be assigned to a new stationary mechanism by
+looking only at a histogram of trajectory means.
+
+For recording block \(k\), define the neuron-wise input mean and second
+moment \(\mu_i^k,s_i^k\), rate mean and second moment \(m_i^k,t_i^k\), and
+average gain \(g_i^k\). For two disjoint independent stationary blocks,
+\begin{align*}
+ \widehat q_i^{kl}
+ &=\tfrac12(s_i^k+s_i^l)-\mu_i^k\mu_i^l,\\
+ \widehat v_i^{kl}
+ &=\tfrac12(t_i^k+t_i^l)-m_i^k m_i^l,\\
+ \widehat A_i^{kl}&=g_i^kg_i^l.
+\end{align*}
+Their expectations are the infinite-time input variance, rate variance, and
+squared time-averaged gain of the fixed network. The variance estimators
+equal the diagonals of the mean-free two-window covariance construction.
+No Gaussian assumption is required for these identities. Independence of
+the windows is the substantive temporal assumption.
+
+Let a tilde denote subtraction of a block's population mean over neuron
+labels. Cross-block spatial products give
+\[
+ \widehat\Delta_a^{kl}
+ =\frac1{N_a}\sum_{i\in a}\widetilde\mu_i^k\widetilde\mu_i^l,\qquad
+ \widehat V_{m,a}^{kl}
+ =\frac1{N_a}\sum_{i\in a}\widetilde m_i^k\widetilde m_i^l.
+\]
+For four distinct independent windows, products
+\[
+ \frac1{N_a}\sum_{i\in a}\widehat v_i^{kl}\widehat v_i^{mn},
+ \quad
+ \frac1{N_a}\sum_{i\in a}
+  (\widehat q_i^{kl}-\overline{\widehat q}_a^{kl})
+  (\widehat q_i^{mn}-\overline{\widehat q}_a^{mn})
+\]
+estimate \(E_i[v_i^2]\) and \(\operatorname{Var}_i q_i\), respectively.
+A third independent window gives the local covariance
+\[
+ \widehat{\operatorname{Cov}}_a(\mu,q)
+ =\frac1{N_a}\sum_{i\in a}
+  \widetilde\mu_i^k
+  (\widehat q_i^{lm}-\overline{\widehat q}_a^{lm}).
+\]
+The implementation averages all three matchings of each valid quadruple,
+or all three choices of the singled-out window in each valid triple.
+Gap changes test residual temporal dependence. None of these operations
+produces another independent network replicate.
+
+The estimated diagonal rate energy is
+\(\widehat{\mathcal E}_{\rm diag}=\sum_a f_a\widehat E_i[v_i^2]\).
+For nonzero denominators,
+\[
+ \widehat d=
+ \left(\frac{\widehat\nu^2}{\widehat{\mathcal E}_{\rm diag}}\right)
+ \left(\frac{\widehat{\mathcal E}_{\rm diag}}
+             {\widehat{\mathcal E}}\right).
+\]
+This is an exact algebraic factorization of the estimates, not an assertion
+that either ratio is unbiased or that a finite-record factor must lie in
+its infinite-time range. Negative noise-corrected moments are retained.
+
+In the prespecified retained \(N=1000,\chi=0\), seed4001 example, cross-block
+mean products give
+\[
+ \widehat\Delta=(0.06067,0.09650),\qquad
+ \widehat V_m=(0.003857,0.004693).
+\]
+The raw full-record mean variances are \((0.06368,0.10104)\).
+Thus the temporal mean-estimation term is small compared with the observed
+static spread. Substituting measured \(V_m\) and population means into the
+exact finite-pool row contraction gives \((0.05939,0.09575)\), within about
+two percent of the observed spread in this example. This substitution is
+a calibrated diagnostic. Since the measured means depend on the same
+network, the independent cavity-row contraction is not an exact identity
+for that particular fixed connectivity.
+
+The same cross-window calculation measures
+\[
+ \operatorname{Var}_i q_i=(0.2076,0.5473),\qquad
+ \operatorname{Cov}_i(\mu_i,q_i)=(0.01962,0.05572).
+\]
+A local Gaussian mean-rate expansion identifies why these are relevant.
+With
+\[
+ {\cal M}(\mu,q)=2\Phi\!\left(\frac{\mu}{\sqrt{1+q}}\right),
+ \qquad
+ \alpha=\partial_\mu{\cal M},\qquad
+ \beta=\partial_\mu^2{\cal M},
+\]
+the Gaussian heat identity gives \(\partial_q{\cal M}=\beta/2\).
+Expanding about a population background,
+\[
+ \delta m_i=\alpha\,\delta\mu_i+\frac{\beta}{2}\delta q_i+
+             O(\delta\mu_i^2,\delta\mu_i\delta q_i,\delta q_i^2),
+\]
+and squaring yields
+\[
+ \operatorname{Var}_i m_i
+ \simeq\alpha^2\Delta+
+       \alpha\beta\operatorname{Cov}_i(\mu_i,q_i)+
+       \frac{\beta^2}{4}\operatorname{Var}_i q_i.
+\]
+At the leading fixed-count background, the predicted and measured rate-mean
+variances are
+\begin{align*}
+ V_m^{\rm Taylor}&=(0.004286,0.005276),\\
+ \widehat V_m&=(0.003857,0.004693).
+\end{align*}
+The prediction exceeds the measured values by \(11\)--\(12\%\).
+Using the measured population input mean and corrected temporal variance
+reduces the excess to about \(7\%\). The terms involving variance
+heterogeneity account for roughly a third of the expanded variance.
+
+This diagnostic explains how finite-network temporal-variance heterogeneity
+can feed static rate heterogeneity even when the leading fixed-count
+solution is homogeneous within each population. It does not predict
+\(\operatorname{Var}q\), \(\operatorname{Cov}(\mu,q)\), their scaling
+coefficients, or the omitted nonlinear moments from microscopic parameters.
+It is therefore not a controlled repair of the finite-size PR theory.
+The \(N=2000\) checks and the full cohort results are recorded separately;
+a selected example alone does not establish a size law.

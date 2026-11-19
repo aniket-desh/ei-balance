@@ -1,0 +1,2766 @@
+{
+  "scope": "Algebra/control-path check only; finite-record block estimates need not obey every exact stationary covariance bound.",
+  "timestamp_unix": 1794407146.123393,
+  "completed_records_checked": 72,
+  "completed_names": [
+    "composition_f60_N1000_seed3001",
+    "composition_f60_N1000_seed3002",
+    "composition_f60_N1000_seed3003",
+    "composition_f60_N1000_seed3004",
+    "composition_f60_N2000_seed3001",
+    "composition_f60_N2000_seed3002",
+    "composition_f60_N2000_seed3003",
+    "composition_f60_N2000_seed3004",
+    "composition_f60_N2000_seed3005",
+    "composition_f60_N2000_seed3006",
+    "composition_f60_N2000_seed3007",
+    "composition_f60_N2000_seed3008",
+    "composition_f60_N2000_seed3009",
+    "composition_f60_N2000_seed3010",
+    "composition_f60_N2000_seed3011",
+    "composition_f60_N2000_seed3012",
+    "composition_f60_N4000_seed3001",
+    "composition_f60_N4000_seed3002",
+    "composition_f60_N4000_seed3003",
+    "composition_f60_N4000_seed3004",
+    "composition_f80_N1000_seed3001",
+    "composition_f80_N1000_seed3002",
+    "composition_f80_N1000_seed3003",
+    "composition_f80_N1000_seed3004",
+    "composition_f80_N2000_seed3001",
+    "composition_f80_N2000_seed3002",
+    "composition_f80_N2000_seed3003",
+    "composition_f80_N2000_seed3004",
+    "composition_f80_N2000_seed3005",
+    "composition_f80_N2000_seed3006",
+    "composition_f80_N2000_seed3007",
+    "composition_f80_N2000_seed3008",
+    "composition_f80_N2000_seed3009",
+    "composition_f80_N2000_seed3010",
+    "composition_f80_N2000_seed3011",
+    "composition_f80_N2000_seed3012",
+    "composition_f80_N4000_seed3001",
+    "composition_f80_N4000_seed3002",
+    "composition_f80_N4000_seed3003",
+    "composition_f80_N4000_seed3004",
+    "degree_chi0.5_N1000_seed4001",
+    "degree_chi0.5_N1000_seed4002",
+    "degree_chi0.5_N1000_seed4003",
+    "degree_chi0_N1000_seed4001",
+    "degree_chi0_N1000_seed4002",
+    "degree_chi0_N1000_seed4003",
+    "degree_chi0_N2000_seed4001",
+    "degree_chi0_N2000_seed4002",
+    "degree_chi0_N2000_seed4003",
+    "degree_chi0_N4000_seed4001",
+    "degree_chi0_N4000_seed4002",
+    "degree_chi0_N4000_seed4003",
+    "degree_chi1_N1000_seed4001",
+    "degree_chi1_N1000_seed4002",
+    "degree_chi1_N1000_seed4003",
+    "degree_chi2_N1000_seed4001",
+    "degree_chi2_N1000_seed4002",
+    "degree_chi2_N1000_seed4003",
+    "degree_chi2_N2000_seed4001",
+    "degree_chi2_N2000_seed4002",
+    "degree_chi2_N2000_seed4003",
+    "degree_chi2_N4000_seed4001",
+    "degree_chi2_N4000_seed4002",
+    "degree_chi2_N4000_seed4003",
+    "dtcheck_composition_f60_N1000_seed3001_dt0025",
+    "dtcheck_composition_f60_N1000_seed3003_dt0025",
+    "dtcheck_composition_f80_N1000_seed3001_dt0025",
+    "dtcheck_composition_f80_N1000_seed3003_dt0025",
+    "dtcheck_degree_chi0_N4000_seed4001_dt0025_T4000",
+    "outlier_record_dt_f80_N1000_seed3001_dt00125_T16000",
+    "outlier_record_dt_f80_N1000_seed3001_dt0025_T16000",
+    "outlier_record_dt_f80_N1000_seed3001_dt005_T16000"
+  ],
+  "unfinished_records": [],
+  "errors": [],
+  "maximum_absolute_errors": {
+    "energy_sum": 0.0,
+    "d_ratio": 0.0,
+    "population_symmetry": 8.326672684688674e-17,
+    "nu_weighting": 5.551115123125783e-17,
+    "W_control": 4.440892098500626e-16,
+    "J0F_control": 4.440892098500626e-16,
+    "h_degree": 0.0,
+    "joint_population_dimension_identity": 2.7755575615628914e-17
+  },
+  "measurement_geometry_diagnostics": [
+    {
+      "name": "composition_f60_N1000_seed3001",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.4543578357314529,
+      "coherent_projection_fraction": 0.0031369199235869675
+    },
+    {
+      "name": "composition_f60_N1000_seed3001",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.45499996258653047,
+      "coherent_projection_fraction": 0.003079745352325062
+    },
+    {
+      "name": "composition_f60_N1000_seed3001",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.4553882634899037,
+      "coherent_projection_fraction": 0.0031293694603695293
+    },
+    {
+      "name": "composition_f60_N1000_seed3001",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.45532753267291187,
+      "coherent_projection_fraction": 0.0031312426307758376
+    },
+    {
+      "name": "composition_f60_N1000_seed3001",
+      "B": 1000.0,
+      "T": 4000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.45422533182132596,
+      "coherent_projection_fraction": 0.0030961057058928117
+    },
+    {
+      "name": "composition_f60_N1000_seed3001",
+      "B": 1000.0,
+      "T": 8000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.45532227772492745,
+      "coherent_projection_fraction": 0.003128292278808293
+    },
+    {
+      "name": "composition_f60_N1000_seed3001",
+      "B": 1000.0,
+      "T": 8000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.45523880263133704,
+      "coherent_projection_fraction": 0.0030842871995096248
+    },
+    {
+      "name": "composition_f60_N1000_seed3002",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.45447221482881217,
+      "coherent_projection_fraction": 0.0024431861615089403
+    },
+    {
+      "name": "composition_f60_N1000_seed3002",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.45473908966787513,
+      "coherent_projection_fraction": 0.002453814728223445
+    },
+    {
+      "name": "composition_f60_N1000_seed3002",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.45479583179883126,
+      "coherent_projection_fraction": 0.002373644826130849
+    },
+    {
+      "name": "composition_f60_N1000_seed3002",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.4548566068013114,
+      "coherent_projection_fraction": 0.0023604089753036525
+    },
+    {
+      "name": "composition_f60_N1000_seed3003",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.4714114269232477,
+      "coherent_projection_fraction": 0.0022876872963254755
+    },
+    {
+      "name": "composition_f60_N1000_seed3003",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.4718359262310774,
+      "coherent_projection_fraction": 0.0023490749478280453
+    },
+    {
+      "name": "composition_f60_N1000_seed3003",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.47136235364853635,
+      "coherent_projection_fraction": 0.0021504769606215113
+    },
+    {
+      "name": "composition_f60_N1000_seed3003",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.47137359064543594,
+      "coherent_projection_fraction": 0.0021749475330495754
+    },
+    {
+      "name": "composition_f60_N1000_seed3004",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.44828368617321945,
+      "coherent_projection_fraction": 0.0026295521652799168
+    },
+    {
+      "name": "composition_f60_N1000_seed3004",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.4477660424823009,
+      "coherent_projection_fraction": 0.002839789137982281
+    },
+    {
+      "name": "composition_f60_N1000_seed3004",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.44666044045292547,
+      "coherent_projection_fraction": 0.0028854737613818026
+    },
+    {
+      "name": "composition_f60_N1000_seed3004",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.446660079981723,
+      "coherent_projection_fraction": 0.002917179897164353
+    },
+    {
+      "name": "composition_f60_N2000_seed3001",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.4486178236228498,
+      "coherent_projection_fraction": 0.0010070564066854942
+    },
+    {
+      "name": "composition_f60_N2000_seed3001",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.44841783984045414,
+      "coherent_projection_fraction": 0.0009428485186859669
+    },
+    {
+      "name": "composition_f60_N2000_seed3001",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.44773448019512235,
+      "coherent_projection_fraction": 0.0008634603114308637
+    },
+    {
+      "name": "composition_f60_N2000_seed3001",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.4475831828562252,
+      "coherent_projection_fraction": 0.0008565008218708
+    },
+    {
+      "name": "composition_f60_N2000_seed3001",
+      "B": 1000.0,
+      "T": 4000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.4485434990685135,
+      "coherent_projection_fraction": 0.001007474952948947
+    },
+    {
+      "name": "composition_f60_N2000_seed3001",
+      "B": 1000.0,
+      "T": 8000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.4477180957476751,
+      "coherent_projection_fraction": 0.000861176149167057
+    },
+    {
+      "name": "composition_f60_N2000_seed3001",
+      "B": 1000.0,
+      "T": 8000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.4477017626684695,
+      "coherent_projection_fraction": 0.0008556262953116015
+    },
+    {
+      "name": "composition_f60_N2000_seed3002",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.45003329377879175,
+      "coherent_projection_fraction": 0.001017540834274976
+    },
+    {
+      "name": "composition_f60_N2000_seed3002",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.4498639732768073,
+      "coherent_projection_fraction": 0.0010366003840488306
+    },
+    {
+      "name": "composition_f60_N2000_seed3002",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.45012704839813217,
+      "coherent_projection_fraction": 0.0011903895189434171
+    },
+    {
+      "name": "composition_f60_N2000_seed3002",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.4501025034014866,
+      "coherent_projection_fraction": 0.0012110932610406681
+    },
+    {
+      "name": "composition_f60_N2000_seed3003",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.449617830526268,
+      "coherent_projection_fraction": 0.0016677191510362287
+    },
+    {
+      "name": "composition_f60_N2000_seed3003",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.4496286783958392,
+      "coherent_projection_fraction": 0.0016995924309482625
+    },
+    {
+      "name": "composition_f60_N2000_seed3003",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.4489980203692813,
+      "coherent_projection_fraction": 0.0016325367318289455
+    },
+    {
+      "name": "composition_f60_N2000_seed3003",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.449097716569157,
+      "coherent_projection_fraction": 0.0016351997191944646
+    },
+    {
+      "name": "composition_f60_N2000_seed3004",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.4462703791610991,
+      "coherent_projection_fraction": 0.0011002474837519581
+    },
+    {
+      "name": "composition_f60_N2000_seed3004",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.44746678998854233,
+      "coherent_projection_fraction": 0.0010587001992074078
+    },
+    {
+      "name": "composition_f60_N2000_seed3004",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.4456331298308931,
+      "coherent_projection_fraction": 0.0012457834334498718
+    },
+    {
+      "name": "composition_f60_N2000_seed3004",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.4456099887169819,
+      "coherent_projection_fraction": 0.001237320456015944
+    },
+    {
+      "name": "composition_f60_N2000_seed3005",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.43834402824124813,
+      "coherent_projection_fraction": 0.0011194126557295882
+    },
+    {
+      "name": "composition_f60_N2000_seed3005",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.43761707576180103,
+      "coherent_projection_fraction": 0.0012312978992417723
+    },
+    {
+      "name": "composition_f60_N2000_seed3005",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.43918497537457196,
+      "coherent_projection_fraction": 0.0009758908506304889
+    },
+    {
+      "name": "composition_f60_N2000_seed3005",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.43914083611338195,
+      "coherent_projection_fraction": 0.0009818359449294482
+    },
+    {
+      "name": "composition_f60_N2000_seed3005",
+      "B": 1000.0,
+      "T": 4000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.43832168017486395,
+      "coherent_projection_fraction": 0.0011085153047250909
+    },
+    {
+      "name": "composition_f60_N2000_seed3005",
+      "B": 1000.0,
+      "T": 8000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.4391996662305873,
+      "coherent_projection_fraction": 0.0009689640389790628
+    },
+    {
+      "name": "composition_f60_N2000_seed3005",
+      "B": 1000.0,
+      "T": 8000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.43929972973066206,
+      "coherent_projection_fraction": 0.00096697134479179
+    },
+    {
+      "name": "composition_f60_N2000_seed3006",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.4378819232598116,
+      "coherent_projection_fraction": 0.0006396153495934755
+    },
+    {
+      "name": "composition_f60_N2000_seed3006",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.4383657052055168,
+      "coherent_projection_fraction": 0.0006552048385239731
+    },
+    {
+      "name": "composition_f60_N2000_seed3006",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.4375258180972794,
+      "coherent_projection_fraction": 0.0006759470500751534
+    },
+    {
+      "name": "composition_f60_N2000_seed3006",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.4376183400356814,
+      "coherent_projection_fraction": 0.0006907988990523703
+    },
+    {
+      "name": "composition_f60_N2000_seed3007",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.4432614387724851,
+      "coherent_projection_fraction": 0.0007418372048050076
+    },
+    {
+      "name": "composition_f60_N2000_seed3007",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.4427550837249849,
+      "coherent_projection_fraction": 0.0007112853883267126
+    },
+    {
+      "name": "composition_f60_N2000_seed3007",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.4430608379789595,
+      "coherent_projection_fraction": 0.0007432879394923931
+    },
+    {
+      "name": "composition_f60_N2000_seed3007",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.44302285732988134,
+      "coherent_projection_fraction": 0.0007534543888472631
+    },
+    {
+      "name": "composition_f60_N2000_seed3008",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.45136049073846024,
+      "coherent_projection_fraction": 0.0014125678413213453
+    },
+    {
+      "name": "composition_f60_N2000_seed3008",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.452270318639964,
+      "coherent_projection_fraction": 0.0014661858846855601
+    },
+    {
+      "name": "composition_f60_N2000_seed3008",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.45047658366268845,
+      "coherent_projection_fraction": 0.0016645132350588097
+    },
+    {
+      "name": "composition_f60_N2000_seed3008",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.4502612001994958,
+      "coherent_projection_fraction": 0.0016739323895001868
+    },
+    {
+      "name": "composition_f60_N2000_seed3009",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.4548363095819064,
+      "coherent_projection_fraction": 0.0010751195214006172
+    },
+    {
+      "name": "composition_f60_N2000_seed3009",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.4555769324753292,
+      "coherent_projection_fraction": 0.0012567182254583284
+    },
+    {
+      "name": "composition_f60_N2000_seed3009",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.45837653684594765,
+      "coherent_projection_fraction": 0.0012700610667925555
+    },
+    {
+      "name": "composition_f60_N2000_seed3009",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.4581074887882782,
+      "coherent_projection_fraction": 0.0012548430692195507
+    },
+    {
+      "name": "composition_f60_N2000_seed3010",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.44053661083619045,
+      "coherent_projection_fraction": 0.0017036309339640986
+    },
+    {
+      "name": "composition_f60_N2000_seed3010",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.44139585767922357,
+      "coherent_projection_fraction": 0.001659292297740375
+    },
+    {
+      "name": "composition_f60_N2000_seed3010",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.4410239809376656,
+      "coherent_projection_fraction": 0.0015809074595990952
+    },
+    {
+      "name": "composition_f60_N2000_seed3010",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.441030440369971,
+      "coherent_projection_fraction": 0.0015661776181598549
+    },
+    {
+      "name": "composition_f60_N2000_seed3011",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.4491102034081629,
+      "coherent_projection_fraction": 0.0006049163147173865
+    },
+    {
+      "name": "composition_f60_N2000_seed3011",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.4501271391644665,
+      "coherent_projection_fraction": 0.0005490838367100449
+    },
+    {
+      "name": "composition_f60_N2000_seed3011",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.44714198648780534,
+      "coherent_projection_fraction": 0.0006847386689614283
+    },
+    {
+      "name": "composition_f60_N2000_seed3011",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.4472286149444046,
+      "coherent_projection_fraction": 0.0006772112389989559
+    },
+    {
+      "name": "composition_f60_N2000_seed3012",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.4420757231899768,
+      "coherent_projection_fraction": 0.0010279017255928312
+    },
+    {
+      "name": "composition_f60_N2000_seed3012",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.4420401071212553,
+      "coherent_projection_fraction": 0.0010485094508713348
+    },
+    {
+      "name": "composition_f60_N2000_seed3012",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.4425841267688456,
+      "coherent_projection_fraction": 0.0009590221596423068
+    },
+    {
+      "name": "composition_f60_N2000_seed3012",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.44259469039115723,
+      "coherent_projection_fraction": 0.0009685690419805146
+    },
+    {
+      "name": "composition_f60_N4000_seed3001",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.44727607332399977,
+      "coherent_projection_fraction": 0.000256602003223498
+    },
+    {
+      "name": "composition_f60_N4000_seed3001",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.44704095398327975,
+      "coherent_projection_fraction": 0.00025581136352109386
+    },
+    {
+      "name": "composition_f60_N4000_seed3001",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.4468930211593952,
+      "coherent_projection_fraction": 0.00021686878168926765
+    },
+    {
+      "name": "composition_f60_N4000_seed3001",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.4469967546246762,
+      "coherent_projection_fraction": 0.00021792600717017815
+    },
+    {
+      "name": "composition_f60_N4000_seed3001",
+      "B": 1000.0,
+      "T": 4000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.44717848088099693,
+      "coherent_projection_fraction": 0.00025793596471239687
+    },
+    {
+      "name": "composition_f60_N4000_seed3001",
+      "B": 1000.0,
+      "T": 8000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.44690130916994486,
+      "coherent_projection_fraction": 0.0002156242942368013
+    },
+    {
+      "name": "composition_f60_N4000_seed3001",
+      "B": 1000.0,
+      "T": 8000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.4466775047113027,
+      "coherent_projection_fraction": 0.00023268439171402085
+    },
+    {
+      "name": "composition_f60_N4000_seed3002",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.4435531721199237,
+      "coherent_projection_fraction": 0.0004011441145669856
+    },
+    {
+      "name": "composition_f60_N4000_seed3002",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.44249101283802356,
+      "coherent_projection_fraction": 0.00036253357721901153
+    },
+    {
+      "name": "composition_f60_N4000_seed3002",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.44401574422677514,
+      "coherent_projection_fraction": 0.00043605594994893193
+    },
+    {
+      "name": "composition_f60_N4000_seed3002",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.4440990689233425,
+      "coherent_projection_fraction": 0.00044020921775467616
+    },
+    {
+      "name": "composition_f60_N4000_seed3003",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.4485422412362211,
+      "coherent_projection_fraction": 0.0003017976599075782
+    },
+    {
+      "name": "composition_f60_N4000_seed3003",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.44862138635878585,
+      "coherent_projection_fraction": 0.0003214806430356778
+    },
+    {
+      "name": "composition_f60_N4000_seed3003",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.4476859843571894,
+      "coherent_projection_fraction": 0.0003335381258876642
+    },
+    {
+      "name": "composition_f60_N4000_seed3003",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.44776162693277766,
+      "coherent_projection_fraction": 0.00033515034699397407
+    },
+    {
+      "name": "composition_f60_N4000_seed3004",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.4520958823773455,
+      "coherent_projection_fraction": 0.0001326944359418543
+    },
+    {
+      "name": "composition_f60_N4000_seed3004",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.4516838371110165,
+      "coherent_projection_fraction": 0.00011085852808286893
+    },
+    {
+      "name": "composition_f60_N4000_seed3004",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.44996911671944295,
+      "coherent_projection_fraction": 0.00014182179881877603
+    },
+    {
+      "name": "composition_f60_N4000_seed3004",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.44999955936765323,
+      "coherent_projection_fraction": 0.00013900208498473317
+    },
+    {
+      "name": "composition_f80_N1000_seed3001",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.28737166581641277,
+      "coherent_projection_fraction": 0.007245587425038386
+    },
+    {
+      "name": "composition_f80_N1000_seed3001",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.2864796110263442,
+      "coherent_projection_fraction": 0.007684602824812621
+    },
+    {
+      "name": "composition_f80_N1000_seed3001",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.2888459330425961,
+      "coherent_projection_fraction": 0.0073239907486022365
+    },
+    {
+      "name": "composition_f80_N1000_seed3001",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.28936243850114235,
+      "coherent_projection_fraction": 0.007355159618163275
+    },
+    {
+      "name": "composition_f80_N1000_seed3001",
+      "B": 1000.0,
+      "T": 4000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.28776104565746286,
+      "coherent_projection_fraction": 0.007211889991313817
+    },
+    {
+      "name": "composition_f80_N1000_seed3001",
+      "B": 1000.0,
+      "T": 8000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.28892453121332,
+      "coherent_projection_fraction": 0.007316407698774994
+    },
+    {
+      "name": "composition_f80_N1000_seed3001",
+      "B": 1000.0,
+      "T": 8000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.29074250358709547,
+      "coherent_projection_fraction": 0.00737849365792454
+    },
+    {
+      "name": "composition_f80_N1000_seed3002",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.2896941353848825,
+      "coherent_projection_fraction": 0.003088858591878151
+    },
+    {
+      "name": "composition_f80_N1000_seed3002",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.2904966278179083,
+      "coherent_projection_fraction": 0.0032416479655006537
+    },
+    {
+      "name": "composition_f80_N1000_seed3002",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.2909829047902501,
+      "coherent_projection_fraction": 0.0036484244484383155
+    },
+    {
+      "name": "composition_f80_N1000_seed3002",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.29113963414583366,
+      "coherent_projection_fraction": 0.0036576791388281934
+    },
+    {
+      "name": "composition_f80_N1000_seed3003",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.30461475227904816,
+      "coherent_projection_fraction": 0.0027013141871514773
+    },
+    {
+      "name": "composition_f80_N1000_seed3003",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.3029179512236011,
+      "coherent_projection_fraction": 0.0027904842031451693
+    },
+    {
+      "name": "composition_f80_N1000_seed3003",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.3049545316205508,
+      "coherent_projection_fraction": 0.0023519324205179557
+    },
+    {
+      "name": "composition_f80_N1000_seed3003",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.30495958507978776,
+      "coherent_projection_fraction": 0.002362970467859662
+    },
+    {
+      "name": "composition_f80_N1000_seed3004",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.2693130054190732,
+      "coherent_projection_fraction": 0.00757910228764179
+    },
+    {
+      "name": "composition_f80_N1000_seed3004",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.26990238816150497,
+      "coherent_projection_fraction": 0.007773117629247305
+    },
+    {
+      "name": "composition_f80_N1000_seed3004",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.2714947132560818,
+      "coherent_projection_fraction": 0.0081433700947578
+    },
+    {
+      "name": "composition_f80_N1000_seed3004",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.27162884535931525,
+      "coherent_projection_fraction": 0.008151883205814503
+    },
+    {
+      "name": "composition_f80_N2000_seed3001",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.2981810087077182,
+      "coherent_projection_fraction": 0.0008410140214502928
+    },
+    {
+      "name": "composition_f80_N2000_seed3001",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.2962497747930318,
+      "coherent_projection_fraction": 0.0008931787297145947
+    },
+    {
+      "name": "composition_f80_N2000_seed3001",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.2990783829089599,
+      "coherent_projection_fraction": 0.0008737841496270854
+    },
+    {
+      "name": "composition_f80_N2000_seed3001",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.29903615347299656,
+      "coherent_projection_fraction": 0.0008777141875410709
+    },
+    {
+      "name": "composition_f80_N2000_seed3001",
+      "B": 1000.0,
+      "T": 4000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.2982329667607425,
+      "coherent_projection_fraction": 0.0008498691711119001
+    },
+    {
+      "name": "composition_f80_N2000_seed3001",
+      "B": 1000.0,
+      "T": 8000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.2990834849019254,
+      "coherent_projection_fraction": 0.0008820130550530233
+    },
+    {
+      "name": "composition_f80_N2000_seed3001",
+      "B": 1000.0,
+      "T": 8000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.29884591112948716,
+      "coherent_projection_fraction": 0.0008420071840766837
+    },
+    {
+      "name": "composition_f80_N2000_seed3002",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.3013032486037022,
+      "coherent_projection_fraction": 0.00284368888138917
+    },
+    {
+      "name": "composition_f80_N2000_seed3002",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.30009146839648637,
+      "coherent_projection_fraction": 0.002831651268724382
+    },
+    {
+      "name": "composition_f80_N2000_seed3002",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.3000981297981769,
+      "coherent_projection_fraction": 0.002843178661149295
+    },
+    {
+      "name": "composition_f80_N2000_seed3002",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.30003643341507275,
+      "coherent_projection_fraction": 0.0028667223933362463
+    },
+    {
+      "name": "composition_f80_N2000_seed3003",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.295453308870437,
+      "coherent_projection_fraction": 0.0023994653745204103
+    },
+    {
+      "name": "composition_f80_N2000_seed3003",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.29679910929047804,
+      "coherent_projection_fraction": 0.0024490852874112738
+    },
+    {
+      "name": "composition_f80_N2000_seed3003",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.2943066739037037,
+      "coherent_projection_fraction": 0.0024246729809868123
+    },
+    {
+      "name": "composition_f80_N2000_seed3003",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.29447554884267974,
+      "coherent_projection_fraction": 0.0024048791129544092
+    },
+    {
+      "name": "composition_f80_N2000_seed3004",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.2953297280463523,
+      "coherent_projection_fraction": 0.0018654040006653356
+    },
+    {
+      "name": "composition_f80_N2000_seed3004",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.2970115779570881,
+      "coherent_projection_fraction": 0.0020222900257751758
+    },
+    {
+      "name": "composition_f80_N2000_seed3004",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.29780855149690644,
+      "coherent_projection_fraction": 0.0017620959687827118
+    },
+    {
+      "name": "composition_f80_N2000_seed3004",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.29807392258242554,
+      "coherent_projection_fraction": 0.0017809727850888939
+    },
+    {
+      "name": "composition_f80_N2000_seed3005",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.3175876209308082,
+      "coherent_projection_fraction": 0.0007713287725397789
+    },
+    {
+      "name": "composition_f80_N2000_seed3005",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.3173005306281183,
+      "coherent_projection_fraction": 0.0007865445631622551
+    },
+    {
+      "name": "composition_f80_N2000_seed3005",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.31588631518636184,
+      "coherent_projection_fraction": 0.0007950457955066685
+    },
+    {
+      "name": "composition_f80_N2000_seed3005",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.3159850222164889,
+      "coherent_projection_fraction": 0.0008024071635169282
+    },
+    {
+      "name": "composition_f80_N2000_seed3005",
+      "B": 1000.0,
+      "T": 4000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.3176082353750313,
+      "coherent_projection_fraction": 0.000783410911617928
+    },
+    {
+      "name": "composition_f80_N2000_seed3005",
+      "B": 1000.0,
+      "T": 8000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.3159319060009945,
+      "coherent_projection_fraction": 0.0007966331557914929
+    },
+    {
+      "name": "composition_f80_N2000_seed3005",
+      "B": 1000.0,
+      "T": 8000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.31586403093602455,
+      "coherent_projection_fraction": 0.0008472048766382042
+    },
+    {
+      "name": "composition_f80_N2000_seed3006",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.29186695185199846,
+      "coherent_projection_fraction": 0.0021652100470346426
+    },
+    {
+      "name": "composition_f80_N2000_seed3006",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.2919644060557447,
+      "coherent_projection_fraction": 0.00234991406157218
+    },
+    {
+      "name": "composition_f80_N2000_seed3006",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.29227820929557763,
+      "coherent_projection_fraction": 0.001991703203663413
+    },
+    {
+      "name": "composition_f80_N2000_seed3006",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.29211611286974715,
+      "coherent_projection_fraction": 0.0020103154314341457
+    },
+    {
+      "name": "composition_f80_N2000_seed3007",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.2904334266649686,
+      "coherent_projection_fraction": 0.0024376669873452756
+    },
+    {
+      "name": "composition_f80_N2000_seed3007",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.2892940282083305,
+      "coherent_projection_fraction": 0.002727533082390138
+    },
+    {
+      "name": "composition_f80_N2000_seed3007",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.29221252194789676,
+      "coherent_projection_fraction": 0.0021229920875688504
+    },
+    {
+      "name": "composition_f80_N2000_seed3007",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.2919476389957183,
+      "coherent_projection_fraction": 0.0021248215836176814
+    },
+    {
+      "name": "composition_f80_N2000_seed3008",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.29080534426218113,
+      "coherent_projection_fraction": 0.0012234297801876231
+    },
+    {
+      "name": "composition_f80_N2000_seed3008",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.2899910680473236,
+      "coherent_projection_fraction": 0.001198072010282491
+    },
+    {
+      "name": "composition_f80_N2000_seed3008",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.2913870007448042,
+      "coherent_projection_fraction": 0.0011243889720191475
+    },
+    {
+      "name": "composition_f80_N2000_seed3008",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.29141920143035444,
+      "coherent_projection_fraction": 0.0011158278461138036
+    },
+    {
+      "name": "composition_f80_N2000_seed3009",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.29936691821076367,
+      "coherent_projection_fraction": 0.0012170314808437022
+    },
+    {
+      "name": "composition_f80_N2000_seed3009",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.29863726723066153,
+      "coherent_projection_fraction": 0.0012481698525593182
+    },
+    {
+      "name": "composition_f80_N2000_seed3009",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.29998616839666137,
+      "coherent_projection_fraction": 0.0009996293357804064
+    },
+    {
+      "name": "composition_f80_N2000_seed3009",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.29998274321032947,
+      "coherent_projection_fraction": 0.000995844071213779
+    },
+    {
+      "name": "composition_f80_N2000_seed3010",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.28897653289645875,
+      "coherent_projection_fraction": 0.0015251461186781788
+    },
+    {
+      "name": "composition_f80_N2000_seed3010",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.28658330213660993,
+      "coherent_projection_fraction": 0.0014823039379862793
+    },
+    {
+      "name": "composition_f80_N2000_seed3010",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.2907430665493771,
+      "coherent_projection_fraction": 0.0014955972279923327
+    },
+    {
+      "name": "composition_f80_N2000_seed3010",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.29077997251825777,
+      "coherent_projection_fraction": 0.0014914587081351835
+    },
+    {
+      "name": "composition_f80_N2000_seed3011",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.28231251307870514,
+      "coherent_projection_fraction": 0.00042740926147662823
+    },
+    {
+      "name": "composition_f80_N2000_seed3011",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.28145437986223293,
+      "coherent_projection_fraction": 0.00040042447371587705
+    },
+    {
+      "name": "composition_f80_N2000_seed3011",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.28195073795561204,
+      "coherent_projection_fraction": 0.0005000964129950803
+    },
+    {
+      "name": "composition_f80_N2000_seed3011",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.28193439482268845,
+      "coherent_projection_fraction": 0.0004980745318957418
+    },
+    {
+      "name": "composition_f80_N2000_seed3012",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.2945159361080493,
+      "coherent_projection_fraction": 0.0027664063401019803
+    },
+    {
+      "name": "composition_f80_N2000_seed3012",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.2949506199203429,
+      "coherent_projection_fraction": 0.0031491276184297274
+    },
+    {
+      "name": "composition_f80_N2000_seed3012",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.29189312496708264,
+      "coherent_projection_fraction": 0.002373723169078979
+    },
+    {
+      "name": "composition_f80_N2000_seed3012",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.2917458282259639,
+      "coherent_projection_fraction": 0.0023948643144513114
+    },
+    {
+      "name": "composition_f80_N4000_seed3001",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.293946752010198,
+      "coherent_projection_fraction": 0.000612496011397913
+    },
+    {
+      "name": "composition_f80_N4000_seed3001",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.29413543604709047,
+      "coherent_projection_fraction": 0.0005944835969156765
+    },
+    {
+      "name": "composition_f80_N4000_seed3001",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.29485905499487103,
+      "coherent_projection_fraction": 0.0006061159300057728
+    },
+    {
+      "name": "composition_f80_N4000_seed3001",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.29501308429866413,
+      "coherent_projection_fraction": 0.0006035221728410092
+    },
+    {
+      "name": "composition_f80_N4000_seed3001",
+      "B": 1000.0,
+      "T": 4000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.2938873873602703,
+      "coherent_projection_fraction": 0.0006224734171058527
+    },
+    {
+      "name": "composition_f80_N4000_seed3001",
+      "B": 1000.0,
+      "T": 8000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.2948606796821044,
+      "coherent_projection_fraction": 0.0006092517137309968
+    },
+    {
+      "name": "composition_f80_N4000_seed3001",
+      "B": 1000.0,
+      "T": 8000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.29527729655024587,
+      "coherent_projection_fraction": 0.000618870879111163
+    },
+    {
+      "name": "composition_f80_N4000_seed3002",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.30220784294847364,
+      "coherent_projection_fraction": 0.0003285955507626867
+    },
+    {
+      "name": "composition_f80_N4000_seed3002",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.30139884932703925,
+      "coherent_projection_fraction": 0.00029371363692897606
+    },
+    {
+      "name": "composition_f80_N4000_seed3002",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.3029539798571569,
+      "coherent_projection_fraction": 0.00040753839759359275
+    },
+    {
+      "name": "composition_f80_N4000_seed3002",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.3029859116138433,
+      "coherent_projection_fraction": 0.00040623972667590383
+    },
+    {
+      "name": "composition_f80_N4000_seed3003",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.3091053581337497,
+      "coherent_projection_fraction": 0.00027424364952501366
+    },
+    {
+      "name": "composition_f80_N4000_seed3003",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.30945015009725496,
+      "coherent_projection_fraction": 0.0002569635230773196
+    },
+    {
+      "name": "composition_f80_N4000_seed3003",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.3099568187063701,
+      "coherent_projection_fraction": 0.0003335646894077593
+    },
+    {
+      "name": "composition_f80_N4000_seed3003",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.31002526851619633,
+      "coherent_projection_fraction": 0.0003355445104383102
+    },
+    {
+      "name": "composition_f80_N4000_seed3004",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.2985565959138425,
+      "coherent_projection_fraction": 0.00036263307903534636
+    },
+    {
+      "name": "composition_f80_N4000_seed3004",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.297867999980068,
+      "coherent_projection_fraction": 0.00037100171613935353
+    },
+    {
+      "name": "composition_f80_N4000_seed3004",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.2968898941999142,
+      "coherent_projection_fraction": 0.00035500195013585235
+    },
+    {
+      "name": "composition_f80_N4000_seed3004",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.2967479836167235,
+      "coherent_projection_fraction": 0.0003567719682417861
+    },
+    {
+      "name": "degree_chi0.5_N1000_seed4001",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.2969190261327475,
+      "coherent_projection_fraction": 0.004039397219872183
+    },
+    {
+      "name": "degree_chi0.5_N1000_seed4001",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.3001592007041103,
+      "coherent_projection_fraction": 0.004635674126224416
+    },
+    {
+      "name": "degree_chi0.5_N1000_seed4001",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.29562993917139185,
+      "coherent_projection_fraction": 0.004665906723903407
+    },
+    {
+      "name": "degree_chi0.5_N1000_seed4001",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.29607475980951486,
+      "coherent_projection_fraction": 0.004657818944885615
+    },
+    {
+      "name": "degree_chi0.5_N1000_seed4002",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.28978616836457927,
+      "coherent_projection_fraction": 0.006650875826661547
+    },
+    {
+      "name": "degree_chi0.5_N1000_seed4002",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.2886613749986397,
+      "coherent_projection_fraction": 0.0066863465591161676
+    },
+    {
+      "name": "degree_chi0.5_N1000_seed4002",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.2895321067152489,
+      "coherent_projection_fraction": 0.00615642744088157
+    },
+    {
+      "name": "degree_chi0.5_N1000_seed4002",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.2891992660423559,
+      "coherent_projection_fraction": 0.006163759986866996
+    },
+    {
+      "name": "degree_chi0.5_N1000_seed4003",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.29221397937919824,
+      "coherent_projection_fraction": 0.0014690230926775003
+    },
+    {
+      "name": "degree_chi0.5_N1000_seed4003",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.29080158920556176,
+      "coherent_projection_fraction": 0.0015364267240680909
+    },
+    {
+      "name": "degree_chi0.5_N1000_seed4003",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.29184833096128526,
+      "coherent_projection_fraction": 0.0014785360254759203
+    },
+    {
+      "name": "degree_chi0.5_N1000_seed4003",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.2916848484726097,
+      "coherent_projection_fraction": 0.0014836113098720502
+    },
+    {
+      "name": "degree_chi0_N1000_seed4001",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.2714135486901258,
+      "coherent_projection_fraction": 0.0025888678079999034
+    },
+    {
+      "name": "degree_chi0_N1000_seed4001",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.27295015974827125,
+      "coherent_projection_fraction": 0.002490983915627482
+    },
+    {
+      "name": "degree_chi0_N1000_seed4001",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.2699821967601512,
+      "coherent_projection_fraction": 0.0023575900776855487
+    },
+    {
+      "name": "degree_chi0_N1000_seed4001",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.2700436202491445,
+      "coherent_projection_fraction": 0.002334626677244896
+    },
+    {
+      "name": "degree_chi0_N1000_seed4001",
+      "B": 1000.0,
+      "T": 4000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.27157756740788375,
+      "coherent_projection_fraction": 0.0025473641599065627
+    },
+    {
+      "name": "degree_chi0_N1000_seed4001",
+      "B": 1000.0,
+      "T": 8000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.2700937307881536,
+      "coherent_projection_fraction": 0.002352631241146781
+    },
+    {
+      "name": "degree_chi0_N1000_seed4001",
+      "B": 1000.0,
+      "T": 8000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.2698212503631193,
+      "coherent_projection_fraction": 0.002438591637941737
+    },
+    {
+      "name": "degree_chi0_N1000_seed4002",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.2706724824163305,
+      "coherent_projection_fraction": 0.003710470907629001
+    },
+    {
+      "name": "degree_chi0_N1000_seed4002",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.27055516545533387,
+      "coherent_projection_fraction": 0.0034436468590282893
+    },
+    {
+      "name": "degree_chi0_N1000_seed4002",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.26962637692551367,
+      "coherent_projection_fraction": 0.0036862086540983157
+    },
+    {
+      "name": "degree_chi0_N1000_seed4002",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.2696298937254091,
+      "coherent_projection_fraction": 0.003742045644734638
+    },
+    {
+      "name": "degree_chi0_N1000_seed4003",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.2622635941468331,
+      "coherent_projection_fraction": 0.0033981190627125966
+    },
+    {
+      "name": "degree_chi0_N1000_seed4003",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.26385985930511896,
+      "coherent_projection_fraction": 0.0031773852404424472
+    },
+    {
+      "name": "degree_chi0_N1000_seed4003",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.2623533605283361,
+      "coherent_projection_fraction": 0.003325322986892854
+    },
+    {
+      "name": "degree_chi0_N1000_seed4003",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.2621285362497525,
+      "coherent_projection_fraction": 0.0032929836179759696
+    },
+    {
+      "name": "degree_chi0_N2000_seed4001",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.2638268383866388,
+      "coherent_projection_fraction": 0.0009569337471765513
+    },
+    {
+      "name": "degree_chi0_N2000_seed4001",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.26406873236279954,
+      "coherent_projection_fraction": 0.0009675174392970787
+    },
+    {
+      "name": "degree_chi0_N2000_seed4001",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.26463634220575033,
+      "coherent_projection_fraction": 0.001071572721484424
+    },
+    {
+      "name": "degree_chi0_N2000_seed4001",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.26457151429260123,
+      "coherent_projection_fraction": 0.001093501711190672
+    },
+    {
+      "name": "degree_chi0_N2000_seed4001",
+      "B": 1000.0,
+      "T": 4000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.2638435559257653,
+      "coherent_projection_fraction": 0.0010017688861813704
+    },
+    {
+      "name": "degree_chi0_N2000_seed4001",
+      "B": 1000.0,
+      "T": 8000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.2645944300014988,
+      "coherent_projection_fraction": 0.001083262604599897
+    },
+    {
+      "name": "degree_chi0_N2000_seed4001",
+      "B": 1000.0,
+      "T": 8000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.26484249843991114,
+      "coherent_projection_fraction": 0.0010641661321918162
+    },
+    {
+      "name": "degree_chi0_N2000_seed4002",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.266987365415839,
+      "coherent_projection_fraction": 0.0005849141290706155
+    },
+    {
+      "name": "degree_chi0_N2000_seed4002",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.2665111689306649,
+      "coherent_projection_fraction": 0.0006158242000476548
+    },
+    {
+      "name": "degree_chi0_N2000_seed4002",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.26659254320720294,
+      "coherent_projection_fraction": 0.0006298715649698938
+    },
+    {
+      "name": "degree_chi0_N2000_seed4002",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.2665048554792952,
+      "coherent_projection_fraction": 0.0006401876061982314
+    },
+    {
+      "name": "degree_chi0_N2000_seed4003",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.265029312196834,
+      "coherent_projection_fraction": 0.0008382525394331902
+    },
+    {
+      "name": "degree_chi0_N2000_seed4003",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.2644967977179935,
+      "coherent_projection_fraction": 0.0009144193892504528
+    },
+    {
+      "name": "degree_chi0_N2000_seed4003",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.26498985703682076,
+      "coherent_projection_fraction": 0.000806222427279842
+    },
+    {
+      "name": "degree_chi0_N2000_seed4003",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.26498712140204184,
+      "coherent_projection_fraction": 0.0008257690747072002
+    },
+    {
+      "name": "degree_chi0_N4000_seed4001",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.2662478071088492,
+      "coherent_projection_fraction": 0.00021706760249986943
+    },
+    {
+      "name": "degree_chi0_N4000_seed4001",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.2667641625747708,
+      "coherent_projection_fraction": 0.00022125307439300966
+    },
+    {
+      "name": "degree_chi0_N4000_seed4001",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.2665357146404791,
+      "coherent_projection_fraction": 0.00019704497363808544
+    },
+    {
+      "name": "degree_chi0_N4000_seed4001",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.266361590790629,
+      "coherent_projection_fraction": 0.00020017138718136517
+    },
+    {
+      "name": "degree_chi0_N4000_seed4001",
+      "B": 1000.0,
+      "T": 4000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.2664539739948881,
+      "coherent_projection_fraction": 0.00021537294795130493
+    },
+    {
+      "name": "degree_chi0_N4000_seed4001",
+      "B": 1000.0,
+      "T": 8000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.2665724197162389,
+      "coherent_projection_fraction": 0.00019694357295654298
+    },
+    {
+      "name": "degree_chi0_N4000_seed4001",
+      "B": 1000.0,
+      "T": 8000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.2661679755950093,
+      "coherent_projection_fraction": 0.00020458840297013723
+    },
+    {
+      "name": "degree_chi0_N4000_seed4002",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.2680238235713524,
+      "coherent_projection_fraction": 0.0002591539857450656
+    },
+    {
+      "name": "degree_chi0_N4000_seed4002",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.2668639460155164,
+      "coherent_projection_fraction": 0.0002517594539737969
+    },
+    {
+      "name": "degree_chi0_N4000_seed4002",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.26685082853632736,
+      "coherent_projection_fraction": 0.0002781999245435041
+    },
+    {
+      "name": "degree_chi0_N4000_seed4002",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.26676529165238094,
+      "coherent_projection_fraction": 0.00027734832592154216
+    },
+    {
+      "name": "degree_chi0_N4000_seed4003",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.2654877872982419,
+      "coherent_projection_fraction": 0.00025650857785104297
+    },
+    {
+      "name": "degree_chi0_N4000_seed4003",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.2647274782101009,
+      "coherent_projection_fraction": 0.0002982884756717629
+    },
+    {
+      "name": "degree_chi0_N4000_seed4003",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.26530692896113867,
+      "coherent_projection_fraction": 0.00021965995790357892
+    },
+    {
+      "name": "degree_chi0_N4000_seed4003",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.26527220730196466,
+      "coherent_projection_fraction": 0.00022680069764012602
+    },
+    {
+      "name": "degree_chi1_N1000_seed4001",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.28281527562122294,
+      "coherent_projection_fraction": 0.005826592196384215
+    },
+    {
+      "name": "degree_chi1_N1000_seed4001",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.2840504247857849,
+      "coherent_projection_fraction": 0.005863571833204539
+    },
+    {
+      "name": "degree_chi1_N1000_seed4001",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.2785896376648881,
+      "coherent_projection_fraction": 0.0053660642161808296
+    },
+    {
+      "name": "degree_chi1_N1000_seed4001",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.278548689406439,
+      "coherent_projection_fraction": 0.005297124437456829
+    },
+    {
+      "name": "degree_chi1_N1000_seed4002",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.27452270508979115,
+      "coherent_projection_fraction": 0.009696282565449339
+    },
+    {
+      "name": "degree_chi1_N1000_seed4002",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.27716467694007685,
+      "coherent_projection_fraction": 0.009258164158084996
+    },
+    {
+      "name": "degree_chi1_N1000_seed4002",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.2764171489860111,
+      "coherent_projection_fraction": 0.01096978017396905
+    },
+    {
+      "name": "degree_chi1_N1000_seed4002",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.27658024863654507,
+      "coherent_projection_fraction": 0.010886165665331581
+    },
+    {
+      "name": "degree_chi1_N1000_seed4003",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.2827961727163003,
+      "coherent_projection_fraction": 0.011407189677901977
+    },
+    {
+      "name": "degree_chi1_N1000_seed4003",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.28268043342771443,
+      "coherent_projection_fraction": 0.011487861036381086
+    },
+    {
+      "name": "degree_chi1_N1000_seed4003",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.28039963829567227,
+      "coherent_projection_fraction": 0.010583413419659288
+    },
+    {
+      "name": "degree_chi1_N1000_seed4003",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.2800718724738317,
+      "coherent_projection_fraction": 0.01055013429825472
+    },
+    {
+      "name": "degree_chi2_N1000_seed4001",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.2956275819133338,
+      "coherent_projection_fraction": 0.009774411752377315
+    },
+    {
+      "name": "degree_chi2_N1000_seed4001",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.2962380231272253,
+      "coherent_projection_fraction": 0.009389507819111157
+    },
+    {
+      "name": "degree_chi2_N1000_seed4001",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.29313909981041775,
+      "coherent_projection_fraction": 0.011056654102910424
+    },
+    {
+      "name": "degree_chi2_N1000_seed4001",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.2930293261013261,
+      "coherent_projection_fraction": 0.01098204612877941
+    },
+    {
+      "name": "degree_chi2_N1000_seed4001",
+      "B": 1000.0,
+      "T": 4000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.29555035662278833,
+      "coherent_projection_fraction": 0.0097842073055001
+    },
+    {
+      "name": "degree_chi2_N1000_seed4001",
+      "B": 1000.0,
+      "T": 8000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.2931106155034922,
+      "coherent_projection_fraction": 0.011059468902293217
+    },
+    {
+      "name": "degree_chi2_N1000_seed4001",
+      "B": 1000.0,
+      "T": 8000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.2922781998739904,
+      "coherent_projection_fraction": 0.01154700565110328
+    },
+    {
+      "name": "degree_chi2_N1000_seed4002",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.2938656124252921,
+      "coherent_projection_fraction": 0.005997773788256384
+    },
+    {
+      "name": "degree_chi2_N1000_seed4002",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.29402559765786024,
+      "coherent_projection_fraction": 0.005988871238748603
+    },
+    {
+      "name": "degree_chi2_N1000_seed4002",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.29360530849181105,
+      "coherent_projection_fraction": 0.005912095073102631
+    },
+    {
+      "name": "degree_chi2_N1000_seed4002",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.293438177344121,
+      "coherent_projection_fraction": 0.005915627273917506
+    },
+    {
+      "name": "degree_chi2_N1000_seed4003",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.26395313161473594,
+      "coherent_projection_fraction": 0.0016588486329583085
+    },
+    {
+      "name": "degree_chi2_N1000_seed4003",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.2641093815267848,
+      "coherent_projection_fraction": 0.0017079683484673837
+    },
+    {
+      "name": "degree_chi2_N1000_seed4003",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.2652101304182335,
+      "coherent_projection_fraction": 0.0016400592398790532
+    },
+    {
+      "name": "degree_chi2_N1000_seed4003",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.2650170561712446,
+      "coherent_projection_fraction": 0.0016657746777469418
+    },
+    {
+      "name": "degree_chi2_N2000_seed4001",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.291838836040187,
+      "coherent_projection_fraction": 0.0026483026683774306
+    },
+    {
+      "name": "degree_chi2_N2000_seed4001",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.2922357834988579,
+      "coherent_projection_fraction": 0.002866249278762553
+    },
+    {
+      "name": "degree_chi2_N2000_seed4001",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.29380340571724983,
+      "coherent_projection_fraction": 0.0026935775503366946
+    },
+    {
+      "name": "degree_chi2_N2000_seed4001",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.29365438487919904,
+      "coherent_projection_fraction": 0.0027168238620764976
+    },
+    {
+      "name": "degree_chi2_N2000_seed4001",
+      "B": 1000.0,
+      "T": 4000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.29179979098966263,
+      "coherent_projection_fraction": 0.002628588804920512
+    },
+    {
+      "name": "degree_chi2_N2000_seed4001",
+      "B": 1000.0,
+      "T": 8000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.293754910346733,
+      "coherent_projection_fraction": 0.002691810673806545
+    },
+    {
+      "name": "degree_chi2_N2000_seed4001",
+      "B": 1000.0,
+      "T": 8000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.29353858484478823,
+      "coherent_projection_fraction": 0.0028288896977847096
+    },
+    {
+      "name": "degree_chi2_N2000_seed4002",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.2920135859692469,
+      "coherent_projection_fraction": 0.005806215996906073
+    },
+    {
+      "name": "degree_chi2_N2000_seed4002",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.2885747689119125,
+      "coherent_projection_fraction": 0.006021518814778361
+    },
+    {
+      "name": "degree_chi2_N2000_seed4002",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.2938436105921803,
+      "coherent_projection_fraction": 0.00543318173928282
+    },
+    {
+      "name": "degree_chi2_N2000_seed4002",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.293791962289006,
+      "coherent_projection_fraction": 0.005433440800265588
+    },
+    {
+      "name": "degree_chi2_N2000_seed4003",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.30588209794453536,
+      "coherent_projection_fraction": 0.0008563834941967224
+    },
+    {
+      "name": "degree_chi2_N2000_seed4003",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.30535046004348176,
+      "coherent_projection_fraction": 0.0008111078539742624
+    },
+    {
+      "name": "degree_chi2_N2000_seed4003",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.30565760670729336,
+      "coherent_projection_fraction": 0.0008330046515524999
+    },
+    {
+      "name": "degree_chi2_N2000_seed4003",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.30538132594437983,
+      "coherent_projection_fraction": 0.000826470305093624
+    },
+    {
+      "name": "degree_chi2_N4000_seed4001",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.319518145373232,
+      "coherent_projection_fraction": 0.0008126336726168385
+    },
+    {
+      "name": "degree_chi2_N4000_seed4001",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.3179461807161634,
+      "coherent_projection_fraction": 0.0007378673964870616
+    },
+    {
+      "name": "degree_chi2_N4000_seed4001",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.31773314414199555,
+      "coherent_projection_fraction": 0.0007192084384470931
+    },
+    {
+      "name": "degree_chi2_N4000_seed4001",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.3174881363417576,
+      "coherent_projection_fraction": 0.0007021764487880852
+    },
+    {
+      "name": "degree_chi2_N4000_seed4001",
+      "B": 1000.0,
+      "T": 4000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.31948075486660854,
+      "coherent_projection_fraction": 0.000799011946680888
+    },
+    {
+      "name": "degree_chi2_N4000_seed4001",
+      "B": 1000.0,
+      "T": 8000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.31772487995343435,
+      "coherent_projection_fraction": 0.000716370733272264
+    },
+    {
+      "name": "degree_chi2_N4000_seed4001",
+      "B": 1000.0,
+      "T": 8000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.31658601834108624,
+      "coherent_projection_fraction": 0.0006820867152440952
+    },
+    {
+      "name": "degree_chi2_N4000_seed4002",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.313175582415861,
+      "coherent_projection_fraction": 0.0016040102353709243
+    },
+    {
+      "name": "degree_chi2_N4000_seed4002",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.3138787757486462,
+      "coherent_projection_fraction": 0.0017164669415294883
+    },
+    {
+      "name": "degree_chi2_N4000_seed4002",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.31183070789456874,
+      "coherent_projection_fraction": 0.001254148795760363
+    },
+    {
+      "name": "degree_chi2_N4000_seed4002",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.3117861365322622,
+      "coherent_projection_fraction": 0.001242964015507222
+    },
+    {
+      "name": "degree_chi2_N4000_seed4003",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.3106723729633499,
+      "coherent_projection_fraction": 0.0007156095566793198
+    },
+    {
+      "name": "degree_chi2_N4000_seed4003",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.30938350609154786,
+      "coherent_projection_fraction": 0.0007200250142390724
+    },
+    {
+      "name": "degree_chi2_N4000_seed4003",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.31151118807354006,
+      "coherent_projection_fraction": 0.0005755523534040232
+    },
+    {
+      "name": "degree_chi2_N4000_seed4003",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.3113316319554404,
+      "coherent_projection_fraction": 0.0005746013704192894
+    },
+    {
+      "name": "dtcheck_composition_f60_N1000_seed3001_dt0025",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.4565571689156346,
+      "coherent_projection_fraction": 0.003662052923491559
+    },
+    {
+      "name": "dtcheck_composition_f60_N1000_seed3001_dt0025",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.4562483575327039,
+      "coherent_projection_fraction": 0.003795279378369564
+    },
+    {
+      "name": "dtcheck_composition_f60_N1000_seed3001_dt0025",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.4572567188161034,
+      "coherent_projection_fraction": 0.0033199284196464875
+    },
+    {
+      "name": "dtcheck_composition_f60_N1000_seed3001_dt0025",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.4572666356212986,
+      "coherent_projection_fraction": 0.0033362394532464234
+    },
+    {
+      "name": "dtcheck_composition_f60_N1000_seed3003_dt0025",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.47240021238699703,
+      "coherent_projection_fraction": 0.001993490503017089
+    },
+    {
+      "name": "dtcheck_composition_f60_N1000_seed3003_dt0025",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.4726724141391866,
+      "coherent_projection_fraction": 0.0019307115757933254
+    },
+    {
+      "name": "dtcheck_composition_f60_N1000_seed3003_dt0025",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.4715144602895358,
+      "coherent_projection_fraction": 0.0020019800582489473
+    },
+    {
+      "name": "dtcheck_composition_f60_N1000_seed3003_dt0025",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.4714875833709817,
+      "coherent_projection_fraction": 0.0019872576037879524
+    },
+    {
+      "name": "dtcheck_composition_f80_N1000_seed3001_dt0025",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.29368236191642927,
+      "coherent_projection_fraction": 0.009525572505621202
+    },
+    {
+      "name": "dtcheck_composition_f80_N1000_seed3001_dt0025",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.2962565916781123,
+      "coherent_projection_fraction": 0.009042326017446305
+    },
+    {
+      "name": "dtcheck_composition_f80_N1000_seed3001_dt0025",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.2962980518770699,
+      "coherent_projection_fraction": 0.00792286632112044
+    },
+    {
+      "name": "dtcheck_composition_f80_N1000_seed3001_dt0025",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.2964210885570977,
+      "coherent_projection_fraction": 0.007868346663418025
+    },
+    {
+      "name": "dtcheck_composition_f80_N1000_seed3003_dt0025",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.3062677546261985,
+      "coherent_projection_fraction": 0.0015935957509078352
+    },
+    {
+      "name": "dtcheck_composition_f80_N1000_seed3003_dt0025",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.3056939562728282,
+      "coherent_projection_fraction": 0.0015372782894798268
+    },
+    {
+      "name": "dtcheck_composition_f80_N1000_seed3003_dt0025",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.30780092919253577,
+      "coherent_projection_fraction": 0.0017890887128833687
+    },
+    {
+      "name": "dtcheck_composition_f80_N1000_seed3003_dt0025",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.30757472303138006,
+      "coherent_projection_fraction": 0.0017659564121617996
+    },
+    {
+      "name": "dtcheck_degree_chi0_N4000_seed4001_dt0025_T4000",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.26601993315485306,
+      "coherent_projection_fraction": 0.00021386013055968805
+    },
+    {
+      "name": "dtcheck_degree_chi0_N4000_seed4001_dt0025_T4000",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.2662192172969034,
+      "coherent_projection_fraction": 0.00021664586328654152
+    },
+    {
+      "name": "outlier_record_dt_f80_N1000_seed3001_dt00125_T16000",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.283155770098462,
+      "coherent_projection_fraction": 0.0064701799564262944
+    },
+    {
+      "name": "outlier_record_dt_f80_N1000_seed3001_dt00125_T16000",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.28052005192204255,
+      "coherent_projection_fraction": 0.007118630348618415
+    },
+    {
+      "name": "outlier_record_dt_f80_N1000_seed3001_dt00125_T16000",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.28356250637082414,
+      "coherent_projection_fraction": 0.007000460154717018
+    },
+    {
+      "name": "outlier_record_dt_f80_N1000_seed3001_dt00125_T16000",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.2834134159396816,
+      "coherent_projection_fraction": 0.007093009488842609
+    },
+    {
+      "name": "outlier_record_dt_f80_N1000_seed3001_dt00125_T16000",
+      "B": 500.0,
+      "T": 16000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.2862127940772737,
+      "coherent_projection_fraction": 0.007440520089496021
+    },
+    {
+      "name": "outlier_record_dt_f80_N1000_seed3001_dt00125_T16000",
+      "B": 500.0,
+      "T": 16000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.2861286772487832,
+      "coherent_projection_fraction": 0.007461460102030191
+    },
+    {
+      "name": "outlier_record_dt_f80_N1000_seed3001_dt0025_T16000",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.29368236191642927,
+      "coherent_projection_fraction": 0.009525572505621202
+    },
+    {
+      "name": "outlier_record_dt_f80_N1000_seed3001_dt0025_T16000",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.2962565916781123,
+      "coherent_projection_fraction": 0.009042326017446305
+    },
+    {
+      "name": "outlier_record_dt_f80_N1000_seed3001_dt0025_T16000",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.2962980518770699,
+      "coherent_projection_fraction": 0.00792286632112044
+    },
+    {
+      "name": "outlier_record_dt_f80_N1000_seed3001_dt0025_T16000",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.2964210885570977,
+      "coherent_projection_fraction": 0.007868346663418025
+    },
+    {
+      "name": "outlier_record_dt_f80_N1000_seed3001_dt0025_T16000",
+      "B": 500.0,
+      "T": 16000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.29402904954946707,
+      "coherent_projection_fraction": 0.007110721038052645
+    },
+    {
+      "name": "outlier_record_dt_f80_N1000_seed3001_dt0025_T16000",
+      "B": 500.0,
+      "T": 16000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.29403500756920325,
+      "coherent_projection_fraction": 0.007100968328234029
+    },
+    {
+      "name": "outlier_record_dt_f80_N1000_seed3001_dt005_T16000",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.2847075721038575,
+      "coherent_projection_fraction": 0.007682606950014971
+    },
+    {
+      "name": "outlier_record_dt_f80_N1000_seed3001_dt005_T16000",
+      "B": 500.0,
+      "T": 4000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.28431931975161556,
+      "coherent_projection_fraction": 0.007661158714876868
+    },
+    {
+      "name": "outlier_record_dt_f80_N1000_seed3001_dt005_T16000",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.28574807055511053,
+      "coherent_projection_fraction": 0.006708546933359377
+    },
+    {
+      "name": "outlier_record_dt_f80_N1000_seed3001_dt005_T16000",
+      "B": 500.0,
+      "T": 8000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.2855599156882385,
+      "coherent_projection_fraction": 0.006596671225003184
+    },
+    {
+      "name": "outlier_record_dt_f80_N1000_seed3001_dt005_T16000",
+      "B": 500.0,
+      "T": 16000.0,
+      "gap": 0,
+      "cross_energy_fraction": 0.28814607148280497,
+      "coherent_projection_fraction": 0.007221637590399363
+    },
+    {
+      "name": "outlier_record_dt_f80_N1000_seed3001_dt005_T16000",
+      "B": 500.0,
+      "T": 16000.0,
+      "gap": 1,
+      "cross_energy_fraction": 0.28810001567268784,
+      "coherent_projection_fraction": 0.007220442509519712
+    }
+  ],
+  "all_completed_record_checks_passed": true
+}

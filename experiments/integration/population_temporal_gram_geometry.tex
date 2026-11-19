@@ -1,0 +1,53 @@
+\section{Population covariance energy as temporal Gram geometry}
+Let $X_a$ be the $N_a\times T$ matrix of centered rate samples from population
+$a$ in one common recording. With $C_{ab}=X_aX_b^T/T$, introduce the temporal
+Gram matrix $\mathsf K_a=X_a^TX_a/T$. Cyclicity of trace gives
+\begin{align}
+ \|C_{EI}\|_F^2
+ &=\operatorname{tr}(C_{EI}C_{IE})
+ =T^{-2}\operatorname{tr}(X_EX_I^TX_IX_E^T)\\
+ &=T^{-2}\operatorname{tr}(X_E^TX_EX_I^TX_I)
+ =\operatorname{tr}(\mathsf K_E\mathsf K_I),\\
+ \operatorname{tr}(C_{aa}^2)&=\operatorname{tr}(\mathsf K_a^2).
+\end{align}
+The normalized cross-population energy is consequently
+\begin{equation}
+ \mathcal O_{EI}=
+ \frac{\mathcal E_{EI}}{\sqrt{\mathcal E_{EE}\mathcal E_{II}}}
+ =\frac{\operatorname{tr}(\mathsf K_E\mathsf K_I)}
+ {\sqrt{\operatorname{tr}(\mathsf K_E^2)\operatorname{tr}(\mathsf K_I^2)}}.
+\end{equation}
+Both temporal Gram matrices are positive semidefinite, so their inner product
+is nonnegative; Hilbert--Schmidt Cauchy--Schwarz gives $0\leq\mathcal O_{EI}\leq1$
+when both norms are nonzero. Rescaling $X_E\mapsto aX_E$ and $X_I\mapsto bX_I$
+multiplies the numerator and denominator by the same factor $a^2b^2$.
+This observable tests relative temporal geometry independently of separate
+population amplitude rescalings. It is not the participation ratio of the
+rectangular cross-covariance block and does not establish communication or
+computational performance.
+
+The identity applies to a common finite recording. A four-window estimator
+uses cross-products to estimate the infinite-record energies; its normalized
+ratio need not obey the exact finite-sample bound in every noisy realization.
+The observed comparison is therefore an explicitly exploratory geometry
+diagnostic alongside the prespecified absolute energies and participation
+ratios, not a replacement for their errors.
+
+There is also an exact relation between population dimensions and joint
+dimension. Define $t_a=\operatorname{tr}C_{aa}$,
+$D_a=t_a^2/\operatorname{tr}(C_{aa}^2)$, and variance fractions
+$w_a=t_a/(t_E+t_I)$. Then
+\begin{align}
+ \operatorname{tr}C^2
+ &=\operatorname{tr}C_{EE}^2+2\|C_{EI}\|_F^2
+    +\operatorname{tr}C_{II}^2\\
+ &=\frac{t_E^2}{D_E}+\frac{t_I^2}{D_I}
+    +\frac{2\mathcal O_{EI}t_Et_I}{\sqrt{D_ED_I}},\\
+ \frac1D
+ &=\frac{w_E^2}{D_E}+\frac{w_I^2}{D_I}
+    +\frac{2\mathcal O_{EI}w_Ew_I}{\sqrt{D_ED_I}}.
+\end{align}
+Thus the populations' dimensions do not simply add. At equal individual
+dimensions $D_E=D_I=D_0$, complete temporal Gram overlap gives $D=D_0$.
+Zero overlap and equal variance fractions give $D=2D_0$. The weights $w_a$
+are fractions of total temporal variance, not neuron fractions $f_a$.

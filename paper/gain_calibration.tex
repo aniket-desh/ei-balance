@@ -1,0 +1,30 @@
+\begin{table}[htp]
+\centering
+\footnotesize
+\caption{Gain calibration diagnostics on the instrumented subset. Entries are
+mean percentage errors with network standard errors, normalized by the
+measured squared time-averaged gain moment. These are population moment
+errors, not a uniform per-neuron guarantee. The three Gaussian formulas use
+measured individual $(\mu_i,q_i)$; measured $\mu_i$ with common $q$; or a
+Gaussian operating-point distribution with measured population $(h,\Delta,q)$.
+The block check compares cross-block gain products with the squared full-record
+mean. These same-record calibrations are not parameter-only predictions or
+tests of the entire Gaussian trajectory law. The $N=2000$ subset consists of
+initial seed 3001 and all eight additional instrumented networks per
+composition; the $N=4000$ subset uses all four.}
+\label{tab:gain_calibration}
+\begin{tabular}{rrrrrrrr}
+\toprule
+$f_E$&$N$&Class&$n$&\shortstack{Individual\\$\mu_i,q_i$}&\shortstack{Empirical $\mu_i$\\common $q$}&\shortstack{Gaussian $\mu$\\common $q$}&Gain block check\\
+\midrule
+0.6&2000&E&9&$+0.83\pm0.12$&$+4.02\pm0.33$&$+6.76\pm1.04$&$-0.076\pm0.005$\\
+0.6&2000&I&9&$+0.06\pm0.09$&$+1.83\pm0.36$&$+4.72\pm0.51$&$-0.093\pm0.005$\\
+0.8&2000&E&9&$+0.71\pm0.08$&$+4.37\pm0.35$&$+8.07\pm0.86$&$-0.069\pm0.003$\\
+0.8&2000&I&9&$-0.33\pm0.17$&$+1.56\pm0.34$&$+7.39\pm1.52$&$-0.086\pm0.003$\\
+0.6&4000&E&4&$+0.54\pm0.08$&$+3.22\pm0.26$&$+5.30\pm0.64$&$-0.072\pm0.004$\\
+0.6&4000&I&4&$+0.24\pm0.07$&$+1.81\pm0.14$&$+3.11\pm0.50$&$-0.088\pm0.004$\\
+0.8&4000&E&4&$+0.59\pm0.07$&$+3.47\pm0.13$&$+5.68\pm0.67$&$-0.065\pm0.001$\\
+0.8&4000&I&4&$-0.08\pm0.08$&$+1.23\pm0.31$&$+3.67\pm0.79$&$-0.082\pm0.002$\\
+\bottomrule
+\end{tabular}
+\end{table}

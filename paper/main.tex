@@ -1,0 +1,731 @@
+\documentclass[11pt]{article}
+\usepackage[margin=24mm]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools,bm,graphicx,booktabs,microtype}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage[colorlinks=true,allcolors=blue]{hyperref}
+\usepackage[font=small,labelfont=bf]{caption}
+\usepackage{placeins}
+\renewcommand{\topfraction}{.95}
+\renewcommand{\bottomfraction}{.85}
+\renewcommand{\textfraction}{.05}
+\renewcommand{\floatpagefraction}{.65}
+\setcounter{topnumber}{3}
+\setcounter{bottomnumber}{2}
+\clubpenalty=10000
+\widowpenalty=10000
+\displaywidowpenalty=10000
+\newcommand{\E}{\mathbb E}
+\newcommand{\dd}{\,\mathrm d}
+\newcommand{\diag}{\operatorname{diag}}
+\newcommand{\tr}{\operatorname{tr}}
+\newcommand{\PR}{D}
+\newcommand{\energy}{\mathcal E}
+\newtheorem{proposition}{Proposition}
+\graphicspath{{figures/}{../experiments/figures/}{../experiments/degree/}{../archive/research_round/record/}}
+\hypersetup{pdftitle={Conditional activity geometry in balanced excitatory-inhibitory networks}}
+\title{Conditional activity geometry in balanced\\excitatory--inhibitory networks}
+\author{}
+\date{Working manuscript, 19 November 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+Excitation--inhibition balance creates heterogeneous neuronal operating points
+even when neurons share a transfer function. These operating points jointly
+determine temporal variances and local responses, so replacing the population
+by an average neuron can distort its collective activity geometry. We combine
+conditional balanced-network mean field with a two-site cavity closure to
+obtain a population resolvent for E--E, E--I, and I--I covariance energies and
+the participation ratio, including normalized temporal alignment between the
+populations. Under stated common-leak stability assumptions,
+averaging conditional spectra or gains before taking their second moments
+raises the predicted dimension, with a blockwise inequality for covariance
+energy. The calculation separates two interventions: changing population
+fractions at fixed aggregate coupling reweights geometry, whereas changing
+degree dispersion alters the self-consistent operating-point distribution.
+Strict Dale-network comparisons reproduce a large degree-driven change in
+dimension and expose quantitative finite-network deviations, alongside the
+importance of finite-record centering. The resulting conditional prediction
+of activity geometry separates its algebraic consequences from its empirical
+accuracy; it does not supply a full finite-network covariance spectrum or a
+theorem of nonlinear cavity decoupling.
+\end{abstract}
+
+\section{From balanced activity to collective dimension}
+
+Large excitatory and inhibitory inputs can cancel in their mean while leaving
+fluctuations comparable to the residual input. This balanced regime provides
+a mechanism for irregular activity \citep{vreeswijk1996,kadmon2015}. It also
+generates static differences between neurons: each incoming connectivity row
+samples a different combination of presynaptic rates. A common microscopic
+transfer function therefore need not imply a common distribution of activity
+variance or response.
+
+The question here is how those endogenous local differences shape covariance
+geometry. Let $r_i(t)$ be a stationary rate trajectory, $m_i=\langle
+r_i\rangle_t$, and
+\begin{equation}
+ C_{ij}(\tau)=\langle[r_i(t+\tau)-m_i][r_j(t)-m_j]\rangle_t.
+ \label{eq:covariance}
+\end{equation}
+At zero lag, $C(0)$ is positive semidefinite. Its participation ratio is
+\begin{equation}
+ \PR=\frac{[\tr C(0)]^2}{\tr[C(0)^2]},\qquad
+ \nu_N=\frac{\tr C(0)}{N},\quad
+ \energy_N=\frac{\tr[C(0)^2]}{N},\quad
+ d_N=\frac{\PR}{N}=\frac{\nu_N^2}{\energy_N}.
+ \label{eq:pr}
+\end{equation}
+It measures how broadly variance is distributed among activity modes.
+It is distinct from a Lyapunov dimension, and by itself does not establish
+performance on a computational task.
+
+Two-site cavity theory already predicts covariance energy and dimensionality
+in random recurrent networks \citep{clark2023}. General neuronal heterogeneity,
+including its different effects through recurrent gains and readout amplitudes,
+is treated by \citet{clark2025}. Appendix J of that work already retains
+same-label spectral and response products of the kind used below.
+Balanced EI mean field supplies the
+self-consistent distribution of local operating points, and earlier work
+distinguishes fixed and fluctuating in-degree \citep{kadmon2015,mastrogiuseppe2017}.
+Related cavity work for independent, identically distributed couplings derives
+a linear-equivalent covariance description at fixed quenched connectivity
+\citep{clark2026linear}. Here we target population
+covariance energies and PR; an accurate covariance matrix for each individual
+network would require an additional claim and validation.
+Our contribution is their conditional combination for balanced population
+geometry: retain the dependence of local covariance and response on the same
+operating point, propagate their moments through a small population resolvent,
+and test separately the effects of composition and degree dispersion.
+
+\section{Conditional local dynamics}
+
+\subsection{Model and balance}
+
+There are $N_a=f_aN$ neurons of class $a\in\{E,I\}$, with
+$f_E+f_I=1$. In common leak-time units,
+\begin{equation}
+ \dot x_i=-x_i+\sum_jJ_{ij}\phi(x_j)+\sqrt N I_a+h_a^{\rm ext},
+ \qquad \phi(x)=2\Phi(x),\qquad i\in a,
+ \label{eq:model}
+\end{equation}
+where $\Phi$ is the standard Gaussian cumulative distribution function.
+Independent-edge strict Dale connectivity is
+\begin{equation}
+ J_{ij}=\frac{t_{ab}}{\sqrt N}A_{ij},\quad
+ A_{ij}\sim\operatorname{Bernoulli}(p_{ab}),\quad
+ t_{aE}>0,\quad t_{aI}<0.
+ \label{eq:connectivity}
+\end{equation}
+Writing $J^0_{ab}=p_{ab}t_{ab}$ and
+$G_{ab}=p_{ab}(1-p_{ab})t_{ab}^2$, the edge mean and centered variance are
+$J^0_{ab}/\sqrt N$ and $G_{ab}/N$. Set $F=\diag(f_E,f_I)$ and $W=GF$.
+The leading population rates satisfy
+\begin{equation}
+ J^0F\bar m+I=0.
+ \label{eq:balance}
+\end{equation}
+The order-one mean input adjusts to realize these rates. Equation
+\eqref{eq:balance} is a limiting balance condition, not an exact identity
+between measured finite-network rates and the nominal target.
+
+\subsection{Keep the neuronal label through the nonlinearity}
+
+In the dense asymmetric asynchronous closure, the one-site input law is
+\begin{equation}
+ x_a(t)\mid z=\mu_a(z)+u_a(t),\qquad
+ \mu_a(z)=h_a+\sqrt{\Delta_a}\,z,\quad z\sim\mathcal N(0,1),
+ \qquad u_a\sim\operatorname{GP}(0,K_a).
+ \label{eq:conditional}
+\end{equation}
+The label $z$ is fixed for each neuron. The dynamic input kernel $K_a$ is
+common within a population in the closure, whereas the output moments depend
+on $z$. With $q_a=K_a(0)$, define
+\begin{align}
+ m_a(z)&=\E_u\phi(\mu_a(z)+u),\qquad
+ v_a(z)=c_a(z,0),\nonumber\\
+ c_a(z,\tau)&=\E_u\{[\phi(x_a(t+\tau))-m_a(z)]
+                              [\phi(x_a(t))-m_a(z)]\},\label{eq:localmoments}\\
+ \alpha_a(z)&=\E_u\phi'(\mu_a(z)+u).
+ \nonumber
+\end{align}
+For the chosen rate function,
+\begin{equation}
+ m_a(z)=2\Phi\!\left(\frac{\mu_a(z)}{\sqrt{1+q_a}}\right),\qquad
+ \alpha_a(z)=\sqrt{\frac{2}{\pi(1+q_a)}}
+             \exp\!\left[-\frac{\mu_a(z)^2}{2(1+q_a)}\right].
+ \label{eq:localerf}
+\end{equation}
+Population rate balance fixes
+$h_a=\sqrt{1+\Delta_a+q_a}\,\Phi^{-1}(\bar m_a/2)$.
+Figure~\ref{fig:cavity_sites} illustrates how two cells in the same
+population can respond differently to the same small change in mean input.
+
+\begin{figure}[tb]
+\centering
+\includegraphics[width=\linewidth]{../docs/cavity_schematic.pdf}
+\caption{\textbf{Two excitatory cells can have different local gains.}
+The reservoir contains the other $N-2$ neurons. Each drawn edge takes its
+sign from its presynaptic cell, so $J_{ik}$ carries the rate of cell $k$ to
+cell $i$. The connections are schematic. The two points on the conditional
+mean rate curve mark the lower and upper quartiles of the predicted E
+operating-point distribution for the Bernoulli reference in
+Eq.~\eqref{eq:reference}. At fixed $q_E$, their tangent slopes
+are the local gains in Eq.~\eqref{eq:localerf}.}
+\label{fig:cavity_sites}
+\end{figure}
+
+For independent edges, the one-site self-consistency equations are
+\begin{align}
+ \Delta_a&=\sum_bW_{ab}\E_z[m_b(z)^2],\label{eq:static}\\
+ K_a''(\tau)&=K_a(\tau)-\sum_bW_{ab}\E_z c_b(z,\tau),\qquad
+ K_a'(0)=0,\quad K_a(\infty)=0.
+ \label{eq:dynamic}
+\end{align}
+Static input disorder survives at large $N$ because each row sums centered
+couplings with total variance of order one. Its source includes
+$\E m_b^2=\bar m_b^2+\operatorname{Var}_z m_b$; removing the latter term
+would discard recurrently generated rate heterogeneity.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\linewidth]{conditional_local_laws.pdf}
+\caption{\textbf{The same operating point controls activity variance and response.}
+(a) Predicted static operating-point distributions in the nonuniform EI
+reference model. (b,c) Conditional temporal rate variance and local average
+slope. The E and I laws differ, and neurons within either population sample
+different parts of these curves. (d) Parameter-only dimension predictions
+under two approximations to the same local law: average the conditional
+spectra before forming their product, or replace $\E\alpha^2$ by
+$(\E\alpha)^2$. Either approximation raises the predicted dimension.
+The controls retain the original local covariances and PR numerator; they
+are not new self-consistent network ensembles. The two compositions hold
+$W=GF$ and $J^0F$ fixed. No network data or fitted amplitudes enter this figure.}
+\label{fig:local}
+\end{figure}
+
+\section{A population response for covariance geometry}
+
+Use the Fourier transform $c(\omega)=\int e^{-i\omega\tau}c(\tau)\dd\tau$,
+with inverse measure $\dd\omega/(2\pi)$. The local response to additive
+input current, before recurrent propagation, is
+\begin{equation}
+ s_a(z,\omega)=\alpha_a(z)H(\omega),\qquad
+ H(\omega)=\frac{1}{1+i\omega}.
+ \label{eq:response}
+\end{equation}
+At each pair of frequencies, retain the same neuronal label in the products
+\begin{equation}
+ Q_a(\omega_1,\omega_2)=\E_z[c_a(z,\omega_1)c_a(z,\omega_2)],\quad
+ A_a=\E_z\alpha_a(z)^2,\quad
+ U=H(\omega_1)H(\omega_2)\diag(A_a).
+ \label{eq:source}
+\end{equation}
+The source $Q_a$ is not the product of two population-averaged spectra.
+That distinction preserves the covariance of a neuron's two spectral factors.
+
+In addition to the one-site law, the cavity closure assumes weak distinct-site
+correlations, leading conditional decoupling of reservoir responses, and
+bounded response and covariance norms at fixed parameters. Coherent EI
+feedback must remain stable; an unstable or unusually amplified population
+mode cannot be dropped on the grounds that the mean coupling has low rank.
+Under these assumptions, define
+\begin{equation}
+ R=(I-UW)^{-1},\qquad \mathsf D_{\rm src}=\diag(Q_a/f_a),\qquad
+ X=R\mathsf D_{\rm src}R^\dagger,\qquad \Psi=X-\mathsf D_{\rm src}.
+ \label{eq:resolvent}
+\end{equation}
+Here $\Psi_{ab}$ is the scaled two-frequency product for distinct neurons
+in populations $a,b$; $X$ restores the diagonal contributions. Algebraic
+identities conditional on this closure are derived in Appendix~\ref{app:final_conditional_analytics}.
+
+The integrated population contributions and dimension are
+\begin{equation}
+ \energy_{ab}=f_af_b\int\!\!\int X_{ab}(\omega_1,\omega_2)
+                        \frac{\dd\omega_1\dd\omega_2}{(2\pi)^2},\qquad
+ \energy=\sum_{ab}\energy_{ab},\qquad
+ \boxed{\frac{\PR}{N}=\frac{(\sum_af_a\bar v_a)^2}{\energy}},
+ \quad \bar v_a=\E_zv_a.
+ \label{eq:geometry}
+\end{equation}
+The E--I contribution occurs twice in the total energy. It is a covariance
+energy, not a participation ratio of a rectangular cross-covariance matrix.
+For population $a$ alone,
+\begin{equation}
+ \frac{D_a}{N_a}=\frac{\bar v_a^2}
+ {f_a\int\!\!\int X_{aa}\,\dd\omega_1\dd\omega_2/(2\pi)^2}.
+ \label{eq:populationpr}
+\end{equation}
+Population PRs alone do not determine the alignment of E and I activity
+subspaces.
+
+An equivalent decomposition exposes two routes to low dimension:
+\begin{equation}
+ \energy=\sum_af_a\E_zv_a^2+\sum_{ab}f_af_b\psi_{ab},\qquad
+ \psi_{ab}=\int\!\!\int\Psi_{ab}\frac{\dd\omega_1\dd\omega_2}{(2\pi)^2}.
+ \label{eq:diagonal}
+\end{equation}
+Variance heterogeneity increases the diagonal second moment relative to the
+squared mean variance, while pair correlations add off-diagonal energy.
+Both must be retained before taking the PR ratio.
+At fixed parameters with finite nonzero $\nu$ and $\energy$, the prediction
+is extensive, $D\sim Nd$. Distinct pair covariances can vanish as
+$N^{-1/2}$ while their $N^2$ squared contributions remain of order $N$,
+the same order as the diagonal energy. Weak pair correlations therefore
+change the leading dimensionality fraction rather than disappearing from
+the collective observable.
+
+\subsection{Relating E and I activity geometry}
+
+A normalized cross-population energy isolates geometry from separate
+population amplitude scales. For centered neuron-by-time activity matrices
+$Y_a$, let $\mathsf K_a=Y_a^\top Y_a/T$ be their temporal Gram matrices.
+Since $C_{ab}=Y_aY_b^\top/T$, cyclicity of trace gives
+\begin{equation}
+ \mathcal O_{EI}
+ =\frac{\energy_{EI}}{\sqrt{\energy_{EE}\energy_{II}}}
+ =\frac{\tr(\mathsf K_E\mathsf K_I)}
+        {\|\mathsf K_E\|_F\|\mathsf K_I\|_F},\qquad
+ 0\leq\mathcal O_{EI}\leq1.
+ \label{eq:temporalalignment}
+\end{equation}
+For nonzero Gram norms, this normalized Hilbert--Schmidt alignment is linear centered kernel
+alignment for the time-centered activity matrices \citep{kornblith2019}.
+It is invariant under a separate common rescaling of all E rates or all I
+rates. It compares population temporal Gram geometry, rather than defining
+a communication dimension or a PR of the rectangular cross block.
+The simulations estimate its stationary energies through the corrected
+window products described below. The finite-record ratio is not exactly
+unbiased and need not obey the population bound on every estimate.
+
+Let $t_a=\tr C_{aa}$ and $w_a=t_a/(t_E+t_I)$ be fractions of temporal
+variance. With absolute population dimensions $D_E,D_I$, the exact identity
+\begin{equation}
+ \boxed{\frac1D=\frac{w_E^2}{D_E}+\frac{w_I^2}{D_I}
+      +\frac{2\mathcal O_{EI}w_Ew_I}{\sqrt{D_ED_I}}}
+ \label{eq:jointgeometry}
+\end{equation}
+relates population and joint dimensionality. The weights $w_a$ are variance
+fractions, not neuron fractions $f_a$. Equal population dimensions $D_0$
+give joint dimension $D_0$ at perfect Gram overlap; at zero overlap and equal
+variance fractions, they give $2D_0$. The conditional pair theory predicts
+all the terms of this geometric relation.
+
+\subsection{Why averaging too early raises dimension}
+
+For common leak times, set $B=\diag(A)W$ and assume $B$ is nonnegative with
+$\rho(B)<1$. Expanding both resolvents gives
+\begin{equation}
+ \int\!\!\int X_{ab}\frac{\dd\omega_1\dd\omega_2}{(2\pi)^2}
+ =\sum_{c,n,m\geq0}\frac{(B^n)_{ac}(B^m)_{bc}}{f_c}
+   \E_z[a_{nm,c}(z)^2],
+ \label{eq:averagingseries}
+\end{equation}
+where
+$a_{nm,c}(z)=\int c_c(z,\omega)H(\omega)^nH(\omega)^{*m}
+\dd\omega/(2\pi)$ is real by conjugate symmetry. The interchange requires
+integrable spectra and a dominated convergent series.
+
+\begin{proposition}[Conditional averaging]
+Under these assumptions and with the local-law numerator held fixed,
+replacing $Q_c$ by the product of averaged spectra cannot increase any
+integrated population covariance energy. Replacing $A_a=\E\alpha_a^2$ by
+$(\E\alpha_a)^2$ also cannot increase these energies. Either replacement
+therefore cannot decrease the predicted total or within-population PR.
+\end{proposition}
+For the first statement, Eq.~\eqref{eq:averagingseries} replaces a second
+moment by a squared mean, with nonnegative coefficients. For the second,
+Jensen's inequality lowers $B$ entrywise and hence lowers every coefficient
+in the series. Figure~\ref{fig:local} shows that these effects are substantial
+for the reference EI law. The proposition compares approximations to a fixed
+conditional law; it does not impose an ordering on arbitrary biological
+interventions that also change that law.
+The mechanism has two parts. Neurons with large local slopes contribute
+disproportionately to repeated recurrent propagation, so averaging the slopes
+before taking response moments removes that amplification. At the same time,
+each neuron's covariance contributes a product of its own spectral factors;
+averaging the spectra first removes a nonnegative source of covariance
+energy. Neither effect is determined by the mean firing rate alone.
+
+\section{Two distinct connectivity interventions}
+
+\subsection{Population composition at fixed aggregate input}
+
+Rescale presynaptic columns so that $J^0F$ and $W=GF$ remain fixed while $f$
+changes. Equations~\eqref{eq:balance}--\eqref{eq:dynamic} then preserve the
+one-site laws within the theory. The source weights $1/f_a$ and population
+weights $f_af_b$ still change. In particular, with the fraction-independent
+tensor
+\begin{equation}
+ T_{abc}=\int\!\!\int R_{ac}R_{bc}^*Q_c
+                    \frac{\dd\omega_1\dd\omega_2}{(2\pi)^2},
+ \qquad
+ \energy_{ab}=f_af_b\sum_c\frac{T_{abc}}{f_c},
+ \label{eq:composition}
+\end{equation}
+one conditional calculation predicts the entire controlled fraction family.
+For the reference local law, changing the fraction from 80:20 to 60:40
+raises the predicted share $2\energy_{EI}/\energy$ from $0.305$ to $0.448$,
+despite preserving the conditional local laws. Population geometry is
+therefore a distinct prediction even when the change in total PR is modest.
+Holding individual edge moments fixed defines a different intervention and
+requires recomputing the local laws. No biological optimum follows from
+an optimum along one such parameter path.
+The numerical reference has
+\begin{equation}
+ G^0=\begin{pmatrix}16&9\\25&12\end{pmatrix},\qquad
+ J^{0,\rm ref}=\begin{pmatrix}1&-6\\2&-10\end{pmatrix},\qquad
+ f^0=(0.8,0.2),\qquad \bar m=(0.3,0.3).
+ \label{eq:reference}
+\end{equation}
+The required leading drive is $I=(0.12,0.12)$. Changing composition rescales
+each presynaptic column of both matrices by $f_b^0/f_b$. The resulting
+Bernoulli probabilities are $p_{ab}=(J^0_{ab})^2/[G_{ab}+(J^0_{ab})^2]$,
+with $t_{ab}=J^0_{ab}/p_{ab}$. The ensemble includes self-connections.
+
+\subsection{Degree dispersion at fixed edge marginals}
+
+For each incoming population block of size $M=N_b$, draw a count $K_{ab}$
+with mean $Mp_{ab}$ and choose that many presynaptic neurons uniformly.
+Different incoming rows and presynaptic classes are independent. Define
+\begin{equation}
+ \chi_{ab}=\frac{\operatorname{Var}K_{ab}}{Mp_{ab}(1-p_{ab})}.
+ \label{eq:chi}
+\end{equation}
+Bernoulli edges have $\chi=1$; fixed integer counts have $\chi=0$.
+This control preserves each edge's marginal mean and variance, but changes
+correlations between edges in a row. The exact finite-pool sampling identity
+then gives the leading static equation
+\begin{equation}
+ \boxed{\Delta_a=\sum_bW_{ab}
+ [\operatorname{Var}_z m_b(z)+\chi_{ab}\bar m_b^2].}
+ \label{eq:degreestatic}
+\end{equation}
+Fixed counts remove the disorder caused by sampling different numbers of
+neurons with a common mean rate. They leave disorder from sampling unequal
+presynaptic mean rates. The same distinction was identified in EI mean-field
+comparisons of fixed and stochastic in-degree \citep{mastrogiuseppe2017}.
+For fixed nonzero dispersion, count deviations are of order $\sqrt M$.
+Multiplying by a synapse of order $N^{-1/2}$ and a nonzero mean rate leaves
+an order-one quenched input offset even as relative count fluctuations
+vanish. This persistent static disorder is consistent with concentration
+of the centered temporal input kernel in the limiting closure.
+Within-row coupling covariances are only of order $N^{-2}$, but their
+contribution to static input sums over order $N^2$ pairs of presynaptic mean
+rates. Degree constraints can therefore change static disorder by order one
+while preserving every edge marginal. This change then propagates through
+the conditional nonlinear responses into collective geometry.
+
+For bounded dispersion and growing in-degree, the dynamic and pair equations
+retain their leading form under the stated asynchronous and stable-coherent
+assumptions, after the conditional law is recomputed. Our nonuniform degree
+test measures this prediction where the E and I local laws differ. It also
+records the generator's actual dispersion, since integer rounding is part
+of a finite-network intervention.
+In this controlled family, the leading drive $\sqrt N I$ and the edge-moment
+matrices remain fixed, while the order-one drive is set to the residual
+input $h_a(\chi)$ computed from the parameter-only conditional theory. Thus
+the stated intervention does not keep the entire external drive fixed; the
+order-one change is prescribed before measuring the networks and is not a
+fit to their PR.
+To separate variance heterogeneity from pair correlations, set
+$\energy_{\rm diag}=\sum_af_a\E v_a^2$. Then
+\begin{equation}
+ d=\underbrace{\frac{\nu^2}{\energy_{\rm diag}}}
+                 _{\text{variance heterogeneity}}
+   \underbrace{\frac{\energy_{\rm diag}}{\energy}}
+                 _{\text{pair correlations}}.
+ \label{eq:degreefactors}
+\end{equation}
+For the ideal nonuniform degree control from $\chi=0$ to $\chi=2$, these
+parameter-only factors fall by 2.93-fold and 3.53-fold, respectively, giving
+a 10.34-fold predicted reduction in $d$. Thus the predicted degree effect
+changes activity geometry as well as its overall amplitude; common covariance
+rescaling would leave PR invariant.
+
+\input{results.tex}
+
+\section{Discussion}
+
+The useful reduction is a map from a self-consistent distribution of local
+trajectory laws to a small population response problem. Balance supplies
+the distribution; the two-site calculation supplies covariance energy.
+Their conditional combination preserves information that is lost in a
+population-average neuron. Composition and degree variability act on
+different parts of this map, providing separate tests of its structure.
+
+Three qualifications limit its interpretation. First, the closure assumes
+conditional cavity decoupling and controlled coherent feedback; the matrix
+identity does not prove these properties for the nonlinear network. Second,
+PR can conceal errors through correlated numerator and denominator shifts.
+For any positive covariance-energy random variable,
+\begin{equation}
+ \E\frac{\nu^2}{\energy}-\frac{(\E\nu)^2}{\E\energy}
+ =\E\frac{(\nu-a\energy)^2}{\energy}\geq0,\qquad
+ a=\frac{\E\nu}{\E\energy}.
+ \label{eq:ratiobias}
+\end{equation}
+We therefore report both ensemble summaries and their ingredients. Third,
+finite recordings estimate a different object unless their centering and
+mixing errors are controlled. The recording checks are part of validating
+the observable, rather than a fit to the dynamical prediction.
+
+The formal $N^{-1/2}$ stationary correction retained in the research archive
+does not provide a controlled expansion at $N=1000$. Its known higher-order
+resummations omit irreducible terms, and a small final PR shift does not
+establish that large ingredient corrections are controlled. Completing the
+full finite-size expansion is distinct from defining and testing the leading
+conditional theory. Likewise, selected examples of weak chaos, fixed points,
+and periodic activity establish a classification issue, not their ensemble
+probabilities.
+A concentration diagnostic can also depend on the effective dimension of
+the presynaptic covariance after leak filtering and variance weighting,
+rather than on $N$ alone. Appendix~\ref{sec:source-concentration-diagnostic}
+gives the exact frozen-Gaussian-row identity. Its effective source dimension
+is distinct from activity PR, and omitted degree constraints, cumulants,
+endogenous conditioning, and coherent reinsertion prevent treating it as a
+complete finite-network error bound.
+
+Near a simple smooth instability, the conditional equations also admit a
+critical-mode reduction. Nonzero local curvature generically produces a
+three-halves dimension law; curvature can arise from a biased homogeneous
+operating point as well as from quenched heterogeneity. The scalar
+disorder--curvature crossover derived in the archive is therefore a
+supporting analytical result, with finite-network visibility and the
+nonuniform EI extension requiring their own evidence. It is not used to
+replace the finite-coupling tests reported here.
+
+\clearpage
+\appendix
+\input{../experiments/analytics/final_analytics.tex}
+
+\section{Recording covariance without block-centering bias}
+\label{app:recording}
+
+Let $Y(t)=r(t)-m$ be a stationary centered vector and
+$\bar Y_B=B^{-1}\int_0^B Y(t)\dd t$. The usual covariance computed after
+subtracting a block's empirical mean obeys
+\begin{equation}
+ \E\widehat C_B=C(0)-M_B,\qquad
+ M_B=\E[\bar Y_B\bar Y_B^\top]
+ =\frac{1}{B^2}\int_0^B\!\int_0^B C(t-s)\dd t\dd s.
+ \label{eq:centering}
+\end{equation}
+Even independent blocks estimate $C-M_B$, so increasing only the separation
+between blocks does not remove this bias. Cross-multiplying independent
+centered blocks estimates $\|C-M_B\|_F^2/N$, with possible upward PR bias.
+
+For two independent equal-length stationary blocks $A,B$, write their means
+as $\bar r_A,\bar r_B$. The corrected matrix
+\begin{equation}
+ C^{\rm diff}_{AB}=\frac{\widehat C_A+\widehat C_B}{2}
+ +\frac{(\bar r_A-\bar r_B)(\bar r_A-\bar r_B)^\top}{2}
+ \label{eq:meandiff}
+\end{equation}
+satisfies $\E C^{\rm diff}_{AB}=C$. With four mutually independent blocks,
+\begin{equation}
+ \widehat\nu=\frac{\tr C^{\rm diff}_{AB}}{N},\qquad
+ \widehat\energy=\frac{\tr(C^{\rm diff}_{AB}C^{\rm diff}_{CD})}{N}
+ \label{eq:energyestimate}
+\end{equation}
+are unbiased for $\nu$ and $\energy$; their ratio is not exactly unbiased.
+Actual trajectory windows are tested for duration and gap dependence, rather
+than assumed independent on the basis of single-neuron correlation times.
+The complete finite-record and four-time algebra is retained in the archive.
+
+\section{Reproducibility and claim boundaries}
+\label{app:reproducibility}
+
+The accompanying archive retains the conditional solvers, run protocol,
+connectivity and initial-condition seeds, estimator checks, every completed
+network summary, figures, and rejected calculations. Spectrum arrays in
+the supplied numerical implementation are spectral \emph{masses}, already
+including $\dd\omega/(2\pi)$; they must be summed without a second integration
+factor. All reported network uncertainties use independently drawn networks.
+Neurons, pairs, time blocks, and repeated subsamples from the same realization
+are not independent network replicates.
+
+The complete finite-network covariance spectrum, rare-state probabilities,
+uniform interchange of long-time and large-network limits, and all
+irreducible second-order corrections are outside the claims of this paper.
+A true fixed point has zero temporally centered covariance and undefined PR.
+Persistent periodic activity can have a defined covariance but lies outside
+the mixing chaotic saddle used by the stationary closure. These outcomes are
+reported separately rather than silently removed by a low-variance cutoff.
+
+\subsection{Numerical protocol and implementation}
+
+The prospective campaign integrates Eq.~\eqref{eq:model} with the midpoint
+method at step $0.05$, discards 500 leak times, and records 8000 leak times
+at spacing $0.25$. The primary covariance estimator uses 500-time windows
+and zero minimum empty gap; selected 1000-time windows, 4000-time prefixes,
+and a one-window empty gap are sensitivity checks. These choices are fixed
+before inspecting the corresponding network outcomes. Distinct compositions
+and sizes sharing a seed are treated as a cluster when their differences
+are compared, not as independent observations.
+
+Dynamics use 64-bit floating point; temporary trajectories use 32-bit storage
+and covariance contractions return to 64-bit arithmetic. The optimized
+connectivity action represents dense Bernoulli blocks by a sparse adjacency
+or its sparse complement plus the exact population sum. No edges are
+discarded. Independent dense-action and short-trajectory comparisons verify
+the representation to floating-point precision. Rate evaluations are
+vectorized, covariance contractions use matrix multiplication, and network
+realizations run in at most four spawned workers with one BLAS thread each.
+Covariance windows are streamed through disk-backed arrays rather than
+retaining an entire window-by-$N$-by-$N$ tensor in memory. Resource limits,
+timing benchmarks, equivalence errors, software versions, and every run
+status are included in the computational record.
+The temporal Gram interpretation does not require allocating a
+time-by-time Gram matrix: alignment is computed directly from the three
+population covariance energies.
+
+Measured local input and rate kernels use a fixed, outcome-independent sample
+of at most 96 neurons per population. These whole-record centered kernels are
+diagnostics with their own finite-record error; they are not substitutes for
+the population covariance-energy estimator. The fast campaign does not
+measure a full Lyapunov spectrum or establish attractor basins.
+
+\section{Integration and selected tangent-flow checks}
+\label{app:integration_checks}
+
+Five selected midpoint step-refinement comparisons retain the same
+connectivity and initial condition while changing the step from $0.05$ to
+$0.025$ (Table~\ref{tab:time_step_checks}). Four changes in PR are below
+$1.1\%$, including the matched 4000-time comparison for a largest-size
+fixed-degree network. Ingredient changes can be larger even when PR is
+stable. In the 60:40, $N=1000$, seed3003 comparison, temporal rate variance
+and energy change by $-3.89\%$ and $-7.58\%$, while PR changes by only
+$-0.056\%$.
+
+The 80:20, $N=1000$, seed3001 example is a retained exception: its PR
+changes by $+24.34\%$, with variance and energy changes of $-10.83\%$ and
+$-36.06\%$. A step-size change also changes the finite chaotic trajectory,
+so these tests alone do not distinguish truncation error, slow sampling,
+or a change of dynamical branch in that case. They do not establish uniform
+negligibility of numerical error.
+
+\input{time_step_checks.tex}
+
+A bounded follow-up repeats this same outlier using the native action
+backend at steps $0.05$, $0.025$, and $0.0125$, with 16000 recorded times
+(Table~\ref{tab:outlier_followup}). At the \emph{same} step $0.05$ and
+duration 8000, the native run gives $d=0.018361$ rather than the original
+SciPy value $0.015601$, a $17.69\%$ difference despite floating-point
+agreement of the connectivity actions. Thus the original $24.34\%$ change
+cannot be uniquely attributed to step truncation.
+The three native 16000-time values are $0.019085$, $0.018636$, and
+$0.017002$, a $12.25\%$ max-to-min spread. A converged invariant covariance
+has not been established for this atypical network; arithmetic phase,
+recording duration, numerical step, and possible branch sensitivity remain
+entangled. This is retained as a limitation, without replacing or filtering
+the primary outcome.
+
+\input{outlier_followup.tex}
+
+Selected branch checks integrate
+$\dot v=-v+J\diag[\phi'(x(t))]v$ along four $N=2000$ trajectories.
+Their largest finite-time exponents are positive, as are all eight
+successive blocks in each case (Table~\ref{tab:tangent_checks}). This
+supports the chaotic-branch comparison for those examples. It is not a
+classification of all sixty-four networks, a full Lyapunov spectrum, or
+a statement about basins or rare fixed points.
+
+\input{tangent_checks.tex}
+
+\FloatBarrier
+
+\input{../experiments/integration/source_dimension_and_concentration.tex}
+
+\input{../experiments/integration/population_temporal_gram_geometry.tex}
+
+\section{Additional gain and population-axis diagnostics}
+\label{app:ingredients}
+
+Let the columns of $U_{\rm pop}$ be the normalized constant vectors on E and
+I, and set $P=U_{\rm pop}U_{\rm pop}^{\top}$, $P_\perp=I-P$.
+The covariance energy touching a population-uniform direction is
+\begin{equation}
+ \energy_{\rm pop}=\frac{\|PCP\|_F^2+2\|PCP_\perp\|_F^2}{N},\qquad
+ \energy=\energy_{\rm pop}+\frac{\|P_\perp CP_\perp\|_F^2}{N}.
+\end{equation}
+The cross-window estimator uses the corresponding bilinear identity.
+A small measured fraction $\energy_{\rm pop}/\energy$ excludes direct
+dominance by these two uniform axes. It does not exclude indirect coherent
+feedback or slow collective modes whose eigenvectors are nonuniform.
+
+\input{population_dimensions.tex}
+
+\input{gain_calibration.tex}
+
+\input{composition_intervals.tex}
+
+\begin{figure}[htp]
+\centering
+\includegraphics[width=\linewidth]{composition_validation.pdf}
+\caption{\textbf{Ingredient checks accompany the PR comparison.}
+Original 40-network composition and size series. Panels a--c show the original
+moment and dimension comparisons for context. Panels d,e compare squared
+time-averaged local slopes $A_a$ with their parameter-only values;
+instantaneous squared slopes are a different observable. Panel f shows the
+fraction of covariance energy involving a population-uniform direction,
+including mixed uniform--transverse sectors. Points are networks and group
+means with network standard errors. These checks distinguish local-law
+errors from direct population-axis energy, without turning measured local
+statistics into a parameter-only correction.}
+\label{fig:ingredients}
+\end{figure}
+
+\FloatBarrier
+\section{Historical unequal-lag population comparison}
+\label{app:historical_lags}
+
+The original handoff also tests the stronger two-lag prediction
+\[
+ \psi_{ab}(\tau_1,\tau_2)
+ =N\mathbb E[C_{ij}(\tau_1)C_{ij}(\tau_2)
+              \mid i\in a,j\in b,i\ne j]
+\]
+in the nonuniform 80:20 reference network. The historical cohort contains
+seeds 77, 88, and 99 at $N=1000$, and seeds 77 and 88 at $N=2000$.
+The recordings are 6000 and 8000 leak times, respectively, after 1000
+burn-in times, with midpoint step $0.05$ and storage interval $0.25$.
+Each map uses 12000 distinct sampled pairs per class and lags from $-24$
+to $24$ in steps of one leak time. Within-class sampling restores both pair
+orientations.
+
+This historical estimator multiplies covariance estimates from separately
+centered temporal blocks. There are eight blocks per recording; selected
+block pairs have at least one empty block between them. The mean-difference
+repair used by the fresh zero-lag campaign has not been applied to these
+archived maps. Changing from eight to four centered blocks in the
+$N=2000$, seed77 diagnostic changes the maps by about 6\%, so this comparison
+must remain distinct from the current estimator validation.
+
+At $N=2000$, relative Frobenius map errors are 9.3\%, 15.3\%, and 14.7\%
+for E--E, E--I, and I--I, while flattened map correlations are 0.998, 0.995,
+and 0.995. The dominant ridge and equal-lag decay are reproduced, but
+negative unequal-lag lobes remain unexplained. High map correlation therefore
+supports the broad temporal pattern, without establishing exact amplitudes
+or tails. These historical networks do not increase the replication count
+of the fresh staged campaign.
+
+\begin{figure}[p]
+\centering
+\includegraphics[width=.93\linewidth]{historical_lag_validation_nord.pdf}
+\caption{\textbf{Historical evidence for population-resolved temporal structure.}
+Lag maps from the original handoff, displayed with the paper's color scale.
+Columns are E--E, E--I,
+and I--I. The first row is parameter-only theory; the next rows are the mean
+of three $N=1000$ and two $N=2000$ networks described in the text. Heatmaps
+share one absolute color scale; dashed contours mark negative values.
+The bottom row shows equal-lag slices, with sample standard-deviation bands
+across networks, not across sampled pairs. No gain, amplitude, or timescale
+is fitted to cross-neuron data. The historical separately centered estimator
+and unresolved negative lobes restrict this evidence to the stated comparison.}
+\label{fig:historical_lags}
+\end{figure}
+
+\FloatBarrier
+\bibliographystyle{unsrtnat}
+\bibliography{references}
+\end{document}

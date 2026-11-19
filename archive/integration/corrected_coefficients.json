@@ -1,0 +1,165 @@
+{
+  "scope": "Reproduction of explicitly conditional closure, with corrected static matrix contraction; no full-network control claim.",
+  "results": {
+    "0.6": {
+      "nu0": 0.1529208020058116,
+      "nu1": 0.42583418604331086,
+      "E0": 0.7822688131760416,
+      "E1": 3.5476125059913954,
+      "d0": 0.029893524185321357,
+      "d1": 0.03091925671466697,
+      "h1": [
+        -1.6207680511013771,
+        -1.9674284662894808
+      ],
+      "Delta1": [
+        1.6101275948539813,
+        2.5278969949559333
+      ],
+      "q1": [
+        5.3985648277668865,
+        8.315941324748833
+      ],
+      "A0": [
+        0.05791908279867636,
+        0.0415153000609012
+      ],
+      "A1": [
+        -0.3277136657370996,
+        -0.1773094142909298
+      ],
+      "E1_pieces": {
+        "L": -24.00947662801952,
+        "S": 16.6851093461252,
+        "R": 3.1212741463624933,
+        "Vs": 6.693845767635825,
+        "Vd": 1.0568598738873989
+      },
+      "byN": {
+        "1000": {
+          "strict_first_d": 0.030871276933099382,
+          "first_energy": 0.894454170922347,
+          "resummed_energy": 0.8464127057982237,
+          "partial_resummed_d": 0.03270814277369269,
+          "DC_radius_resummed": 0.8293848815276348
+        },
+        "2000": {
+          "strict_first_d": 0.03058489978359898,
+          "first_energy": 0.861595840388293,
+          "resummed_energy": 0.8358935741332891,
+          "partial_resummed_d": 0.03156818745221878,
+          "DC_radius_resummed": 0.8371327911408291
+        },
+        "10000": {
+          "strict_first_d": 0.030202716752468026,
+          "first_energy": 0.8177449382359555,
+          "resummed_energy": 0.8120907476173697,
+          "partial_resummed_d": 0.03042182581073558,
+          "DC_radius_resummed": 0.8474718041272887
+        }
+      },
+      "source_diagnostic_N1000": {
+        "minimum_eigenvalue": -1.8680827203915743e-14,
+        "at_frequency_pair": [
+          0.0,
+          -11.875220230569418
+        ],
+        "fraction_of_frequency_pairs_with_negative_source": 0.30770789925262254,
+        "minimum_whitened_eigenvalue_on_resolved_support": 1.0393418814253332,
+        "resolved_support_Q0_relative_threshold": 1e-10,
+        "fraction_grid_on_resolved_support": 0.15514567075883465,
+        "positive_eigenprojection_energy": 0.8464127058186344,
+        "negative_eigenprojection_energy": -2.041173307989142e-11,
+        "negative_over_signed_energy": 2.4115579716684214e-11,
+        "resolved_spectral_Schur_epsilon2_source_bounds_by_tolerance": {
+          "1e-08": 0.01579386297773536,
+          "1e-10": 0.01579386298572502,
+          "1e-12": 0.01579386298639603
+        },
+        "lower_bound_omitted_epsilon2_source_energy_on_resolved_support": 0.01579386298572502,
+        "lower_bound_relative_to_resummed_energy": 0.018659765948138,
+        "scope": "Schur-complement bound conditional on the external leading independent-row noise model, not a full-network inequality."
+      }
+    },
+    "0.8": {
+      "nu0": 0.14843823186581334,
+      "nu1": 0.4737520379598402,
+      "E0": 0.6418972250791747,
+      "E1": 2.938735480145329,
+      "d0": 0.034326225162807325,
+      "d1": 0.06195716755881603,
+      "h1": [
+        -1.713142435445057,
+        -2.0907354930199147
+      ],
+      "Delta1": [
+        1.666544690814294,
+        2.6141730113090134
+      ],
+      "q1": [
+        5.744193913756523,
+        8.845230924005145
+      ],
+      "A0": [
+        0.05791908279867636,
+        0.0415153000609012
+      ],
+      "A1": [
+        -0.34629947334783107,
+        -0.19576263544179412
+      ],
+      "E1_pieces": {
+        "L": -20.078167334121137,
+        "S": 14.084461085642525,
+        "R": 2.6403465112511006,
+        "Vs": 5.432031714314211,
+        "Vd": 0.8600635030586293
+      },
+      "byN": {
+        "1000": {
+          "strict_first_d": 0.03628548283139285,
+          "first_energy": 0.7348282006592524,
+          "resummed_energy": 0.6967257738098623,
+          "partial_resummed_d": 0.03833066369846884,
+          "DC_radius_resummed": 0.8276367444366977
+        },
+        "2000": {
+          "strict_first_d": 0.0357116295463559,
+          "first_energy": 0.7076093480941291,
+          "resummed_energy": 0.6871853892474481,
+          "partial_resummed_d": 0.036803846431937515,
+          "DC_radius_resummed": 0.835896477951395
+        },
+        "10000": {
+          "strict_first_d": 0.034945796838395486,
+          "first_energy": 0.671284579880628,
+          "resummed_energy": 0.6667777928786449,
+          "partial_resummed_d": 0.035188351091677776,
+          "DC_radius_resummed": 0.8469187946457615
+        }
+      },
+      "source_diagnostic_N1000": {
+        "minimum_eigenvalue": -3.71725947820274e-14,
+        "at_frequency_pair": [
+          0.0,
+          -11.875220230569418
+        ],
+        "fraction_of_frequency_pairs_with_negative_source": 0.30715479525704736,
+        "minimum_whitened_eigenvalue_on_resolved_support": 1.0605868405276573,
+        "resolved_support_Q0_relative_threshold": 1e-10,
+        "fraction_grid_on_resolved_support": 0.14083367544475917,
+        "positive_eigenprojection_energy": 0.6967257738304585,
+        "negative_eigenprojection_energy": -2.0594865933938517e-11,
+        "negative_over_signed_energy": 2.9559500607133924e-11,
+        "resolved_spectral_Schur_epsilon2_source_bounds_by_tolerance": {
+          "1e-08": 0.012560552359899982,
+          "1e-10": 0.01256055238228285,
+          "1e-12": 0.012560552382799208
+        },
+        "lower_bound_omitted_epsilon2_source_energy_on_resolved_support": 0.01256055238228285,
+        "lower_bound_relative_to_resummed_energy": 0.01802797148381455,
+        "scope": "Schur-complement bound conditional on the external leading independent-row noise model, not a full-network inequality."
+      }
+    }
+  }
+}

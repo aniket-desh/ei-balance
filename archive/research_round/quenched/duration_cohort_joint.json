@@ -1,0 +1,545 @@
+{
+  "scope": "Joint descriptors of finite-record mean-free covariance estimators, not a pure stationary quenched law.",
+  "cohort_source_sha256": "cd91c91d81a63f9cf987b9089546b433da62a84d8b69a8121142d2cb7e7d6c94",
+  "conditions": {
+    "mean_free_B500_T4000": {
+      "n": 16,
+      "n_positive_finite": 16,
+      "seeds": [
+        11,
+        22,
+        33,
+        44,
+        55,
+        66,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110
+      ],
+      "n_nu_lt_002": 0,
+      "mean_nu_E": [
+        0.14425984945221046,
+        0.8415439799838459
+      ],
+      "cov_nu_E": [
+        [
+          0.0008574984694800532,
+          0.0061176143125052825
+        ],
+        [
+          0.0061176143125052825,
+          0.0919983127624207
+        ]
+      ],
+      "corr_nu_E": 0.6887720021633865,
+      "sd_nu_E": [
+        0.02928307479552059,
+        0.3033122364205254
+      ],
+      "mean_d": 0.02596408466241515,
+      "sd_d": 0.006525334005180507,
+      "plugin_d_of_means": 0.02472943144857849,
+      "mean_ratio_minus_ratio_of_means": 0.001234653213836659,
+      "exact_positive_ratio_bias_identity": 0.001234653213836659,
+      "delta_ratio_bias_sample": 0.0016304224936900457,
+      "delta_ratio_bias_ensemble": 0.0017391173266027155,
+      "delta_sd_d": 0.007547748556163309,
+      "observed_sd_over_delta_sd": 0.8645404595324094,
+      "exact_log_variance": 0.08228113268626466,
+      "exact_log_variance_components": {
+        "4_var_log_nu": 0.2087321030645091,
+        "var_log_E": 0.1253460687203277,
+        "minus4_cov_logs": -0.2517970390985721
+      },
+      "variance_reduction_from_log_correlation_fraction": 0.7537069475486178,
+      "covariance_of_logs": [
+        [
+          0.052183025766127274,
+          0.06294925977464302
+        ],
+        [
+          0.06294925977464302,
+          0.1253460687203277
+        ]
+      ],
+      "ratio_curvature_relative_variance": 0.07032581117843226,
+      "bootstrap95_sd_d": [
+        0.0040642336030996115,
+        0.008029032227393856
+      ],
+      "bootstrap95_corr_logs": [
+        0.3967169639145036,
+        0.9439538456882781
+      ]
+    },
+    "mean_free_B500_T8000": {
+      "n": 16,
+      "n_positive_finite": 16,
+      "seeds": [
+        11,
+        22,
+        33,
+        44,
+        55,
+        66,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110
+      ],
+      "n_nu_lt_002": 0,
+      "mean_nu_E": [
+        0.1441588221198747,
+        0.8462737478167333
+      ],
+      "cov_nu_E": [
+        [
+          0.0008399656674022272,
+          0.006177443443608041
+        ],
+        [
+          0.006177443443608041,
+          0.09964845490996062
+        ]
+      ],
+      "corr_nu_E": 0.675216001545692,
+      "sd_nu_E": [
+        0.02898216119274453,
+        0.3156714350554396
+      ],
+      "mean_d": 0.025891232697592192,
+      "sd_d": 0.006504154190483359,
+      "plugin_d_of_means": 0.024556789157886203,
+      "mean_ratio_minus_ratio_of_means": 0.0013344435397059894,
+      "exact_positive_ratio_bias_identity": 0.001334443539705986,
+      "delta_ratio_bias_sample": 0.0018022998049643775,
+      "delta_ratio_bias_ensemble": 0.0019224531252953361,
+      "delta_sd_d": 0.007698067167564647,
+      "observed_sd_over_delta_sd": 0.8449074357116848,
+      "exact_log_variance": 0.08405044200190256,
+      "exact_log_variance_components": {
+        "4_var_log_nu": 0.20309686601066854,
+        "var_log_E": 0.12959026672845575,
+        "minus4_cov_logs": -0.24863669073722158
+      },
+      "variance_reduction_from_log_correlation_fraction": 0.7473589035142797,
+      "covariance_of_logs": [
+        [
+          0.050774216502667134,
+          0.062159172684305396
+        ],
+        [
+          0.062159172684305396,
+          0.12959026672845575
+        ]
+      ],
+      "ratio_curvature_relative_variance": 0.07828601340896213,
+      "bootstrap95_sd_d": [
+        0.003836088443255205,
+        0.008045779764186597
+      ],
+      "bootstrap95_corr_logs": [
+        0.40452414662226405,
+        0.9417156103941484
+      ]
+    },
+    "mean_free_B500_T16000": {
+      "n": 16,
+      "n_positive_finite": 16,
+      "seeds": [
+        11,
+        22,
+        33,
+        44,
+        55,
+        66,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110
+      ],
+      "n_nu_lt_002": 0,
+      "mean_nu_E": [
+        0.14407879865978343,
+        0.8551615957856341
+      ],
+      "cov_nu_E": [
+        [
+          0.0008010495710273621,
+          0.006014507932626751
+        ],
+        [
+          0.006014507932626751,
+          0.10515547124412136
+        ]
+      ],
+      "corr_nu_E": 0.6553215788806361,
+      "sd_nu_E": [
+        0.02830281913568615,
+        0.32427684352127484
+      ],
+      "mean_d": 0.025678484780984834,
+      "sd_d": 0.006508722776375376,
+      "plugin_d_of_means": 0.024274593627155887,
+      "mean_ratio_minus_ratio_of_means": 0.001403891153828947,
+      "exact_positive_ratio_bias_identity": 0.0014038911538289363,
+      "delta_ratio_bias_sample": 0.0019287196848210984,
+      "delta_ratio_bias_ensemble": 0.002057300997142505,
+      "delta_sd_d": 0.007786334144055534,
+      "observed_sd_over_delta_sd": 0.8359161905920068,
+      "exact_log_variance": 0.0855681418213743,
+      "exact_log_variance_components": {
+        "4_var_log_nu": 0.19317526416743955,
+        "var_log_E": 0.1291198336006191,
+        "minus4_cov_logs": -0.2367269559466844
+      },
+      "variance_reduction_from_log_correlation_fraction": 0.7345037438858166,
+      "covariance_of_logs": [
+        [
+          0.04829381604185989,
+          0.0591817389866711
+        ],
+        [
+          0.0591817389866711,
+          0.1291198336006191
+        ]
+      ],
+      "ratio_curvature_relative_variance": 0.08475120237815273,
+      "bootstrap95_sd_d": [
+        0.0038491294075150054,
+        0.007994377173498657
+      ],
+      "bootstrap95_corr_logs": [
+        0.3785367520243178,
+        0.9349841189391818
+      ]
+    }
+  },
+  "per_seed_primary": [
+    {
+      "seed": 11,
+      "nu": 0.12434005434229746,
+      "cross_energy": 1.1441703749217922,
+      "D_cross": 0.0135123662111093
+    },
+    {
+      "seed": 22,
+      "nu": 0.07950932651781652,
+      "cross_energy": 0.45281138551954203,
+      "D_cross": 0.013961073430305636
+    },
+    {
+      "seed": 33,
+      "nu": 0.10446620636785987,
+      "cross_energy": 0.4448055942326617,
+      "D_cross": 0.024534737005092597
+    },
+    {
+      "seed": 44,
+      "nu": 0.12714862295810656,
+      "cross_energy": 0.633776554736222,
+      "D_cross": 0.02550863107719622
+    },
+    {
+      "seed": 55,
+      "nu": 0.16941543591041006,
+      "cross_energy": 0.9108792272078494,
+      "D_cross": 0.03150976448622532
+    },
+    {
+      "seed": 66,
+      "nu": 0.129217524445271,
+      "cross_energy": 0.5544235456458584,
+      "D_cross": 0.03011626896962567
+    },
+    {
+      "seed": 101,
+      "nu": 0.1777394465514199,
+      "cross_energy": 1.340404261634073,
+      "D_cross": 0.023568494792677256
+    },
+    {
+      "seed": 102,
+      "nu": 0.16455078999371936,
+      "cross_energy": 0.8788197303594628,
+      "D_cross": 0.030810599207282095
+    },
+    {
+      "seed": 103,
+      "nu": 0.1674086888955994,
+      "cross_energy": 1.6954881385683778,
+      "D_cross": 0.016529557759930816
+    },
+    {
+      "seed": 104,
+      "nu": 0.16527392990576806,
+      "cross_energy": 0.8156762730988564,
+      "D_cross": 0.03348812857179458
+    },
+    {
+      "seed": 105,
+      "nu": 0.1475321631939988,
+      "cross_energy": 0.7725042375475663,
+      "D_cross": 0.02817555958760743
+    },
+    {
+      "seed": 106,
+      "nu": 0.1276412231166269,
+      "cross_energy": 0.7148612831559649,
+      "D_cross": 0.022790829805163695
+    },
+    {
+      "seed": 107,
+      "nu": 0.15978188836797516,
+      "cross_energy": 0.8166596843468187,
+      "D_cross": 0.03126180015958018
+    },
+    {
+      "seed": 108,
+      "nu": 0.15591102153914133,
+      "cross_energy": 0.9116237674987101,
+      "D_cross": 0.026664779379408823
+    },
+    {
+      "seed": 109,
+      "nu": 0.12642675462703323,
+      "cross_energy": 0.657336297139794,
+      "D_cross": 0.024315900940009783
+    },
+    {
+      "seed": 110,
+      "nu": 0.17889770182349155,
+      "cross_energy": 0.9383451769565934,
+      "D_cross": 0.03410726511274792
+    }
+  ],
+  "new_only14_T16000": {
+    "n": 14,
+    "n_positive_finite": 14,
+    "seeds": [
+      33,
+      44,
+      55,
+      66,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "n_nu_lt_002": 0,
+    "mean_nu_E": [
+      0.1501008141211729,
+      0.8632574122949149
+    ],
+    "cov_nu_E": [
+      [
+        0.0005345541094189311,
+        0.005327708064808248
+      ],
+      [
+        0.005327708064808248,
+        0.10238482393181172
+      ]
+    ],
+    "corr_nu_E": 0.720156341295649,
+    "sd_nu_E": [
+      0.023120426237829853,
+      0.3199762865148162
+    ],
+    "mean_d": 0.0273844512038816,
+    "sd_d": 0.004878488201936215,
+    "plugin_d_of_means": 0.0260991149093567,
+    "mean_ratio_minus_ratio_of_means": 0.001285336294524899,
+    "exact_positive_ratio_bias_identity": 0.0012853362945248847,
+    "delta_ratio_bias_sample": 0.0019117169154487666,
+    "delta_ratio_bias_ensemble": 0.0020587720627909794,
+    "delta_sd_d": 0.006797195150530885,
+    "observed_sd_over_delta_sd": 0.7177207795122945,
+    "exact_log_variance": 0.03760850641666251,
+    "exact_log_variance_components": {
+      "4_var_log_nu": 0.10597363625716215,
+      "var_log_E": 0.11378488095633536,
+      "minus4_cov_logs": -0.18215001079683493
+    },
+    "variance_reduction_from_log_correlation_fraction": 0.8288643967317747,
+    "covariance_of_logs": [
+      [
+        0.026493409064290537,
+        0.04553750269920873
+      ],
+      [
+        0.04553750269920873,
+        0.11378488095633536
+      ]
+    ],
+    "ratio_curvature_relative_variance": 0.0788828306990938,
+    "bootstrap95_sd_d": [
+      0.003086008132896066,
+      0.006330257002811096
+    ],
+    "bootstrap95_corr_logs": [
+      0.6384262374243435,
+      0.9647165519779226
+    ]
+  },
+  "comparison_to_previous_label_component": {
+    "observed_cov_nu_E": [
+      [
+        0.0008010495710273621,
+        0.006014507932626751
+      ],
+      [
+        0.006014507932626751,
+        0.10515547124412136
+      ]
+    ],
+    "label_cov_nu_E": [
+      [
+        0.0003057894097353973,
+        0.0010303456379065475
+      ],
+      [
+        0.0010303456379065472,
+        0.007639984546212671
+      ]
+    ],
+    "observed_sd_nu_E": [
+      0.02830281913568615,
+      0.32427684352127484
+    ],
+    "label_sd_nu_E": [
+      0.017486835326479096,
+      0.08740700513238439
+    ],
+    "observed_corr_nu_E": 0.6553215788806361,
+    "label_corr_nu_E": 0.6741017839110556,
+    "observed_sd_d": 0.006508722776375376,
+    "label_sd_d": 0.005206799111542864,
+    "observed_over_label_sd_d": 1.2500429989600135,
+    "observed_over_label_sd_E": 3.7099640129544937,
+    "caveat": "The previous label component includes selected finite-loop approximation; it is not a lower bound. Observed statistics still include record error."
+  },
+  "per_seed_primary_log_decomposition": [
+    {
+      "seed": 11,
+      "log_numerator_contribution": -0.2946803538753895,
+      "log_energy_contribution": -0.2911446379811355,
+      "sum_log_d_over_plugin": -0.585824991856525
+    },
+    {
+      "seed": 22,
+      "log_numerator_contribution": -1.1889720667116022,
+      "log_energy_contribution": 0.6358147807257213,
+      "sum_log_d_over_plugin": -0.5531572859858809
+    },
+    {
+      "seed": 33,
+      "log_numerator_contribution": -0.6429934555188401,
+      "log_energy_contribution": 0.6536531321780044,
+      "sum_log_d_over_plugin": 0.01065967665916423
+    },
+    {
+      "seed": 44,
+      "log_numerator_contribution": -0.25000740214687484,
+      "log_energy_contribution": 0.29959399700518213,
+      "sum_log_d_over_plugin": 0.0495865948583073
+    },
+    {
+      "seed": 55,
+      "log_numerator_contribution": 0.3239870726374171,
+      "log_energy_contribution": -0.0631198648034937,
+      "sum_log_d_over_plugin": 0.2608672078339234
+    },
+    {
+      "seed": 66,
+      "log_numerator_contribution": -0.21772628510599493,
+      "log_energy_contribution": 0.4333615345221722,
+      "sum_log_d_over_plugin": 0.21563524941617726
+    },
+    {
+      "seed": 101,
+      "log_numerator_contribution": 0.419916663341521,
+      "log_energy_contribution": -0.4494360832357621,
+      "sum_log_d_over_plugin": -0.029519419894241117
+    },
+    {
+      "seed": 102,
+      "log_numerator_contribution": 0.2657178269744631,
+      "log_energy_contribution": -0.02728933973989606,
+      "sum_log_d_over_plugin": 0.23842848723456705
+    },
+    {
+      "seed": 103,
+      "log_numerator_contribution": 0.3001553977504349,
+      "log_energy_contribution": -0.68443551371292,
+      "sum_log_d_over_plugin": -0.38428011596248507
+    },
+    {
+      "seed": 104,
+      "log_numerator_contribution": 0.2744878314907364,
+      "log_energy_contribution": 0.047272899892501115,
+      "sum_log_d_over_plugin": 0.3217607313832375
+    },
+    {
+      "seed": 105,
+      "log_numerator_contribution": 0.04737168947395814,
+      "log_energy_contribution": 0.10165295774188406,
+      "sum_log_d_over_plugin": 0.1490246472158422
+    },
+    {
+      "seed": 106,
+      "log_numerator_contribution": -0.24227395782214894,
+      "log_energy_contribution": 0.17920193769756804,
+      "sum_log_d_over_plugin": -0.06307202012458091
+    },
+    {
+      "seed": 107,
+      "log_numerator_contribution": 0.20689864941927144,
+      "log_energy_contribution": 0.046067986942499285,
+      "sum_log_d_over_plugin": 0.25296663636177075
+    },
+    {
+      "seed": 108,
+      "log_numerator_contribution": 0.15785021390022655,
+      "log_energy_contribution": -0.06393691732350931,
+      "sum_log_d_over_plugin": 0.09391329657671724
+    },
+    {
+      "seed": 109,
+      "log_numerator_contribution": -0.26139447431413415,
+      "log_energy_contribution": 0.2630946966795426,
+      "sum_log_d_over_plugin": 0.0017002223654084547
+    },
+    {
+      "seed": 110,
+      "log_numerator_contribution": 0.4329075629117185,
+      "log_energy_contribution": -0.0928274218074251,
+      "sum_log_d_over_plugin": 0.3400801411042934
+    }
+  ]
+}

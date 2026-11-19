@@ -1,0 +1,10 @@
+{
+  "selection": "Fourbaselineconnectivitycasesselectedbeforetime-stepcheckoutputs; sameJ,seeds,initialconditions,driveandT8000,dt.025versus.05",
+  "primary_comparison": "stationarylocalmomentsandmeanfreeenergy; longchaotictrajectoriesneednotagreepointwise",
+  "jobs": [
+    "dtcheck_composition_f60_N1000_seed3001_dt0025",
+    "dtcheck_composition_f80_N1000_seed3001_dt0025",
+    "dtcheck_composition_f60_N1000_seed3003_dt0025",
+    "dtcheck_composition_f80_N1000_seed3003_dt0025"
+  ]
+}

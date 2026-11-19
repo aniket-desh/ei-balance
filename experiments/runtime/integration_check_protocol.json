@@ -1,0 +1,25 @@
+{
+  "selection": "Fourbaselineconnectivitycasesselectedbeforetime-stepcheckoutputs; sameJ,seeds,initialconditions,driveandT8000,dt.025versus.05",
+  "primary_comparison": "stationarylocalmomentsandmeanfreeenergy; longchaotictrajectoriesneednotagreepointwise",
+  "jobs": [
+    "dtcheck_composition_f60_N1000_seed3001_dt0025",
+    "dtcheck_composition_f80_N1000_seed3001_dt0025",
+    "dtcheck_composition_f60_N1000_seed3003_dt0025",
+    "dtcheck_composition_f80_N1000_seed3003_dt0025"
+  ],
+  "additional_largest_size_check": {
+    "created_unix": 1794405793.3831077,
+    "case": "dtcheck_degree_chi0_N4000_seed4001_dt0025_T4000",
+    "baseline_case": "degree_chi0_N4000_seed4001",
+    "reason": "CoherentmeanfeedbackstiffnessscaleswithsqrtN; N1000controlsinsufficientforlargestN.",
+    "record_duration": 4000.0,
+    "dt": 0.025,
+    "compare_base_prefixes": [
+      4000.0,
+      8000.0
+    ],
+    "selected_before_auxiliary_outcome": true
+  },
+  "total_checks": 5,
+  "execution_order": "LargestNfirstalongside3N1000checksforCPUutilization; fourthN1000follows."
+}

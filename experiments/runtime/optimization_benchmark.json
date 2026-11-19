@@ -1,0 +1,70 @@
+{
+  "threadpools": [
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 1,
+      "prefix": "libscipy_openblas",
+      "filepath": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/numpy.libs/libscipy_openblas64_-fdde5778.so",
+      "version": "0.3.30",
+      "threading_layer": "pthreads",
+      "architecture": "SkylakeX"
+    },
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 1,
+      "prefix": "libscipy_openblas",
+      "filepath": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/scipy.libs/libscipy_openblas-6cdc3b4a.so",
+      "version": "0.3.30",
+      "threading_layer": "pthreads",
+      "architecture": "SkylakeX"
+    }
+  ],
+  "cases": [
+    {
+      "N": 1000,
+      "fe": 0.8,
+      "nnz_fraction": 0.095739,
+      "dense_bytes": 8000000,
+      "sparse_bytes": 1152872,
+      "max_action_error": 1.2434497875801753e-14,
+      "max_50step_trajectory_error": 4.440892098500626e-15,
+      "seconds_per_midpoint_step": {
+        "dense1": 0.0007917182800004714,
+        "sparse_complement": 0.00020284135666694662
+      },
+      "estimated_T8000_sim_seconds": 34.48303063338093
+    },
+    {
+      "N": 2000,
+      "fe": 0.6,
+      "nnz_fraction": 0.181042,
+      "dense_bytes": 32000000,
+      "sparse_bytes": 8698020,
+      "max_action_error": 2.3092638912203256e-14,
+      "max_50step_trajectory_error": 1.5987211554602254e-14,
+      "seconds_per_midpoint_step": {
+        "dense1": 0.0029479117599998973,
+        "sparse_complement": 0.001334144046666097,
+        "dense2": 0.002117080076667056,
+        "dense4": 0.001876480689999577
+      },
+      "estimated_T8000_sim_seconds": 226.8044879332365
+    },
+    {
+      "N": 4000,
+      "fe": 0.8,
+      "nnz_fraction": 0.0959949375,
+      "dense_bytes": 128000000,
+      "sparse_bytes": 18447032,
+      "max_action_error": 3.375077994860476e-14,
+      "max_50step_trajectory_error": 1.687538997430238e-14,
+      "seconds_per_midpoint_step": {
+        "dense1": 0.013661193603332625,
+        "sparse_complement": 0.0032620644233338682
+      },
+      "estimated_T8000_sim_seconds": 554.5509519667576
+    }
+  ]
+}

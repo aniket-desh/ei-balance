@@ -1,0 +1,119 @@
+\section{Degree constraints and the finite-reservoir pair source}
+\label{sec:review-degree-contraction}
+
+This audit checks whether replacing independent Bernoulli edges by an
+exchangeable degree ensemble changes the leading pair source. The answer
+requires a condition on coherent population projections, not just the
+single-edge variance. The calculation is exact for probe rows independent
+of a specified reservoir covariance. Applying it to the original recurrent
+network retains the usual cavity-independence assumption.
+
+\subsection{The exact row covariance}
+Let a presynaptic pool contain $M$ neurons, and let $A_j\in\{0,1\}$ be the
+indicators in one exchangeable row. Uniformly sample a subset after drawing
+its size $K$. Suppose
+\[
+ \mathbb E K=Mp,\qquad
+ \operatorname{Var}K=\chi_{\rm eff}Mp(1-p).
+\]
+The effective dispersion is the variance actually generated, including
+stochastic rounding. Every edge has mean $p$ and variance $p(1-p)$.
+Writing $K=\sum_jA_j$ gives
+\begin{align*}
+ \operatorname{Var}K
+ &=Mp(1-p)+M(M-1)\operatorname{Cov}(A_j,A_k),\qquad j\ne k,\\
+ \operatorname{Cov}(A_j,A_k)
+ &=\frac{(\chi_{\rm eff}-1)p(1-p)}{M-1}.
+\end{align*}
+If the centered coupling is $w(A_j-p)/\sqrt N$ and
+$G=w^2p(1-p)$, its row covariance is
+\[
+ S=\frac GN\left[
+   \frac{M-\chi_{\rm eff}}{M-1}I_M+
+   \frac{\chi_{\rm eff}-1}{M-1}\mathbf1\mathbf1^\top\right].
+\]
+With $u=\mathbf1/\sqrt M$ and $P=uu^\top$, this is
+\[
+ S=\frac GN\left[a I_M+bP\right],\quad
+ a=\frac{M-\chi_{\rm eff}}{M-1},\quad
+ b=\frac{M(\chi_{\rm eff}-1)}{M-1}.
+\]
+Its eigenvalue on the constant vector is $G\chi_{\rm eff}/N$; its
+$M-1$ orthogonal eigenvalues are $Ga/N$. For exactly fixed counts,
+$S=(G/N)[M/(M-1)](I-P)$: population-constant fluctuations are removed
+exactly. Different receiving rows remain independent in this ensemble.
+
+\subsection{The exact pair-source contraction}
+Let $C$ denote any real reservoir cross-covariance matrix at a fixed lag.
+Take two independent, centered probe rows $j_i,j_k$ with row covariances
+$S_a,S_c$, independent of $C$. Their shared-reservoir cross-input is
+$Y=j_i C j_k^\top$. Conditioning on $C$,
+\begin{align*}
+ \mathbb E[Y^2\mid C]
+ &=\sum_{j,l,m,n}C_{jl}C_{mn}
+    \mathbb E[j_{ij}j_{im}]\mathbb E[j_{kl}j_{kn}]\\
+ &=\sum_{j,l,m,n}C_{jl}C_{mn}(S_a)_{jm}(S_c)_{ln}\\
+ &=\boxed{\operatorname{tr}(S_a C S_c C^\top)}.
+\end{align*}
+No fourth-cumulant assumption enters this bilinear, two-independent-row
+identity. It does not describe a repeated probe row.
+
+Let $I_b$ project onto presynaptic population $b$, $u_b$ be its normalized
+constant vector, and $P_b=u_bu_b^\top$. For receiving class $a$ write
+\[
+ S_a=\sum_b(s_{ab}I_b+t_{ab}P_b),\quad
+ s_{ab}=\frac{G_{ab}}N\frac{M_b-\chi_{ab}}{M_b-1},\quad
+ t_{ab}=\frac{G_{ab}}N\frac{M_b(\chi_{ab}-1)}{M_b-1}.
+\]
+Expanding the trace yields
+\begin{align*}
+ \mathbb E[Y^2\mid C]
+ =\sum_{b,d}\big[&s_{ab}s_{cd}\|I_bCI_d\|_F^2\\
+ &+t_{ab}s_{cd}\|I_d C^\top u_b\|^2\\
+ &+s_{ab}t_{cd}\|I_b C u_d\|^2\\
+ &+t_{ab}t_{cd}|u_b^\top C u_d|^2\big].
+\end{align*}
+The first term tends to the independent-edge contraction. The other terms
+are explicit coherent-projection corrections. For equal-time $C$, symmetry
+relates the left and right projections; unequal-lag covariance requires
+both. Diagonal factors $s_{ab}$ also differ from $G_{ab}/N$ by relative
+$O(M_b^{-1})$ for bounded dispersion.
+
+\subsection{When the leading pair equation survives}
+Suppose the number of populations is fixed, all fractions are nonzero,
+$G$ and $\chi$ stay bounded, and $\|C\|_F^2=O(N)$. The independent-edge
+source is then $O(N^{-1})$. The coherent terms are $O(N^{-2})$ if
+\[
+ \|Cu_b\|^2+\|C^\top u_b\|^2=O(1)
+ \quad\hbox{for every population }b.
+\]
+Under these conditions degree constraints do not change the leading pair
+equation after the one-site law has been recomputed. A bounded operator norm
+is sufficient for the projection condition, but is stronger than necessary.
+Stable mean connectivity by itself is not a proof of this condition in a
+nonlinear network. An unusually amplified coherent mode can invalidate it.
+
+For one population and exactly fixed counts the ratio to the Bernoulli
+source is particularly transparent:
+\[
+ \frac{\mathbb E[Y^2\mid C]_{\chi=0}}
+      {(G/N)^2\|C\|_F^2}
+ =\left(\frac{N}{N-1}\right)^2
+  \left[1-
+  \frac{\|Cu\|^2+\|C^\top u\|^2-|u^\top Cu|^2}{\|C\|_F^2}\right].
+\]
+Thus an extensive participation ratio alone does not guarantee negligible
+correction: a single coherent eigenvalue of order $\sqrt N$ can contribute
+$O(N)$ covariance energy while contributing only $O(\sqrt N)$ to the trace.
+The diagnostic is the projection fraction, not just $D/N$.
+
+\subsection{What this does and does not repair}
+The formulas give a parameter-free finite-reservoir input-source diagnostic
+once $C$ is measured. They are not a closed stationary finite-network
+correction: recurrent dependence of probe rows, local responses, source
+changes, and response dressing must be treated consistently. In particular,
+they cannot be inserted into the final PR denominator as a fitted amplitude.
+For the nonuniform degree experiment we record population mean time courses
+and $\|Cu_b\|^2$, alongside the population covariance energies. Small measured
+projection fractions support this specific step of the degree extension;
+large fractions identify a concrete failure of its leading assumptions.

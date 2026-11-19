@@ -1,0 +1,565 @@
+{
+  "seed": 103,
+  "status": "complete",
+  "config": {
+    "n": 1000,
+    "g": 4.0,
+    "mean_rate": 0.3,
+    "seed": 103,
+    "ensemble": "bernoulli",
+    "dt": 0.05,
+    "burn": 500.0,
+    "duration": 16000.0,
+    "sample_dt": 0.25,
+    "mean_scale": 1.0,
+    "fraction_e": 0.6,
+    "variance_profile": [
+      [
+        21.333333333333336,
+        4.5
+      ],
+      [
+        33.333333333333336,
+        6.000000000000001
+      ]
+    ],
+    "mean_connectivity": [
+      [
+        1.3333333333333335,
+        -3.0000000000000004
+      ],
+      [
+        2.666666666666667,
+        -5.0
+      ]
+    ],
+    "degree_dispersion": null
+  },
+  "connectivity_sha256": "a881776f58496fc3faa04345c44399c49ec2be15dfc45d97d2099da3d1eee3b6",
+  "started_unix": 1794358572.7963502,
+  "selection": "Full fixed sixteen-seed + Bernoulli cohort; not selected on fit.",
+  "recorded_duration": 16000.0,
+  "elapsed_seconds": 111.00958585999979,
+  "prefix_T4000_sha256": "ce4e543ef384e6f7e2b543b55dd13259922d82a00e970b9e9efea381954da4d1",
+  "estimator_results": [
+    {
+      "block_duration": 500.0,
+      "N": 1000,
+      "analyzed_duration": 16000.0,
+      "nblocks": 32,
+      "prefixes": [
+        {
+          "record_duration": 4000.0,
+          "nu_global": 0.16907642471298012,
+          "gaps": [
+            {
+              "min_empty_blocks_between_all_windows": 0,
+              "empty_gap_duration": 0.0,
+              "quadruples": 70,
+              "pairing_mean_energies": [
+                1.6375164466412284,
+                1.6477187303943583,
+                1.6767669643998815
+              ],
+              "mean_free_energy": 1.6540007138118227,
+              "mean_free_nu": 0.16964942769005414,
+              "d_mean_free_ratio": 0.01740079558323416,
+              "d_global_nu_mean_free_energy": 0.01728344924824282,
+              "delete_window_sensitivity": null,
+              "classic_cross_energy": 1.4835745871267105,
+              "classic_d": 0.019268891258840674,
+              "common_global_center_energy_diagnostic": 1.6322292163739598,
+              "common_global_center_d_diagnostic": 0.017513984621124752
+            },
+            {
+              "min_empty_blocks_between_all_windows": 1,
+              "empty_gap_duration": 500.0,
+              "quadruples": 5,
+              "pairing_mean_energies": [
+                1.520342091279526,
+                1.59901830448349,
+                1.6471068073734572
+              ],
+              "mean_free_energy": 1.5888224010454908,
+              "mean_free_nu": 0.16944219692442308,
+              "d_mean_free_ratio": 0.018070401122040156,
+              "d_global_nu_mean_free_energy": 0.01799246874598009,
+              "delete_window_sensitivity": null,
+              "classic_cross_energy": 1.4909769168079618,
+              "classic_d": 0.019173226004682693,
+              "common_global_center_energy_diagnostic": 1.62685283458102,
+              "common_global_center_d_diagnostic": 0.017571864391216614
+            }
+          ]
+        },
+        {
+          "record_duration": 8000.0,
+          "nu_global": 0.1674991743220819,
+          "gaps": [
+            {
+              "min_empty_blocks_between_all_windows": 0,
+              "empty_gap_duration": 0.0,
+              "quadruples": 1820,
+              "pairing_mean_energies": [
+                1.6467162463595622,
+                1.675094641612644,
+                1.6467107972158914
+              ],
+              "mean_free_energy": 1.6561738950626992,
+              "mean_free_nu": 0.167806736732073,
+              "d_mean_free_ratio": 0.01700250256124295,
+              "d_global_nu_mean_free_energy": 0.016940234043187258,
+              "delete_window_sensitivity": {
+                "scope": "Delete-one-window jackknife sensitivity; approximate temporal SE only under independent/mixing-window assumptions, not network SEM.",
+                "nu_energy_d_sensitivity": [
+                  0.0016690680284446409,
+                  0.08671400183741167,
+                  0.0007814201661906666
+                ],
+                "leave_one_d_range": [
+                  0.016705742804885976,
+                  0.017331328183071107
+                ]
+              },
+              "classic_cross_energy": 1.4629774431555496,
+              "classic_d": 0.019177310989883907,
+              "common_global_center_energy_diagnostic": 1.643760138193085,
+              "common_global_center_d_diagnostic": 0.01706816751829735
+            },
+            {
+              "min_empty_blocks_between_all_windows": 1,
+              "empty_gap_duration": 500.0,
+              "quadruples": 715,
+              "pairing_mean_energies": [
+                1.6584559323694712,
+                1.6833360744205101,
+                1.6229365673332994
+              ],
+              "mean_free_energy": 1.65490952470776,
+              "mean_free_nu": 0.16788055891086598,
+              "d_mean_free_ratio": 0.017030467007072017,
+              "d_global_nu_mean_free_energy": 0.016953176581380527,
+              "delete_window_sensitivity": {
+                "scope": "Delete-one-window jackknife sensitivity; approximate temporal SE only under independent/mixing-window assumptions, not network SEM.",
+                "nu_energy_d_sensitivity": [
+                  0.0016267600843905433,
+                  0.09328095492174328,
+                  0.0008271385173512535
+                ],
+                "leave_one_d_range": [
+                  0.016663531209102543,
+                  0.017414466621467024
+                ]
+              },
+              "classic_cross_energy": 1.4625966431203838,
+              "classic_d": 0.01918230397324243,
+              "common_global_center_energy_diagnostic": 1.6400719994916755,
+              "common_global_center_d_diagnostic": 0.017106549838833206
+            },
+            {
+              "min_empty_blocks_between_all_windows": 2,
+              "empty_gap_duration": 1000.0,
+              "quadruples": 210,
+              "pairing_mean_energies": [
+                1.667642588458072,
+                1.7043593053287447,
+                1.588534206341979
+              ],
+              "mean_free_energy": 1.6535120333762652,
+              "mean_free_nu": 0.16780729572949232,
+              "d_mean_free_ratio": 0.01702998704070362,
+              "d_global_nu_mean_free_energy": 0.016967504821414806,
+              "delete_window_sensitivity": {
+                "scope": "Delete-one-window jackknife sensitivity; approximate temporal SE only under independent/mixing-window assumptions, not network SEM.",
+                "nu_energy_d_sensitivity": [
+                  0.0017012064897043166,
+                  0.10279851538537807,
+                  0.000943040669721701
+                ],
+                "leave_one_d_range": [
+                  0.016603234595431584,
+                  0.017494936789593053
+                ]
+              },
+              "classic_cross_energy": 1.4574085416449627,
+              "classic_d": 0.019250589383065283,
+              "common_global_center_energy_diagnostic": 1.6356211877314257,
+              "common_global_center_d_diagnostic": 0.01715309975746417
+            }
+          ]
+        },
+        {
+          "record_duration": 16000.0,
+          "nu_global": 0.1672209268380417,
+          "gaps": [
+            {
+              "min_empty_blocks_between_all_windows": 0,
+              "empty_gap_duration": 0.0,
+              "quadruples": 35960,
+              "pairing_mean_energies": [
+                1.702033894368961,
+                1.696379539197009,
+                1.6995683052000354
+              ],
+              "mean_free_energy": 1.699327246255335,
+              "mean_free_nu": 0.16742666518337995,
+              "d_mean_free_ratio": 0.016495756350755095,
+              "d_global_nu_mean_free_energy": 0.01645524041010527,
+              "delete_window_sensitivity": {
+                "scope": "Delete-one-window jackknife sensitivity; approximate temporal SE only under independent/mixing-window assumptions, not network SEM.",
+                "nu_energy_d_sensitivity": [
+                  0.0012024711162734183,
+                  0.059088040891754776,
+                  0.000539543305606135
+                ],
+                "leave_one_d_range": [
+                  0.016319340540527763,
+                  0.01665635548640177
+                ]
+              },
+              "classic_cross_energy": 1.4013225725906342,
+              "classic_d": 0.019954604970701798,
+              "common_global_center_energy_diagnostic": 1.6894701372612875,
+              "common_global_center_d_diagnostic": 0.01655124749224796
+            },
+            {
+              "min_empty_blocks_between_all_windows": 1,
+              "empty_gap_duration": 500.0,
+              "quadruples": 23751,
+              "pairing_mean_energies": [
+                1.6971658166760883,
+                1.6916226590234629,
+                1.697675940005582
+              ],
+              "mean_free_energy": 1.6954881385683778,
+              "mean_free_nu": 0.1674086888955994,
+              "d_mean_free_ratio": 0.016529557759930816,
+              "d_global_nu_mean_free_energy": 0.0164925001458192,
+              "delete_window_sensitivity": {
+                "scope": "Delete-one-window jackknife sensitivity; approximate temporal SE only under independent/mixing-window assumptions, not network SEM.",
+                "nu_energy_d_sensitivity": [
+                  0.0011894775641681794,
+                  0.06209652871586301,
+                  0.0005653852571111
+                ],
+                "leave_one_d_range": [
+                  0.01632704600157033,
+                  0.016703713124256007
+                ]
+              },
+              "classic_cross_energy": 1.4003956389903982,
+              "classic_d": 0.019967813090829987,
+              "common_global_center_energy_diagnostic": 1.6882544205869334,
+              "common_global_center_d_diagnostic": 0.016563166091312365
+            },
+            {
+              "min_empty_blocks_between_all_windows": 2,
+              "empty_gap_duration": 1000.0,
+              "quadruples": 14950,
+              "pairing_mean_energies": [
+                1.6894663875222546,
+                1.6825810561853272,
+                1.7028583684090433
+              ],
+              "mean_free_energy": 1.6916352707055418,
+              "mean_free_nu": 0.16739290542448226,
+              "d_mean_free_ratio": 0.016564081673919588,
+              "d_global_nu_mean_free_energy": 0.016530063458011873,
+              "delete_window_sensitivity": {
+                "scope": "Delete-one-window jackknife sensitivity; approximate temporal SE only under independent/mixing-window assumptions, not network SEM.",
+                "nu_energy_d_sensitivity": [
+                  0.001212635613552721,
+                  0.06391901016093074,
+                  0.0005854783064989485
+                ],
+                "leave_one_d_range": [
+                  0.016351584396309085,
+                  0.016750654071391268
+                ]
+              },
+              "classic_cross_energy": 1.3988167550981045,
+              "classic_d": 0.019990351324189387,
+              "common_global_center_energy_diagnostic": 1.6868553021478858,
+              "common_global_center_d_diagnostic": 0.016576903980423455
+            }
+          ]
+        }
+      ],
+      "compressed_formula_dense_check_error": 1.1102230246251565e-15,
+      "elapsed_seconds": 5.312672626000676
+    },
+    {
+      "block_duration": 1000.0,
+      "N": 1000,
+      "analyzed_duration": 16000.0,
+      "nblocks": 16,
+      "prefixes": [
+        {
+          "record_duration": 4000.0,
+          "nu_global": 0.16907642471298012,
+          "gaps": [
+            {
+              "min_empty_blocks_between_all_windows": 0,
+              "empty_gap_duration": 0.0,
+              "quadruples": 1,
+              "pairing_mean_energies": [
+                1.6171246367844987,
+                1.644818960183097,
+                1.674814694385332
+              ],
+              "mean_free_energy": 1.6455860971176426,
+              "mean_free_nu": 0.16954510004380863,
+              "d_mean_free_ratio": 0.01746826920767918,
+              "d_global_nu_mean_free_energy": 0.017371827243676797,
+              "delete_window_sensitivity": null,
+              "classic_cross_energy": 1.5879375328633971,
+              "classic_d": 0.018002494935789915,
+              "common_global_center_energy_diagnostic": 1.6325419930676046,
+              "common_global_center_d_diagnostic": 0.01751062913855487
+            }
+          ]
+        },
+        {
+          "record_duration": 8000.0,
+          "nu_global": 0.1674991743220819,
+          "gaps": [
+            {
+              "min_empty_blocks_between_all_windows": 0,
+              "empty_gap_duration": 0.0,
+              "quadruples": 70,
+              "pairing_mean_energies": [
+                1.6471759584981347,
+                1.6801040199407187,
+                1.6365157131575356
+              ],
+              "mean_free_energy": 1.6545985638654632,
+              "mean_free_nu": 0.1678214467355391,
+              "d_mean_free_ratio": 0.01702167438040846,
+              "d_global_nu_mean_free_energy": 0.016956362716183546,
+              "delete_window_sensitivity": null,
+              "classic_cross_energy": 1.5578064462143322,
+              "classic_d": 0.01800992252070773,
+              "common_global_center_energy_diagnostic": 1.6427094550360013,
+              "common_global_center_d_diagnostic": 0.01707908438255401
+            },
+            {
+              "min_empty_blocks_between_all_windows": 1,
+              "empty_gap_duration": 1000.0,
+              "quadruples": 5,
+              "pairing_mean_energies": [
+                1.6391851403223832,
+                1.7034475344732396,
+                1.5900292544059516
+              ],
+              "mean_free_energy": 1.6442206430671917,
+              "mean_free_nu": 0.16781342846828043,
+              "d_mean_free_ratio": 0.01712747427969608,
+              "d_global_nu_mean_free_energy": 0.017063387153589373,
+              "delete_window_sensitivity": null,
+              "classic_cross_energy": 1.5424798032944944,
+              "classic_d": 0.01818887569137439,
+              "common_global_center_energy_diagnostic": 1.6310970693910067,
+              "common_global_center_d_diagnostic": 0.017200676725545386
+            }
+          ]
+        },
+        {
+          "record_duration": 16000.0,
+          "nu_global": 0.1672209268380417,
+          "gaps": [
+            {
+              "min_empty_blocks_between_all_windows": 0,
+              "empty_gap_duration": 0.0,
+              "quadruples": 1820,
+              "pairing_mean_energies": [
+                1.7027131066263619,
+                1.6952372321647369,
+                1.698983383787833
+              ],
+              "mean_free_energy": 1.6989779075263105,
+              "mean_free_nu": 0.1674275105198427,
+              "d_mean_free_ratio": 0.016499314767245102,
+              "d_global_nu_mean_free_energy": 0.016458623887162384,
+              "delete_window_sensitivity": {
+                "scope": "Delete-one-window jackknife sensitivity; approximate temporal SE only under independent/mixing-window assumptions, not network SEM.",
+                "nu_energy_d_sensitivity": [
+                  0.001080223656145743,
+                  0.046800264914850766,
+                  0.0005348024704443335
+                ],
+                "leave_one_d_range": [
+                  0.01625704335126933,
+                  0.01671068924035729
+                ]
+              },
+              "classic_cross_energy": 1.5495371936203817,
+              "classic_d": 0.018045929124967015,
+              "common_global_center_energy_diagnostic": 1.689415636669328,
+              "common_global_center_d_diagnostic": 0.016551781435918428
+            },
+            {
+              "min_empty_blocks_between_all_windows": 1,
+              "empty_gap_duration": 1000.0,
+              "quadruples": 715,
+              "pairing_mean_energies": [
+                1.6969453632498386,
+                1.6769203930598688,
+                1.7047479354336768
+              ],
+              "mean_free_energy": 1.692871230581128,
+              "mean_free_nu": 0.16741067809933252,
+              "d_mean_free_ratio": 0.016555503239344124,
+              "d_global_nu_mean_free_energy": 0.016517994911505837,
+              "delete_window_sensitivity": {
+                "scope": "Delete-one-window jackknife sensitivity; approximate temporal SE only under independent/mixing-window assumptions, not network SEM.",
+                "nu_energy_d_sensitivity": [
+                  0.001105406421677803,
+                  0.056361199568448365,
+                  0.0006175813753390379
+                ],
+                "leave_one_d_range": [
+                  0.016237040389346584,
+                  0.016769235256148724
+                ]
+              },
+              "classic_cross_energy": 1.5446698130739265,
+              "classic_d": 0.01810279331925769,
+              "common_global_center_energy_diagnostic": 1.6860105432936643,
+              "common_global_center_d_diagnostic": 0.016585209673687797
+            },
+            {
+              "min_empty_blocks_between_all_windows": 2,
+              "empty_gap_duration": 2000.0,
+              "quadruples": 210,
+              "pairing_mean_energies": [
+                1.7057987103330112,
+                1.6629177114301708,
+                1.6976426380188079
+              ],
+              "mean_free_energy": 1.6887863532606635,
+              "mean_free_nu": 0.1673393498357115,
+              "d_mean_free_ratio": 0.016581409453820042,
+              "d_global_nu_mean_free_energy": 0.01655794903753444,
+              "delete_window_sensitivity": {
+                "scope": "Delete-one-window jackknife sensitivity; approximate temporal SE only under independent/mixing-window assumptions, not network SEM.",
+                "nu_energy_d_sensitivity": [
+                  0.0011458616658753613,
+                  0.062212846662318404,
+                  0.0006972918225007754
+                ],
+                "leave_one_d_range": [
+                  0.01625916924613133,
+                  0.016862663355886667
+                ]
+              },
+              "classic_cross_energy": 1.5423991853076509,
+              "classic_d": 0.01812944316810966,
+              "common_global_center_energy_diagnostic": 1.6844641508753675,
+              "common_global_center_d_diagnostic": 0.01660043543107891
+            }
+          ]
+        }
+      ],
+      "compressed_formula_dense_check_error": 1.3322676295501878e-15,
+      "elapsed_seconds": 3.5403176580002764
+    },
+    {
+      "block_duration": 2000.0,
+      "N": 1000,
+      "analyzed_duration": 16000.0,
+      "nblocks": 8,
+      "prefixes": [
+        {
+          "record_duration": 8000.0,
+          "nu_global": 0.1674991743220819,
+          "gaps": [
+            {
+              "min_empty_blocks_between_all_windows": 0,
+              "empty_gap_duration": 0.0,
+              "quadruples": 1,
+              "pairing_mean_energies": [
+                1.6708504217897382,
+                1.7011438732848239,
+                1.6012495140808047
+              ],
+              "mean_free_energy": 1.6577479363851222,
+              "mean_free_nu": 0.16795753899509527,
+              "d_mean_free_ratio": 0.017016902441032725,
+              "d_global_nu_mean_free_energy": 0.016924149192281857,
+              "delete_window_sensitivity": null,
+              "classic_cross_energy": 1.578204292776067,
+              "classic_d": 0.0177771493380167,
+              "common_global_center_energy_diagnostic": 1.6375708461852545,
+              "common_global_center_d_diagnostic": 0.01713267762670298
+            }
+          ]
+        },
+        {
+          "record_duration": 16000.0,
+          "nu_global": 0.1672209268380417,
+          "gaps": [
+            {
+              "min_empty_blocks_between_all_windows": 0,
+              "empty_gap_duration": 0.0,
+              "quadruples": 70,
+              "pairing_mean_energies": [
+                1.6995081963994878,
+                1.6906234985215116,
+                1.6989256949737783
+              ],
+              "mean_free_energy": 1.6963524632982594,
+              "mean_free_nu": 0.16739415111832212,
+              "d_mean_free_ratio": 0.016518266359658616,
+              "d_global_nu_mean_free_energy": 0.016484096894701275,
+              "delete_window_sensitivity": null,
+              "classic_cross_energy": 1.6372350736342358,
+              "classic_d": 0.01707930572883677,
+              "common_global_center_energy_diagnostic": 1.6888830077874075,
+              "common_global_center_d_diagnostic": 0.01655700142854039
+            },
+            {
+              "min_empty_blocks_between_all_windows": 1,
+              "empty_gap_duration": 2000.0,
+              "quadruples": 5,
+              "pairing_mean_energies": [
+                1.7291005097790992,
+                1.680258147208988,
+                1.6924040595709549
+              ],
+              "mean_free_energy": 1.7005875721863475,
+              "mean_free_nu": 0.16732119476401874,
+              "d_mean_free_ratio": 0.016462770089084772,
+              "d_global_nu_mean_free_energy": 0.01644304523325634,
+              "delete_window_sensitivity": null,
+              "classic_cross_energy": 1.6349338152051316,
+              "classic_d": 0.01710334578226658,
+              "common_global_center_energy_diagnostic": 1.6861398360822424,
+              "common_global_center_d_diagnostic": 0.016583937923882724
+            }
+          ]
+        }
+      ],
+      "compressed_formula_dense_check_error": 2.220446049250313e-16,
+      "elapsed_seconds": 2.723593906000133
+    }
+  ],
+  "published_prefix_comparison": {
+    "nu": {
+      "calculated": 0.16907642471298012,
+      "published": 0.16907642471298043,
+      "absolute_difference": 3.0531133177191805e-16
+    },
+    "energy": {
+      "calculated": 1.4909769168079618,
+      "published": 1.490976916807961,
+      "absolute_difference": 8.881784197001252e-16
+    },
+    "d": {
+      "calculated": 0.019173226004682693,
+      "published": 0.01917322600468277,
+      "absolute_difference": 7.632783294297951e-17
+    }
+  },
+  "published_prefix_matches_within_1e_12": true,
+  "finished_unix": 1794358683.7906826
+}

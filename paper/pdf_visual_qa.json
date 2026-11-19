@@ -1,0 +1,210 @@
+{
+  "pdf": "/workspace/scratch/f157098d3e38/next_round/manuscript/main.pdf",
+  "bytes": 643286,
+  "sha256": "2592302425af0016cda67ed0e10b3bbcbd983bc5bca008254dda6809774c738e",
+  "pages": 30,
+  "all_pages_rendered": true,
+  "text_spans_outside_pages": [],
+  "required_numerical_text": {
+    "0.029417": true,
+    "0.029973": true,
+    "0.162277": true,
+    "0.019306": true,
+    "0.87217": true,
+    "0.78920": true,
+    "17.69": true,
+    "12.25": true,
+    "0.017002": true,
+    "0.019085": true
+  },
+  "source_snapshot_checks": [
+    {
+      "path": "next_round/composition/prospective_summary.json",
+      "matches": true
+    },
+    {
+      "path": "next_round/degree/comparison.json",
+      "matches": true
+    },
+    {
+      "path": "next_round/composition/local_calibration_summary.json",
+      "matches": true
+    },
+    {
+      "path": "next_round/runtime/runtime_completion_summary.json",
+      "matches": true
+    },
+    {
+      "path": "next_round/runtime/checks/composition_f60_N2000_seed3001_tangent.json",
+      "matches": true
+    },
+    {
+      "path": "next_round/runtime/checks/composition_f80_N2000_seed3001_tangent.json",
+      "matches": true
+    },
+    {
+      "path": "next_round/runtime/checks/degree_chi0_N2000_seed4001_tangent.json",
+      "matches": true
+    },
+    {
+      "path": "next_round/runtime/checks/degree_chi2_N2000_seed4001_tangent.json",
+      "matches": true
+    }
+  ],
+  "all_source_snapshots_current": true,
+  "unresolved_draft_placeholders": false,
+  "page_summary": [
+    {
+      "page": 1,
+      "extracted_characters": 2841,
+      "first_text": "Conditional activity geometry in balanced excitatory\u2013inhibitory networks Working"
+    },
+    {
+      "page": 2,
+      "extracted_characters": 2308,
+      "first_text": "same-label spectral and response products of the kind used below. Balanced EI me"
+    },
+    {
+      "page": 3,
+      "extracted_characters": 1600,
+      "first_text": "\u221210.0 \u22127.5 \u22125.0 \u22122.5 0.0 2.5 5.0 Operating point \u03bc 0.00 0.05 0.10 0.15 0.20 Dens"
+    },
+    {
+      "page": 4,
+      "extracted_characters": 2377,
+      "first_text": "3 A population response for covariance geometry Use the Fourier transform c(\u03c9) ="
+    },
+    {
+      "page": 5,
+      "extracted_characters": 3091,
+      "first_text": "3.1 Relating E and I activity geometry A normalized cross-population energy isol"
+    },
+    {
+      "page": 6,
+      "extracted_characters": 3099,
+      "first_text": "4 Two distinct connectivity interventions 4.1 Population composition at fixed ag"
+    },
+    {
+      "page": 7,
+      "extracted_characters": 3543,
+      "first_text": "recomputed. Our nonuniform degree test measures this prediction where the E and "
+    },
+    {
+      "page": 8,
+      "extracted_characters": 2534,
+      "first_text": "500 1000 2000 Covariance block duration B 0.0000 0.0005 0.0010 0.0015 0.0020 Own"
+    },
+    {
+      "page": 9,
+      "extracted_characters": 3685,
+      "first_text": "Table 2: Fresh composition and size series. Ratios compare the mean of each netw"
+    },
+    {
+      "page": 10,
+      "extracted_characters": 2455,
+      "first_text": "0.0 0.5 1.0 1.5 2.0 Degree dispersion \u03c7 10\u22121 Activity dimension PR/N A Condition"
+    },
+    {
+      "page": 11,
+      "extracted_characters": 2284,
+      "first_text": "1000 2000 4000 Network size N 0.6 0.7 0.8 0.9 1.0 1.1 1.2 \u03bdN/\u03bd0 A. Mean rate var"
+    },
+    {
+      "page": 12,
+      "extracted_characters": 4031,
+      "first_text": "supplies the missing variance weights and temporal overlap. Table 6 reports per-"
+    },
+    {
+      "page": 13,
+      "extracted_characters": 2659,
+      "first_text": "6 Discussion The useful reduction is a map from a self-consistent distribution o"
+    },
+    {
+      "page": 14,
+      "extracted_characters": 2434,
+      "first_text": "A Conditional EI analytics and the population geometry This appendix completes t"
+    },
+    {
+      "page": 15,
+      "extracted_characters": 2270,
+      "first_text": "For example, m(\u00b5) = 2P(Y \u2264\u00b5 + \u221aqZ) for independent standard normal Y, Z; their d"
+    },
+    {
+      "page": 16,
+      "extracted_characters": 2045,
+      "first_text": "At each pair of frequencies define Aa = Ez\u03b1a(z)2, ua = AaH(\u03c91)H(\u03c92), U = diag(ua"
+    },
+    {
+      "page": 17,
+      "extracted_characters": 2228,
+      "first_text": "The off-diagonal pairs each contribute O(N\u22121) but number O(N2); they therefore c"
+    },
+    {
+      "page": 18,
+      "extracted_characters": 2680,
+      "first_text": "First replace Qc by the product of population-averaged spectra, while holding A "
+    },
+    {
+      "page": 19,
+      "extracted_characters": 3149,
+      "first_text": "control of coherent population projections. Degree constraints change within-row"
+    },
+    {
+      "page": 20,
+      "extracted_characters": 3216,
+      "first_text": "is ca(z, \u03c4) = \u03b1a(z)2Ka(\u03c4) + \u03b2a(z)2Ka(\u03c4)2/2 + \u00b7 \u00b7 \u00b7 , where \u03b2a = Eu\u03d5\u2032\u2032(\u00b5a + u); a"
+    },
+    {
+      "page": 21,
+      "extracted_characters": 3943,
+      "first_text": "Persistent periodic activity can have a defined covariance but lies outside the "
+    },
+    {
+      "page": 22,
+      "extracted_characters": 2523,
+      "first_text": "Table 3: Selected time-step checks at the same connectivity and initial conditio"
+    },
+    {
+      "page": 23,
+      "extracted_characters": 2586,
+      "first_text": "E A frozen-source dimensionality diagnostic for variance concentra- tion The con"
+    },
+    {
+      "page": 24,
+      "extracted_characters": 2189,
+      "first_text": "The normalized cross-population energy is consequently OEI = EEI \u221aEEEEII = tr(KE"
+    },
+    {
+      "page": 25,
+      "extracted_characters": 2243,
+      "first_text": "Table 6: Population dimensionality as a derived observable. Fractions are da = D"
+    },
+    {
+      "page": 26,
+      "extracted_characters": 966,
+      "first_text": "Table 8: Descriptive mean-error intervals for the fresh composition series. Erro"
+    },
+    {
+      "page": 27,
+      "extracted_characters": 1283,
+      "first_text": "1000 2000 4000 Network size N 0.6 0.7 0.8 0.9 1.0 1.1 1.2 \u03bdN/\u03bd0 A. Mean rate var"
+    },
+    {
+      "page": 28,
+      "extracted_characters": 1574,
+      "first_text": "H Historical unequal-lag population comparison The original handoff also tests t"
+    },
+    {
+      "page": 29,
+      "extracted_characters": 1293,
+      "first_text": "\u221220 0 20 \u221220 0 20 Theory Lag \u03c42 a   E\u2013E \u221220 0 20 \u221220 0 20 b   E\u2013I \u221220 0 20 \u221220 0"
+    },
+    {
+      "page": 30,
+      "extracted_characters": 1468,
+      "first_text": "References [1] Carl van Vreeswijk and Haim Sompolinsky. Chaos in neuronal networ"
+    }
+  ],
+  "render_directory": "/workspace/scratch/f157098d3e38/tmp/final_paper_qa",
+  "scope": "Rendering, layout, source freshness and numerical transcription checks; not a new scientific validation."
+}

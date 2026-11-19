@@ -1,0 +1,535 @@
+{
+  "scope": "Exact cumulants of implemented degree-count generator, and of incoming constant-mean-rate contribution. Not full conditional input skew, response correction, or PR repair.",
+  "checks": [
+    {
+      "M": 17,
+      "p": 0.058823529411764705,
+      "chi": 0.0,
+      "variance_absolute_error": 0.0,
+      "third_cumulant_absolute_error": 0.0
+    },
+    {
+      "M": 17,
+      "p": 0.058823529411764705,
+      "chi": 0.5,
+      "variance_absolute_error": 0.0,
+      "third_cumulant_absolute_error": 5.551115123125783e-17
+    },
+    {
+      "M": 17,
+      "p": 0.058823529411764705,
+      "chi": 1.0,
+      "variance_absolute_error": 3.3306690738754696e-16,
+      "third_cumulant_absolute_error": 5.551115123125783e-16
+    },
+    {
+      "M": 17,
+      "p": 0.058823529411764705,
+      "chi": 1.25,
+      "variance_absolute_error": 1.5543122344752192e-15,
+      "third_cumulant_absolute_error": 3.774758283725532e-15
+    },
+    {
+      "M": 17,
+      "p": 0.058823529411764705,
+      "chi": 2.0,
+      "variance_absolute_error": 1.7763568394002505e-15,
+      "third_cumulant_absolute_error": 7.993605777301127e-15
+    },
+    {
+      "M": 17,
+      "p": 0.058823529411764705,
+      "chi": 3.5,
+      "variance_absolute_error": 4.440892098500626e-16,
+      "third_cumulant_absolute_error": 1.0658141036401503e-14
+    },
+    {
+      "M": 17,
+      "p": 0.8,
+      "chi": 0.0,
+      "variance_absolute_error": 0.0,
+      "third_cumulant_absolute_error": 1.3877787807814457e-17
+    },
+    {
+      "M": 17,
+      "p": 0.8,
+      "chi": 0.5,
+      "variance_absolute_error": 2.220446049250313e-16,
+      "third_cumulant_absolute_error": 3.885780586188048e-15
+    },
+    {
+      "M": 17,
+      "p": 0.8,
+      "chi": 1.0,
+      "variance_absolute_error": 8.881784197001252e-16,
+      "third_cumulant_absolute_error": 5.10702591327572e-15
+    },
+    {
+      "M": 17,
+      "p": 0.8,
+      "chi": 1.25,
+      "variance_absolute_error": 3.9968028886505635e-15,
+      "third_cumulant_absolute_error": 7.549516567451064e-15
+    },
+    {
+      "M": 17,
+      "p": 0.8,
+      "chi": 2.0,
+      "variance_absolute_error": 4.440892098500626e-15,
+      "third_cumulant_absolute_error": 5.1514348342607263e-14
+    },
+    {
+      "M": 17,
+      "p": 0.8,
+      "chi": 3.5,
+      "variance_absolute_error": 0.0,
+      "third_cumulant_absolute_error": 1.7763568394002505e-14
+    },
+    {
+      "M": 80,
+      "p": 0.058823529411764705,
+      "chi": 0.0,
+      "variance_absolute_error": 0.0,
+      "third_cumulant_absolute_error": 0.0
+    },
+    {
+      "M": 80,
+      "p": 0.058823529411764705,
+      "chi": 0.5,
+      "variance_absolute_error": 8.881784197001252e-16,
+      "third_cumulant_absolute_error": 1.7763568394002505e-15
+    },
+    {
+      "M": 80,
+      "p": 0.058823529411764705,
+      "chi": 1.0,
+      "variance_absolute_error": 0.0,
+      "third_cumulant_absolute_error": 4.884981308350689e-15
+    },
+    {
+      "M": 80,
+      "p": 0.058823529411764705,
+      "chi": 1.25,
+      "variance_absolute_error": 2.5490720645393594e-13,
+      "third_cumulant_absolute_error": 9.174883075502294e-13
+    },
+    {
+      "M": 80,
+      "p": 0.058823529411764705,
+      "chi": 2.0,
+      "variance_absolute_error": 7.105427357601002e-15,
+      "third_cumulant_absolute_error": 5.684341886080802e-14
+    },
+    {
+      "M": 80,
+      "p": 0.058823529411764705,
+      "chi": 3.5,
+      "variance_absolute_error": 3.375077994860476e-14,
+      "third_cumulant_absolute_error": 4.831690603168681e-13
+    },
+    {
+      "M": 80,
+      "p": 0.8,
+      "chi": 0.0,
+      "variance_absolute_error": 0.0,
+      "third_cumulant_absolute_error": 0.0
+    },
+    {
+      "M": 80,
+      "p": 0.8,
+      "chi": 0.5,
+      "variance_absolute_error": 2.6645352591003757e-15,
+      "third_cumulant_absolute_error": 4.1744385725905886e-14
+    },
+    {
+      "M": 80,
+      "p": 0.8,
+      "chi": 1.0,
+      "variance_absolute_error": 3.552713678800501e-15,
+      "third_cumulant_absolute_error": 9.50350909079134e-14
+    },
+    {
+      "M": 80,
+      "p": 0.8,
+      "chi": 1.25,
+      "variance_absolute_error": 6.821210263296962e-13,
+      "third_cumulant_absolute_error": 3.433697770560684e-12
+    },
+    {
+      "M": 80,
+      "p": 0.8,
+      "chi": 2.0,
+      "variance_absolute_error": 3.552713678800501e-14,
+      "third_cumulant_absolute_error": 2.1316282072803006e-14
+    },
+    {
+      "M": 80,
+      "p": 0.8,
+      "chi": 3.5,
+      "variance_absolute_error": 4.121147867408581e-13,
+      "third_cumulant_absolute_error": 1.071498445526231e-11
+    },
+    {
+      "M": 800,
+      "p": 0.058823529411764705,
+      "chi": 0.0,
+      "variance_absolute_error": 6.938893903907228e-18,
+      "third_cumulant_absolute_error": 0.0
+    },
+    {
+      "M": 800,
+      "p": 0.058823529411764705,
+      "chi": 0.5,
+      "variance_absolute_error": 7.105427357601002e-15,
+      "third_cumulant_absolute_error": 1.8474111129762605e-13
+    },
+    {
+      "M": 800,
+      "p": 0.058823529411764705,
+      "chi": 1.0,
+      "variance_absolute_error": 1.4210854715202004e-14,
+      "third_cumulant_absolute_error": 5.826450433232822e-13
+    },
+    {
+      "M": 800,
+      "p": 0.058823529411764705,
+      "chi": 1.25,
+      "variance_absolute_error": 1.588773557159584e-11,
+      "third_cumulant_absolute_error": 3.062865516767488e-10
+    },
+    {
+      "M": 800,
+      "p": 0.058823529411764705,
+      "chi": 2.0,
+      "variance_absolute_error": 7.005951374594588e-12,
+      "third_cumulant_absolute_error": 1.0402345651527867e-10
+    },
+    {
+      "M": 800,
+      "p": 0.058823529411764705,
+      "chi": 3.5,
+      "variance_absolute_error": 1.98667748918524e-11,
+      "third_cumulant_absolute_error": 1.1968950275331736e-09
+    },
+    {
+      "M": 800,
+      "p": 0.8,
+      "chi": 0.0,
+      "variance_absolute_error": 0.0,
+      "third_cumulant_absolute_error": 0.0
+    },
+    {
+      "M": 800,
+      "p": 0.8,
+      "chi": 0.5,
+      "variance_absolute_error": 2.842170943040401e-14,
+      "third_cumulant_absolute_error": 3.865352482534945e-12
+    },
+    {
+      "M": 800,
+      "p": 0.8,
+      "chi": 1.0,
+      "variance_absolute_error": 7.105427357601002e-14,
+      "third_cumulant_absolute_error": 1.3500311979441904e-11
+    },
+    {
+      "M": 800,
+      "p": 0.8,
+      "chi": 1.25,
+      "variance_absolute_error": 5.005063030694146e-11,
+      "third_cumulant_absolute_error": 1.4125305369816488e-09
+    },
+    {
+      "M": 800,
+      "p": 0.8,
+      "chi": 2.0,
+      "variance_absolute_error": 3.6493474908638746e-11,
+      "third_cumulant_absolute_error": 1.255102688446641e-09
+    },
+    {
+      "M": 800,
+      "p": 0.8,
+      "chi": 3.5,
+      "variance_absolute_error": 1.4381384971784428e-11,
+      "third_cumulant_absolute_error": 1.6796093404991552e-09
+    },
+    {
+      "M": 3200,
+      "p": 0.058823529411764705,
+      "chi": 0.0,
+      "variance_absolute_error": 0.0,
+      "third_cumulant_absolute_error": 1.3877787807814457e-17
+    },
+    {
+      "M": 3200,
+      "p": 0.058823529411764705,
+      "chi": 0.5,
+      "variance_absolute_error": 0.0,
+      "third_cumulant_absolute_error": 1.6058265828178264e-12
+    },
+    {
+      "M": 3200,
+      "p": 0.058823529411764705,
+      "chi": 1.0,
+      "variance_absolute_error": 1.1368683772161603e-13,
+      "third_cumulant_absolute_error": 1.3102408047416247e-11
+    },
+    {
+      "M": 3200,
+      "p": 0.058823529411764705,
+      "chi": 1.25,
+      "variance_absolute_error": 3.5998937164549716e-10,
+      "third_cumulant_absolute_error": 6.756067705282476e-09
+    },
+    {
+      "M": 3200,
+      "p": 0.058823529411764705,
+      "chi": 2.0,
+      "variance_absolute_error": 8.640199666842818e-12,
+      "third_cumulant_absolute_error": 7.348376129812095e-09
+    },
+    {
+      "M": 3200,
+      "p": 0.058823529411764705,
+      "chi": 3.5,
+      "variance_absolute_error": 4.291678123991005e-10,
+      "third_cumulant_absolute_error": 5.331912689143792e-09
+    },
+    {
+      "M": 3200,
+      "p": 0.8,
+      "chi": 0.0,
+      "variance_absolute_error": 0.0,
+      "third_cumulant_absolute_error": 0.0
+    },
+    {
+      "M": 3200,
+      "p": 0.8,
+      "chi": 0.5,
+      "variance_absolute_error": 1.1368683772161603e-13,
+      "third_cumulant_absolute_error": 5.283595783112105e-11
+    },
+    {
+      "M": 3200,
+      "p": 0.8,
+      "chi": 1.0,
+      "variance_absolute_error": 4.547473508864641e-13,
+      "third_cumulant_absolute_error": 2.0310153558966704e-10
+    },
+    {
+      "M": 3200,
+      "p": 0.8,
+      "chi": 1.25,
+      "variance_absolute_error": 1.4733814168721437e-10,
+      "third_cumulant_absolute_error": 2.2461335902335122e-08
+    },
+    {
+      "M": 3200,
+      "p": 0.8,
+      "chi": 2.0,
+      "variance_absolute_error": 4.1302428144263104e-10,
+      "third_cumulant_absolute_error": 3.784293767239433e-08
+    },
+    {
+      "M": 3200,
+      "p": 0.8,
+      "chi": 3.5,
+      "variance_absolute_error": 1.2055352272000164e-09,
+      "third_cumulant_absolute_error": 5.32054400537163e-10
+    }
+  ],
+  "cases": [
+    {
+      "N": 1000,
+      "chi": 0.0,
+      "mean_rate_degree_component_variance": [
+        0.0014399999999999136,
+        0.007039799999999938
+      ],
+      "mean_rate_degree_component_third_cumulant": [
+        0.00020491559237890042,
+        0.0002244696627816817
+      ],
+      "standardized_skew": [
+        3.7500000000001443,
+        0.38002937948018384
+      ]
+    },
+    {
+      "N": 1000,
+      "chi": 0.5,
+      "mean_rate_degree_component_variance": [
+        0.6634799999999998,
+        1.0130039999999996
+      ],
+      "mean_rate_degree_component_third_cumulant": [
+        0.08536271289524483,
+        0.09880527821309755
+      ],
+      "standardized_skew": [
+        0.15795248209573817,
+        0.09690884221352992
+      ]
+    },
+    {
+      "N": 1000,
+      "chi": 1.0,
+      "mean_rate_degree_component_variance": [
+        1.3139999999999996,
+        2.015999999999999
+      ],
+      "mean_rate_degree_component_third_cumulant": [
+        0.170848375145917,
+        0.19733371546089118
+      ],
+      "standardized_skew": [
+        0.11342735500639306,
+        0.06893908284687449
+      ]
+    },
+    {
+      "N": 1000,
+      "chi": 2.0,
+      "mean_rate_degree_component_variance": [
+        2.6279999999999992,
+        4.031999999999998
+      ],
+      "mean_rate_degree_component_third_cumulant": [
+        1.0241322704811304,
+        1.1827451356061027
+      ],
+      "standardized_skew": [
+        0.2403908923913019,
+        0.14608660131732618
+      ]
+    },
+    {
+      "N": 2000,
+      "chi": 0.0,
+      "mean_rate_degree_component_variance": [
+        0.001349999999999925,
+        0.002716200000000147
+      ],
+      "mean_rate_degree_component_third_cumulant": [
+        0.00011772897901535969,
+        -0.00011180630576335935
+      ],
+      "standardized_skew": [
+        2.3734644158558322,
+        -0.7898119141548492
+      ]
+    },
+    {
+      "N": 2000,
+      "chi": 0.5,
+      "mean_rate_degree_component_variance": [
+        0.6577199999999999,
+        1.0115198999999995
+      ],
+      "mean_rate_degree_component_third_cumulant": [
+        0.060476470912661555,
+        0.06984736618992819
+      ],
+      "standardized_skew": [
+        0.11337697564754164,
+        0.0686575635420891
+      ]
+    },
+    {
+      "N": 2000,
+      "chi": 1.0,
+      "mean_rate_degree_component_variance": [
+        1.3139999999999996,
+        2.015999999999999
+      ],
+      "mean_rate_degree_component_third_cumulant": [
+        0.12080804462038111,
+        0.1395360083591328
+      ],
+      "standardized_skew": [
+        0.08020525189707442,
+        0.04874729296980614
+      ]
+    },
+    {
+      "N": 2000,
+      "chi": 2.0,
+      "mean_rate_degree_component_variance": [
+        2.6279999999999992,
+        4.031999999999998
+      ],
+      "mean_rate_degree_component_third_cumulant": [
+        0.7245095705057348,
+        0.8367715779786374
+      ],
+      "standardized_skew": [
+        0.17006153132748242,
+        0.10335372535114434
+      ]
+    },
+    {
+      "N": 4000,
+      "chi": 0.0,
+      "mean_rate_degree_component_variance": [
+        0.0011699999999999482,
+        0.0016897500000000272
+      ],
+      "mean_rate_degree_component_third_cumulant": [
+        4.994817564236018e-05,
+        5.375832493820811e-06
+      ],
+      "standardized_skew": [
+        1.248075441506864,
+        0.07739484687876344
+      ]
+    },
+    {
+      "N": 4000,
+      "chi": 0.5,
+      "mean_rate_degree_component_variance": [
+        0.6576749999999998,
+        1.0093580999999996
+      ],
+      "mean_rate_degree_component_third_cumulant": [
+        0.04275371726618122,
+        0.049293899366730454
+      ],
+      "standardized_skew": [
+        0.08015984720186022,
+        0.04860996018140147
+      ]
+    },
+    {
+      "N": 4000,
+      "chi": 1.0,
+      "mean_rate_degree_component_variance": [
+        1.3139999999999996,
+        2.015999999999999
+      ],
+      "mean_rate_degree_component_third_cumulant": [
+        0.0854241875729585,
+        0.09866685773044559
+      ],
+      "standardized_skew": [
+        0.05671367750319653,
+        0.03446954142343724
+      ]
+    },
+    {
+      "N": 4000,
+      "chi": 2.0,
+      "mean_rate_degree_component_variance": [
+        2.6279999999999992,
+        4.031999999999998
+      ],
+      "mean_rate_degree_component_third_cumulant": [
+        0.5124253778884547,
+        0.591844001737768
+      ],
+      "standardized_skew": [
+        0.12027976993312149,
+        0.07310152975569768
+      ]
+    }
+  ]
+}

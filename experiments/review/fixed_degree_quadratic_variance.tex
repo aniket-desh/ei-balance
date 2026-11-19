@@ -1,0 +1,142 @@
+\section{A frozen-reservoir test of degree-induced variance heterogeneity}
+This calculation isolates one possible source of the static variance seen
+at nominally fixed degree. It is an exact sampling identity for a specified
+reservoir matrix, followed by a conditional large-$N$ estimate. It is not a
+complete stationary $N^{-1}$ correction for the recurrent network.
+
+\subsection{One fixed-size subset}
+Choose uniformly a subset of size $K$ from a pool of $M$ units. Write its
+binary indicator as $A$, set $p=K/M$, $P=I-\mathbf1\mathbf1^\top/M$, and
+$z=A-p\mathbf1=PA$. For a real symmetric matrix $S$ define $B=PSP$,
+$D=\operatorname{tr}B$, $T=\operatorname{tr}B^2$, and
+$L=\sum_iB_{ii}^2$. For distinct indices the inclusion probabilities are
+\[
+ \pi_r=\frac{(K)_r}{(M)_r},\qquad r=1,2,3,4,\qquad \pi_1=p.
+\]
+The quadratic form is $z^TSz=A^TBA$. Since $B\mathbf1=0$,
+$\sum_{i\ne j}B_{ij}=-D$, and hence
+\[
+ \mathbb E[A^TBA]=(p-\pi_2)D.
+\]
+To calculate the square, split the form into its diagonal part
+$V=\sum_iB_{ii}A_i$ and off-diagonal part
+$W=\sum_{i\ne j}B_{ij}A_iA_j$. The required contractions are
+\begin{align*}
+ \mathbb E V^2&=pL+\pi_2(D^2-L),\\
+ 2\mathbb E VW&=-4\pi_2L-2\pi_3D^2+4\pi_3L,\\
+ \mathbb E W^2&=\pi_2(2T-2L)+\pi_3(8L-4T)
+                      +\pi_4(D^2+2T-6L).
+\end{align*}
+In the last equation, the three terms have two, three, and four distinct
+indices, respectively. Adding them and subtracting the squared mean gives
+\begin{equation}
+ \boxed{\operatorname{Var}(z^TSz)
+ =2cT+\kappa L+[c-(p-\pi_2)^2]D^2,}
+ \quad c=\pi_2-2\pi_3+\pi_4,\quad
+ \kappa=p-7\pi_2+12\pi_3-6\pi_4.
+ \label{eq:review_exact_fixed_qvar}
+\end{equation}
+For a constant diagonal of $B$, $L=D^2/M$, and the identity simplifies to
+\begin{equation}
+ \operatorname{Var}(z^TSz)=
+ 2c\left[T-\frac{D^2}{M-1}\right].
+ \label{eq:review_const_diag_qvar}
+\end{equation}
+In particular, $S=sI$ has zero variance because $\|z\|^2=Mp(1-p)$ is fixed.
+A Gaussian-row approximation that retained only $2\operatorname{tr}S^2$
+would incorrectly assign a variance to this constant-diagonal contribution.
+
+For $M\to\infty$ at fixed $p$, put $\sigma^2=p(1-p)$. Then
+\[
+ c=\sigma^4+O(M^{-1}),\quad
+ \kappa=\sigma^2(1-6\sigma^2)+O(M^{-1}),\quad
+ c-(p-\pi_2)^2=-\frac{\sigma^2(1-2p)^2}{M}+O(M^{-2}).
+\]
+The diagonal terms cancel to leading extensive order when $S_{ii}$ is
+constant within the pool and its coherent projections are controlled.
+
+\subsection{Independent presynaptic pools and the coherent row mean}
+Let the full frozen coupling row be
+$j=\bar j+\sum_b(t_b/\sqrt N)z_b$, with independent fixed-size subsets
+in each pool. Define
+\[
+ V_b=\mathbb E[z_bz_b^T]
+ =p_b(1-p_b)\frac{M_b}{M_b-1}P_b,\qquad
+ B_b=P_bS_{bb}P_b,\quad \ell_b=(S\bar j)_b.
+\]
+The full quadratic form contains
+\begin{align*}
+ j^TSj={}&\bar j^TS\bar j
+ +\sum_b\frac{2t_b}{\sqrt N}\ell_b^Tz_b
+ +\sum_b\frac{t_b^2}{N}z_b^TS_{bb}z_b\\
+ &+\sum_{b<c}\frac{2t_bt_c}{N}z_b^TS_{bc}z_c.
+\end{align*}
+Besides the diagonal-pool variance from
+Eq.~\eqref{eq:review_exact_fixed_qvar}, the exact independent-pool terms are
+\begin{align*}
+ V_{\rm linear}&=\frac4N\sum_bt_b^2\ell_b^TV_b\ell_b,\\
+ V_{\rm cross}&=\frac4{N^2}\sum_{b<c}t_b^2t_c^2
+                  \operatorname{tr}(V_bS_{bc}V_cS_{cb}),\\
+ 2\operatorname{Cov}(V_{\rm lin},V_{\rm quad})
+ &=\frac4{N^{3/2}}\sum_bt_b^3(p_b-3\pi_{2b}+2\pi_{3b})
+                   \sum_i(P_b\ell_b)_i(B_b)_{ii}.
+\end{align*}
+All remaining cross-pool covariance terms vanish by independence and the
+centering of every $z_b$. The last formula follows from
+\[
+ \operatorname{Cov}(\lambda^TA,A^TBA)
+ =(p-3\pi_2+2\pi_3)\sum_i\lambda_iB_{ii},\qquad
+ \mathbf1^T\lambda=0,
+\]
+using $B\mathbf1=0$. The cubic term vanishes for a constant projected
+diagonal. The coherent linear variance is nonnegative and can remain
+$O(N^{-1})$ when $\|S\bar j\|=O(1)$. Thus it is not automatically
+subleading relative to the centered quadratic variance.
+
+\subsection{The proposed leading frozen-row estimate}
+Suppose $S$ has a population-constant leading diagonal $s_b$, bounded
+operator norm, and controlled population projections. For a centered row,
+the preceding formulas give
+\begin{equation}
+ \operatorname{Var}_{\rm frozen}(q_i)
+ \simeq\frac2N\sum_{b,c}G_{ab}G_{ac}
+ \left[\mathcal E^H_{bc}-\delta_{bc}f_b s_b^2\right],
+ \quad
+ \mathcal E^H_{bc}=\frac1N\|S_{bc}\|_F^2,
+ \label{eq:review_frozen_Vq}
+\end{equation}
+where $G_{ab}=t_b^2p_b(1-p_b)$. For the input filter,
+$S_{jk}=\int |H(\omega)|^2 C_{jk}(\omega)d\omega/(2\pi)$, and its block
+energies are obtained by the corresponding two-frequency weights. This
+checks the proposed diagonal subtraction and its factor of two.
+
+The mean row must also be retained unless its filtered coherent contribution
+is negligible at the claimed order. Uniformly small population projection
+\emph{fractions} are enough for the leading pair energy, but do not by
+themselves imply $S\bar j=o(1)$, which is what removes the linear term from
+the leading frozen-row variance coefficient.
+
+\subsection{Converting variance fluctuations into static heterogeneity}
+At nominally fixed degree, linearizing the local mean rate around its
+homogeneous operating point gives
+\[
+ \delta m_i=\alpha_a\delta\mu_i+\frac{\beta_a}{2}\delta q_i+\cdots,
+ \qquad \beta_a=-\frac{h_a\alpha_a}{1+q_a}.
+\]
+If a further frozen-site decoupling makes
+$\operatorname{Cov}(\delta\mu_i,\delta q_i)$ negligible at this order,
+then a candidate static-variance estimate is
+\[
+ \Delta^{(q)}\simeq
+ [I-W\operatorname{diag}(\alpha_a^2)]^{-1}
+ W\operatorname{diag}(\beta_a^2/4)\,V_q.
+\]
+This final formula is conditional, rather than an exact consequence of the
+subset calculation. A complete stationary coefficient would also require
+reservoir reinsertion/self-response terms, dependence of $S$ on the probe
+row, possible covariance between $\delta\mu$ and $\delta q$, source changes
+and collective sample fluctuations, and consistent coherent-loop treatment.
+They can enter at the same order as the local fluctuations being retained.
+Stochastic count rounding also generates a separate static source. Agreement
+or failure of this frozen diagnostic is informative; neither would complete
+the finite-size correction to PR or explain the 60:40 discrepancy on its own.

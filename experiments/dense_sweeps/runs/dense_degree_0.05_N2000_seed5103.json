@@ -1,0 +1,952 @@
+{
+  "name": "dense_degree_0.05_N2000_seed5103",
+  "job": {
+    "name": "dense_degree_0.05_N2000_seed5103",
+    "experiment": "degree",
+    "config": {
+      "n": 2000,
+      "g": 4.0,
+      "mean_rate": 0.3,
+      "seed": 5103,
+      "fraction_e": 0.8,
+      "ensemble": "degree",
+      "dt": 0.05,
+      "burn": 500.0,
+      "duration": 8000.0,
+      "sample_dt": 0.25,
+      "variance_profile": [
+        [
+          16.0,
+          9.0
+        ],
+        [
+          25.0,
+          12.0
+        ]
+      ],
+      "mean_connectivity": [
+        [
+          1.0,
+          -6.0
+        ],
+        [
+          2.0,
+          -10.0
+        ]
+      ],
+      "degree_dispersion": 0.05
+    },
+    "mean_input": [
+      -2.1798642450670136,
+      -2.589245102120907
+    ],
+    "blocks": [
+      500.0
+    ],
+    "prefixes": [
+      4000.0,
+      8000.0
+    ],
+    "retain_temporary_trajectory": false,
+    "shard": "remote",
+    "native_library": "/workspace/ei-balance-n19/final/next_round/dense_sweeps/tmp/f21f2390d7d2_remote_3of3_504/constant_csr.so"
+  },
+  "status": "complete",
+  "started_unix": 1795114722.5779078,
+  "action_backend": "compiled_constant_CSR",
+  "engine_source_sha256": "117f57b8341a1e36fa351f37d96cd779879b5c037aa11d52f7d44a4bd923f546",
+  "connectivity_sha256": "be5658ea2009dfdb0a97266708ab11fe83e6a3cd4a6a590bae8fae28a9022ab0",
+  "native_library_sha256": "b0320fb8c5babce9e2b7e50a0b2d4b21d68061e88fcc9e9997dcc2ab156afc4b",
+  "network_info": {
+    "j0": [
+      [
+        1.0,
+        -6.0
+      ],
+      [
+        2.0,
+        -10.0
+      ]
+    ],
+    "probabilities": [
+      [
+        0.058823529411764705,
+        0.8
+      ],
+      [
+        0.13793103448275862,
+        0.8928571428571429
+      ]
+    ],
+    "nonzero_weights_scaled": [
+      [
+        17.0,
+        7.5
+      ],
+      [
+        14.5,
+        11.2
+      ]
+    ],
+    "fractions": [
+      0.8,
+      0.2
+    ],
+    "external": [
+      3.1866989009324818,
+      2.7773180438785885
+    ],
+    "degree_expected_dispersion": [
+      [
+        0.05273437499999999,
+        0.05
+      ],
+      [
+        0.0511875,
+        0.055333333333333255
+      ]
+    ],
+    "degree_empirical_means": [
+      [
+        94.105625,
+        319.94375
+      ],
+      [
+        220.8375,
+        357.14
+      ]
+    ],
+    "degree_empirical_variances": [
+      [
+        4.719468359375001,
+        3.1505859375000007
+      ],
+      [
+        10.221093749999998,
+        1.9504000000000001
+      ]
+    ]
+  },
+  "sparse_nnz": 384138,
+  "recorded_duration": 8000.0,
+  "elapsed_seconds": 40.5816098889336,
+  "simulation_seconds": 33.61583476513624,
+  "final_drift_rms": 0.7198390589939676,
+  "state_description": "Persistent temporal fluctuations unless vanishing variance and drift; Lyapunov sign not measured by this runner.",
+  "estimators": [
+    {
+      "block_duration": 500.0,
+      "nblocks": 16,
+      "N": 2000,
+      "population_energy_normalization": "sum entries in a,b divided by total N; off-diagonal E-I block counted twice in total",
+      "population_local_stats": [
+        {
+          "population": 0,
+          "count": 1600,
+          "mean_rate": 0.30009453509500084,
+          "h": -2.2292340913244963,
+          "Delta_input_means": 0.3130829486073171,
+          "q_temporal_input": 3.3077067736170456,
+          "nu_temporal_rate": 0.25772487445664427,
+          "mean_v_squared": 0.07700856380391326,
+          "A_timeaveraged_gain_squared": 0.047305894395897656,
+          "A4_timeaveraged_gain_fourth": 0.002849309809108983,
+          "instantaneous_gain_squared": 0.11685066901474359,
+          "variance_temporal_q_across_neurons": 0.14938117859147426
+        },
+        {
+          "population": 1,
+          "count": 400,
+          "mean_rate": 0.30099266622908,
+          "h": -2.6472975782329367,
+          "Delta_input_means": 0.468447191601577,
+          "q_temporal_input": 5.094810287295761,
+          "nu_temporal_rate": 0.2931197208276934,
+          "mean_v_squared": 0.09925328015873841,
+          "A_timeaveraged_gain_squared": 0.03432076396971035,
+          "A4_timeaveraged_gain_fourth": 0.0015007563881636466,
+          "instantaneous_gain_squared": 0.10009846901566086,
+          "variance_temporal_q_across_neurons": 0.338890473889371
+        }
+      ],
+      "conditional_local_bins": [
+        {
+          "population": 0,
+          "bin": 0,
+          "count": 134,
+          "mu": -3.232860819187676,
+          "temporal_input_q": 3.114138157208962,
+          "mean_rate": 0.11823195655665424,
+          "rate_variance": 0.10213858793220622,
+          "mean_gain": 0.10944839370411678,
+          "mean_gain_squared": 0.012271166118031128
+        },
+        {
+          "population": 0,
+          "bin": 1,
+          "count": 134,
+          "mu": -2.868494037830658,
+          "temporal_input_q": 3.1663422869689866,
+          "mean_rate": 0.16428653084471787,
+          "rate_variance": 0.144086865676162,
+          "mean_gain": 0.14227232069386234,
+          "mean_gain_squared": 0.02031843566163393
+        },
+        {
+          "population": 0,
+          "bin": 2,
+          "count": 134,
+          "mu": -2.6877324392191366,
+          "temporal_input_q": 3.2595894196065323,
+          "mean_rate": 0.19662858479761397,
+          "rate_variance": 0.1760461034738959,
+          "mean_gain": 0.16048877553689417,
+          "mean_gain_squared": 0.025796392785542174
+        },
+        {
+          "population": 0,
+          "bin": 3,
+          "count": 134,
+          "mu": -2.5292034114691497,
+          "temporal_input_q": 3.26439923582943,
+          "mean_rate": 0.2232526606258366,
+          "rate_variance": 0.19816562948686034,
+          "mean_gain": 0.17774702053260988,
+          "mean_gain_squared": 0.03163208941148945
+        },
+        {
+          "population": 0,
+          "bin": 4,
+          "count": 133,
+          "mu": -2.403916144304363,
+          "temporal_input_q": 3.278848873359421,
+          "mean_rate": 0.24720082094262918,
+          "rate_variance": 0.21968839161519885,
+          "mean_gain": 0.1906642805279923,
+          "mean_gain_squared": 0.03640451868257736
+        },
+        {
+          "population": 0,
+          "bin": 5,
+          "count": 133,
+          "mu": -2.2914060239076304,
+          "temporal_input_q": 3.277738083437417,
+          "mean_rate": 0.26919904076599527,
+          "rate_variance": 0.237608714056764,
+          "mean_gain": 0.2032798891500768,
+          "mean_gain_squared": 0.04136641822264012
+        },
+        {
+          "population": 0,
+          "bin": 6,
+          "count": 133,
+          "mu": -2.1871402737949452,
+          "temporal_input_q": 3.3142577203671233,
+          "mean_rate": 0.29304463412114007,
+          "rate_variance": 0.25838584587482727,
+          "mean_gain": 0.21479799742719113,
+          "mean_gain_squared": 0.04618057714693999
+        },
+        {
+          "population": 0,
+          "bin": 7,
+          "count": 133,
+          "mu": -2.0734020464566303,
+          "temporal_input_q": 3.2966980993312562,
+          "mean_rate": 0.3173163512881537,
+          "rate_variance": 0.27831333808823494,
+          "mean_gain": 0.22674229517686298,
+          "mean_gain_squared": 0.0514806913992451
+        },
+        {
+          "population": 0,
+          "bin": 8,
+          "count": 133,
+          "mu": -1.930894432286512,
+          "temporal_input_q": 3.32245504835326,
+          "mean_rate": 0.35214298169394936,
+          "rate_variance": 0.3050910366399035,
+          "mean_gain": 0.2433038526543826,
+          "mean_gain_squared": 0.05926688995784253
+        },
+        {
+          "population": 0,
+          "bin": 9,
+          "count": 133,
+          "mu": -1.7899999418242123,
+          "temporal_input_q": 3.398980022021664,
+          "mean_rate": 0.391186201559088,
+          "rate_variance": 0.33686750910745566,
+          "mean_gain": 0.25788301220493787,
+          "mean_gain_squared": 0.06660358111216082
+        },
+        {
+          "population": 0,
+          "bin": 10,
+          "count": 133,
+          "mu": -1.5783823173556064,
+          "temporal_input_q": 3.4250202713712157,
+          "mean_rate": 0.44983987718999324,
+          "rate_variance": 0.3795693833014011,
+          "mean_gain": 0.2789166081241475,
+          "mean_gain_squared": 0.07798365931389849
+        },
+        {
+          "population": 0,
+          "bin": 11,
+          "count": 133,
+          "mu": -1.1593219124498557,
+          "temporal_input_q": 3.5772197647587065,
+          "mean_rate": 0.5825489793072849,
+          "rate_variance": 0.4598232710182309,
+          "mean_gain": 0.3140518851376497,
+          "mean_gain_squared": 0.09911221890573993
+        },
+        {
+          "population": 1,
+          "bin": 0,
+          "count": 34,
+          "mu": -3.9093582766862265,
+          "temporal_input_q": 4.942412714804143,
+          "mean_rate": 0.11509370300800396,
+          "rate_variance": 0.11578817063658234,
+          "mean_gain": 0.09102351356786527,
+          "mean_gain_squared": 0.008479925709667803
+        },
+        {
+          "population": 1,
+          "bin": 1,
+          "count": 34,
+          "mu": -3.443823658633166,
+          "temporal_input_q": 4.966391810218634,
+          "mean_rate": 0.16175482181368203,
+          "rate_variance": 0.16429996899554206,
+          "mean_gain": 0.11930834172416468,
+          "mean_gain_squared": 0.014308765372662556
+        },
+        {
+          "population": 1,
+          "bin": 2,
+          "count": 34,
+          "mu": -3.18691601596957,
+          "temporal_input_q": 4.8980967588913975,
+          "mean_rate": 0.19103282831945248,
+          "rate_variance": 0.19284685491720222,
+          "mean_gain": 0.13629127684147446,
+          "mean_gain_squared": 0.018626660643306203
+        },
+        {
+          "population": 1,
+          "bin": 3,
+          "count": 34,
+          "mu": -3.003295759615648,
+          "temporal_input_q": 5.025723346838479,
+          "mean_rate": 0.22109528362372013,
+          "rate_variance": 0.2235239983066815,
+          "mean_gain": 0.15141590475738684,
+          "mean_gain_squared": 0.02297890391855126
+        },
+        {
+          "population": 1,
+          "bin": 4,
+          "count": 33,
+          "mu": -2.829790266338916,
+          "temporal_input_q": 5.053571848309889,
+          "mean_rate": 0.2508394516841418,
+          "rate_variance": 0.25494160226971607,
+          "mean_gain": 0.16351634733175097,
+          "mean_gain_squared": 0.02676197886863646
+        },
+        {
+          "population": 1,
+          "bin": 5,
+          "count": 33,
+          "mu": -2.699488599684233,
+          "temporal_input_q": 5.002142398277973,
+          "mean_rate": 0.27000449066857746,
+          "rate_variance": 0.27129120240167387,
+          "mean_gain": 0.17389834730868844,
+          "mean_gain_squared": 0.030274460578511665
+        },
+        {
+          "population": 1,
+          "bin": 6,
+          "count": 33,
+          "mu": -2.5398765555379197,
+          "temporal_input_q": 5.23351174948186,
+          "mean_rate": 0.3087790239138784,
+          "rate_variance": 0.3106739106677129,
+          "mean_gain": 0.18696353185212908,
+          "mean_gain_squared": 0.0350045393057487
+        },
+        {
+          "population": 1,
+          "bin": 7,
+          "count": 33,
+          "mu": -2.426538918199008,
+          "temporal_input_q": 5.178561456434248,
+          "mean_rate": 0.32882284348346486,
+          "rate_variance": 0.3294321397159773,
+          "mean_gain": 0.1946346486972275,
+          "mean_gain_squared": 0.037924149556424876
+        },
+        {
+          "population": 1,
+          "bin": 8,
+          "count": 33,
+          "mu": -2.301069990160717,
+          "temporal_input_q": 5.037757263816232,
+          "mean_rate": 0.3474319137225291,
+          "rate_variance": 0.3414606727610182,
+          "mean_gain": 0.2058075613942921,
+          "mean_gain_squared": 0.042410998233232446
+        },
+        {
+          "population": 1,
+          "bin": 9,
+          "count": 33,
+          "mu": -2.1131050970948406,
+          "temporal_input_q": 5.1083824738263335,
+          "mean_rate": 0.3912093429996087,
+          "rate_variance": 0.37863115477540377,
+          "mean_gain": 0.22099989979929194,
+          "mean_gain_squared": 0.04900758630300113
+        },
+        {
+          "population": 1,
+          "bin": 10,
+          "count": 33,
+          "mu": -1.8319240312262854,
+          "temporal_input_q": 5.220892897202644,
+          "mean_rate": 0.4607667394474461,
+          "rate_variance": 0.43619369168575944,
+          "mean_gain": 0.2399016684185678,
+          "mean_gain_squared": 0.05772980397308508
+        },
+        {
+          "population": 1,
+          "bin": 11,
+          "count": 33,
+          "mu": -1.3928624545586195,
+          "temporal_input_q": 5.486842866369432,
+          "mean_rate": 0.5806874317054075,
+          "rate_variance": 0.5127781279643471,
+          "mean_gain": 0.26511430058771956,
+          "mean_gain_squared": 0.07055014669595823
+        }
+      ],
+      "temporal_kernels": [
+        {
+          "population": 0,
+          "sampled_neurons": [
+            0,
+            16,
+            33,
+            50,
+            67,
+            84,
+            100,
+            117,
+            134,
+            151,
+            168,
+            185,
+            201,
+            218,
+            235,
+            252,
+            269,
+            286,
+            302,
+            319,
+            336,
+            353,
+            370,
+            387,
+            403,
+            420,
+            437,
+            454,
+            471,
+            488,
+            504,
+            521,
+            538,
+            555,
+            572,
+            589,
+            605,
+            622,
+            639,
+            656,
+            673,
+            690,
+            706,
+            723,
+            740,
+            757,
+            774,
+            791,
+            807,
+            824,
+            841,
+            858,
+            875,
+            892,
+            908,
+            925,
+            942,
+            959,
+            976,
+            993,
+            1009,
+            1026,
+            1043,
+            1060,
+            1077,
+            1094,
+            1110,
+            1127,
+            1144,
+            1161,
+            1178,
+            1195,
+            1211,
+            1228,
+            1245,
+            1262,
+            1279,
+            1296,
+            1312,
+            1329,
+            1346,
+            1363,
+            1380,
+            1397,
+            1413,
+            1430,
+            1447,
+            1464,
+            1481,
+            1498,
+            1514,
+            1531,
+            1548,
+            1565,
+            1582,
+            1599
+          ],
+          "lags": [
+            0.0,
+            0.25,
+            0.5,
+            1.0,
+            2.0,
+            4.0,
+            8.0,
+            16.0,
+            32.0,
+            64.0
+          ],
+          "input_centered_kernel": [
+            3.297400499483688,
+            3.2807464560898048,
+            3.2317367363494784,
+            3.0485316872956143,
+            2.4679876440326534,
+            1.275100691560376,
+            0.24430889486209273,
+            0.011243135321747677,
+            0.0164751503574069,
+            0.01012680833328277
+          ],
+          "rate_centered_kernel": [
+            0.2495909210876439,
+            0.24754034852783927,
+            0.24161209495581662,
+            0.22069286058098517,
+            0.16376908130568563,
+            0.07287447843410921,
+            0.011770402844086559,
+            0.0009608830023955469,
+            0.0008195168323221246,
+            0.000694209593575603
+          ],
+          "scope": "Fixed-index neuron subsample, whole-record centering, diagnostic not exact unbiased finite-window estimate."
+        },
+        {
+          "population": 1,
+          "sampled_neurons": [
+            1600,
+            1604,
+            1608,
+            1612,
+            1616,
+            1621,
+            1625,
+            1629,
+            1633,
+            1637,
+            1642,
+            1646,
+            1650,
+            1654,
+            1658,
+            1663,
+            1667,
+            1671,
+            1675,
+            1679,
+            1684,
+            1688,
+            1692,
+            1696,
+            1700,
+            1705,
+            1709,
+            1713,
+            1717,
+            1721,
+            1726,
+            1730,
+            1734,
+            1738,
+            1742,
+            1747,
+            1751,
+            1755,
+            1759,
+            1763,
+            1768,
+            1772,
+            1776,
+            1780,
+            1784,
+            1789,
+            1793,
+            1797,
+            1801,
+            1805,
+            1810,
+            1814,
+            1818,
+            1822,
+            1826,
+            1831,
+            1835,
+            1839,
+            1843,
+            1847,
+            1852,
+            1856,
+            1860,
+            1864,
+            1868,
+            1873,
+            1877,
+            1881,
+            1885,
+            1889,
+            1894,
+            1898,
+            1902,
+            1906,
+            1910,
+            1915,
+            1919,
+            1923,
+            1927,
+            1931,
+            1936,
+            1940,
+            1944,
+            1948,
+            1952,
+            1957,
+            1961,
+            1965,
+            1969,
+            1973,
+            1978,
+            1982,
+            1986,
+            1990,
+            1994,
+            1999
+          ],
+          "lags": [
+            0.0,
+            0.25,
+            0.5,
+            1.0,
+            2.0,
+            4.0,
+            8.0,
+            16.0,
+            32.0,
+            64.0
+          ],
+          "input_centered_kernel": [
+            5.134080760823536,
+            5.108092675916787,
+            5.031676480359428,
+            4.746136125880314,
+            3.8411563208965744,
+            1.9769348637417383,
+            0.34887265673836126,
+            -0.004771703356668505,
+            0.029370330216837437,
+            -0.017016147539131388
+          ],
+          "rate_centered_kernel": [
+            0.2941198174299433,
+            0.29142856539513023,
+            0.2837128867352661,
+            0.25713630466977355,
+            0.18807927451324766,
+            0.08247501206500733,
+            0.012256649063722298,
+            0.00014675579098604352,
+            0.0004033149006640009,
+            -0.00017363839005835502
+          ],
+          "scope": "Fixed-index neuron subsample, whole-record centering, diagnostic not exact unbiased finite-window estimate."
+        }
+      ],
+      "dense_formula_error": 0.0,
+      "dense_formula_check_scope": "Fixed32neuronperpopulationtile; fullidentity validatedv1 N<=2000",
+      "neuron_statistics_file": "next_round/dense_sweeps/runs/dense_degree_0.05_N2000_seed5103_B500_neuron_statistics.npz",
+      "prefixes": [
+        {
+          "duration": 4000.0,
+          "gaps": [
+            {
+              "empty_blocks": 0,
+              "quadruples": 70,
+              "population_energy": [
+                [
+                  0.36548757905154095,
+                  0.0763430574643171
+                ],
+                [
+                  0.07634305746431712,
+                  0.038681446249943234
+                ]
+              ],
+              "energy": 0.5568551402301184,
+              "diagonal_population_energy": [
+                0.06142264913091869,
+                0.01990115638509313
+              ],
+              "ingredient_cross_block": [
+                {
+                  "population": 0,
+                  "Delta_cross_block_inputmeans": 0.3041555437613085,
+                  "A_cross_block_timeaveraged_gain": 0.04738093226276997,
+                  "q_mean_free_input": 3.308535425451905,
+                  "scope": "Unbiased only for independent stationary windows conditional on fixed connectivity; ensemble label variation remains."
+                },
+                {
+                  "population": 1,
+                  "Delta_cross_block_inputmeans": 0.45703554350790077,
+                  "A_cross_block_timeaveraged_gain": 0.03416425202560337,
+                  "q_mean_free_input": 5.104681533744922,
+                  "scope": "Unbiased only for independent stationary windows conditional on fixed connectivity; ensemble label variation remains."
+                }
+              ],
+              "nu_by_population": [
+                0.25813394563840486,
+                0.29405681497810743
+              ],
+              "nu": 0.26531851950634533,
+              "d": 0.12641333752248188,
+              "classic_energy": 0.5369669581844568,
+              "classic_population_energy": [
+                [
+                  0.35250210978752344,
+                  0.07350101953567346
+                ],
+                [
+                  0.07350101953567346,
+                  0.03746280932558649
+                ]
+              ],
+              "coherent_projection_energy": 0.0005162928465270129,
+              "coherent_projection_fraction": 0.0009271582665352729
+            },
+            {
+              "empty_blocks": 1,
+              "quadruples": 5,
+              "population_energy": [
+                [
+                  0.36533555607763923,
+                  0.0766636753652251
+                ],
+                [
+                  0.07666367536522513,
+                  0.039011627249783354
+                ]
+              ],
+              "energy": 0.5576745340578728,
+              "diagonal_population_energy": [
+                0.06150429168597662,
+                0.019921399286916
+              ],
+              "ingredient_cross_block": [
+                {
+                  "population": 0,
+                  "Delta_cross_block_inputmeans": 0.30359598377514563,
+                  "A_cross_block_timeaveraged_gain": 0.04736650896536995,
+                  "q_mean_free_input": 3.3090085135280765,
+                  "scope": "Unbiased only for independent stationary windows conditional on fixed connectivity; ensemble label variation remains."
+                },
+                {
+                  "population": 1,
+                  "Delta_cross_block_inputmeans": 0.456117797968949,
+                  "A_cross_block_timeaveraged_gain": 0.03414496947222843,
+                  "q_mean_free_input": 5.10730496461103,
+                  "scope": "Unbiased only for independent stationary windows conditional on fixed connectivity; ensemble label variation remains."
+                }
+              ],
+              "nu_by_population": [
+                0.2581904316440023,
+                0.29413593040199604
+              ],
+              "nu": 0.26537953139560105,
+              "d": 0.1262856583593618,
+              "classic_energy": 0.5344667599669577,
+              "classic_population_energy": [
+                [
+                  0.3509073176587299,
+                  0.07308224729831894
+                ],
+                [
+                  0.07308224729831894,
+                  0.03739494771158992
+                ]
+              ],
+              "coherent_projection_energy": 0.0005387538089636977,
+              "coherent_projection_fraction": 0.0009660721013088046
+            }
+          ]
+        },
+        {
+          "duration": 8000.0,
+          "gaps": [
+            {
+              "empty_blocks": 0,
+              "quadruples": 1820,
+              "population_energy": [
+                [
+                  0.37037365319226856,
+                  0.07740409085024129
+                ],
+                [
+                  0.07740409085024129,
+                  0.038841560698632406
+                ]
+              ],
+              "energy": 0.5640233955913836,
+              "diagonal_population_energy": [
+                0.0615532301838437,
+                0.019834990192646333
+              ],
+              "ingredient_cross_block": [
+                {
+                  "population": 0,
+                  "Delta_cross_block_inputmeans": 0.3099193873068362,
+                  "A_cross_block_timeaveraged_gain": 0.04725850533111653,
+                  "q_mean_free_input": 3.3108755866449884,
+                  "scope": "Unbiased only for independent stationary windows conditional on fixed connectivity; ensemble label variation remains."
+                },
+                {
+                  "population": 1,
+                  "Delta_cross_block_inputmeans": 0.4634662784294129,
+                  "A_cross_block_timeaveraged_gain": 0.03427952479616752,
+                  "q_mean_free_input": 5.099799583375693,
+                  "scope": "Unbiased only for independent stationary windows conditional on fixed connectivity; ensemble label variation remains."
+                }
+              ],
+              "nu_by_population": [
+                0.25793644764869567,
+                0.29335957443064015
+              ],
+              "nu": 0.26502107300508454,
+              "d": 0.12452704920710442,
+              "classic_energy": 0.5424475065847637,
+              "classic_population_energy": [
+                [
+                  0.35646209304466586,
+                  0.07424134968026147
+                ],
+                [
+                  0.07424134968026147,
+                  0.037502714179574896
+                ]
+              ],
+              "coherent_projection_energy": 0.0005067137613723173,
+              "coherent_projection_fraction": 0.0008983913882526511
+            },
+            {
+              "empty_blocks": 1,
+              "quadruples": 715,
+              "population_energy": [
+                [
+                  0.36962299054587855,
+                  0.07720835965911467
+                ],
+                [
+                  0.07720835965911467,
+                  0.03879040364860913
+                ]
+              ],
+              "energy": 0.562830113512717,
+              "diagonal_population_energy": [
+                0.061546371597581626,
+                0.01983090457359655
+              ],
+              "ingredient_cross_block": [
+                {
+                  "population": 0,
+                  "Delta_cross_block_inputmeans": 0.30975579936911257,
+                  "A_cross_block_timeaveraged_gain": 0.04725600700133073,
+                  "q_mean_free_input": 3.310899834136057,
+                  "scope": "Unbiased only for independent stationary windows conditional on fixed connectivity; ensemble label variation remains."
+                },
+                {
+                  "population": 1,
+                  "Delta_cross_block_inputmeans": 0.46313323440833803,
+                  "A_cross_block_timeaveraged_gain": 0.034278265277131056,
+                  "q_mean_free_input": 5.099935570284398,
+                  "scope": "Unbiased only for independent stationary windows conditional on fixed connectivity; ensemble label variation remains."
+                }
+              ],
+              "nu_by_population": [
+                0.25794041512361116,
+                0.29337260726851727
+              ],
+              "nu": 0.2650268535525924,
+              "d": 0.12479650860472348,
+              "classic_energy": 0.5419356011897967,
+              "classic_population_energy": [
+                [
+                  0.3561687819707806,
+                  0.07414361671169115
+                ],
+                [
+                  0.07414361671169115,
+                  0.037479585795633825
+                ]
+              ],
+              "coherent_projection_energy": 0.0005019654913614903,
+              "coherent_projection_fraction": 0.0008918596914238288
+            }
+          ]
+        }
+      ],
+      "elapsed_seconds": 6.95741482777521
+    }
+  ],
+  "finished_unix": 1795114763.1594985,
+  "max_rss_bytes": 448487424
+}

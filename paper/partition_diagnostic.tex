@@ -1,0 +1,29 @@
+\subsection{Static and temporal variance must be tested separately}
+
+A finite network can place more input variance in fixed differences between
+neurons and less in temporal fluctuations. Testing only the total input
+variance $V_a=\Delta_a+q_a$ would miss this change. Let
+$\mathcal M_2(h,V,k)=\E[\phi(X_1)\phi(X_2)]$ for two Gaussian variables
+with common mean $h$, marginal variance $V$, and covariance $k$. The
+conditional Gaussian construction gives
+\begin{equation}
+ \bar v_a=\mathcal M_2(h_a,V_a,V_a)
+          -\mathcal M_2(h_a,V_a,\Delta_a),\qquad
+ \left.\frac{\partial\bar v_a}{\partial\Delta_a}\right|_{V_a,h_a}
+ =-A_a.
+ \label{eq:partitionderivative}
+\end{equation}
+The second identity follows from Gaussian integration by parts: differentiating
+the shared covariance gives $\E[\phi'(X_1)\phi'(X_2)]$, which equals
+$\E_z\alpha_a(z)^2=A_a$ at shared covariance $\Delta_a$.
+Thus reallocating input variance toward static disorder lowers the temporal
+rate variance along this specified diagnostic direction.
+
+At fixed $V,h$, linearizing the static self-consistency functional gives the
+susceptibility $(I-W\diag(A))^{-1}$. Its Perron-mode amplification is about
+$6.94$ for the reference law. This sensitivity explains why modest changes
+in local operating points can matter appreciably for activity fluctuations.
+Actual networks also change $V$ and $h$, and the covariance energy changes
+through both its source and its response. These derivative identities
+therefore diagnose a possible finite-network mechanism; they do not supply
+a complete correction to PR.

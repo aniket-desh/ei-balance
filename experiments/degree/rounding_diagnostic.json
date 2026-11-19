@@ -1,0 +1,173 @@
+{
+  "scope": "Diagnostic conditional theory using exact expected degree dispersion but reimposing target populationmeans. This changes h slightly and is not the parameter-only prediction for the already specified finite-N drives. The O(1/M) Var(m) factor is not included.",
+  "rows": [
+    {
+      "n": 1000,
+      "chi": 0.0,
+      "effective": [
+        [
+          0.001249999999999925,
+          0.0
+        ],
+        [
+          0.002374999999999978,
+          0.012799999999999916
+        ]
+      ],
+      "h_retargeted_mean": [
+        -2.1365870960108695,
+        -2.5343245295001373
+      ],
+      "h_difference": [
+        -0.0012260411098488078,
+        -0.002602094762488072
+      ],
+      "static_variances": [
+        0.007183292791347557,
+        0.0157766796420202
+      ],
+      "dimension_retargeted_mean": 0.17261320843221495,
+      "dimension_relative_difference": -0.007347027116834326
+    },
+    {
+      "n": 2000,
+      "chi": 0.0,
+      "effective": [
+        [
+          0.0011718749999999351,
+          0.0
+        ],
+        [
+          0.0011250000000000277,
+          0.0032000000000004564
+        ]
+      ],
+      "h_retargeted_mean": [
+        -2.1363592691088407,
+        -2.5331495046141406
+      ],
+      "h_difference": [
+        -0.0009982142078199807,
+        -0.001427069876491327
+      ],
+      "static_variances": [
+        0.005705681116872662,
+        0.009380970114727888
+      ],
+      "dimension_retargeted_mean": 0.1729296216125322,
+      "dimension_relative_difference": -0.0055274184845975904
+    },
+    {
+      "n": 4000,
+      "chi": 0.0,
+      "effective": [
+        [
+          0.0010156249999999551,
+          0.0
+        ],
+        [
+          0.0006187499999999827,
+          0.0026666666666669407
+        ]
+      ],
+      "h_retargeted_mean": [
+        -2.136200416282194,
+        -2.532786148756476
+      ],
+      "h_difference": [
+        -0.0008393613811734646,
+        -0.0010637140188265448
+      ],
+      "static_variances": [
+        0.004769218362666933,
+        0.007205235109935618
+      ],
+      "dimension_retargeted_mean": 0.17309782230790896,
+      "dimension_relative_difference": -0.004560140708909088
+    },
+    {
+      "n": 1000,
+      "chi": 0.5,
+      "effective": [
+        [
+          0.505625,
+          0.5
+        ],
+        [
+          0.5015,
+          0.5106666666666668
+        ]
+      ],
+      "h_retargeted_mean": [
+        -2.459784735335115,
+        -2.948116233340272
+      ],
+      "h_difference": [
+        -0.0023535999619226367,
+        -0.0021169789518826754
+      ],
+      "static_variances": [
+        2.158013965159423,
+        3.3030719846046295
+      ],
+      "dimension_retargeted_mean": 0.05562998138068765,
+      "dimension_relative_difference": -0.005570247550607754
+    },
+    {
+      "n": 2000,
+      "chi": 0.5,
+      "effective": [
+        [
+          0.500625,
+          0.5
+        ],
+        [
+          0.5011875,
+          0.5064
+        ]
+      ],
+      "h_retargeted_mean": [
+        -2.4577297829789635,
+        -2.9468196618019427
+      ],
+      "h_difference": [
+        -0.0002986476057711407,
+        -0.0008204074135531592
+      ],
+      "static_variances": [
+        2.1436001952269264,
+        3.2882637638509804
+      ],
+      "dimension_retargeted_mean": 0.05589246678448261,
+      "dimension_relative_difference": -0.0008781141247278246
+    },
+    {
+      "n": 4000,
+      "chi": 0.5,
+      "effective": [
+        [
+          0.5005859375,
+          0.5
+        ],
+        [
+          0.5005625,
+          0.5016000000000002
+        ]
+      ],
+      "h_retargeted_mean": [
+        -2.457687035394803,
+        -2.94638528498632
+      ],
+      "h_difference": [
+        -0.0002559000216106888,
+        -0.0003860305979306311
+      ],
+      "static_variances": [
+        2.1431784643145573,
+        3.2855423593614828
+      ],
+      "dimension_retargeted_mean": 0.05590491685124827,
+      "dimension_relative_difference": -0.0006555593708976737
+    }
+  ]
+}

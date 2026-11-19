@@ -1,0 +1,36 @@
+# Local environments and build products
+.DS_Store
+.env
+.env.*
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+*.dylib
+*.so
+tmp/
+
+# Large simulation outputs. Keep the run JSONs, compact theory arrays and plots.
+*_trajectory.npy
+*_neuron_statistics.npz
+/experiments/readout_pilot/measurements/*_blocks.npz
+/experiments/analytics/local_block_capsules/*.npz
+
+# Local links left at the paths used by the original handoff
+/final/
+
+# TeX intermediates. Experimental logs are provenance.
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+*.out
+*.toc
+/paper/main.log
+/paper/bibtex.log
+/paper/build_*.log

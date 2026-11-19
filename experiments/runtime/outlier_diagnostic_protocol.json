@@ -1,0 +1,13 @@
+{
+  "created_unix": 1794406809.3581371,
+  "trigger": "N1000fe80seed3001has24.3%PRshiftbetweenbaselineSciPy.05andnative.025T8000;other3N1000controlsandlargestNcontrolhave~1%orlessPRshifts.",
+  "selection": "Oneatypicalfixednetwork,identifiedafterauxiliarytest; notadditionalindependentcohortreplicates. Allthreefollowupsretained.",
+  "design": "SamenetworkandoriginalIC/seed/h; nativebackenddt.05/.025/.0125,T16000,prefixes4k/8k/16k. Distinguishbackend/phase,recorddurationandtimestepdependence.",
+  "no_four_restart_design": "Parentreplacedearlierfour-restartproposalwiththese3originalICcases; fourrestartcasesarenotrun.",
+  "no_further_campaign_expansion": true,
+  "engine": "engine_v4.py",
+  "engine_sha256": "b21a8687effa2fcedc592f6bc5af3811b65ba7b260f266bb1871a47d13278ba3",
+  "workers": 3,
+  "limits": "4GBaggregateor40%available,BLAS1,3networkworkers",
+  "interpretation": "Ifnotresolved,retainambiguityaslimitationratherthanlaunchabasinmap."
+}

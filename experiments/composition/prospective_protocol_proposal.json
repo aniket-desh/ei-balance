@@ -1,0 +1,77 @@
+{
+  "scope": "Prospective focused fixed-aggregate composition validation. Recommendations sent before examining new outcomes; final accepted runner allocation saved separately.",
+  "fractions_e": [
+    0.6,
+    0.8
+  ],
+  "candidate_sizes": [
+    1000,
+    2000,
+    4000
+  ],
+  "fresh_seed_pool": [
+    3001,
+    3002,
+    3003,
+    3004,
+    3005,
+    3006
+  ],
+  "allocation_rule": "Start4to6freshseedsperfraction atN1000and2000, largestsize3to4if runtimepermits; runner records exact allocation before outcomes. No exclusions by agreement.",
+  "W": [
+    [
+      12.8,
+      1.8
+    ],
+    [
+      20.0,
+      2.4
+    ]
+  ],
+  "J0F": [
+    [
+      0.8,
+      -1.2
+    ],
+    [
+      1.6,
+      -2.0
+    ]
+  ],
+  "target_mean_rates": [
+    0.3,
+    0.3
+  ],
+  "H_external_residual": [
+    -2.6712782365825896,
+    -3.2189749212858354
+  ],
+  "dt": 0.05,
+  "sample_dt": 0.25,
+  "candidate_record_duration": [
+    8000,
+    16000
+  ],
+  "candidate_block_duration": [
+    500,
+    1000
+  ],
+  "mean_free_estimator": "C_AB=.5(C_A+C_B)+.5(m_A-m_B)(m_A-m_B)^T, cross two disjoint pairs and average valid quadruple pairings. Exact unbiased energy only under independent stationarywindows; PRratio not exactlyunbiased.",
+  "primary_outcomes": [
+    "nu",
+    "energy",
+    "d",
+    "pop_block_energies",
+    "mu_mean",
+    "mu_variance",
+    "input_dynamic_variance",
+    "alpha_squared_crossblocks",
+    "mean_rate_by_pop"
+  ],
+  "secondary_outcomes": [
+    "duration_block_gap_sensitivity",
+    "positive_tangent_growth_or_state_classification",
+    "population_uniform_projection_energy"
+  ],
+  "inference": "Independent networks are statistical units; pairedseedcomparisons accountforpairing; samplemeans and ratioofmeans bothreported. Small pilots maynotresolvedeterministicbias."
+}

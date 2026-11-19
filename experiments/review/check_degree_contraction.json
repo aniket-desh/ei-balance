@@ -1,0 +1,141 @@
+{
+  "scope": "Probe rows independent of specified C; exact finite row-covariance identity, not recurrent closure theorem.",
+  "monte_carlo_checks": [
+    {
+      "chi_requested": 0.0,
+      "chi_effective": [
+        0.0,
+        0.0
+      ],
+      "exact_source": 0.8937441247314429,
+      "expanded_source": 0.8937441247314429,
+      "source_pieces": [
+        0.9447967453466439,
+        -0.04065201544189678,
+        -0.03903511183160741,
+        0.028634506658303208
+      ],
+      "monte_carlo_source": 0.9009267821948151,
+      "MC_SE": 0.005829078416951484,
+      "z_error": 1.2322115006180732
+    },
+    {
+      "chi_requested": 0.5,
+      "chi_effective": [
+        0.5666666666666667,
+        0.5
+      ],
+      "exact_source": 0.8647930241561606,
+      "expanded_source": 0.8647930241561606,
+      "source_pieces": [
+        0.894822502902516,
+        -0.018663774516334553,
+        -0.017692944758702346,
+        0.006327240528681553
+      ],
+      "monte_carlo_source": 0.8769996066202401,
+      "MC_SE": 0.005769142914659862,
+      "z_error": 2.115839847382122
+    },
+    {
+      "chi_requested": 1.0,
+      "chi_effective": [
+        1.0,
+        1.0
+      ],
+      "exact_source": 0.8526790626753464,
+      "expanded_source": 0.8526790626753463,
+      "source_pieces": [
+        0.8526790626753463,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "monte_carlo_source": 0.8503481464495649,
+      "MC_SE": 0.005676213336701532,
+      "z_error": -0.41064633894398767
+    },
+    {
+      "chi_requested": 2.0,
+      "chi_effective": [
+        2.0,
+        2.0
+      ],
+      "exact_source": 0.8656382849352386,
+      "expanded_source": 0.8656382849352389,
+      "source_pieces": [
+        0.7652853637307818,
+        0.03658681389770711,
+        0.03513160064844667,
+        0.028634506658303208
+      ],
+      "monte_carlo_source": 0.8787814548392167,
+      "MC_SE": 0.006042864607522119,
+      "z_error": 2.174989968767045
+    }
+  ],
+  "coherent_scaling_counterexample": [
+    {
+      "N": 40,
+      "case": "bounded_coherent",
+      "source_ratio_fixed_to_iid": 0.9540846750149072,
+      "coherent_projection_energy_fraction": 0.0930232558139535
+    },
+    {
+      "N": 40,
+      "case": "sqrtN_coherent",
+      "source_ratio_fixed_to_iid": 0.44280663615599264,
+      "coherent_projection_energy_fraction": 0.5790569415042095
+    },
+    {
+      "N": 80,
+      "case": "bounded_coherent",
+      "source_ratio_fixed_to_iid": 0.9760561232270856,
+      "coherent_projection_energy_fraction": 0.04819277108433735
+    },
+    {
+      "N": 80,
+      "case": "sqrtN_coherent",
+      "source_ratio_fixed_to_iid": 0.4554124537093468,
+      "coherent_projection_energy_fraction": 0.555901699437495
+    },
+    {
+      "N": 160,
+      "case": "bounded_coherent",
+      "source_ratio_fixed_to_iid": 0.9877686460624302,
+      "coherent_projection_energy_fraction": 0.02453987730061352
+    },
+    {
+      "N": 160,
+      "case": "sqrtN_coherent",
+      "source_ratio_fixed_to_iid": 0.4662818380897159,
+      "coherent_projection_energy_fraction": 0.5395284707521049
+    },
+    {
+      "N": 320,
+      "case": "bounded_coherent",
+      "source_ratio_fixed_to_iid": 0.9938177547871151,
+      "coherent_projection_energy_fraction": 0.012383900928792596
+    },
+    {
+      "N": 320,
+      "case": "sqrtN_coherent",
+      "source_ratio_fixed_to_iid": 0.47501334488458663,
+      "coherent_projection_energy_fraction": 0.5279508497187456
+    },
+    {
+      "N": 640,
+      "case": "bounded_coherent",
+      "source_ratio_fixed_to_iid": 0.996892013911706,
+      "coherent_projection_energy_fraction": 0.006220839813374795
+    },
+    {
+      "N": 640,
+      "case": "sqrtN_coherent",
+      "source_ratio_fixed_to_iid": 0.4817400260823462,
+      "coherent_projection_energy_fraction": 0.5197642353760507
+    }
+  ],
+  "all_algebra_checks_passed": true,
+  "seconds": 0.8945447030000651
+}

@@ -1,0 +1,50 @@
+{
+  "scope": "Exact exhaustive finite-subset identities with fixed S, independent pools; no stationary recurrent expansion asserted.",
+  "single_pool": [
+    {
+      "M": 5,
+      "K": 2,
+      "subsets": 10,
+      "variance_error": 2.7755575615628914e-17,
+      "linear_quadratic_covariance_error": 6.938893903907228e-18,
+      "constant_diagonal_variance": -2.7755575615628914e-16
+    },
+    {
+      "M": 7,
+      "K": 3,
+      "subsets": 35,
+      "variance_error": 3.885780586188048e-16,
+      "linear_quadratic_covariance_error": 1.3183898417423734e-16,
+      "constant_diagonal_variance": 5.828670879282072e-16
+    },
+    {
+      "M": 8,
+      "K": 2,
+      "subsets": 28,
+      "variance_error": 8.881784197001252e-16,
+      "linear_quadratic_covariance_error": 5.551115123125783e-17,
+      "constant_diagonal_variance": -5.551115123125783e-16
+    },
+    {
+      "M": 8,
+      "K": 5,
+      "subsets": 56,
+      "variance_error": 2.7755575615628914e-16,
+      "linear_quadratic_covariance_error": 8.673617379884035e-19,
+      "constant_diagonal_variance": -6.938893903907228e-17
+    }
+  ],
+  "two_pool": {
+    "networks_enumerated": 60,
+    "mean_error": 2.220446049250313e-16,
+    "variance_error": 5.551115123125783e-17,
+    "variance": 0.2758490584174426,
+    "sectors": {
+      "centered_quadratic_diag": 0.01874499393657354,
+      "centered_quadratic_cross": 0.03133091075008653,
+      "coherent_linear": 0.23792162235855185,
+      "linear_quadratic_cubic_covariance": -0.012148468627769284
+    }
+  },
+  "all_checks_passed": true
+}

@@ -1,0 +1,45 @@
+{
+  "created_unix": 1794402694.2093227,
+  "selection": "Additionalsize/precisioncampaignauthorizedbeforeextensionoutputs; notselectedonfit.",
+  "n2000_additional_seeds": [
+    3005,
+    3006,
+    3007,
+    3008,
+    3009,
+    3010,
+    3011,
+    3012
+  ],
+  "n4000_seeds": [
+    3001,
+    3002,
+    3003,
+    3004
+  ],
+  "primary": "B500,gap0,T8000; gap1 andT4000 sensitivities. SelectedB1000beforeoutcomes.",
+  "engine_version": "engine_v2.py",
+  "engine_sha256": "886c3a9ae5b21a9fb746533ac5b03aa11ac9da1a5ffeca0c25edfa8d0c7ad811",
+  "native_cpp_sha256": "0676acffdbbbfb34816f093d8980a08a343fc70470e8b7c04a46910951dd1216",
+  "native_python_sha256": "a8fe7cfd238c11c23f2eee94ef7946628ef72a0c6854f6901e006ed65c9e2ab0",
+  "native_build_command": [
+    "/usr/bin/c++",
+    "-O3",
+    "-std=c++11",
+    "-fPIC",
+    "-shared",
+    "-ffast-math",
+    "-march=native",
+    "/workspace/scratch/f157098d3e38/next_round/runtime/constant_csr.cpp",
+    "-o",
+    "/workspace/scratch/f157098d3e38/next_round/runtime/tmp/constant_csr.so"
+  ],
+  "native_library_sha256": "cc9f67ca45dfecdc3063d9eac3426a173bfd6f4f744934836f444a7d080defec",
+  "precision": "Same float64 midpoint scheme and exact same matrices; sparse sums reordered by SIMD, so long chaotic trajectories are not expected to be bitwise identical.",
+  "resource_gate": "First wave has2N4000jobsand16N2000jobs under4workerlimit; remaining6N4000 releasedonlyaftermeasuredmemoryfits. No gateonagreement.",
+  "order_changed_before_outputs_for_compute_utilization": true,
+  "remaining_large_engine": "engine_v2.py",
+  "remaining_large_engine_sha256": "886c3a9ae5b21a9fb746533ac5b03aa11ac9da1a5ffeca0c25edfa8d0c7ad811",
+  "memory_only_change_verified": "memory_v3_validation.json:612numericfieldsexactlyequal",
+  "v3_memory_upgrade_status": "Validatedalternative,notactivatedinrunningcampaign. Originalcontrolleradvancedto2workerv2poolbeforehandoff; noactivenetworkinterrupted."
+}

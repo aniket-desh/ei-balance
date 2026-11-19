@@ -1,0 +1,63 @@
+{
+  "rate_variance_by_population": [
+    0.12112349397828381,
+    0.1349161360704455
+  ],
+  "rate_mean_by_population": [
+    0.29909729823401926,
+    0.29958679008199135
+  ],
+  "case_name": "composition_f80_N2000_seed3001",
+  "config": {
+    "n": 2000,
+    "g": 4.0,
+    "mean_rate": 0.3,
+    "seed": 3001,
+    "ensemble": "bernoulli",
+    "dt": 0.05,
+    "burn": 500.0,
+    "duration": 2000.0,
+    "sample_dt": 0.25,
+    "mean_scale": 1.0,
+    "fraction_e": 0.8,
+    "variance_profile": [
+      [
+        16.0,
+        9.000000000000002
+      ],
+      [
+        25.0,
+        12.000000000000004
+      ]
+    ],
+    "mean_connectivity": [
+      [
+        1.0,
+        -6.000000000000002
+      ],
+      [
+        2.0,
+        -10.000000000000002
+      ]
+    ],
+    "degree_dispersion": null
+  },
+  "connectivity_sha256": "6dcefe8fe26f4f4c2f899b137d0c8083394f3cc4be615463a89c351512b1a39c",
+  "tangent_initial_seed": 2003004,
+  "largest_finite_time_exponent": 0.1257441981110483,
+  "eight_duration_blocks": [
+    0.13059897324699513,
+    0.12510606140997257,
+    0.12870452021899367,
+    0.12804739932258624,
+    0.13129010861083584,
+    0.11996548933795038,
+    0.11414428039065846,
+    0.1280967523503943
+  ],
+  "duration": 2000.0,
+  "burn": 500.0,
+  "elapsed_seconds": 61.17305816299995,
+  "max_rss_bytes": 140845056,
+  "scope": "One tangent and one initial condition. A positive finite-time exponent supports the fluctuating chaotic branch; no attractor-exhaustiveness or basin-probability claim."
+}

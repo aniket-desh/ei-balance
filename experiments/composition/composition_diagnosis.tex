@@ -1,0 +1,312 @@
+\section{Composition controls and a diagnosis of the 60:40 comparison}
+\label{sec:composition-diagnosis-next}
+The composition experiment changes the fractions while retaining the
+aggregate input matrices. Write $F=\operatorname{diag}(f_E,f_I)$,
+$W=GF$, and $B=J^0F$. The specified path is
+\begin{equation}
+ G(f)=G_{80}\operatorname{diag}(.8/f_E,.2/f_I),\qquad
+ J^0(f)=J^0_{80}\operatorname{diag}(.8/f_E,.2/f_I).
+\end{equation}
+Consequently $W$ and $B$ are constant. The leading conditional one-site law
+is unchanged on this path. The Bernoulli probabilities
+$p_{ab}=(J^0_{ab})^2/[(J^0_{ab})^2+G_{ab}]$ change with composition,
+so higher connectivity cumulants and finite-network fluctuations need not
+be unchanged. This distinction prevents an inference that finite networks
+must share identical local statistics.
+
+\subsection{Population geometry with an unambiguous normalization}
+For the stationary temporally centered rate covariance $C$, define
+\begin{align}
+ \nu_a&=\frac1{N_a}\sum_{i\in a}C_{ii},\\
+ \mathcal E_{ab}&=\frac1N\sum_{i\in a,j\in b}C_{ij}^2,\\
+ \Xi_{ab}&=\frac{N}{N_aN_b}\sum_{i\in a,j\in b,
+                    (a,i)\ne(b,j)}C_{ij}^2.
+\end{align}
+The unequal-population exclusion is vacuous. The two ordered cross blocks
+are both included: $\mathcal E_{EI}=\mathcal E_{IE}$ at zero lag and their
+sum is twice the rectangular contribution. With
+$V_{2,a}=N_a^{-1}\sum_{i\in a}C_{ii}^2$,
+\begin{equation}
+ \nu=\sum_af_a\nu_a,\qquad
+ \mathcal E=\sum_{ab}\mathcal E_{ab}
+ =\sum_af_a V_{2,a}+\sum_{ab}f_af_b\Xi_{ab},\qquad
+ \frac DN=\frac{\nu^2}{\mathcal E}.
+\end{equation}
+The within-population quantity is instead
+$D_a/N_a=\nu_a^2/(V_{2,a}+f_a\Xi_{aa})$.
+An E--I rectangular cross-covariance block does not have this PR definition.
+The conditional leading theory predicts these population energies, not only
+their contraction into a single dimension.
+
+\subsection{An exact accounting of ingredient errors}
+For any positive measured $\nu_N,\mathcal E_N$ and theoretical
+$\nu_0,\mathcal E_0$, no small-error expansion is needed for
+\begin{equation}
+ \log\frac{d_N}{d_0}
+ =2\log\frac{\nu_N}{\nu_0}
+  -\log\frac{\mathcal E_N}{\mathcal E_0}.
+ \label{eq:exact-log-error-next}
+\end{equation}
+For ensemble means the same equation applies to
+$d_{\rm plug}=(\mathbb E\nu_N)^2/\mathbb E\mathcal E_N$.
+It does not apply to the mean network ratio without an additional term.
+Putting $a=(\mathbb E\nu_N)/(\mathbb E\mathcal E_N)$ and expanding a
+nonnegative square gives
+\begin{align}
+ \mathbb E\frac{(\nu_N-a\mathcal E_N)^2}{\mathcal E_N}
+ &=\mathbb E\frac{\nu_N^2}{\mathcal E_N}
+       -2a\mathbb E\nu_N+a^2\mathbb E\mathcal E_N\\
+ &=\mathbb E d_N-\frac{(\mathbb E\nu_N)^2}
+                            {\mathbb E\mathcal E_N}\ge0.
+\end{align}
+Thus the mean ratio and the ratio of ensemble moments are distinct observables.
+They must both be retained rather than selecting whichever agrees better.
+
+In the historical sixteen-network 60:40 cohort with the four-window estimator
+at $T=16000$ and $B=500$, $\bar\nu/\nu_0=0.94218$ and
+$\bar{\mathcal E}/\mathcal E_0=1.09318$. Equation~\eqref{eq:exact-log-error-next}
+then has contributions $-0.11912$ and $-0.08909$ respectively.
+The ratio of mean moments is $0.0242746$, whereas the mean network ratio is
+$0.0256785$. These are finite-record observations in a historically assembled
+cohort, not an infinite-time ensemble theorem. They establish that the
+remaining difference cannot be assigned solely to the old own-block
+centering artifact or solely to the two original unusually low-PR networks.
+
+\subsection{What the formal first correction can and cannot explain}
+Write $\epsilon=N^{-1/2}$ and
+\begin{equation}
+ \nu=\nu_0+\epsilon\nu_1+O(\epsilon^2),\quad
+ \mathcal E=\mathcal E_0+\epsilon\mathcal E_1+O(\epsilon^2).
+\end{equation}
+Expanding the ratio explicitly,
+\begin{align}
+ \frac{\nu^2}{\mathcal E}
+ &=\frac{\nu_0^2+2\epsilon\nu_0\nu_1+O(\epsilon^2)}
+         {\mathcal E_0}
+       \left(1-\epsilon\frac{\mathcal E_1}{\mathcal E_0}
+             +O(\epsilon^2)\right)\\
+ &=d_0\left[1+\epsilon\left(
+       \frac{2\nu_1}{\nu_0}-\frac{\mathcal E_1}{\mathcal E_0}
+                               \right)\right]+O(\epsilon^2).
+\end{align}
+For the corrected formal 60:40 coefficients, the $N=1000$ retained shifts
+are $+8.806\%$ in $\nu$, $+14.341\%$ in $\mathcal E$, and $+3.271\%$
+in $d$. The observed historical $\nu$ shift is negative and the observed
+mean ratio shift is negative. The retained correction therefore does not
+repair this comparison. Replacing the strict expansion by a ratio of
+truncated moments silently retains some second-order terms but omits others;
+that change is not evidence of a controlled repair.
+
+\subsection{A diagnostic substitution is not a new prediction}
+On a common frequency grid put
+\begin{equation}
+ T=\operatorname{diag}(A)H(\omega_1)H(\omega_2)W,\quad
+ R=(I-T)^{-1},\quad \Sigma=\operatorname{diag}(Q/f),\quad
+ \mathcal E=\iint f^\top R\Sigma R^\dagger f.
+\end{equation}
+The source $Q_a$ is a same-neuron product of spectra. It is not the product
+of population-averaged spectra. Three substitutions distinguish errors:
+replace only $Q$ and the numerator; replace only $A$; replace both. All use
+measured local statistics and are calibrated diagnostics. A pole after the
+substitution is a failed diagnostic, not an invitation to clip the gains.
+For a small perturbation,
+\begin{align}
+ (I-T-\delta T)(R+\delta R)&=I+O(\delta T^2),\\
+ (I-T)\delta R&=\delta T R+O(\delta T^2),\\
+ \delta R&=R\delta T R+O(\delta T^2),\\
+ \delta\mathcal E
+ &=\iint f^\top R\delta\Sigma R^\dagger f
+  +2\operatorname{Re}\iint f^\top R\delta T R\Sigma R^\dagger f
+  +O(\delta^2).
+\end{align}
+The two changes can oppose one another and their correlation is physical.
+A gain-only improvement at fixed source is insufficient.
+Prior held-out substitutions already show that measured one-site statistics
+are not a universal pair-energy repair: the seed-22 $N=1000$ case is close,
+whereas seed 11 and both tested $N=2000$ cases retain substantial errors.
+Those earlier estimates used a different recording estimator, so they
+motivate the new common-protocol comparison rather than supplying its result.
+
+\subsection{An exact test for a population-coherent energy sector}
+Let $U_{ia}=1_{i\in a}/\sqrt{N_a}$, $P=UU^\top$, and $Q_\perp=I-P$.
+For a covariance matrix $C$ define $A=U^\top CU$ and $Z=CU$.
+Using orthogonal projectors, write
+\begin{equation}
+ C=PCP+PCQ_\perp+Q_\perp CP+Q_\perp CQ_\perp.
+\end{equation}
+The four blocks are Frobenius orthogonal, whence
+\begin{align}
+ \|C\|_F^2
+ &=\|A\|_F^2+2\|PCQ_\perp\|_F^2
+                     +\|Q_\perp CQ_\perp\|_F^2,\\
+ \|Z\|_F^2&=\|A\|_F^2+\|Q_\perp CPU\|_F^2,\\
+ \mathcal E_{\rm touching\ population}
+ &=\frac{2\|Z\|_F^2-\|A\|_F^2}{N},\\
+ \mathcal E_\perp
+ &=\mathcal E-\mathcal E_{\rm touching\ population}.
+\end{align}
+The second identity follows from $CU=PCU+Q_\perp CU$ and $U^\top U=I$.
+The displayed redundant $P U=U$ makes its dimensions explicit.
+For two covariance estimates $C,D$, polarization replaces squared norms by
+inner products. Thus the same decomposition applies to cross-window energy
+and to the mean-difference-corrected covariance matrices, without estimating
+a full eigenspectrum. Finite-record cross sectors may be negative, even
+though every stationary self-energy sector is nonnegative.
+A large population sector identifies coherent geometry but does not prove a
+specific feedback mechanism; a small sector rules out population-uniform
+modes as the whole explanation. Nonuniform collective modes can remain in
+$Q_\perp$.
+
+\subsection{Static--dynamic variance partition and a conditional susceptibility}
+The law of total variance gives, within a population,
+\begin{equation}
+ \operatorname{Var}_{i,t}x_i(t)=\Delta+q,\qquad
+ \operatorname{Var}_{i,t}r_i(t)=\operatorname{Var}_i m_i+\nu.
+\end{equation}
+Consequently a good check of the marginal input variance alone does not
+establish the correct temporal variance. A finite network can put more of
+its activity variation into fixed differences between neurons and less into
+temporal fluctuations.
+There is an exact conditional Gaussian derivative behind this interpretation.
+Temporarily hold $h$ and total input variance $V=\Delta+q$ fixed and put
+\begin{equation}
+ M_2(h,V,\Delta)=\mathbb E[\phi(X_1)\phi(X_2)],\qquad
+ \operatorname{Var}X_j=V,\quad\operatorname{Cov}(X_1,X_2)=\Delta.
+\end{equation}
+Price's theorem and conditional independence given the static label imply
+\begin{align}
+ \partial_\Delta M_2\big|_{h,V}
+ &=\mathbb E[\phi'(X_1)\phi'(X_2)]\\
+ &=\mathbb E_z\left[\mathbb E_u\phi'(h+\sqrt\Delta z+u)\right]^2=A,\\
+ \nu(h,V,\Delta)&=M_2(h,V,V)-M_2(h,V,\Delta),\\
+ \partial_\Delta\nu\big|_{h,V}&=-A<0.
+\end{align}
+For $\phi=2\Phi$, $s=1+V$ gives explicitly
+\begin{equation}
+ A=\frac{2}{\pi\sqrt{s^2-\Delta^2}}
+       \exp\left[-\frac{h^2}{s+\Delta}\right],\qquad
+ \partial_\Delta\log A\big|_{h,V}
+ =\frac{\Delta}{s^2-\Delta^2}+\frac{h^2}{(s+\Delta)^2}\ge0.
+\end{equation}
+Thus a pure repartition at fixed $h,V$ lowers temporal rate variance and
+locally increases this gain moment when $\Delta>0$ or $h\ne0$. If the measured gain moves in the other direction,
+changes in $h,V$, the static label distribution, or conditional temporal
+statistics are also needed. The partition argument alone is not a complete
+finite-network explanation.
+
+For a prescribed small residual $\xi$ in the Gaussian static equation
+$\Delta=W M_2(\Delta)+\xi$, with $h,V$ held fixed, its linear response is
+\begin{equation}
+ \delta\Delta=(I-W\operatorname{diag}A)^{-1}\delta\xi.
+\end{equation}
+At the reference law the largest eigenvalue of
+$W\operatorname{diag}A$ is $0.8558355$, the modal amplification is $6.93652$,
+and the inverse matrix has two-norm $10.17336$. The associated positive
+right eigenvector is $(0.546639,0.837368)^\top$ with unit Euclidean norm.
+These values identify a sensitive partition direction in the conditional
+functional. They are not the full quenched fluctuation law: the actual
+network also changes $V,h$, its temporal kernel and its source residual.
+
+A separate parameter-only check varies the degree dispersion in the full
+population boundary-value problem. At $\chi=1$,
+\begin{equation}
+ \frac{d\Delta}{d\chi}=(2.800885,4.294997)^\top,\qquad
+ \frac{dq}{d\chi}=(-0.907054,-1.388953)^\top.
+\end{equation}
+Central differences with steps $0.01$ and $0.005$ agree to about
+$10^{-5}$ relatively. Total variance also increases on this path;
+$\Delta+q$ is not fixed. This is a controlled test of the disorder mechanism,
+not a fit of an effective degree dispersion to a measured PR.
+
+\subsection{Exact static-source accounting on a fixed network}
+Write $J_{ij}=J^0_{ab}/\sqrt N+\delta J_{ij}$ and let $m_j$ be the
+measured time-averaged firing rate. Define
+$\eta_i=\sum_j\delta J_{ij}m_j$. Within population $a$, the coherent
+mean input is common to every neuron, so the stationary static input
+variance is $\operatorname{Var}_{i\in a}\eta_i$. Direct expansion gives
+\begin{align}
+ \Delta_a
+ &=\frac1{N_a}\sum_{i\in a}\sum_j\delta J_{ij}^2m_j^2
+ +\frac1{N_a}\sum_{i\in a}\sum_{j\ne k}
+           \delta J_{ij}\delta J_{ik}m_jm_k
+ -\left(\frac1{N_a}\sum_{i\in a}\eta_i\right)^2.
+ \label{eq:fixed-static-source-accounting}
+\end{align}
+This is an identity for fixed connectivity and fixed measured $m$; it does
+not use independence of the rates and the connectivity. The leading
+Bernoulli closure replaces the first term by
+$\sum_bW_{ab}\mathbb E_{j\in b}m_j^2$ and discards the other centered
+terms in the appropriate ensemble limit. Comparing these pieces diagnoses
+three different changes: the empirical presynaptic rate distribution,
+the realized squared couplings weighted by those rates, and the remaining
+cross-source/centering contribution. The identity alone predicts none of
+their finite-network distributions.
+A check of the measured mean state against $Jm+\mathrm{drive}$ accompanies
+this calculation, since finite-record endpoint terms and sampling a
+midpoint integrator can leave a small difference.
+
+For Bernoulli nonzero signed weight $t=j/p$, write $j=J^0_{ab}$ and
+$G=G_{ab}$. Elementary substitution gives
+\begin{align}
+ p&=\frac{j^2}{j^2+G},\quad t=j+G/j,\\
+ T_3&=t^3p(1-p)(1-2p)=G(G-j^2)/j,\\
+ T_4&=t^4p(1-p)[1-6p(1-p)]
+        =G\left(j^2-4G+\frac{G^2}{j^2}\right).
+\end{align}
+On the fixed-aggregate path $j=B_{ab}/f_b$, $G=W_{ab}/f_b$,
+\begin{equation}
+ f_bT_{3,ab}=\frac{W_{ab}^2}{B_{ab}}
+                   -\frac{W_{ab}B_{ab}}{f_b},\qquad
+ f_bT_{4,ab}=\frac{W_{ab}B_{ab}^2}{f_b^2}
+             -\frac{4W_{ab}^2}{f_b}+\frac{W_{ab}^3}{B_{ab}^2}.
+\end{equation}
+Thus holding $W,B$ fixed does not hold the higher finite-size source
+cumulants fixed. This states the distinction without asserting a completed
+second-order correction.
+The same decomposition also keeps the finite coherent balance feedback visible.
+For external input $-\sqrt N Bm^*+h^{\rm ext}$, average the stationary
+mean equation first over time and then over a population:
+\begin{equation}
+ \bar\mu=h^{\rm ext}+\sqrt N B(\bar m-m^*)+\bar\eta,
+ \qquad
+ \bar m-m^*=N^{-1/2}B^{-1}(\bar\mu-h^{\rm ext}-\bar\eta).
+\end{equation}
+The centered recurrent input $\bar\eta$ cannot in general be dropped in a
+finite network. In a finite record the equation also has an endpoint
+contribution from the mean derivative. The selected-network source check
+retains this term as a measured residual rather than treating the inferred
+balance identity as a new parameter-only prediction.
+
+\subsection{Population dimensions and a normalized cross-population energy}
+The population PR is a square-block quantity:
+\begin{equation}
+ d_a\equiv\frac{D_a}{N_a}
+   =\frac{f_a\nu_a^2}{\mathcal E_{aa}},\qquad
+ D_a=Nf_a d_a.
+\end{equation}
+Reporting both $d_a$ and $D_a$ distinguishes the fraction of population size
+from the absolute effective number of dimensions. A smaller population can
+have a larger dimension fraction while exploring fewer absolute dimensions.
+The full-network PR need not equal the sum of the population PRs.
+
+A separate normalized observable uses the cross-population covariance energy:
+\begin{equation}
+ \rho_{\rm geom}=
+ \frac{\|C_{EI}\|_F^2}{\|C_{EE}\|_F\|C_{II}\|_F}
+ =\frac{\mathcal E_{EI}}
+        {\sqrt{\mathcal E_{EE}\mathcal E_{II}}}.
+\end{equation}
+To see its meaning, define temporal Gram kernels
+$K_a(t,s)=\sum_{i\in a}\delta r_i(t)\delta r_i(s)$.
+Averages over two independent stationary times give
+\begin{equation}
+ \langle K_aK_b\rangle_{t,s}=\sum_{i\in a,j\in b}C_{ij}^2,
+ \qquad
+ \rho_{\rm geom}=\frac{\langle K_EK_I\rangle}
+                        {\|K_E\|\|K_I\|}\in[0,1],
+\end{equation}
+where the last inequality is Cauchy--Schwarz. The normalization removes a
+common amplitude from each population. It tests their temporal covariance
+geometry, not a PR of a rectangular matrix or a task-based communication
+capacity. Cross-window finite-record estimates need not themselves respect
+all stationary positive-semidefinite inequalities.

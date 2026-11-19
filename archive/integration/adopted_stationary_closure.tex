@@ -1,0 +1,512 @@
+% Independently written integration of the stationary overlap calculation.
+% Compatible with working_derivation.tex: amsmath,amssymb,mathrsfs,booktabs.
+\providecommand{\E}{\mathbb E}
+\providecommand{\dd}{\mathrm d}
+\providecommand{\diag}{\operatorname{diag}}
+
+\section{A stationary replica closure through formal order $N^{-1/2}$}
+\label{sec:adopted-stationary}
+
+The calculation in this section supplies a closed, parameter-computable
+first-order approximation to the covariance energy. It uses a stationary
+replica fluctuation expansion rather than a pathwise tangent expansion about
+a chaotic trajectory. Its status is a formal large-$N$ closure conditional on
+the assumptions stated below. It is not a uniform error theorem for networks
+of size $1000$, and exact inversion of its finite matrices does not complete
+the second-order theory.
+
+The assumptions are a specified stationary mixing state, a single relevant
+mean-field saddle, independent directed edge disorder in the supplied dense
+ensemble, a nonsingular inter-replica fluctuation operator, and sufficient
+delocalization and uniform moment bounds to justify the cavity sums and the
+stationary/frequency limits. Coherent population feedback is retained before
+performing the bulk expansion. Frozen networks and other attractors require
+a separate state-selection rule.
+
+\subsection{Model, normalization and independent stationary replicas}
+For a cell $i$ in population $a\in\{E,I\}$,
+\[
+ \dot x_i=-x_i+\sum_jJ_{ij}\phi(x_j)+\sqrt N I_a+h_a^{\rm ext},
+ \qquad \phi(x)=2\Phi(x),\quad r_i=\phi(x_i).
+\]
+Let $f_a=N_a/N$, $F=\diag(f_E,f_I)$, and write
+\[
+ J_{ij}=J^0_{ab}/\sqrt N+X_{ij},\qquad
+ \E X_{ij}^2=G_{ab}/N,\qquad
+ \E X_{ij}^3=T_{ab}/N^{3/2}.
+\]
+Put $W=GF$, $\Theta=TF$, and $\epsilon=N^{-1/2}$. Removing finitely many
+probe cells does not change the original normalization $N$ in these formulas.
+For temporal means $m_i=\langle r_i\rangle_t$ and centered rates
+$\delta r_i=r_i-m_i$, define
+\[
+ C_{ij}=\langle\delta r_i\delta r_j\rangle_t,\quad
+ \nu_N=\frac1N\operatorname{tr}C,\quad
+ \mathcal E_N=\frac1N\operatorname{tr}(C^2),\quad
+ d_N=\frac{\mathrm{PR}}N=\frac{\nu_N^2}{\mathcal E_N}.
+\]
+Take two independent draws from the same stationary measure at fixed $J$,
+denoted by superscripts $1,2$. Directly expanding the square gives the exact
+identity
+\begin{align*}
+ \mathcal E_N
+ &=\frac1N\sum_{ij}
+   \E_1[\delta r_i^{(1)}\delta r_j^{(1)}]
+   \E_2[\delta r_i^{(2)}\delta r_j^{(2)}]\\
+ &=N\E_{1,2}\left[
+       \frac1N\sum_i\delta r_i^{(1)}\delta r_i^{(2)}\right]^2.
+\end{align*}
+Independent initial conditions may replace independent stationary draws only
+if they select this same stationary measure. The two copies share the
+connectivity and the static operating-point labels; their temporal
+fluctuations are independent conditional on those quenched quantities.
+
+Use $\widehat g(\omega)=\int e^{-i\omega t}g(t)\dd t$ and
+$H(\omega)=(1+i\omega)^{-1}$. On a record of length $T_r$, introduce
+\[
+ q_a(\omega_1,\omega_2)=\frac1{N_a}\sum_{i\in a}
+   \delta\widehat r_i^{(1)}(\omega_1)
+   \delta\widehat r_i^{(2)}(\omega_2).
+\]
+The spectral energy is $N T_r^{-2}\E|f^\top q|^2$, integrated with
+$\dd\omega_1\dd\omega_2/(2\pi)^2$. The calculation below suppresses
+frequency arguments when they are fixed. Numerical spectra stored as masses
+already include these integration weights and are summed once.
+
+\subsection{One-site inputs and the first-order marginal correction}
+The leading conditional law is
+\[
+ x_a(t)=\mu+u_a(t),\quad
+ \mu=h_a+\sqrt{\Delta_a}z,\quad z\sim\mathcal N(0,1),\quad
+ \E u_a(t+\tau)u_a(t)=K_a(\tau),\quad q_a=K_a(0).
+\]
+Here $q_a$ is an input variance; $q_a(\omega_1,\omega_2)$ above is a
+replica overlap, distinguished by its arguments. All label averages below
+refer to this leading Gaussian label measure. Put $s_a^2=1+q_a$ and
+\begin{align*}
+ m(\mu)&=2\Phi(\mu/s_a),\\
+ \alpha(\mu)&=\partial_\mu m
+ =\sqrt{\frac2{\pi s_a^2}}e^{-\mu^2/(2s_a^2)},\qquad
+ \beta(\mu)=\partial_\mu\alpha=-\mu\alpha/s_a^2,\\
+ c_\mu(\tau)&=\operatorname{Cov}(r(t+\tau),r(t)\mid\mu).
+\end{align*}
+For $k=K_a(\tau)$ the latter is the explicit Gaussian integral
+\[
+ c_\mu(k)=\frac2\pi\int_0^{\arcsin(k/s_a^2)}
+     \exp\left[-\frac{\mu^2}{s_a^2(1+\sin\vartheta)}\right]\dd\vartheta.
+\]
+Its Price derivative and mixed derivative are
+\[
+ D_\mu(k)=\partial_kc_\mu
+ =\frac{2e^{-\mu^2/(s_a^2+k)}}{\pi\sqrt{s_a^4-k^2}},\qquad
+ B_{21,\mu}(k)=\tfrac12\partial_\mu D_\mu(k).
+\]
+
+Let $y=H*r=m+v$, so $v=H*\delta r$, and write
+$P_\mu(\tau)=\operatorname{Cov}(v(t+\tau),v(t)\mid\mu)$. The input
+third-cumulant coefficients are the following one-site functionals:
+\begin{align*}
+ t_{0a}&=\sum_b\Theta_{ab}\E_b[m^3],\\
+ M_a(\tau)&=\sum_b\Theta_{ab}\E_b[mP_\mu(\tau)],\\
+ D_a(t_1,t_2,t_3)&=\sum_b\Theta_{ab}
+       \E_b[\operatorname{cum}(v(t_1),v(t_2),v(t_3)\mid\mu)].
+\end{align*}
+These are computable from Gaussian expectations of $\phi$ and causal leak
+convolutions. For example the rate third cumulant is a trivariate Gaussian
+expectation of three $2\Phi$ factors minus its disconnected terms; filtering
+its three arguments gives the cumulant of $v$. It does not require an
+uncomputed reservoir-response average.
+
+Let $h_1,\Delta_1,K_1$, and $q_1=K_1(0)$ denote the marginal shifts. With
+$\sigma=(\mu-h_a)/\Delta_a$, define
+\[
+ \delta q_\mu=q_{1a}+\sigma M_a(0),\qquad
+ \delta K_\mu(\tau)=K_{1a}(\tau)+\sigma M_a(\tau),
+\]
+and $D_{0a}=D_a(0,0,0)$,
+$D_{sa}(\tau)=[D_a(\tau,\tau,0)+D_a(-\tau,-\tau,0)]/2$.
+At a fixed leading label, the conditional corrections are
+\begin{align*}
+ m_1&=\tfrac12\beta\,\delta q_\mu
+       +\tfrac16D_{0a}\partial_\mu^3m,\\
+ \alpha_1&=\tfrac12\partial_\mu^3m\,\delta q_\mu
+       +\tfrac16D_{0a}\partial_\mu^4m,\\
+ c_1(\mu,\tau)&=(\partial_qc_\mu)\delta q_\mu
+       +D_\mu(K_a(\tau))\delta K_\mu(\tau)
+       +\tfrac16D_{0a}\partial_\mu^3c_\mu\\
+ &\quad+D_{0a}\alpha\beta+
+      [D_{sa}(\tau)-D_{0a}]B_{21,\mu}(K_a(\tau)),\\
+ \partial_qc_\mu&=\tfrac12\partial_\mu^2c_\mu+\alpha^2-D_\mu.
+\end{align*}
+The label measure contributes the signed first-order weight
+\[
+ w_a^{(1)}(z)=\frac{t_{0a}}{6\Delta_a^{3/2}}(z^3-3z)
+       +\frac{h_{1a}}{\sqrt{\Delta_a}}z
+       +\frac{\Delta_{1a}}{2\Delta_a}(z^2-1).
+\]
+It acts as a differential correction to averages, not as a positive tail
+probability distribution.
+
+The coefficients solve the linearized one-site self-consistency equations
+\begin{align*}
+ 0&=\E_a[w_a^{(1)}m+m_1],\\
+ \Delta_{1a}&=\sum_bW_{ab}\E_b[w_b^{(1)}m^2+2mm_1],\\
+ K_{1a}''(\tau)&=K_{1a}(\tau)
+       -\sum_bW_{ab}\E_b[w_b^{(1)}c_\mu(\tau)+c_1(\mu,\tau)],\\
+ K_{1a}'(0)&=0,\qquad K_{1a}(\infty)=0,\qquad q_{1a}=K_{1a}(0).
+\end{align*}
+The zero first-order mean-rate shift is the asymptotic compensated-drive
+constraint. Its distinction from exact finite-network balance is addressed
+below. The one-site outputs needed by the overlap theory are
+\begin{align*}
+ A_{0a}&=\E_a\alpha^2,&
+ A_{1a}&=\E_a[w_a^{(1)}\alpha^2+2\alpha\alpha_1],\\
+ Q_{0a}&=\E_a[c_\mu(\omega_1)c_\mu(\omega_2)],\\
+ Q_{1a}&=\E_a[w_a^{(1)}c_\mu(\omega_1)c_\mu(\omega_2)
+        +c_1(\mu,\omega_1)c_\mu(\omega_2)
+        +c_\mu(\omega_1)c_1(\mu,\omega_2)],\\
+ \nu_0&=\sum_af_a\E_ac_\mu(0),&
+ \nu_1&=\sum_af_a\E_a[w_a^{(1)}c_\mu(0)+c_1(\mu,0)].
+\end{align*}
+Both factors in $Q_0$ or $Q_1$ belong to the same neuron's label.
+
+\subsection{A stationary trajectory weight and two triple overlaps}
+At leading order the cross-replica covariance fluctuation of a cavity input is
+$H_1H_2Wq$. A Gaussian covariance perturbation of the product of rates has
+conditional response $\alpha^2$. This yields
+\[
+ q=\xi+\mathcal T_0q,\qquad
+ \mathcal T_0=\diag(A_0)XW,\quad X=H_1H_2,
+\]
+where the leading covariance of the row source, with the $N/T_r^2$
+normalization understood, is $\Sigma_0=\diag(Q_{0a}/f_a)$.
+
+The third edge cumulant introduces the centered square
+$s(t)=y(t)^2-\langle y^2\rangle_t$ and the population overlaps
+\[
+ w_a^A=\frac1{N_a}\sum_{i\in a}
+        \widehat s_i^{(1)}(\omega_1)\widehat v_i^{(2)}(\omega_2),\qquad
+ w_a^B=\frac1{N_a}\sum_{i\in a}
+        \widehat v_i^{(1)}(\omega_1)\widehat s_i^{(2)}(\omega_2).
+\]
+The derivative of a squared filtered rate is
+\[
+ \frac{\delta y(t)^2}{\delta x(\sigma)}
+       =2H(t-\sigma)y(t)\phi'(x(\sigma)).
+\]
+Consequently its label-conditioned stationary response is
+\begin{align*}
+ \Lambda_\mu(\tau)&=2\theta(\tau)e^{-\tau}
+            [m\alpha+\ell_\mu(\tau)],\\
+ \ell_\mu(\tau)&=\operatorname{Cov}(v(t+\tau),\phi'(x(t))\mid\mu)
+                  =\tfrac12\partial_\mu(H*c_\mu)(\tau).
+\end{align*}
+The last identity follows by differentiating a Gaussian rate covariance with
+respect to its common mean: exchange symmetry makes the two derivative terms
+equal. Define
+\[
+ \ell_\mu^+(\omega)=\int_0^\infty
+        e^{-(1+i\omega)\tau}\ell_\mu(\tau)\dd\tau,
+ \qquad \widehat\Lambda_\mu(\omega)=2m\alpha H(\omega)+2\ell_\mu^+(\omega).
+\]
+The $\ell$ term retains a same-replica temporal correlation. Conditional
+independence of the two replicas does not justify dropping it.
+
+Write $b_a=\E_a[\alpha\beta]$ and set
+\begin{align*}
+ \mathcal C&=\tfrac12\diag(b)\Theta,\qquad
+ \mathcal T_{\mathrm{loc}}=\diag(A_1)XW,\\
+ \mathcal D_A&=\diag\{\E_a[\widehat\Lambda_\mu(\omega_1)\alpha]\}
+                    H_2XW,\\
+ \mathcal D_B&=\diag\{\E_a[\alpha\widehat\Lambda_\mu(\omega_2)]\}
+                    H_1XW.
+\end{align*}
+The term $\mathcal T_{\mathrm{loc}}$ contains the one-site law correction.
+The closed augmented linear system, to the required formal order, is
+\begin{equation}\label{eq:adopted-augmented}
+ \begin{pmatrix}
+ I-\mathcal T_0-\epsilon\mathcal T_{\mathrm{loc}}&-\epsilon\mathcal C&-\epsilon\mathcal C\\
+ -\mathcal D_A&I&0\\-\mathcal D_B&0&I
+ \end{pmatrix}
+ \begin{pmatrix}q\\w^A\\w^B\end{pmatrix}
+ =\begin{pmatrix}\xi\\\zeta^A\\\zeta^B\end{pmatrix}.
+\end{equation}
+Each block is two-by-two in population space. The factor $1/2$ in
+$\mathcal C$ is the third-cumulant Price coefficient: there are three
+orderings of two inputs in one replica and one in the other, out of $3!$.
+
+Eliminating the two triple overlaps is a Schur complement:
+\begin{align*}
+ q&=(I-\mathcal T_0-\epsilon\mathcal T_1)^{-1}S,\\
+ \mathcal T_1&=\mathcal T_{\mathrm{loc}}+\mathcal C(\mathcal D_A+\mathcal D_B),
+ \qquad S=\xi+\epsilon\mathcal C(\zeta^A+\zeta^B).
+\end{align*}
+For $m_{2a}=\E_a[m\alpha^2]$ and
+$e_a(\omega)=\E_a[\alpha\ell_\mu^+(\omega)]$, this is explicitly
+\begin{align*}
+ \mathcal T_1={}&\diag(A_1)XW\\
+ &+\diag(b)\Theta\{
+       2\diag(m_2)X+\diag(e(\omega_1))H_2
+                        +\diag(e(\omega_2))H_1\}XW.
+\end{align*}
+In particular, the static insertion has population indices
+\[
+ (\mathcal T_{1,S})_{ac}
+ =X^2\sum_b 2b_a\Theta_{ab}m_{2b}W_{bc}.
+\]
+The internal population index $b$ is summed. This corresponds to the matrix
+product $\diag(b)\Theta\,2\diag(m_2)W$, rather than retaining $b$ as a
+free source index. With this contraction its energy contribution plus the
+static source vertex agrees with the earlier conditional-label adjoint
+calculation: $23.37895511$ for 60:40 and $19.51649280$ for 80:20.
+
+\subsection{Source covariance, energy and strict first-order PR}
+Let $\mathcal L_\mu(\omega)=H(\omega)c_\mu(\omega)$ and define
+\[
+ \mathcal B_\mu(\omega)=2m\mathcal L_\mu(\omega)
+            +\widehat T_\mu^{\rm dyn}(\omega),\qquad
+ T_\mu^{\rm dyn}(\tau)=
+       \E[v(t+\tau)^2\delta r(t)\mid\mu].
+\]
+The leading row-source cross covariances are diagonal in population:
+\begin{align*}
+ \operatorname{Cov}(\zeta^A,\xi)
+ &=\diag\{\E_a[\mathcal B_\mu(\omega_1)
+                      \mathcal L_\mu(\omega_2)]/f_a\},\\
+ \operatorname{Cov}(\zeta^B,\xi)
+ &=\diag\{\E_a[\mathcal L_\mu(\omega_1)
+                      \mathcal B_\mu(\omega_2)]/f_a\}.
+\end{align*}
+Define $Y=\mathcal C\operatorname{Cov}(\zeta^A+\zeta^B,\xi)$; elementwise,
+\[
+ Y_{ab}=\tfrac12 b_aT_{ab}\E_b[
+        \mathcal B_\mu(\omega_1)\mathcal L_\mu(\omega_2)
+       +\mathcal L_\mu(\omega_1)\mathcal B_\mu(\omega_2)].
+\]
+The factor $\Theta_{ab}/f_b=T_{ab}$ is fixed by the source normalization.
+Through first order,
+\[
+ \Sigma_S=\Sigma_0+\epsilon\Sigma_1,\qquad
+ \Sigma_1=\diag(Q_{1a}/f_a)+Y+Y^\dagger.
+\]
+For $R_0=(I-\mathcal T_0)^{-1}$ and $g=f^\top R_0$, the energy coefficients
+at a frequency pair are
+\begin{align*}
+ \mathcal E_0(\omega_1,\omega_2)&=g\Sigma_0g^\dagger,\\
+ \mathcal E_1(\omega_1,\omega_2)&=g\Sigma_1g^\dagger
+       +2\operatorname{Re}\{g\mathcal T_1R_0\Sigma_0g^\dagger\}.
+\end{align*}
+Integrate both frequencies to obtain $\mathcal E_0,\mathcal E_1$. In particular,
+the source vertex is dressed by $R_0$ on both sides; a bare paired-ladder source
+without the corresponding Schur-complement dressing omits some insertions.
+
+The following expansion concerns the deterministic ensemble-saddle pieces,
+denoted by a subscript $\mathrm{det}$, rather than a prediction for each
+quenched network. Keeping the numerator to the same order gives
+\begin{align*}
+ \nu_{\mathrm{det}}^2&=\nu_0^2+2\epsilon\nu_0\nu_1+O(\epsilon^2),\\
+ \mathcal E_{\mathrm{det}}^{-1}&=\mathcal E_0^{-1}
+             [1-\epsilon\mathcal E_1/\mathcal E_0]+O(\epsilon^2),\\
+ d_{\mathrm{det}}&=d_0+\epsilon d_1+O(\epsilon^2),\qquad
+ d_1=d_0\left(2\nu_1/\nu_0-\mathcal E_1/\mathcal E_0\right).
+\end{align*}
+If a centered, tight $O_p(\epsilon)$ quenched fluctuation expansion also holds,
+an individual network has an additional first-order term
+\[
+ d_N=d_{\mathrm{det}}+\epsilon d_0
+   (2Z_{\nu,N}/\nu_0-Z_{\mathcal E,N}/\mathcal E_0)+o_p(\epsilon).
+\]
+Obtaining an ensemble expectation from this statement needs moment control;
+neither the full fluctuation law nor its variance is proved by the present
+closure. Label sampling gives only a component model for these fluctuations.
+These are formal remainder orders under the stated closure assumptions, not
+established uniform bounds on finite simulated networks. Evaluating a ratio
+of linearly shifted numerator and denominator adds selected second-order
+powers and is not the strict first-order expression.
+
+The corrected coefficient calculation gives
+\begin{center}\small
+\begin{tabular}{lrrrrr}\toprule
+composition & $\nu_1/\nu_0$ & $\mathcal E_1/\mathcal E_0$ &
+ $d_1/d_0$ & $d_0$ & $d_0+d_1/\sqrt{1000}$\\\midrule
+60:40&2.78467&4.53503&1.03431&.02989352&.03087128\\
+80:20&3.19158&4.57820&1.80495&.03432623&.03628548\\\bottomrule
+\end{tabular}
+\end{center}
+The corresponding relative PR shifts are $+3.27\%$ and $+5.71\%$. The
+energy coefficient at 60:40 is
+\[
+ -24.00948+16.68511+3.12127+6.69385+1.05686=3.54761.
+\]
+The terms are, respectively, the local law, static response insertion,
+dynamic trajectory-weight insertion, static source vertex, and dynamic
+source vertex. This cancellation explains why the final small number alone
+cannot establish numerical control at $N=1000$.
+
+\subsection{Coherent feedback and the exact mean residual}
+The nonzero connectivity mean is not a perturbative centered-disorder vertex.
+For normalized population indicators $V$, write $J_R=J_b+VBV^\top$ and
+let $S_0=D_1H$, $M_b=(I-S_0J_b)^{-1}$. The exact causal response identity is
+\[
+ M=M_b+M_bS_0VB(I-V^\top M_bS_0VB)^{-1}V^\top M_b.
+\]
+For time-dependent gains the small inverse is an inverse of time operators.
+Eliminating this population block requires an appropriate Schur complement;
+setting $B=0$ before the calculation does not derive the screened bulk law.
+If a projected bulk response has a uniformly bounded inverse on a specified
+frequency range and the limiting $B/\sqrt N$ is nonsingular, the direct and
+indirect coherent mean probe couplings cancel at order $N^{-1/2}$ on that
+range. This is not uniform high-frequency or causal $L^2$ operator counting.
+
+Exact stationarity also retains a finite-network mean residual. Define
+\[
+ \eta_i=\sum_jX_{ij}m_j,\quad
+ \bar\eta_a=N_a^{-1}\sum_{i\in a}\eta_i,\quad
+ \bar\mu_a=N_a^{-1}\sum_{i\in a}\langle x_i\rangle_t,
+ \quad m^*=-(J^0F)^{-1}I.
+\]
+Averaging the state equation gives
+\begin{align*}
+ \bar\mu&=\sqrt N J^0F(\bar m-m^*)+h^{\rm ext}+\bar\eta,\\
+ \boxed{\bar m-m^*=\epsilon(J^0F)^{-1}
+             (\bar\mu-h^{\rm ext}-\bar\eta).}
+\end{align*}
+The residual $\bar\eta$ cannot be dropped merely because each centered edge
+has zero ensemble mean: $m_j$ depends on the network. If
+$\bar\mu=h_0+\epsilon h_1+\cdots$,
+$\bar\eta=\epsilon\eta_1+\cdots$, and $h^{\rm ext}=h_0$, the deterministic
+mean-rate correction begins as
+$\epsilon^2(J^0F)^{-1}(h_1-\eta_1)$. This explains the zero first-order
+constraint above, but does not fix all finite-loop corrections.
+Keeping an $\epsilon(J^0F)^{-1}h_1$ term inside the coefficient equations is
+a partial finite-gain resummation only after specifying what $h_1$ excludes
+and how the label mean and $\eta_1$ are represented. It is not an exact
+finite-network balance equation without the residual term.
+
+\subsection{Formal power counting and the stationary-limit assumption}
+At a finite time grid, introduce the dynamical response fields enforcing the
+state equations and let $A_{ij}$ denote their time/replica contraction with
+the rate of cell $j$. Independence of the centered edges gives an expansion
+of the disorder-averaged generating functional whose $n$th-cumulant term is
+proportional to
+\[
+ \sum_{ij}\frac{\kappa_n(X_{ij})}{n!}A_{ij}^{n}.
+\]
+Dense weak-coupling counting gives $N^2N^{-n/2}=N^{2-n/2}$. Thus the second
+cumulant contributes an order-$N$ bulk saddle action, the third an
+order-$\sqrt N$ perturbation, and the fourth an order-one term. About a
+nonsingular saddle, the third cumulant shifts both the saddle and the
+quadratic fluctuation operator at relative order $\epsilon$. In particular,
+the latter fluctuation sector contains the overlap and the two triple
+overlaps retained above.
+
+For the baseline Gaussian fluctuation law, its cubic fluctuation interaction
+is odd. A single insertion into a quadratic overlap observable has zero
+Gaussian expectation, since the resulting integrand has odd total degree.
+Ordinary fluctuation-loop corrections therefore start one order later in
+this formal expansion. This argument assumes centered Gaussian fluctuations,
+a stable saddle, and a consistent expansion of the observable and source;
+it does not apply to a mixture of saddles or a soft/localized mode without
+additional analysis. The coherent mean has a stronger order-$N^{3/2}$ action
+and must be retained or eliminated before applying this centered bulk count.
+
+The replica identity and Gaussian Price derivatives explain why the adopted
+stationary calculation uses separate conditional mean gains across replicas.
+They do not establish uniform bounds on arbitrary products of pathwise
+tangent matrices. Passing from a fixed-grid generating functional to the
+stationary spectral result still requires mixing, self-averaging and
+interchange of limits. The closure makes these assumptions explicit rather
+than obtaining them from the overlap identity alone.
+
+\subsection{A positive augmented noise and a known second-order source sector}
+Exact inversion of $I-\mathcal T_0-\epsilon\mathcal T_1$ repeats known
+response insertions, but its strictly first-order source omits a definite
+quadratic term. Let $\zeta=\zeta^A+\zeta^B$ and
+$\eta=\mathcal C\zeta$. Then
+\[
+ \operatorname{Cov}(\xi+\epsilon\eta)
+ =\Sigma_\xi+\epsilon(Y+Y^\dagger)
+                 +\epsilon^2\Sigma_\eta.
+\]
+The last term is nonnegative as a matrix. The leading joint source is a
+covariance of the three two-replica features
+$\delta r^{(1)}\delta r^{(2)}$,
+$s^{(1)}v^{(2)}$, and $v^{(1)}s^{(2)}$; it is positive semidefinite by
+construction.
+
+To evaluate its missing blocks, define the one-site spectra
+\[
+ P_{vv}=|H|^2c_\mu,\quad S_{sv}=\mathcal B_\mu H^*,\quad
+ S_{vs}=S_{sv}^*,\quad S_{ss}=\widehat{\operatorname{Cov}(s(t+\tau),s(t))}.
+\]
+The noise blocks are diagonal in population, with entries
+\begin{align*}
+ (\Sigma_{AA})_{aa}&=f_a^{-1}\E_a[S_{ss}(\omega_1)P_{vv}(\omega_2)],\\
+ (\Sigma_{BB})_{aa}&=f_a^{-1}\E_a[P_{vv}(\omega_1)S_{ss}(\omega_2)],\\
+ (\Sigma_{AB})_{aa}&=f_a^{-1}\E_a[S_{sv}(\omega_1)S_{vs}(\omega_2)],
+ \qquad \Sigma_{BA}=\Sigma_{AB}^{\dagger},\\
+ \Sigma_\eta&=\mathcal C
+  (\Sigma_{AA}+\Sigma_{BB}+\Sigma_{AB}+\Sigma_{BA})\mathcal C^\dagger.
+\end{align*}
+For $T_v(\tau)=\E[v(t+\tau)^2v(t)\mid\mu]$, the required fourth functional
+is explicit:
+\begin{align*}
+ \operatorname{Cov}(s(t+\tau),s(t)\mid\mu)
+ &=4m^2P_\mu(\tau)+2m[T_v(\tau)+T_v(-\tau)]
+       +2P_\mu(\tau)^2\\
+ &\quad+\operatorname{cum}(v(t+\tau),v(t+\tau),v(t),v(t)\mid\mu).
+\end{align*}
+This can be evaluated from a four-time Gaussian rate expectation followed
+by leak convolution. It is an additional one-site functional, not an unknown
+nonlinear reservoir response.
+
+On resolved spectral support $\Omega_{\rm res}$ where $\Sigma_0$ is positive,
+the joint leading
+covariance of $\xi$ and $\eta$ has Schur complement
+\[
+ \Sigma_\eta-Y\Sigma_0^{-1}Y^\dagger\succeq0.
+\]
+Use the pseudoinverse with the corresponding range condition if a true null
+space is present. If $R_\epsilon=(I-\mathcal T_0-\epsilon\mathcal T_1)^{-1}$,
+the omitted known source contribution consequently obeys, within this
+leading row-noise model,
+\[
+ \Delta\mathcal E_{\rm source}
+ \ge\epsilon^2\iint_{\Omega_{\rm res}} f^\top R_\epsilon
+       Y\Sigma_0^{-1}Y^\dagger R_\epsilon^\dagger f
+       \frac{\dd\omega_1\dd\omega_2}{(2\pi)^2}.
+\]
+On resolved spectral support the numerical lower contributions at $N=1000$
+are $.01579386$ for 60:40 and $.01256055$ for 80:20. They are $1.866\%$ and
+$1.803\%$ of the respective partial-resummed energies. Thresholds between
+$10^{-8}$ and $10^{-12}$ relative to the leading source scale change these
+figures negligibly. The signed first-order source has small negative tail
+eigenvalues of order $10^{-14}$; their integrated negative-energy fractions
+are below $3\times10^{-11}$, so numerical tail negativity is not the
+material effect measured by this Schur bound.
+
+This inequality concerns an omitted source covariance of the specified
+augmented model. It is not a lower bound on the true network's total
+second-order energy correction: unknown second-order one-site shifts,
+vertices, response corrections and fluctuation loops can have either sign.
+Restoring the full augmented covariance is preferable to an arbitrary
+eigenvalue clipping rule, but still does not complete that second-order theory.
+
+\subsection{Scope of the adopted result}
+The corrected closure supplies every function in its formal first-order
+coefficient through one-site Gaussian integrals, leak convolutions, a linear
+marginal problem and two-by-two population matrix inverses. In particular it
+does not leave a stationary nonlinear-reservoir average unevaluated within
+that adopted approximation. Its new trajectory weight and correctly dressed
+source are meaningful analytical additions to the previous partial candidate.
+
+The remaining claims are narrower than a full finite-network solution.
+Uniform stationary and delocalization bounds are not proved; the single-synapse
+EE amplitude is about $.55$ at $N=1000$; large sectors cancel; known omitted
+source covariance already contributes at the percent level; and the complete
+quenched law, including correlations beyond a sampled static-label model,
+is not determined. An influence-function calculation for independent labels
+is a component model for fluctuations, not a rigorous lower bound on their
+total variance. The leading theory and this formal extension must be tested
+against independently sampled networks, with active-state selection and
+finite-record estimation described separately.

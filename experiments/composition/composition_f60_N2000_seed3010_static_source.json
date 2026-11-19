@@ -1,0 +1,79 @@
+{
+  "neuron_moment_source": "next_round/runtime/runs/composition_f60_N2000_seed3010_B500_neuron_statistics.npz",
+  "name": "composition_f60_N2000_seed3010",
+  "scope": "Exactfixed-networkdecompositionatmeasuredratemeans; noindependenceassumption. Source-to-labeldependenceandquenchedcross-termsareincluded, notpredicted. Sampled-stateaveragesneednotexactlyobeycontinuousmeanidentityduetofiniterecordandmidpoint/samplingdiscretization.",
+  "config": {
+    "n": 2000,
+    "g": 4.0,
+    "mean_rate": 0.3,
+    "seed": 3010,
+    "ensemble": "bernoulli",
+    "dt": 0.05,
+    "burn": 500.0,
+    "duration": 8000.0,
+    "sample_dt": 0.25,
+    "mean_scale": 1.0,
+    "fraction_e": 0.6,
+    "variance_profile": [
+      [
+        21.333333333333336,
+        4.5
+      ],
+      [
+        33.333333333333336,
+        6.0
+      ]
+    ],
+    "mean_connectivity": [
+      [
+        1.3333333333333335,
+        -3.0
+      ],
+      [
+        2.666666666666667,
+        -5.0
+      ]
+    ],
+    "degree_dispersion": null
+  },
+  "rows": [
+    {
+      "population": 0,
+      "measured_mean_rate": 0.30798063615489163,
+      "measured_source_mean_rate_squared_by_presynaptic_population": [
+        0.2694086193316534,
+        0.28441561722021297
+      ],
+      "leading_GFm2_using_measured_rates": 3.960378438441547,
+      "exact_diagonal_source": 3.989663372976654,
+      "exact_offdiagonal_source": -0.02630286561112083,
+      "mean_eta": 0.08118855306549311,
+      "mean_eta_squared": 0.006591581148868391,
+      "exact_centered_static_variance_from_Jm": 3.956768926216665,
+      "measured_input_mean_static_variance": 3.9568967596408653,
+      "offdiagonal_minus_centering": -0.03289444675998922,
+      "diagonal_minus_GFm2": 0.029284934535107165,
+      "state_mean_minus_Jrate_mean_plus_drive_rms": 0.000268480884632574,
+      "identity_residual": 0.0
+    },
+    {
+      "population": 1,
+      "measured_mean_rate": 0.30706564403392944,
+      "measured_source_mean_rate_squared_by_presynaptic_population": [
+        0.2694086193316534,
+        0.28441561722021297
+      ],
+      "leading_GFm2_using_measured_rates": 6.070769867961579,
+      "exact_diagonal_source": 6.088903800241641,
+      "exact_offdiagonal_source": -0.3438024998147027,
+      "mean_eta": 0.051117258168105674,
+      "mean_eta_squared": 0.002612974082624766,
+      "exact_centered_static_variance_from_Jm": 5.742488326344313,
+      "measured_input_mean_static_variance": 5.7425942937839265,
+      "offdiagonal_minus_centering": -0.34641547389732746,
+      "diagonal_minus_GFm2": 0.01813393228006177,
+      "state_mean_minus_Jrate_mean_plus_drive_rms": 0.00031894449091707244,
+      "identity_residual": -8.881784197001252e-16
+    }
+  ]
+}

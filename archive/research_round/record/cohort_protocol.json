@@ -1,0 +1,26 @@
+{
+  "created_unix": 1794358442.2936459,
+  "scope": "Existing full sixteen-seed60:40 N1000 Bernoulli cohort. One network per seed, same original dt.05,burn500,IC. Records16000; prefix4000/8000/16000;8block,fixedB500,andmean-freeB500/1000/2000.",
+  "seeds": [
+    11,
+    22,
+    33,
+    44,
+    55,
+    66,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110
+  ],
+  "workers": 4,
+  "wall_limit_seconds": 600,
+  "outcome_independent_inclusion": "Every listed seed kept, with interrupted/failed status if unfinished. No agreement-based selection.",
+  "temporary_arrays_not_deliverables": true
+}

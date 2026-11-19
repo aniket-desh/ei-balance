@@ -1,0 +1,10 @@
+{
+  "case": "composition_f80_N4000_seed3001",
+  "numeric_fields_checked": 612,
+  "maximum_absolute_numeric_difference": 0.0,
+  "all_numeric_fields_bitwise_equal": true,
+  "max_RSS_bytes": 645292032,
+  "elapsed_seconds": 35.88148911400003,
+  "v3_source_sha256": "4a3709279656f12d81e231defa8e610e246e56df36ce6385c0e1eda83fb772f9",
+  "changes": "Release raw memmap pages after first means and FFT passes; in-place covariance scaling/subtraction; release written covariance pages immediately."
+}

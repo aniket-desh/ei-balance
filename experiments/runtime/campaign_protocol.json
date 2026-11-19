@@ -1,0 +1,20 @@
+{
+  "created_unix": 1794401967.9338148,
+  "selection": "Prespecified fresh seeds; all listed outcomes retained, no selection on fit.",
+  "jobs": 34,
+  "composition_seeds": [
+    3001,
+    3002,
+    3003,
+    3004
+  ],
+  "degree_seeds": [
+    4001,
+    4002,
+    4003
+  ],
+  "primary_estimator": "four distinct stationary window mean-free covariance estimator, B500 gap0; gap1 and T4000/T8000 sensitivity",
+  "domain": "Fluctuating stationary branch; no automatic chaotic classification; selected validation checks can follow.",
+  "limits": "4workers maximum,1BLASthread each,4GB or40%availableRAM whichever smaller,20GB scratchrawdisk ceiling",
+  "parameter_fitting": "None. Parameter-only theory h fixed before outcomes; finitechi rounding recorded."
+}

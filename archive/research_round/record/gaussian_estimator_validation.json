@@ -1,0 +1,57 @@
+{
+  "scope": "Exact discrete Gaussian trace/Wick validation on two commuting OU modes, not EI dynamics.",
+  "rows": [
+    {
+      "gap": 0,
+      "block_samples": 20,
+      "true_stationary_energy": 0.5800000000000001,
+      "energy_product_of_mean_centered_covariances": 0.11218473317480185,
+      "cross_window_covariance_contribution": 0.0023244684942039097,
+      "exact_expected_cross_energy": 0.11450920166900576,
+      "monte_carlo_mean": 0.11445226544169054,
+      "monte_carlo_SE": 0.0002276194459283359,
+      "absolute_error_over_SE": 0.25013779944417247
+    },
+    {
+      "gap": 10,
+      "block_samples": 20,
+      "true_stationary_energy": 0.5800000000000001,
+      "energy_product_of_mean_centered_covariances": 0.11218473317480185,
+      "cross_window_covariance_contribution": 0.0005049643260019137,
+      "exact_expected_cross_energy": 0.11268969750080376,
+      "monte_carlo_mean": 0.11272464153531563,
+      "monte_carlo_SE": 0.00022970590693757801,
+      "absolute_error_over_SE": 0.15212510195202175
+    },
+    {
+      "gap": 40,
+      "block_samples": 20,
+      "true_stationary_energy": 0.5800000000000001,
+      "energy_product_of_mean_centered_covariances": 0.11218473317480185,
+      "cross_window_covariance_contribution": 9.245499239308389e-06,
+      "exact_expected_cross_energy": 0.11219397867404116,
+      "monte_carlo_mean": 0.11228830072378657,
+      "monte_carlo_SE": 0.0002705600571552653,
+      "absolute_error_over_SE": 0.34861779206116067
+    },
+    {
+      "gap": 160,
+      "block_samples": 20,
+      "true_stationary_energy": 0.5800000000000001,
+      "energy_product_of_mean_centered_covariances": 0.11218473317480185,
+      "cross_window_covariance_contribution": 1.0404438722567902e-12,
+      "exact_expected_cross_energy": 0.1121847331758423,
+      "monte_carlo_mean": 0.11217805731339345,
+      "monte_carlo_SE": 0.00021309002620936417,
+      "absolute_error_over_SE": 0.03132883583339076
+    }
+  ],
+  "independent_four_window_repair": {
+    "exact_energy": 0.5800000000000001,
+    "mean_free_energy_MC": 0.5861412492506066,
+    "mean_free_energy_MC_SE": 0.0022714901173535584,
+    "own_centered_cross_energy_MC": 0.11265906365213219,
+    "mean_free_nu_MC": 0.7035293268922092,
+    "true_nu": 0.7
+  }
+}

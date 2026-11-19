@@ -1,0 +1,512 @@
+{
+  "status": "complete",
+  "updated_unix": 1794407158.9628146,
+  "primary_cases_expected": 64,
+  "primary_cases_completed": 64,
+  "missing_primary": [],
+  "time_step_checks_completed": 5,
+  "time_step_checks_expected": 5,
+  "time_step_checks": [
+    {
+      "case": "degree_chi0_N4000_seed4001",
+      "compared_duration": 4000.0,
+      "same_connectivity_SHA256": true,
+      "baseline_full_record": {
+        "nu": 0.27225908830988377,
+        "energy": 0.46237579370999593,
+        "d": 0.16031334722903035
+      },
+      "baseline": {
+        "nu": 0.272272709041326,
+        "energy": 0.46388724109228024,
+        "d": 0.15980699946424162
+      },
+      "half_dt": {
+        "nu": 0.2721260195367637,
+        "energy": 0.4585537115363322,
+        "d": 0.1614915955228415
+      },
+      "relative_changes": {
+        "nu": -0.0005387594852190869,
+        "energy": -0.011497469823463113,
+        "d": 0.01054144101477128
+      },
+      "population_relative_changes": [
+        {
+          "q_temporal_input": -0.0008532139823169693,
+          "A_timeaveraged_gain_squared": -0.0007908863676736599,
+          "nu_temporal_rate": -0.0004488045906364535
+        },
+        {
+          "q_temporal_input": -0.002373605480288421,
+          "A_timeaveraged_gain_squared": 0.0008481765221597382,
+          "nu_temporal_rate": -0.0011749024414876574
+        }
+      ],
+      "interpretation": "Stationary-statistic check on same connectivity; finite-record chaotic sampling and timestep changes both contribute. No pointwise long-trajectory agreement asserted."
+    },
+    {
+      "case": "composition_f60_N1000_seed3001",
+      "compared_duration": 8000.0,
+      "same_connectivity_SHA256": true,
+      "baseline_full_record": {
+        "nu": 0.1301723118049295,
+        "energy": 0.8122389415922351,
+        "d": 0.020861879298008996
+      },
+      "baseline": {
+        "nu": 0.1301723118049295,
+        "energy": 0.8122389415922351,
+        "d": 0.020861879298008996
+      },
+      "half_dt": {
+        "nu": 0.12950578349282105,
+        "energy": 0.8000204502691611,
+        "d": 0.020964149044498434
+      },
+      "relative_changes": {
+        "nu": -0.0051203539590453095,
+        "energy": -0.015042976515164397,
+        "d": 0.004902230763994542
+      },
+      "population_relative_changes": [
+        {
+          "q_temporal_input": -0.005752321491914403,
+          "A_timeaveraged_gain_squared": 0.002248980661162747,
+          "nu_temporal_rate": -0.008766453975292743
+        },
+        {
+          "q_temporal_input": -0.006635396768097435,
+          "A_timeaveraged_gain_squared": -0.0001583342890939532,
+          "nu_temporal_rate": -0.00018486298404984947
+        }
+      ],
+      "interpretation": "Stationary-statistic check on same connectivity; finite-record chaotic sampling and timestep changes both contribute. No pointwise long-trajectory agreement asserted."
+    },
+    {
+      "case": "composition_f80_N1000_seed3001",
+      "compared_duration": 8000.0,
+      "same_connectivity_SHA256": true,
+      "baseline_full_record": {
+        "nu": 0.08246322089872167,
+        "energy": 0.43587752315559086,
+        "d": 0.01560113206058568
+      },
+      "baseline": {
+        "nu": 0.08246322089872167,
+        "energy": 0.43587752315559086,
+        "d": 0.01560113206058568
+      },
+      "half_dt": {
+        "nu": 0.0735303859358478,
+        "energy": 0.2787095226733197,
+        "d": 0.01939911347131125
+      },
+      "relative_changes": {
+        "nu": -0.10832507953872972,
+        "energy": -0.3605783554619504,
+        "d": 0.2434426806962744
+      },
+      "population_relative_changes": [
+        {
+          "q_temporal_input": -0.11818352365857632,
+          "A_timeaveraged_gain_squared": 0.025506855138786477,
+          "nu_temporal_rate": -0.11346340734096638
+        },
+        {
+          "q_temporal_input": -0.12504830552017665,
+          "A_timeaveraged_gain_squared": 0.03172103808639837,
+          "nu_temporal_rate": -0.09025843544685097
+        }
+      ],
+      "interpretation": "Stationary-statistic check on same connectivity; finite-record chaotic sampling and timestep changes both contribute. No pointwise long-trajectory agreement asserted."
+    },
+    {
+      "case": "composition_f60_N1000_seed3003",
+      "compared_duration": 8000.0,
+      "same_connectivity_SHA256": true,
+      "baseline_full_record": {
+        "nu": 0.10109438994333708,
+        "energy": 0.607981277008025,
+        "d": 0.016809852645973167
+      },
+      "baseline": {
+        "nu": 0.10109438994333708,
+        "energy": 0.607981277008025,
+        "d": 0.016809852645973167
+      },
+      "half_dt": {
+        "nu": 0.09716192868556807,
+        "energy": 0.5619150396491529,
+        "d": 0.016800476441765667
+      },
+      "relative_changes": {
+        "nu": -0.03889890685302255,
+        "energy": -0.07576917102706104,
+        "d": -0.0005577802735674542
+      },
+      "population_relative_changes": [
+        {
+          "q_temporal_input": -0.04622196450727967,
+          "A_timeaveraged_gain_squared": 0.012809318541967984,
+          "nu_temporal_rate": -0.04408991357248648
+        },
+        {
+          "q_temporal_input": -0.04343015047143395,
+          "A_timeaveraged_gain_squared": 0.017670229452797948,
+          "nu_temporal_rate": -0.03237995532555615
+        }
+      ],
+      "interpretation": "Stationary-statistic check on same connectivity; finite-record chaotic sampling and timestep changes both contribute. No pointwise long-trajectory agreement asserted."
+    },
+    {
+      "case": "composition_f80_N1000_seed3003",
+      "compared_duration": 8000.0,
+      "same_connectivity_SHA256": true,
+      "baseline_full_record": {
+        "nu": 0.13297094338661097,
+        "energy": 0.756346372437952,
+        "d": 0.023377215029316226
+      },
+      "baseline": {
+        "nu": 0.13297094338661097,
+        "energy": 0.756346372437952,
+        "d": 0.023377215029316226
+      },
+      "half_dt": {
+        "nu": 0.13494702192402405,
+        "energy": 0.7814488790653897,
+        "d": 0.023303762042557366
+      },
+      "relative_changes": {
+        "nu": 0.014860980053872819,
+        "energy": 0.033189167744037906,
+        "d": -0.0031420760200369102
+      },
+      "population_relative_changes": [
+        {
+          "q_temporal_input": 0.015723761661175617,
+          "A_timeaveraged_gain_squared": -0.0017993194328423945,
+          "nu_temporal_rate": 0.01408020244607222
+        },
+        {
+          "q_temporal_input": 0.022999669350972418,
+          "A_timeaveraged_gain_squared": -0.011789666520195863,
+          "nu_temporal_rate": 0.016919641554020703
+        }
+      ],
+      "interpretation": "Stationary-statistic check on same connectivity; finite-record chaotic sampling and timestep changes both contribute. No pointwise long-trajectory agreement asserted."
+    }
+  ],
+  "tangent_checks_completed": 4,
+  "tangent_checks_expected": 4,
+  "tangent_checks": [
+    {
+      "case": "composition_f60_N2000_seed3001",
+      "largest_finite_time_exponent": 0.1494833726505706,
+      "minimum_250time_block": 0.1342948810232128,
+      "max_rss_bytes": 151539712
+    },
+    {
+      "case": "composition_f80_N2000_seed3001",
+      "largest_finite_time_exponent": 0.1257441981110483,
+      "minimum_250time_block": 0.11414428039065846,
+      "max_rss_bytes": 140845056
+    },
+    {
+      "case": "degree_chi0_N2000_seed4001",
+      "largest_finite_time_exponent": 0.2360043650041619,
+      "minimum_250time_block": 0.23068896250136145,
+      "max_rss_bytes": 140980224
+    },
+    {
+      "case": "degree_chi2_N2000_seed4001",
+      "largest_finite_time_exponent": 0.09874533640864343,
+      "minimum_250time_block": 0.09148116391226352,
+      "max_rss_bytes": 140976128
+    }
+  ],
+  "outlier_diagnostic_cases_expected": 3,
+  "outlier_diagnostic_cases_completed": 3,
+  "outlier_diagnostics": [
+    {
+      "name": "outlier_record_dt_f80_N1000_seed3001_dt005_T16000",
+      "dt": 0.05,
+      "same_connectivity_SHA256": true,
+      "prefixes": [
+        {
+          "duration": 4000.0,
+          "nu": 0.0777927891157912,
+          "energy": 0.3326605989279809,
+          "d": 0.01819186900377139,
+          "population_local": [
+            {
+              "q_temporal_input": 1.0462024455277317,
+              "A_timeaveraged_gain_squared": 0.05276338754128742,
+              "nu_temporal_rate": 0.07491571875734504
+            },
+            {
+              "q_temporal_input": 1.6189248113525674,
+              "A_timeaveraged_gain_squared": 0.04682458720250949,
+              "nu_temporal_rate": 0.0879605258700569
+            }
+          ]
+        },
+        {
+          "duration": 8000.0,
+          "nu": 0.07881071091759154,
+          "energy": 0.33828358064517633,
+          "d": 0.01836071423712107,
+          "population_local": [
+            {
+              "q_temporal_input": 1.0634918113187424,
+              "A_timeaveraged_gain_squared": 0.05264231587027048,
+              "nu_temporal_rate": 0.07618742117708567
+            },
+            {
+              "q_temporal_input": 1.6402472302130815,
+              "A_timeaveraged_gain_squared": 0.0464815588120215,
+              "nu_temporal_rate": 0.08855314269608922
+            }
+          ]
+        },
+        {
+          "duration": 16000.0,
+          "nu": 0.07625302973842725,
+          "energy": 0.3046630948943759,
+          "d": 0.01908509642858226,
+          "population_local": [
+            {
+              "q_temporal_input": 1.0266072569434201,
+              "A_timeaveraged_gain_squared": 0.053017976522321895,
+              "nu_temporal_rate": 0.07367352064355115
+            },
+            {
+              "q_temporal_input": 1.5836514851086512,
+              "A_timeaveraged_gain_squared": 0.046928798662014694,
+              "nu_temporal_rate": 0.08627354594395645
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "outlier_record_dt_f80_N1000_seed3001_dt0025_T16000",
+      "dt": 0.025,
+      "same_connectivity_SHA256": true,
+      "prefixes": [
+        {
+          "duration": 4000.0,
+          "nu": 0.07436626838151154,
+          "energy": 0.3086438385281998,
+          "d": 0.017918199499342067,
+          "population_local": [
+            {
+              "q_temporal_input": 0.9943836931354749,
+              "A_timeaveraged_gain_squared": 0.053515980113978595,
+              "nu_temporal_rate": 0.07147998842915664
+            },
+            {
+              "q_temporal_input": 1.55264230367567,
+              "A_timeaveraged_gain_squared": 0.04727244665262122,
+              "nu_temporal_rate": 0.08445710115353577
+            }
+          ]
+        },
+        {
+          "duration": 8000.0,
+          "nu": 0.0735303859358478,
+          "energy": 0.2787095226733197,
+          "d": 0.01939911347131125,
+          "population_local": [
+            {
+              "q_temporal_input": 0.9844643346275084,
+              "A_timeaveraged_gain_squared": 0.053653977950633126,
+              "nu_temporal_rate": 0.07076044872672739
+            },
+            {
+              "q_temporal_input": 1.524228720045544,
+              "A_timeaveraged_gain_squared": 0.047010485743127536,
+              "nu_temporal_rate": 0.0840335626231503
+            }
+          ]
+        },
+        {
+          "duration": 16000.0,
+          "nu": 0.07462118338159622,
+          "energy": 0.2987946688959606,
+          "d": 0.018635944978016607,
+          "population_local": [
+            {
+              "q_temporal_input": 1.0029871174513507,
+              "A_timeaveraged_gain_squared": 0.053458582197052774,
+              "nu_temporal_rate": 0.07197980907345096
+            },
+            {
+              "q_temporal_input": 1.5531066777302502,
+              "A_timeaveraged_gain_squared": 0.04682622134959329,
+              "nu_temporal_rate": 0.0848902711931111
+            }
+          ]
+        }
+      ],
+      "prior_halfstep_prefix_reproduction_absolute_difference": {
+        "nu": 0.0,
+        "energy": 0.0,
+        "d": 0.0
+      }
+    },
+    {
+      "name": "outlier_record_dt_f80_N1000_seed3001_dt00125_T16000",
+      "dt": 0.0125,
+      "same_connectivity_SHA256": true,
+      "prefixes": [
+        {
+          "duration": 4000.0,
+          "nu": 0.08635038314983984,
+          "energy": 0.42135685666318967,
+          "d": 0.01769613702070211,
+          "population_local": [
+            {
+              "q_temporal_input": 1.1662778809633556,
+              "A_timeaveraged_gain_squared": 0.0518076388517916,
+              "nu_temporal_rate": 0.08369682823982466
+            },
+            {
+              "q_temporal_input": 1.798340866083777,
+              "A_timeaveraged_gain_squared": 0.0451141553381645,
+              "nu_temporal_rate": 0.09516931576287917
+            }
+          ]
+        },
+        {
+          "duration": 8000.0,
+          "nu": 0.0888240464957709,
+          "energy": 0.5054790387412706,
+          "d": 0.0156083845841157,
+          "population_local": [
+            {
+              "q_temporal_input": 1.2094810651463863,
+              "A_timeaveraged_gain_squared": 0.0513508528228245,
+              "nu_temporal_rate": 0.0863657859133875
+            },
+            {
+              "q_temporal_input": 1.867498469173239,
+              "A_timeaveraged_gain_squared": 0.04460901106231979,
+              "nu_temporal_rate": 0.09782656120542127
+            }
+          ]
+        },
+        {
+          "duration": 16000.0,
+          "nu": 0.08220424468982125,
+          "energy": 0.39744907283092695,
+          "d": 0.017002273516181107,
+          "population_local": [
+            {
+              "q_temporal_input": 1.11308564392831,
+              "A_timeaveraged_gain_squared": 0.05224120044440148,
+              "nu_temporal_rate": 0.07964577481011763
+            },
+            {
+              "q_temporal_input": 1.7199705171809598,
+              "A_timeaveraged_gain_squared": 0.045770422151549965,
+              "nu_temporal_rate": 0.09198318826557383
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "resource_audits": [
+    {
+      "file": "resource_audit.json",
+      "workers": 4,
+      "maximum_observed_aggregate_RSS_bytes": 1788375040,
+      "budget_bytes": 3908444160
+    },
+    {
+      "file": "extension_first_jobs_resource_audit.json",
+      "workers": 4,
+      "maximum_observed_aggregate_RSS_bytes": 2102587392,
+      "budget_bytes": 3822488780
+    },
+    {
+      "file": "extension_remaining_jobs_resource_audit.json",
+      "workers": 2,
+      "maximum_observed_aggregate_RSS_bytes": 1854824448,
+      "budget_bytes": 3829720678
+    },
+    {
+      "file": "integration_check_jobs_resource_audit.json",
+      "workers": 4,
+      "maximum_observed_aggregate_RSS_bytes": 874967040,
+      "budget_bytes": 3855242035
+    },
+    {
+      "file": "outlier_diagnostic_jobs_resource_audit.json",
+      "workers": 3,
+      "maximum_observed_aggregate_RSS_bytes": 837185536,
+      "budget_bytes": 3886953267
+    }
+  ],
+  "maximum_observed_network_phase_aggregate_RSS_bytes": 2102587392,
+  "dense_to_sparse_speedups_singleworker": [
+    {
+      "N": 1000,
+      "fe": 0.8,
+      "factor": 3.9031403309948547
+    },
+    {
+      "N": 2000,
+      "fe": 0.6,
+      "factor": 2.2095903117556586
+    },
+    {
+      "N": 4000,
+      "fe": 0.8,
+      "factor": 4.187898162161593
+    }
+  ],
+  "maximum_dense_action_error": 3.375077994860476e-14,
+  "network_backends_actual": "v1SciPy_sparsethenv2compiledconstantCSR. Largesecondwave2workers. V3/V4arevalidatedlower-memoryportableexports,notactualprimarycampaignbackend.",
+  "portable_export_validation": "portable_export_validation.json",
+  "portable_macOS_execution_tested": false,
+  "all_listed_outcomes_retained": true,
+  "primary_sampling_decisions": "campaign_protocol.json,extension_protocol.json,degree_extension_protocol.json",
+  "minimum_observed_primary_nu": 0.08246322089872167,
+  "minimum_observed_primary_energy": 0.4034933315122941,
+  "source_hashes": {
+    "engine.py": "db0bd08564b90da0d03593bd0a8a16c648ec575ca3f9dd77bde79432cae3cf55",
+    "engine_v2.py": "886c3a9ae5b21a9fb746533ac5b03aa11ac9da1a5ffeca0c25edfa8d0c7ad811",
+    "engine_v3.py": "4a3709279656f12d81e231defa8e610e246e56df36ce6385c0e1eda83fb772f9",
+    "engine_v4.py": "b21a8687effa2fcedc592f6bc5af3811b65ba7b260f266bb1871a47d13278ba3",
+    "constant_csr.cpp": "0676acffdbbbfb34816f093d8980a08a343fc70470e8b7c04a46910951dd1216",
+    "native_action.py": "0b4556abd620ae8721e96490311528ccc96884f076e1c9fedd4b7ba36e615e95",
+    "run_campaign.py": "5cec97d1804b2b077353a9f711b12f8b11e6341cfdaa3920f9fc4b0d70842a6d"
+  },
+  "elapsed_primary_campaign_seconds": 4305.4901213645935,
+  "maximum_abs_dtcheck_relative_change": {
+    "nu": 0.10832507953872972,
+    "energy": 0.3605783554619504,
+    "d": 0.2434426806962744
+  },
+  "outlier_interpretation": {
+    "same_dt_native_vs_SciPy_baseline_T8000_relative_d_change": 0.17688345729135446,
+    "T16000_dimension_range": [
+      0.017002273516181107,
+      0.01908509642858226
+    ],
+    "T16000_max_to_min_relative_spread": 0.12250261180770461,
+    "verdict": "No converged invariant-covariance estimate established for this atypical N1000 network. Arithmetic/phase, record length and step dependence are entangled. Do not attribute the24%change solely to timestep or claim full numerical validation.",
+    "scope_decision": "Retain all primary and diagnostic records; no further campaign; flag the outlier and finiteN1000precision limitation."
+  },
+  "original_execution_session_completion": {
+    "original_initial_campaign_finished_exit0": true,
+    "original_continuation_and_all_extension_auxiliary_pools_finished_exit0": true,
+    "outlier_diagnostic_pool_finished_exit0": true,
+    "replacement_controller_canceled_before_pool_start": true,
+    "all_owned_network_pools_joined": true,
+    "scope": "Original archived execution, confirmed by final session tool results; not a monitor of future user reruns."
+  }
+}

@@ -1,0 +1,481 @@
+% Self-contained appendix input. Requires amsmath, amssymb only.
+% No document class, bibliography commands, or project-specific macros.
+\section{Conditional EI analytics and the population geometry}
+\label{app:final_conditional_analytics}
+
+This appendix completes the algebra of the conditional construction used in
+this paper. The construction is an asymptotic cavity closure. Exact
+finite-dimensional identities, algebraic implications of that closure, and
+additional assumptions about the nonlinear network are kept separate. The
+finite-network tests determine where the resulting parameter-only prediction
+is quantitatively useful.
+
+\subsection{Model, averaging operations, and the observable}
+
+Let $i\in a$ identify a neuron in population $a$, with $N_a=f_aN$ and
+$\sum_a f_a=1$. Set $F=\operatorname{diag}(f_a)$. In common leak-time units,
+\begin{equation}
+ \dot x_i=-x_i+\sum_jJ_{ij}\phi(x_j)+\sqrt N I_a+h_a^{\rm ext},
+ \qquad \phi(x)=2\Phi(x),\qquad r_i=\phi(x_i).
+ \label{eq:an_model}
+\end{equation}
+The dense Bernoulli ensemble has $J_{ij}=t_{ab}A_{ij}/\sqrt N$,
+$t_{aE}>0$, $t_{aI}<0$, and independent $A_{ij}$ with success probability
+$p_{ab}$. Its moment coefficients are
+$J^0_{ab}=p_{ab}t_{ab}$ and $G_{ab}=p_{ab}(1-p_{ab})t_{ab}^2$.
+Thus $\mathbb E J_{ij}=J^0_{ab}/\sqrt N$ and
+$\operatorname{Var}J_{ij}=G_{ab}/N$. Self-connections follow the same rule.
+Degree-constrained rows are treated below.
+
+Time averaging within a stationary state is denoted by angle brackets;
+$\mathbb E_z$ averages fixed neuronal operating points, and an ensemble average
+over connectivity realizations is a further operation. Define
+\begin{align}
+ m_i&=\langle r_i\rangle,&
+ C_{ij}(\tau)&=\langle[r_i(t+\tau)-m_i][r_j(t)-m_j]\rangle,\\
+ \nu_N&=\frac{\operatorname{tr}C(0)}N,&
+ \mathcal E_N&=\frac{\operatorname{tr}[C(0)^2]}N,&
+ d_N&=\frac{D_{{\rm PR},N}}N=\frac{\nu_N^2}{\mathcal E_N}.
+ \label{eq:an_observables}
+\end{align}
+At zero lag $C$ is symmetric, so
+$\operatorname{tr}C^2=\sum_iC_{ii}^2+\sum_{i\ne j}C_{ij}^2$.
+Participation ratio therefore depends on the second trace moment, rather
+than on the rank or on the Lyapunov spectrum. At a true fixed point the
+time-centered covariance vanishes and this ratio is undefined.
+
+\subsection{The conditional one-site law}
+
+Cancellation of the $O(\sqrt N)$ mean recurrent and external currents gives
+\begin{equation}
+ J^0F\overline m+I=0.
+ \label{eq:an_balance}
+\end{equation}
+Assume this equation selects admissible mean rates. The conditional cavity law
+is
+\begin{equation}
+ x_a(t)\mid z=\mu_a(z)+u_a(t),\qquad
+ \mu_a(z)=h_a+\sqrt{\Delta_a}z,\qquad
+ z\sim\mathcal N(0,1),\quad
+ u_a\sim\operatorname{GP}(0,K_a),\quad q_a=K_a(0).
+ \label{eq:an_site}
+\end{equation}
+The quenched $z$ remains fixed along a neuron's trajectory. The temporal
+Gaussian process is independent of $z$ in this closure. Its entire kernel
+$K_a$ is part of the law; its variance alone does not specify it. The
+nonlinear rate process is generally non-Gaussian.
+
+Conditional temporal means and averaged slopes follow by integrating two
+Gaussian variables:
+\begin{align}
+ m_a(z)&=2\Phi\!\left(\frac{\mu_a(z)}{\sqrt{1+q_a}}\right),\\
+ \alpha_a(z)&=\mathbb E_u\phi'(\mu_a(z)+u)
+ =\sqrt{\frac2{\pi(1+q_a)}}
+   \exp\!\left[-\frac{\mu_a(z)^2}{2(1+q_a)}\right],\\
+ \overline m_a&=2\Phi\!\left(\frac{h_a}{\sqrt{1+\Delta_a+q_a}}\right),
+ \qquad
+ h_a=\sqrt{1+\Delta_a+q_a}\,
+       \Phi^{-1}(\overline m_a/2).
+ \label{eq:an_site_closed}
+\end{align}
+For example, $m(\mu)=2\mathbb P(Y\leq\mu+\sqrt q Z)$ for independent standard
+normal $Y,Z$; their difference has variance $1+q$, giving the first formula.
+Completing the square in the corresponding Gaussian density gives $\alpha$.
+
+For fixed $\mu,q$, define the centered Gaussian rate covariance
+$\mathcal C(\mu,q;k)$ when the two inputs have covariance $k$. Price's theorem
+and independence at $k=0$ give
+\begin{align}
+ \partial_k\mathcal C(\mu,q;k)
+ &=\frac{2\exp[-\mu^2/(1+q+k)]}
+         {\pi\sqrt{(1+q)^2-k^2}},\\
+ \mathcal C(\mu,q;k)
+ &=\frac2\pi\int_0^{\arcsin[k/(1+q)]}
+ \exp\!\left[-\frac{\mu^2}{(1+q)(1+\sin\theta)}\right]d\theta.
+ \label{eq:an_price}
+\end{align}
+Consequently $c_a(z,\tau)=\mathcal C(\mu_a(z),q_a;K_a(\tau))$ and
+$v_a(z)=c_a(z,0)$. The static and dynamic self-consistency equations are
+\begin{align}
+ \Delta_a&=\sum_bG_{ab}f_b\mathbb E_z[m_b(z)^2],\\
+ C_a^\eta(\tau)&=\sum_bG_{ab}f_b\mathbb E_z[c_b(z,\tau)],&
+ K_a''(\tau)&=K_a(\tau)-C_a^\eta(\tau),
+ \label{eq:an_selfconsistency}
+\end{align}
+with $K_a'(0)=0$, $K_a(0)=q_a$, and $K_a(\infty)=0$ on the stationary mixing
+branch. The first equation contains the second moment of the conditional
+mean, $\mathbb E m_b^2=\overline m_b^2+\operatorname{Var}_z m_b$. Heterogeneity
+survives the dense limit because this quenched input variance remains finite.
+
+Use the transform $c(\omega)=\int e^{-i\omega\tau}c(\tau)d\tau$ and inverse
+measure $d\omega/(2\pi)$. The leak filter is
+\begin{equation}
+ H(\omega)=\frac1{1+i\omega},\qquad
+ K_a(\omega)=|H(\omega)|^2 C_a^\eta(\omega),\qquad
+ s_a(z,\omega)=\alpha_a(z)H(\omega).
+ \label{eq:an_filter}
+\end{equation}
+Here $s$ is the time-averaged local response to additive current before
+recurrent propagation. It is not the pathwise tangent propagator of a chaotic
+network, and replacing an entire time-dependent tangent matrix by averaged
+slopes is not an exact stationary-response identity.
+
+The Hermite expansion makes the nonlinear part explicit. Write
+\[
+ \phi(\mu+\sqrt q Z)-m
+ =\sum_{n\geq1}b_n(\mu)\frac{\operatorname{He}_n(Z)}{\sqrt{n!}}.
+\]
+Gaussian integration by parts gives
+\begin{equation}
+ b_n(\mu)=\frac{q^{n/2}}{\sqrt{n!}}
+          \mathbb E\phi^{(n)}(\mu+\sqrt q Z),\qquad
+ c(\mu,\tau)=\sum_{n\geq1}b_n(\mu)^2[K(\tau)/q]^n.
+ \label{eq:an_hermite}
+\end{equation}
+In particular $b_1=\sqrt q\alpha$, and
+$c(\mu,\omega)-\alpha(\mu)^2K(\omega)$ is a nonnegative spectrum. The
+same label controls variance, spectrum, and response. Their joint moments
+must be retained.
+
+\subsection{From the two-site closure to a small population resolvent}
+
+The additional cavity assumptions concern correlations between distinct
+neurons and their reservoir: weak pair covariances of order $N^{-1/2}$,
+conditional decoupling of the required reservoir response contractions, exact
+retention of repeated-site conditional moments, and bounded source-weighted
+response norms at fixed parameters. These are stronger than the one-site
+Gaussian law. They are not implied by it.
+
+At each pair of frequencies define
+\begin{equation}
+ \begin{aligned}
+ A_a&=\mathbb E_z\alpha_a(z)^2,\qquad
+ &u_a&=A_aH(\omega_1)H(\omega_2),\qquad
+ &U&=\operatorname{diag}(u_a),\\
+ Q_a&=\mathbb E_z[c_a(z,\omega_1)c_a(z,\omega_2)],
+ &Q_{\rm d}&=\operatorname{diag}(Q_a).
+ \end{aligned}
+ \label{eq:an_AUQ}
+\end{equation}
+Both factors in $Q_a$ and $u_a$ belong to the same neuron. For distinct
+$i\in a,j\in b$, let
+$\Psi_{ab}=\lim_{N\to\infty}N\mathbb E[C_{ij}(\omega_1)C_{ij}(\omega_2)]$
+under the closure. The shared-input and directed-interaction contractions
+satisfy
+\begin{align}
+ \Gamma_\eta&=GFQ_{\rm d}G^T+GF\Psi FG^T,\\
+ \Gamma_F&=G+GFU^*G+GFU^*\Gamma_FU^*FG,\\
+ \Psi&=U\Gamma_\eta U^*+U\Gamma_F^*Q_{\rm d}
+                   +Q_{\rm d}\Gamma_F^TU^*.
+ \label{eq:an_cavity}
+\end{align}
+A star denotes complex conjugation, and a dagger conjugate transpose. The
+last two terms retain directed propagation through the reservoir; omitting
+them is not the two-site closure used here.
+
+For the regular branch $\Gamma_F=(I-GFU^*)^{-1}G$. Set
+\begin{equation}
+ L=UGF,\qquad R=(I-L)^{-1},\qquad
+ \mathsf D=\operatorname{diag}(Q_a/f_a),\qquad X=\Psi+\mathsf D.
+ \label{eq:an_R}
+\end{equation}
+Substitution in the last cavity equation gives
+\begin{align}
+ \Psi&=L(\Psi+\mathsf D)L^\dagger
+                  +RL\mathsf D+\mathsf DL^\dagger R^\dagger,\\
+ X&=LXL^\dagger+R\mathsf D+\mathsf DR^\dagger-\mathsf D,
+ \label{eq:an_Lyapunov}
+\end{align}
+where $RL=R-I$. To verify the solution, use $LR=R-I$ on both sides:
+\begin{align}
+ L(R\mathsf DR^\dagger)L^\dagger
+  &=(R-I)\mathsf D(R^\dagger-I)\\
+  &=R\mathsf DR^\dagger-R\mathsf D-\mathsf DR^\dagger+\mathsf D.
+\end{align}
+Adding the remaining terms gives $X=R\mathsf DR^\dagger$. If $\rho(L)<1$,
+the discrete Lyapunov equation has a unique solution, hence
+\begin{equation}
+ \boxed{X=R\mathsf DR^\dagger,\qquad \Psi=X-\mathsf D.}
+ \label{eq:an_final_pair}
+\end{equation}
+This implication is exact algebra conditional on Eq.~\eqref{eq:an_cavity}.
+For nonnegative $G$, a sufficient condition at all real frequencies is
+$\rho(B)<1$, where $B=\operatorname{diag}(A_a)GF$.
+
+This convention fixes the lag orientation independently of the derivation.
+An isolated $j\in b\to i\in a$ edge gives
+$C_{ij}(\omega)=J_{ij}s_i(\omega)c_j(\omega)$ to first order, so its
+contribution is $G_{ab}u_aQ_b$, rather than $G_{ab}u_a^*Q_b$.
+The inverse transform of $\Psi$ uses
+$e^{i\omega_1\tau_1+i\omega_2\tau_2}$. It obeys
+$\psi_{ba}(\tau_1,\tau_2)=\psi_{ab}(-\tau_1,-\tau_2)$ and
+$\psi_{ab}(\tau_1,\tau_2)=\psi_{ab}(\tau_2,\tau_1)$.
+Conjugating the response resolvent reverses the lag map, while leaving the
+zero-lag energy unchanged.
+
+\subsection{Population covariance energies and participation ratios}
+
+Define
+\begin{equation}
+ S_{ab}=\iint X_{ab}\frac{d\omega_1d\omega_2}{(2\pi)^2},\qquad
+ \psi_{ab}=\iint\Psi_{ab}\frac{d\omega_1d\omega_2}{(2\pi)^2},\qquad
+ V_{2a}=\mathbb E_zv_a(z)^2,\quad \overline v_a=\mathbb E_zv_a(z).
+\end{equation}
+Since $\iint Q_a=V_{2a}$, Eq.~\eqref{eq:an_final_pair} gives
+$S_{ab}=\psi_{ab}+\delta_{ab}V_{2a}/f_a$. The physical block energies,
+normalized by the total neuron count, are
+\begin{equation}
+ \mathcal E_{ab}
+ =\lim_{N\to\infty}\frac1N
+           \sum_{i\in a,j\in b}C_{ij}(0)^2
+ =f_af_bS_{ab}
+ =f_af_b\psi_{ab}+\delta_{ab}f_aV_{2a}.
+ \label{eq:an_blocks}
+\end{equation}
+The off-diagonal pairs each contribute $O(N^{-1})$ but number $O(N^2)$;
+they therefore contribute $O(1)$ to $\mathcal E$. Both orientations of the
+E--I block are included in the total:
+\begin{equation}
+ \mathcal E=\mathcal E_{EE}+2\mathcal E_{EI}+\mathcal E_{II}
+           =f^TSf,\qquad
+ \nu=\sum_af_a\overline v_a,\qquad
+ \boxed{d=\frac{D_{\rm PR}}N=\frac{\nu^2}{\mathcal E}.}
+ \label{eq:an_dimension}
+\end{equation}
+Within one population the correct normalization is
+\begin{equation}
+ \boxed{\frac{D_{{\rm PR},a}}{N_a}
+    =\frac{\overline v_a^2}{V_{2a}+f_a\psi_{aa}}
+    =\frac{\overline v_a^2}{f_aS_{aa}}.}
+ \label{eq:an_restricted}
+\end{equation}
+For example, $D_{{\rm PR},E}/N$ has an additional factor $f_E$.
+
+With $\mathcal E_{\rm diag}=\sum_af_aV_{2a}$, the useful physical
+factorization is
+\begin{equation}
+ d=\underbrace{\frac{(\sum_af_a\overline v_a)^2}
+                       {\sum_af_aV_{2a}}}_{d_{\rm uncorrelated}}
+   \underbrace{\frac{\mathcal E_{\rm diag}}{\mathcal E}}_{
+                    \text{reduction by pair correlations}}.
+ \label{eq:an_factorization}
+\end{equation}
+The first factor is at most one by Jensen and Cauchy--Schwarz. It is the PR
+fraction of independent neurons having the same distributed variances.
+The second factor measures the additional effect of pair correlations.
+The analogous within-population factors are
+$\overline v_a^2/V_{2a}$ and $V_{2a}/(V_{2a}+f_a\psi_{aa})$.
+
+For nonnegative conditional spectra, $X(\omega_1,\omega_2)$ is Hermitian
+positive semidefinite. The integrated $S$ is real symmetric and positive
+semidefinite. In particular,
+\begin{equation}
+ 0\leq\frac{\mathcal E_{EI}}
+              {\sqrt{\mathcal E_{EE}\mathcal E_{II}}}\leq1,
+ \qquad
+ 0\leq\frac{2\mathcal E_{EI}}{\mathcal E}\leq\frac12,
+ \label{eq:an_block_bounds}
+\end{equation}
+where zero-denominator cases are omitted. Nonnegativity of the integrated
+entries also follows from the path expansion below. These are second-moment
+properties of population covariance geometry. An E--I energy is not a PR of a
+rectangular matrix, a communication dimension, or a determination of the
+singular vectors of the cross-covariance block.
+
+\subsection{Premature averaging inequalities for a nonuniform population profile}
+\label{app:population_averaging_inequalities}
+
+The sign of the averaging error can be established for the full population
+problem with a common leak filter, not just the uniform scalar reduction.
+Assume $B\geq0$, $\rho(B)<1$, nonnegative integrable conditional spectra,
+and finite $V_{2a}$. Writing $t=H(\omega_1)H(\omega_2)$ gives
+$R=\sum_{n\geq0}t^nB^n$. For each conditional law define the real number
+\begin{equation}
+ a_{nm,c}(z)=\int c_c(z,\omega)H(\omega)^nH(\omega)^{*m}
+                   \frac{d\omega}{2\pi}.
+ \label{eq:an_real_moment}
+\end{equation}
+Reality follows by changing $\omega\to-\omega$ in its complex conjugate.
+Moreover $|a_{nm,c}(z)|\leq v_c(z)$ because $|H|\leq1$.
+Substituting the resolvent series into $S$ and using the same label at both
+frequencies yields
+\begin{equation}
+ \boxed{S_{ab}=\sum_{c,n,m\geq0}
+   \frac{(B^n)_{ac}(B^m)_{bc}}{f_c}
+          \mathbb E_z[a_{nm,c}(z)^2].}
+ \label{eq:an_population_positive_series}
+\end{equation}
+The domination by $V_{2c}$ and the convergent nonnegative matrix geometric
+series justify interchanging the sums and integrals. Every term is
+nonnegative.
+
+First replace $Q_c$ by the product of population-averaged spectra, while
+holding $A$ and each $\overline v_c$ fixed. The source second moment in
+Eq.~\eqref{eq:an_population_positive_series} becomes
+$[\mathbb E_z a_{nm,c}(z)]^2$. Thus
+\begin{equation}
+ S_{ab}-S_{ab}^{\rm average\ spectra}
+ =\sum_{c,n,m\geq0}\frac{(B^n)_{ac}(B^m)_{bc}}{f_c}
+                 \operatorname{Var}_z[a_{nm,c}(z)]\geq0.
+ \label{eq:an_Q_inequality}
+\end{equation}
+Next replace $A_c=\mathbb E\alpha_c^2$ by
+$A_c^{\rm average\ gain}=(\mathbb E\alpha_c)^2$, holding the conditional
+spectra fixed. Jensen gives $0\leq B^{\rm average\ gain}\leq B$
+entrywise. Every matrix power has the same ordering, so every $S_{ab}$
+can only decrease. The unchanged numerator then implies that both total and
+population-restricted PR fractions can only increase in either approximation.
+These statements compare approximations to the same one-site law; they do
+not compare distinct self-consistent network interventions. They also do not
+claim pointwise monotonicity of complex frequency-resolved matrix entries.
+
+In the reference nonuniform law, the resulting PR fractions are
+\begin{center}
+\begin{tabular}{c|rrrr}
+$f_E$ & Conditional & Average spectra & Average gain & Both\\\hline
+$0.6$ & $0.0298935$ & $0.0665594$ & $0.163924$ & $0.359971$\\
+$0.8$ & $0.0343262$ & $0.0764508$ & $0.168014$ & $0.368452$
+\end{tabular}
+\end{center}
+These are parameter-only quadratures at fixed aggregate coupling and fixed
+conditional laws. All blockwise inequalities pass independently; the
+conditional baselines reproduce the previous calculation to floating
+precision. No finite-network observation was used to choose these values.
+
+\subsection{Composition and degree controls change different objects}
+
+At fixed target mean rates, holding $W=GF$ and $J^0F$ fixed preserves the
+conditional one-site equations. When $f$ changes, rescale each presynaptic
+column as $G_{ab}^{\rm new}=G_{ab}^{\rm ref}f_b^{\rm ref}/f_b^{\rm new}$,
+and apply the same rule to $J^0$. Then $R$ and $Q$ remain fixed, but
+$\mathsf D_{cc}=Q_c/f_c$ and the external block weights change. The
+fraction-independent tensor
+\begin{equation}
+ T_{abc}=\iint R_{ac}R_{bc}^*Q_c
+                  \frac{d\omega_1d\omega_2}{(2\pi)^2}
+ \quad\hbox{gives}\quad S_{ab}(f)=\sum_c\frac{T_{abc}}{f_c}.
+ \label{eq:an_composition}
+\end{equation}
+Keeping individual edge moments fixed is a different control path requiring
+new one-site laws. Identical local laws with uniform edge variance instead
+give the null result $\mathcal E=\iint Q/|1-g^2AH_1H_2|^2$, independent of
+population fractions.
+
+For the degree intervention, keep $J^0,G,f$ and the target mean rates fixed,
+choose an incoming count $K_{iab}$, and uniformly sample a subset of the
+$M=N_b$ possible presynaptic neurons. Define
+$\chi_{ab}=\operatorname{Var}K_{iab}/[Mp_{ab}(1-p_{ab})]$.
+For fixed presynaptic values with mean $\overline m$ and variance $V$, exact
+sampling without replacement gives
+\begin{equation}
+ \operatorname{Var}\!\left(\frac{t}{\sqrt N}\sum_jA_jm_j\right)
+ =\frac{t^2}{N}Mp(1-p)
+     \left[\frac{M-\chi}{M-1}V+\chi\overline m^2\right].
+ \label{eq:an_finite_degree}
+\end{equation}
+For bounded $\chi=O(1)$, the leading static law is therefore
+\begin{equation}
+ \Delta_a=\sum_bG_{ab}f_b
+  \left[\operatorname{Var}_z m_b(z)+\chi_{ab}\overline m_b^2\right].
+ \label{eq:an_degree_static}
+\end{equation}
+The finite-$M$ correction and the actual generator dispersion can be retained
+as diagnostics. The dynamic and pair equations retain their form only under
+the dense cavity assumptions, including control of coherent population
+projections. Degree constraints change within-row covariances; their
+population-direction part is not zero merely because the mean EI matrix is
+Hurwitz. Bounded source-weighted response operators and subextensive
+coherent-projection covariance energy are additional conditions. Thus degree
+variation changes the local laws, $A$, and $Q$ self-consistently, whereas the
+fixed-$W$ composition control reweights the same laws.
+
+\subsection{Coherent EI feedback and endogenous labels}
+
+The mean balanced connectivity must remain in the dynamics. Write
+$J=J^{\rm c}+P K_0 B_0$, with $P_{ia}=1_{i\in a}$,
+$(B_0)_{aj}=1_{j\in a}/N_a$, and $K_0=\sqrt N J^0F$.
+For a frozen local-response comparison let
+$L_0=\operatorname{diag}(s_i)$ and $M_0=(I-L_0J^{\rm c})^{-1}$.
+Where the inverses exist, Woodbury gives the exact identity
+\begin{equation}
+ (I-L_0J)^{-1}=M_0+
+ M_0L_0P(I-K_0B_0M_0L_0P)^{-1}K_0B_0M_0.
+ \label{eq:an_coherent}
+\end{equation}
+It retains the full coherent EI loop. This finite-dimensional comparison is
+not an identity for a trajectory-dependent nonlinear tangent propagator.
+Removing the loop before solving for operating points is especially
+unjustified: it changes the one-site law and can destroy stability.
+
+Even conditioning on a neuron's quenched offset changes its incoming row.
+Hold the presynaptic mean-rate vector $m_j$ fixed in a cavity reservoir,
+independent of the added neuron's incoming Gaussian row. For independent
+Gaussian $J_{ij}^{\rm c}$ of variances $G_{ab}/N$, set
+$\eta_i=\sum_jJ_{ij}^{\rm c}m_j$, $v_j=G_{ab}m_j/N$, and
+$\sigma_i^2=\sum_jG_{ab}m_j^2/N$. Exact Gaussian regression yields
+\begin{equation}
+ \mathbb E[J_{ij}^{\rm c}\mid\eta_i]=\eta_i v_j/\sigma_i^2,
+ \qquad
+ \operatorname{Cov}(J_{ij}^{\rm c},J_{ik}^{\rm c}\mid\eta_i)
+   =\frac{G_{ab}}N\delta_{jk}-\frac{v_jv_k}{\sigma_i^2}.
+ \label{eq:an_row_regression}
+\end{equation}
+The conditional mean and removed direction produce finite-rank structure.
+The fixed-reservoir premise matters: the actual recurrent $m_j$ depends on
+the full connectivity, so the Gaussian prior alone does not make this an
+exact regression formula for the full nonlinear network. A Bernoulli
+counterpart additionally requires a conditional central-limit approximation.
+Finite rank by itself does not bound a covariance correction near an
+amplified mode. In a linear residual comparison with fixed source spectra,
+uniformly bounded source-weighted resolvents and an integrable envelope make
+a rank-$r$ change contribute $O(r)$ to the trace norm of the integrated
+covariance difference. If covariance operator norms are also bounded,
+\begin{equation}
+ |\operatorname{tr}(C-\widetilde C)|=O(r),\qquad
+ |\operatorname{tr}(C^2-\widetilde C^2)|
+ \leq\|C-\widetilde C\|_1\|C+\widetilde C\|_{\rm op}=O(r).
+\end{equation}
+Its normalized trace moments are then subleading for fixed $r$. Re-solving
+the nonlinear network can change the source in full rank; the comparison
+does not prove that change small. This is why the coherent and conditional
+cavity assumptions must be tested separately in finite networks.
+
+There is also an exact finite-network balance correction. Averaging the
+stationary input equation over each population gives
+\begin{equation}
+ \overline m_N-\overline m_*=
+ N^{-1/2}(J^0F)^{-1}
+   (\overline\mu_N-h^{\rm ext}-\overline\eta_N),
+ \qquad \overline m_*=-(J^0F)^{-1}I.
+ \label{eq:an_finite_balance}
+\end{equation}
+The centered recurrent static current $\overline\eta_N$ must be retained.
+Dropping it is not an exact finite-gain balance constraint.
+
+\subsection{Critical scope and checks}
+
+A critical reduction additionally requires an isolated response eigenmode,
+a smooth stationary branch, stable coherent feedback, and nonzero projected
+quadratic curvature. The local covariance expansion is
+$c_a(z,\tau)=\alpha_a(z)^2K_a(\tau)+\beta_a(z)^2K_a(\tau)^2/2+\cdots$,
+where $\beta_a=\mathbb E_u\phi''(\mu_a+u)$; averaging retains
+$\mathbb E_z\beta_a^2$, rather than $(\mathbb E_z\beta_a)^2$.
+For the generic quadratic scalar reduction, with
+$\delta=1-g^2\mathbb E\alpha^2$ the scalar response gap,
+$K''=\delta K-g_c^2\mathbb E\beta^2 K^2/2+\cdots$ and the zero-energy
+turning point gives $q=3\delta/(g_c^2\mathbb E\beta^2)+\cdots$.
+The familiar pair resonance then produces the conditional $d\propto
+\delta^{3/2}$ law. Degenerate modes or vanishing quadratic curvature require
+a different reduction. A biased homogeneous operating point can supply
+curvature, so the exponent alone does not identify a heterogeneity mechanism.
+No finite-network critical exponent is established by this algebra.
+
+Independent checks accompanying this appendix compare Price integrals with
+two-dimensional Gaussian quadrature, the matrix closure with a separate
+Lyapunov solver, the population path series with direct quadrature, the
+uniform-fraction null limit, uncoupled diagonal energy, and an isolated
+feedforward edge's phase. Maximum absolute algebra errors are below
+$4.1\times10^{-14}$ and the path-series relative error is below
+$1.8\times10^{-15}$ in the supplied cases. These checks verify integrals,
+normalizations, and algebra. They do not validate the nonlinear cavity
+assumptions or replace network sampling.

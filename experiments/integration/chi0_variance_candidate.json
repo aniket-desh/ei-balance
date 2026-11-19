@@ -1,0 +1,54 @@
+{
+  "scope": "Partial frozen-row candidate; requires exact subset contraction and omission of other same-order sources to be justified.",
+  "chi": 0,
+  "filtered_population_energy": [
+    [
+      0.22053951778415243,
+      0.04629562544124828
+    ],
+    [
+      0.04629562544124828,
+      0.023877700816172895
+    ]
+  ],
+  "filtered_offdiagonal_energy": [
+    [
+      0.1824003691977933,
+      0.04629562544124828
+    ],
+    [
+      0.04629562544124828,
+      0.011376189202405546
+    ]
+  ],
+  "filtered_local_variance": [
+    0.2183436184846008,
+    0.2500151156807059
+  ],
+  "alpha": [
+    0.22633506326413344,
+    0.19090050031605152
+  ],
+  "beta": [
+    0.11385793754222262,
+    0.0809979016023331
+  ],
+  "N_times_q_variance_candidate": [
+    121.89821193421886,
+    286.8315545170323
+  ],
+  "N_times_Delta_candidate_without_mixed_source": [
+    24.212186857753345,
+    37.08006598026414
+  ],
+  "N1000_q_variance_candidate": [
+    0.12189821193421886,
+    0.2868315545170323
+  ],
+  "N1000_Delta_candidate_without_mixed_source": [
+    0.024212186857753344,
+    0.037080065980264136
+  ],
+  "omitted_same_order_term": "alpha*beta*Cov(mu,q), plus exact degree-row and endogenous-feedback contractions; no full correction is claimed.",
+  "existing_measured_reference": "Selected degree N1000 chi0 seed4001: Var(q)~[.2076,.5473], Cov(mu,q)~[.01962,.05572], corrected Delta~[.06067,.09650]. These measurements were not fitted."
+}

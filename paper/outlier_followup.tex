@@ -1,0 +1,27 @@
+\begin{table}[htp]
+\centering
+\small
+\caption{Bounded follow-up of the retained 80:20, $N=1000$, seed3001
+outlier. All rows use the same connectivity, initial condition, drive, and
+mean-difference estimator. The native backend is algebraically equivalent
+to the SciPy action but can change floating-point phase after long chaotic
+evolution. Each native run contributes several prefixes, not independent
+replicates. The original primary outcome remains unchanged.}
+\label{tab:outlier_followup}
+\begin{tabular}{rrrrrr}
+\toprule
+Backend&Step&Duration&$\nu$&$\energy$&$d$\\
+\midrule
+SciPy&0.05&8000&0.082463&0.435878&0.015601\\
+Native&0.05&4000&0.077793&0.332661&0.018192\\
+Native&0.05&8000&0.078811&0.338284&0.018361\\
+Native&0.05&16000&0.076253&0.304663&0.019085\\
+Native&0.025&4000&0.074366&0.308644&0.017918\\
+Native&0.025&8000&0.073530&0.278710&0.019399\\
+Native&0.025&16000&0.074621&0.298795&0.018636\\
+Native&0.0125&4000&0.086350&0.421357&0.017696\\
+Native&0.0125&8000&0.088824&0.505479&0.015608\\
+Native&0.0125&16000&0.082204&0.397449&0.017002\\
+\bottomrule
+\end{tabular}
+\end{table}

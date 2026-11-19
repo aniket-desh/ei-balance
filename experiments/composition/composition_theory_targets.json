@@ -1,0 +1,151 @@
+{
+  "one_site_reference": {
+    "scope": "Original finite-coupling closure; no fit to network data.",
+    "static_variances": [
+      3.7033583765780396,
+      5.677453501537603
+    ],
+    "dynamic_variances": [
+      1.9395071414343728,
+      2.968660604252765
+    ],
+    "mean_inputs": [
+      -2.6712782365825896,
+      -3.218974921285835
+    ],
+    "alpha_second": [
+      0.05791908279867636,
+      0.04151530006090122
+    ],
+    "bvp_residual": 1.9822889811974494e-07,
+    "predictions": {
+      "0.6": {
+        "dimension_fraction": 0.029893524185321298,
+        "covariance_energy": 0.7822688131760428,
+        "mean_variances": [
+          0.14395566172581506,
+          0.16636851242580633
+        ],
+        "variance_seconds": [
+          0.04483078883430915,
+          0.06108146999711322
+        ],
+        "pair_covariance_energy": [
+          [
+            0.7445840232871702,
+            0.7306661242632995
+          ],
+          [
+            0.7306661242632996,
+            0.7010485240427935
+          ]
+        ],
+        "within_population_dimension_fractions": [
+          0.04215627535105292,
+          0.08104951869536059
+        ],
+        "response_radius": 0.8558354994358977,
+        "min_spectral_mass": -1.8468935042515953e-12,
+        "imaginary_energy_residual": 4.5102810375396984e-17
+      },
+      "0.8": {
+        "dimension_fraction": 0.034326225162807276,
+        "covariance_energy": 0.6418972250791755,
+        "mean_variances": [
+          0.14395566172581506,
+          0.16636851242580633
+        ],
+        "variance_seconds": [
+          0.04483078883430915,
+          0.06108146999711322
+        ],
+        "pair_covariance_energy": [
+          [
+            0.5825702418870731,
+            0.6115689069379121
+          ],
+          [
+            0.6115689069379122,
+            0.6317323746111736
+          ]
+        ],
+        "within_population_dimension_fractions": [
+          0.040563242476522626,
+          0.14767532098100952
+        ],
+        "response_radius": 0.8558354994358974,
+        "min_spectral_mass": -1.8468935042515953e-12,
+        "imaginary_energy_residual": 3.209238430557093e-17
+      }
+    }
+  },
+  "formal_firstorder_targets": [
+    {
+      "fraction_e": 0.6,
+      "N": 1000,
+      "nu0": 0.1529208020058116,
+      "energy0": 0.7822688131760416,
+      "d0": 0.029893524185321357,
+      "nu_first": 0.16638686134041908,
+      "energy_first": 0.894454170922347,
+      "d_strict_first": 0.030871276933099382,
+      "d_ratio_of_truncated_moments": 0.03095137629932223
+    },
+    {
+      "fraction_e": 0.6,
+      "N": 2000,
+      "nu0": 0.1529208020058116,
+      "energy0": 0.7822688131760416,
+      "d0": 0.029893524185321357,
+      "nu_first": 0.16244274387717295,
+      "energy_first": 0.861595840388293,
+      "d_strict_first": 0.03058489978359898,
+      "d_ratio_of_truncated_moments": 0.030626476825204682
+    },
+    {
+      "fraction_e": 0.6,
+      "N": 4000,
+      "nu0": 0.1529208020058116,
+      "energy0": 0.7822688131760416,
+      "d0": 0.029893524185321357,
+      "nu_first": 0.15965383167311534,
+      "energy_first": 0.8383614920491943,
+      "d_strict_first": 0.03038240055921037,
+      "d_ratio_of_truncated_moments": 0.030403765213027883
+    },
+    {
+      "fraction_e": 0.8,
+      "N": 1000,
+      "nu0": 0.14843823186581334,
+      "energy0": 0.6418972250791747,
+      "d0": 0.034326225162807325,
+      "nu_first": 0.16341958672680978,
+      "energy_first": 0.7348282006592524,
+      "d_strict_first": 0.03628548283139285,
+      "d_ratio_of_truncated_moments": 0.03634313612624285
+    },
+    {
+      "fraction_e": 0.8,
+      "N": 2000,
+      "nu0": 0.14843823186581334,
+      "energy0": 0.6418972250791747,
+      "d0": 0.034326225162807325,
+      "nu_first": 0.15903164947938597,
+      "energy_first": 0.7076093480941291,
+      "d_strict_first": 0.0357116295463559,
+      "d_ratio_of_truncated_moments": 0.03574156503762011
+    },
+    {
+      "fraction_e": 0.8,
+      "N": 4000,
+      "nu0": 0.14843823186581334,
+      "energy0": 0.6418972250791747,
+      "d0": 0.034326225162807325,
+      "nu_first": 0.15592890929631156,
+      "energy_first": 0.6883627128692136,
+      "d_strict_first": 0.03530585399710009,
+      "d_ratio_of_truncated_moments": 0.03532124024119955
+    }
+  ],
+  "firstorder_status": "Formal conditional stationary closure; missingeven-orderterms; not controlledfiniteNrepair."
+}

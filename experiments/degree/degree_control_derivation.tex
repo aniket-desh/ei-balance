@@ -1,0 +1,322 @@
+\section{A nonuniform EI intervention on degree dispersion}
+\label{sec:nonuniform-degree}
+
+This test changes count fluctuations while preserving the marginal mean and
+variance of every synapse and the population fractions. It directly tests the
+conditional construction in a network where E and I have different local
+laws. It is distinct from the earlier uniform-variance degree campaign.
+
+\subsection{Microscopic control and exact finite-pool identities}
+
+Let a postsynaptic neuron of type \(a\) sample a uniformly chosen subset of a
+presynaptic population of size \(M=N_b=f_bN\). Write \(A_j\in\{0,1\}\) for its
+edge indicators, \(K=\sum_{j=1}^M A_j\), and
+\[
+ E K=Mp,\qquad
+ \operatorname{Var}K=\chi_{\rm eff}Mp(1-p).
+\]
+The subset is uniform conditional on \(K\), and distinct receiving rows are
+drawn independently. Consequently
+\[
+ E A_j=\frac{E K}{M}=p,\qquad
+ \operatorname{Var}A_j=p(1-p).
+\]
+For \(j\ne k\), exchangeability gives
+\[
+ \operatorname{Var}K
+ =M p(1-p)+M(M-1)\operatorname{Cov}(A_j,A_k),
+\]
+hence
+\[
+ \operatorname{Cov}(A_j,A_k)
+ =\frac{(\chi_{\rm eff}-1)p(1-p)}{M-1}.
+\]
+For \(J_{ij}=t_{ab}A_j/\sqrt N\), choose
+\[
+ p_{ab}=\frac{(J^0_{ab})^2}{(J^0_{ab})^2+G_{ab}},
+ \qquad t_{ab}=\frac{J^0_{ab}}{p_{ab}}.
+\]
+Then \(t_{ab}\) has the presynaptic Dale sign and
+\begin{align*}
+ E J_{ij}&=\frac{t_{ab}p_{ab}}{\sqrt N}
+          =\frac{J^0_{ab}}{\sqrt N},\\
+ \operatorname{Var}J_{ij}
+ &=\frac{t_{ab}^2p_{ab}(1-p_{ab})}{N}
+   =\frac{G_{ab}}{N}.
+\end{align*}
+These marginal identities hold at finite \(M\), including nonzero rounding
+dispersion. The within-row covariance matrix of the centered weights is
+\[
+ S_{ab}=\frac{G_{ab}}N
+ \left[
+ \frac{M-\chi_{\rm eff}}{M-1}I_M+
+ \frac{\chi_{\rm eff}-1}{M-1}{\boldsymbol 1}{\boldsymbol 1}^{\mathsf T}
+ \right].
+\]
+Preserving single-edge moments therefore does not preserve joint edge
+independence. The low-rank term must be controlled when using a two-site
+closure.
+
+At \(\chi=1\), the degree construction recovers the full independent
+Bernoulli law, not just its first two moments. For any binary row \(a\) with
+\(k\) active entries,
+\[
+ P(A=a)=\frac{P(K=k)}{\binom Mk}
+       =p^k(1-p)^{M-k}.
+\]
+Thus independent rows give exactly the same connectivity ensemble as the
+Bernoulli baseline. Fresh seed labels with the same dynamics and estimator
+can be combined in a separately labeled pooled diagnostic; the original
+prospective comparisons remain separately identifiable.
+
+For fixed source means \(m_j\), set
+\(\bar m=M^{-1}\sum_jm_j\) and
+\(V_m=M^{-1}\sum_j(m_j-\bar m)^2\). The exact cavity-row contraction is
+\begin{align*}
+ \operatorname{Var}\left(\sum_j\delta J_{ij}m_j\right)
+ &=m^{\mathsf T}S_{ab}m\\
+ &=\frac{G_{ab}}N\left[
+ \frac{M-\chi_{\rm eff}}{M-1}M(V_m+\bar m^2)
+ +\frac{\chi_{\rm eff}-1}{M-1}M^2\bar m^2\right]\\
+ &=G_{ab}f_b\left[
+ \frac{M-\chi_{\rm eff}}{M-1}V_m+\chi_{\rm eff}\bar m^2
+ \right].
+\end{align*}
+The last simplification uses
+\(M-\chi_{\rm eff}+M(\chi_{\rm eff}-1)=\chi_{\rm eff}(M-1)\).
+Thus the usual static equation is its leading dense-network limit, rather
+than an exact finite-network identity.
+
+The count generator records the expected dispersion, not merely the
+requested parameter. For \(0\le\chi\le1\), define
+\(L=\operatorname{round}(\chi M)\),
+\(b=(M-L)p\), and \(\rho=b-\lfloor b\rfloor\). It draws
+\[
+ K=\lfloor b\rfloor+B_\rho+B_{L,p},
+\]
+with independent Bernoulli and binomial terms. Therefore
+\[
+ E K=Mp,\qquad
+ \chi_{\rm eff}
+ =\frac{L p(1-p)+\rho(1-\rho)}{Mp(1-p)}.
+\]
+In particular, requested \(\chi=0\) gives exactly fixed counts only when
+\(Mp\) is an integer. For \(1<\chi<M\), the beta-binomial construction uses
+concentration \(c=(M-\chi)/(\chi-1)\), so that
+\[
+ \operatorname{Var}K
+ =Mp(1-p)\frac{M+c}{1+c}
+ =\chi Mp(1-p).
+\]
+
+\subsection{Conditional one-site prediction}
+
+Under the same asynchronous dense-network cavity assumptions as the main
+construction, the leading quenched input variance is
+\[
+ \Delta_a=\sum_bG_{ab}f_b
+ \left[\operatorname{Var}_z m_b(z)+\chi_{ab}\bar m_b^2\right].
+\]
+The mean-rate term has a direct microscopic interpretation. At bounded
+nonzero dispersion, \(K-Mp=O(\sqrt M)\). Multiplying that count deviation
+by a synapse of size \(O(N^{-1/2})\) and a nonzero mean rate produces an
+\(O(1)\) fixed input offset. Relative degree fluctuations can therefore
+vanish while the operating-point spread persists. This does not require
+the conditional temporal input variance to fail to concentrate.
+Write \(\mu_a(z)=h_a+\sqrt{\Delta_a}z\),
+\(q_a=K_a(0)\), and
+\[
+ m_a(z)=2\Phi\!\left(\frac{\mu_a(z)}{\sqrt{1+q_a}}\right),
+ \qquad
+ h_a=\sqrt{1+\Delta_a+q_a}\,
+       \Phi^{-1}\!\left(\frac{\bar m_a}{2}\right).
+\]
+The last relation fixes the leading ensemble mean; no measured network mean
+is inserted. Let
+\[
+ c_a(z,\tau)=
+ E[\phi(\mu_a(z)+u_a(t+\tau))\phi(\mu_a(z)+u_a(t))]
+ -m_a(z)^2,
+\]
+where \(u_a\) is Gaussian with covariance \(K_a\). The kernel equation is
+\[
+ K_a(\tau)-K_a''(\tau)
+ =\sum_bG_{ab}f_b E_z c_b(z,\tau),
+ \qquad K_a'(0)=0,\quad K_a(\infty)=0.
+\]
+The time-averaged conditional response gain is
+\[
+ \alpha_a(z)=
+ \sqrt{\frac{2}{\pi(1+q_a)}}\,
+ \exp\!\left[-\frac{\mu_a(z)^2}{2(1+q_a)}\right].
+\]
+The whole kernel and the conditional distribution are recomputed as
+\(\chi\) changes; keeping only mean gains fixed would be a different
+experiment.
+
+For a temporally centered population covariance matrix \(C_b(\tau)\), the
+finite-pool dynamic row contraction is exactly
+\[
+ \operatorname{tr}[S_{ab}C_b(\tau)]
+ =\frac{G_{ab}}N\left[
+ \frac{M-\chi_{\rm eff}}{M-1}\operatorname{tr}C_b(\tau)
+ +\frac{\chi_{\rm eff}-1}{M-1}
+ {\boldsymbol 1}^{\mathsf T}C_b(\tau){\boldsymbol 1}\right].
+\]
+The second term is subleading if the population-mean covariance vanishes
+sufficiently quickly. Stable coherent feedback and a self-averaging
+asynchronous state are substantive conditions, not consequences of matching
+the single-edge moments. The paired-row contraction and its directly
+measured low-rank diagnostics are treated separately in the finite-pool audit.
+
+\subsection{Geometry and observables}
+
+Let \(v_a(z)=c_a(z,0)\),
+\(A_a=E_z\alpha_a(z)^2\), and
+\(Q_a(\omega_1,\omega_2)=
+E_z[c_a(z,\omega_1)c_a(z,\omega_2)]\).
+With \(F=\operatorname{diag}(f)\),
+\(H(\omega)=(1+i\omega)^{-1}\), and
+\[
+ R(\omega_1,\omega_2)=
+ \left[I-\operatorname{diag}(A)H(\omega_1)H(\omega_2)GF\right]^{-1},
+\]
+the conditional pair closure gives the integrated matrix
+\[
+ X=\iint R\operatorname{diag}(Q/f)R^\dagger
+       \frac{d\omega_1d\omega_2}{(2\pi)^2}.
+\]
+Our implementation stores spectral masses already containing the integration
+measures. Its frequency sums therefore receive no second quadrature factor.
+Define
+\[
+ P_{ab}=X_{ab}-\delta_{ab}\frac{E_zv_a^2}{f_a},
+ \qquad
+ \mathcal B_{ab}=f_af_b P_{ab}+
+                  \delta_{ab} f_aE_zv_a^2.
+\]
+The matrix \(\mathcal B\) is directly comparable to
+\(N^{-1}\sum_{i\in a,j\in b}C_{ij}^2\).
+Its two equal cross-population entries each contribute once:
+\[
+ \mathcal E=\mathcal B_{EE}+2\mathcal B_{EI}+\mathcal B_{II},
+ \quad
+ \nu=\sum_af_aE_zv_a,
+ \quad
+ d=\frac{\nu^2}{\mathcal E}.
+\]
+These are covariance energies, not participation ratios of a rectangular
+E--I block. For a single population submatrix,
+\[
+ \frac{D_a}{N_a}
+ =\frac{(E_zv_a)^2}{E_zv_a^2+f_aP_{aa}}.
+\]
+
+A useful exact decomposition within this prediction is
+\[
+ d=d_{\rm uncorr}
+       \frac{\mathcal E_{\rm diag}}{\mathcal E},
+ \qquad
+ d_{\rm uncorr}=\frac{\nu^2}{\mathcal E_{\rm diag}},
+ \qquad
+ \mathcal E_{\rm diag}=\sum_af_aE_zv_a^2.
+\]
+The first factor describes the spread of individual temporal variances;
+the second describes the further dimensional reduction by correlations.
+Neither factor is a measure of computational task performance.
+
+\subsection{Specified nonuniform control and deterministic checks}
+
+The control uses
+\[
+ f=(0.8,0.2),\qquad
+ J^0=\begin{pmatrix}1&-6\\2&-10\end{pmatrix},\qquad
+ G=\begin{pmatrix}16&9\\25&12\end{pmatrix},\qquad
+ \bar m_E=\bar m_I=0.3.
+\]
+These quantities remain fixed while all four degree-dispersion entries take
+the common value \(\chi\). The external input is
+\[
+ I_a^{\rm total}=
+ -\sqrt N\sum_bJ^0_{ab}f_b\bar m_b+h_a(\chi).
+\]
+The recomputed \(h_a(\chi)\) maintains the intended leading operating point.
+It is fixed before each simulation and is never fit to the observed PR.
+The \(O(\sqrt N)\) balance drive is fixed along this path, whereas the
+\(O(1)\) offset changes with \(\chi\). This is not an intervention with every
+external input held fixed. In the balanced limit the large drive already
+fixes the mean rates; setting its finite offset to the limiting \(h_a(\chi)\)
+also aims to reduce finite-gain mean offsets without fitting them.
+
+\begin{center}
+\begin{tabular}{r|rr|rr|rrr}
+\(\chi\)&\(\Delta_E\)&\(\Delta_I\)&\(q_E\)&\(q_I\)&
+\(d_{\rm uncorr}\)&\(\mathcal E_{\rm diag}/\mathcal E\)&\(d\)\\
+\hline
+0&0&0&3.24483&4.96691&0.99637&0.17452&0.17389\\
+0.5&2.14132&3.28237&2.48054&3.79709&0.57194&0.09781&0.05594\\
+1&3.70336&5.67745&1.93951&2.96866&0.45827&0.07490&0.03433\\
+2&6.13630&9.40862&1.24928&1.91174&0.34047&0.04937&0.01681
+\end{tabular}
+\end{center}
+
+Refining the one-site time grid from \(0.08\) to \(0.04\), the horizon from
+\(100\) to \(150\), the Gaussian quadrature from \(96\) to \(160\) points, and
+the spectral cutoff from \(12\) to \(20\) changes \(d\) by at most
+\(3.3\times10^{-8}\) in relative value at these four points. This checks
+numerical implementation of the conditional closure; it does not validate
+the closure against networks.
+
+At \(N=1000\), the exact expected rounding dispersions for requested
+\(\chi=0\) are
+\[
+ \begin{pmatrix}0.00125&0\\0.002375&0.0128\end{pmatrix}.
+\]
+Re-solving the conditional equations with these values while reimposing the
+target means changes \(d\) by about \(-0.74\%\) and either component of \(h\)
+by less than \(0.003\). This is a rounding sensitivity diagnostic, not an
+exact prediction for the already specified drive, because it redefines
+\(h\). It is small compared with the predicted 10.34-fold endpoint change.
+
+All network comparisons use fresh prespecified connectivity draws and retain
+every outcome. The mean-free covariance-energy estimator is compared at fixed
+block duration and checked against longer records. Its independence and
+stationarity requirements remain explicit. A finite-record ratio is not
+made unbiased merely by correcting its denominator.
+
+\subsection{Regular static susceptibility on this control path}
+
+The fixed-count endpoint also admits a direct local check of the degree
+mechanism. At \(\chi=0\), the leading static law has \(\Delta=0\), while the
+temporal variance remains positive. Expanding the conditional mean in its
+small quenched offset gives
+\[
+ m_b(z)=\bar m_b+\alpha_{b,0}\sqrt{\Delta_b}z+O(\Delta_b),
+ \qquad
+ \operatorname{Var}_z m_b(z)=A_{b,0}\Delta_b+O(\Delta_b^2).
+\]
+The mean is held fixed, so changes of \(h_b\) and \(q_b\) contribute only at
+higher order to this variance coefficient. For a common small dispersion,
+the static equation therefore reads
+\[
+ \Delta=W\operatorname{diag}(A_0)\Delta+
+          \chi W\bar m^2+O(\|\Delta\|^2+\chi\|\Delta\|),
+ \qquad W=GF.
+\]
+If \(\rho(W\operatorname{diag}A_0)<1\), its derivative is
+\[
+ \left.\frac{d\Delta}{d\chi}\right|_{0}
+ =[I-W\operatorname{diag}(A_0)]^{-1}W\bar m^2.
+\]
+For the specified profile, the direct degree source and full susceptibility are
+\[
+ W\bar m^2=(1.314,2.016)^{\mathsf T},\qquad
+ \Delta'(0)=(5.390674,8.261608)^{\mathsf T}.
+\]
+The positive response eigenvalue is
+\(0.756211\). Static recurrent feedback amplifies the direct count source by
+about four at this endpoint. Numerical solutions at
+\(\chi=10^{-3},10^{-4},10^{-5}\) approach the derivative with maximum
+relative errors \(6.47\times10^{-4},6.48\times10^{-5},6.48\times10^{-6}\).
+This is a regular, away-from-onset susceptibility. It is not a claim that the
+same linear expansion stays uniform at a critical point.

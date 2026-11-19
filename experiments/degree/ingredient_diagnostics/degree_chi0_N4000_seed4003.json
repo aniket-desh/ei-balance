@@ -1,0 +1,188 @@
+{
+  "name": "degree_chi0_N4000_seed4003",
+  "status": "complete",
+  "N": 4000,
+  "chi": 0.0,
+  "scope": "Available retained-trajectory or captured-local-moment diagnostic; coverage is reported in status.json, not assumed to be the full cohort. Crossblock identities require stationary independent windows. Negative corrected finite-time values are not clipped. It does not create another network replicate.",
+  "moment_source": "next_round/runtime/runs/degree_chi0_N4000_seed4003_B500_neuron_statistics.npz",
+  "moment_blocks": 16,
+  "B": 500.0,
+  "T": 8000.0,
+  "rows": [
+    {
+      "empty_blocks": 0,
+      "Delta_crossblock_input_means": [
+        0.014680273105337689,
+        0.023407593306404923
+      ],
+      "A_crossblock_timeaveraged_gain_squared": [
+        0.047968968510566735,
+        0.03463206406212338
+      ],
+      "q_crossblock_temporal_input": [
+        3.3553579018109363,
+        5.136686003843893
+      ],
+      "nu_crossblock_temporal_rate": [
+        0.26465612847438214,
+        0.30127565190191885
+      ],
+      "v_squared_fourwindow_by_population": [
+        0.07094145973691389,
+        0.09190168312542234
+      ],
+      "q_variance_across_neurons_fourwindow": [
+        0.05073977625736748,
+        0.11429088367115087
+      ],
+      "input_mean_temporal_q_covariance_threewindow": [
+        0.002893843253763088,
+        0.005176037974581176
+      ],
+      "static_rate_mean_variance_crossblock": [
+        0.0009232790849351793,
+        0.0010591076737683043
+      ],
+      "population_mean_rate_squared_crossblock": [
+        0.09060896132722217,
+        0.09063445882018124
+      ],
+      "static_row_contraction_measured_source_diagnostic": [
+        0.01490835909074706,
+        0.022717728091315764
+      ],
+      "diagonal_rate_energy": 0.07513350441461558,
+      "quadruples": 1820,
+      "energy": 0.45849949453690514,
+      "d": 0.16133744817400306,
+      "d_uncorrelated": 0.9845559449675387,
+      "correlation_factor": 0.16386823826382213,
+      "factor_identity_error": 1.3877787807814457e-16
+    },
+    {
+      "empty_blocks": 1,
+      "Delta_crossblock_input_means": [
+        0.014935112408651054,
+        0.023758410344619917
+      ],
+      "A_crossblock_timeaveraged_gain_squared": [
+        0.04797404885746183,
+        0.03463531696405664
+      ],
+      "q_crossblock_temporal_input": [
+        3.3550113074596024,
+        5.136289697029634
+      ],
+      "nu_crossblock_temporal_rate": [
+        0.26463918273467124,
+        0.3012605754996687
+      ],
+      "v_squared_fourwindow_by_population": [
+        0.07093666852699788,
+        0.09189722114141713
+      ],
+      "q_variance_across_neurons_fourwindow": [
+        0.05082695226344832,
+        0.11426423733515212
+      ],
+      "input_mean_temporal_q_covariance_threewindow": [
+        0.0028922118171383023,
+        0.005009165970607133
+      ],
+      "static_rate_mean_variance_crossblock": [
+        0.0009366595301477348,
+        0.0010721225383288312
+      ],
+      "population_mean_rate_squared_crossblock": [
+        0.09061043841946964,
+        0.09063533784747389
+      ],
+      "static_row_contraction_measured_source_diagnostic": [
+        0.015103157552107902,
+        0.023016719166678218
+      ],
+      "diagonal_rate_energy": 0.07512877904988173,
+      "quadruples": 715,
+      "energy": 0.45803182414225596,
+      "d": 0.16148250050983023,
+      "d_uncorrelated": 0.9844978876398606,
+      "correlation_factor": 0.16402523818202677,
+      "factor_identity_error": 1.3877787807814457e-16
+    },
+    {
+      "empty_blocks": 2,
+      "Delta_crossblock_input_means": [
+        0.01485631711984718,
+        0.023408505545001256
+      ],
+      "A_crossblock_timeaveraged_gain_squared": [
+        0.04797742800571988,
+        0.03463395060531452
+      ],
+      "q_crossblock_temporal_input": [
+        3.355016164631696,
+        5.136535213094919
+      ],
+      "nu_crossblock_temporal_rate": [
+        0.2646403084881172,
+        0.301273665852727
+      ],
+      "v_squared_fourwindow_by_population": [
+        0.07091029311875993,
+        0.09187176069070534
+      ],
+      "q_variance_across_neurons_fourwindow": [
+        0.050830427835615324,
+        0.11612348531130896
+      ],
+      "input_mean_temporal_q_covariance_threewindow": [
+        0.002811952325025551,
+        0.004827676331432309
+      ],
+      "static_rate_mean_variance_crossblock": [
+        0.0009313460136046008,
+        0.0010600171943204622
+      ],
+      "population_mean_rate_squared_crossblock": [
+        0.09061311616563582,
+        0.09063674572442863
+      ],
+      "static_row_contraction_measured_source_diagnostic": [
+        0.015013341221610738,
+        0.022881368693892033
+      ],
+      "diagonal_rate_energy": 0.07510258663314902,
+      "quadruples": 210
+    }
+  ],
+  "raw_full_record_population_local_stats": [
+    {
+      "population": 0,
+      "count": 3200,
+      "mean_rate": 0.30101329060451326,
+      "h": -2.163151884676406,
+      "Delta_input_means": 0.017982883047926643,
+      "q_temporal_input": 3.3520533511824726,
+      "nu_temporal_rate": 0.2644366084529784,
+      "mean_v_squared": 0.07104636843179472,
+      "A_timeaveraged_gain_squared": 0.04802080139428543,
+      "A4_timeaveraged_gain_fourth": 0.0023505687940259747,
+      "instantaneous_gain_squared": 0.12184550500385347,
+      "variance_temporal_q_across_neurons": 0.06433545314282635
+    },
+    {
+      "population": 1,
+      "count": 800,
+      "mean_rate": 0.30105560811195053,
+      "h": -2.5679078418520422,
+      "Delta_input_means": 0.028437112199493027,
+      "q_temporal_input": 5.131651642688994,
+      "nu_temporal_rate": 0.30103273194567476,
+      "mean_v_squared": 0.09203037976310213,
+      "A_timeaveraged_gain_squared": 0.034676110477912914,
+      "A4_timeaveraged_gain_fourth": 0.0012300776915305574,
+      "instantaneous_gain_squared": 0.10410852960705932,
+      "variance_temporal_q_across_neurons": 0.14543131772614534
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "fresh_output_directory_created": true,
+  "temporary_native_action_error": 1.7763568394002505e-15,
+  "active_native_library_unchanged": true,
+  "unsupported_madvise_OSError_handled": true,
+  "export_source": "engine_v4.py",
+  "export_source_sha256": "b21a8687effa2fcedc592f6bc5af3811b65ba7b260f266bb1871a47d13278ba3",
+  "numerical_kernel": "Identical to memory-validated v3; only portability exception handling and macOS worker-memory estimate changed.",
+  "macOS_execution_tested": false,
+  "native_python_export_sha256": "0b4556abd620ae8721e96490311528ccc96884f076e1c9fedd4b7ba36e615e95",
+  "compiled_Cpp_source_sha256": "0676acffdbbbfb34816f093d8980a08a343fc70470e8b7c04a46910951dd1216",
+  "actual_current_native_library_sha256": "cc9f67ca45dfecdc3063d9eac3426a173bfd6f4f744934836f444a7d080defec",
+  "builder_only_change": "Create output directory on fresh extraction; no action-kernel change.",
+  "export_BLAS_environment_controls": [
+    "OPENBLAS_NUM_THREADS",
+    "OMP_NUM_THREADS",
+    "MKL_NUM_THREADS",
+    "NUMEXPR_NUM_THREADS",
+    "VECLIB_MAXIMUM_THREADS",
+    "BLIS_NUM_THREADS"
+  ],
+  "thread_control_change": "AppleAccelerateandBLISaddedbeforeNumPyimportforexport; productionv2Linuxsourceunchanged.",
+  "macOS_build_flag": "-dynamiclib; architecture-specific -march=native remains Linux-only; macOS build not executed."
+}

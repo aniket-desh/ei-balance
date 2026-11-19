@@ -1,0 +1,165 @@
+**My reassessment: the paper’s strongest version would establish a specific mechanism, demonstrate it in balanced EI networks, and identify the regime where its predictions are quantitatively reliable.** The disorder–curvature crossover is the most promising conceptual result currently in the archive. Its next challenge is direct validation and a clear connection to Nischal’s original two-population problem.
+
+I would prioritize the work in the following order. These priorities follow from the latest archive’s assessment, crossover derivation, degree generator, and validation results; they are not a fresh verification of every calculation.
+
+1. **Settle the central claim and its precise novelty.**
+
+   The candidate claim is:
+
+   > Degree fluctuations generate a distribution of operating points. This distribution creates local curvature self-consistently, changing how the response gap opens near chaos and producing a calculable crossover in activity dimensionality.
+
+   The strongest mathematical expression, within the scalar centered model, is
+   \[
+   \Delta_c\sim\chi^{1/3},
+   \qquad
+   r_\chi\sim\chi^{1/3},
+   \qquad
+   d(r,\chi)\equiv\frac{\mathrm{PR}}N
+   \sim\chi\,\mathcal F\!\left(\frac r{\chi^{1/3}}\right),
+   \]
+   with known coefficients and a specified scaling function. Here \(\chi\) measures degree dispersion and \(r=g/g_c(\chi)-1\).
+
+   This explains something more specific than “heterogeneity changes dimensionality”: **vanishing disorder produces a shrinking critical regime, so taking disorder to zero and approaching onset reveal different coupling-distance exponents.**
+
+   The literature comparison must be equally specific. Clark and colleagues already provide two-site covariance theory and a general treatment of neuronal heterogeneity, including differences between recurrent gain heterogeneity and readout rescaling. Kadmon–Sompolinsky already establish that onset properties depend on the transfer function. Those broad ideas should be credited as foundations. The particular self-consistent degree–curvature crossover needs a focused priority review. [arxiv.org](https://arxiv.org/html/2207.12373v3?utm_source=chatgpt.com)
+
+   **Completion criterion:** one paragraph stating the new result, its assumptions, its nearest predecessors, and the prediction that distinguishes it from them.
+
+2. **Determine whether the crossover is observable before launching a large simulation campaign.**
+
+   This is the most urgent calculation.
+
+   The archive’s excellent agreement at tiny \(\chi\) checks the asymptotic algebra. Those values may be inaccessible in finite networks. The current degree generator randomizes approximately \(\operatorname{round}(\chi N_b)\) trials, with an additional rounding contribution. A requested small dispersion therefore need not equal the dispersion actually generated.
+
+   Construct a feasibility map over \((N,\chi,r)\), using the **exact conditional theory**, and record:
+
+   - The generator’s actual dispersion \(\chi_{\mathrm{eff}}\), including rounding.
+   - Predicted absolute dimension \(Nd\), static disorder, fluctuation amplitude, and response gap.
+   - The separation between inner and outer crossover regimes.
+   - Expected threshold fluctuations and recording requirements.
+   - Departure of the asymptotic scaling function from the full conditional calculation.
+
+   The existing necessary visibility condition,
+   \[
+   N\chi\gg1,
+   \]
+   is a useful first filter. It does not guarantee a clean window. Response fluctuations impose an additional requirement of the form
+   \[
+   \frac{\operatorname{SD}(\delta\lambda)}{\delta}\ll1,
+   \]
+   where \(\delta\lambda\) denotes fluctuations of the relevant projected response eigenvalue. The current label model captures only part of those fluctuations.
+
+   **Completion criterion:** identify a feasible set of parameters where rounding, small absolute dimension, threshold spread, and recording error do not obscure the predicted crossover.
+
+   If no such set is affordable, that changes the paper’s scope: retain the crossover as an analytical prediction and give greater weight to validating the conditional EI theory away from onset.
+
+3. **Validate the entire mechanism through intermediate observables.**
+
+   A PR exponent is a compressed outcome. Several errors can cancel before reaching it. The stronger experiment tests the proposed chain:
+   \[
+   \chi
+   \longrightarrow
+   \Delta
+   \longrightarrow
+   \mathbb E[\phi''(\mu)^2]
+   \longrightarrow
+   \delta
+   \longrightarrow
+   \text{pair-covariance energy}
+   \longrightarrow d.
+   \]
+
+   Use three essential controls:
+
+   | Control | Purpose |
+   |---|---|
+   | Homogeneous, at the inflection point | Recover the cubic reference law |
+   | Homogeneous, biased away from the inflection point | Demonstrate that curvature can exist without heterogeneity |
+   | At the inflection point, with degree dispersion | Isolate curvature generated by disorder |
+
+   The biased control is indispensable. At the original mean rate \(0.3\), removing degree dispersion does **not** recover the centered cubic case: the homogeneous operating point already has nonzero curvature.
+
+   At each selected parameter point, compare parameter-only predictions with measured static variance, gain moments, temporal kernels, response quantities, and covariance energy. Then test the **full crossover curve**, including its scale and prefactor. Local log–log slopes should be secondary diagnostics; a short apparent power law is weak evidence.
+
+   A particularly useful additional observable is the normalized temporal kernel. The theory predicts its change between the \(\operatorname{sech}^2\) and \(\operatorname{sech}\) forms. Agreement in kernel shape and dimensionality would constrain the explanation more strongly than PR alone.
+
+   **Completion criterion:** independently sampled networks reproduce the predicted changes in the intermediate quantities and the crossover, without fitting covariance amplitudes or crossover locations to PR.
+
+4. **Connect the scalar mechanism to the nonuniform two-population EI model.**
+
+   This is essential for preserving the paper’s original scope. The scalar result is currently sharper than the demonstrated connection to the full EI benchmark.
+
+   There are two complementary tasks.
+
+   First, complete the already motivated **nonuniform degree experiment**, where E and I have different local laws. Vary degree dispersion along a specified control path while keeping the aggregate quantities intended by that path fixed. Predict and measure:
+
+   \[
+   \Delta_E,\Delta_I,\quad
+   K_E(\tau),K_I(\tau),\quad
+   \mathcal E_{EE},\mathcal E_{EI},\mathcal E_{II},\quad d.
+   \]
+
+   Separate population covariance energies and selected unequal-lag slices are particularly useful here. They test structure that a single total PR cannot identify.
+
+   Second, derive the critical reduction for an **isolated population mode**. Introduce its left and right eigenvectors, project the nonlinear covariance equations, and compute the effective curvature and higher-order coefficients. Keep coherent EI feedback and the static self-consistency equations in this reduction.
+
+   The question is whether the scalar crossover survives with population-dependent coefficients, or whether EI structure changes the reduction. The answer should be derived rather than inferred from similar-looking equations.
+
+   **Completion criterion:** a stated set of conditions under which the scalar mechanism describes the EI network, supported by at least one genuinely nonuniform example. If those conditions fail, delimit the scalar result explicitly.
+
+5. **Establish a supported domain of validity for the leading closure.**
+
+   The latest corrected \(N=1000\), 60:40 cohort mean is approximately \(0.02568\), about 14% below the leading prediction \(0.02989\). The first-order correction moves the prediction farther upward. That remains a substantive quantitative issue.
+
+   The next useful campaign is a **prospective size series**, using fresh connectivity realizations and a common estimator protocol. Start with a small number of representative points and sizes such as \(N=1000,2000,4000\); increase the largest size if the trend remains unresolved. Include both compositions.
+
+   At each size, report separately:
+   \[
+   \nu_N=\frac{\operatorname{tr}C}{N},
+   \qquad
+   \mathcal E_N=\frac{\operatorname{tr}C^2}{N},
+   \qquad
+   d_N=\frac{\nu_N^2}{\mathcal E_N}.
+   \]
+   Also report gain moments and population pair energies. Preserve both the mean of network ratios and the ratio of ensemble mean moments.
+
+   Choose ensemble sizes from a target precision. With roughly 25% variation between networks, approximately 100 independent realizations would be needed for a conventional 95% mean interval of about ±5%, assuming comparable variability. That level of sampling belongs at a few decisive points, rather than everywhere.
+
+   Use the corrected recording estimator, duration and gap checks, and selected independent initial conditions. Distinguish chaotic, periodic, and fixed-point outcomes. Report their occurrence separately from statistics conditional on a chaotic state.
+
+   **Completion criterion:** identify where errors in the ingredients and PR decrease with size, and where a reproducible residual remains. A complete convergence theorem is unnecessary for an empirically supported validity domain.
+
+6. **Use the remaining discrepancies to select further theory.**
+
+   I would now make second-order work depend on what the preceding tests reveal.
+
+   | Persistent observation | Next analytical target |
+   |---|---|
+   | Local laws converge, but pair energy remains wrong | Missing pair closure or connected collective contribution |
+   | Gain/background errors persist | Correction to the conditional one-site law |
+   | Mean predictions improve, but network spread remains wrong | Joint quenched fluctuations of numerator and energy |
+   | Disagreement concentrates near onset | Fluctuating critical mode, threshold spread, and possible resummation |
+   | Disagreement tracks recording protocol | Observable-specific four-time estimator terms |
+
+   This gives each difficult calculation a discriminating purpose.
+
+   The existing first-order theory is valuable as an appendix result, provided its formal status and failed coefficient checks remain visible. Completing every \(O(N^{-1})\) sector becomes necessary if the paper claims controlled finite-size prediction. For a paper centered on the large-\(N\) mechanism, a validated domain and a well-characterized failure boundary can be sufficient.
+
+   Any proposed resummation should preserve PR’s exact invariance under common covariance rescaling and include source terms at the same retained order. A closer final ratio alone would not validate it.
+
+7. **Build the manuscript around four decisive figures and explicit claim thresholds.**
+
+   I would aim for:
+
+   | Figure | Scientific job |
+   |---|---|
+   | Conditional local laws and averaging controls | Show what information the operating-point distribution contributes |
+   | Nonuniform EI degree intervention | Establish the mechanism in the original population setting |
+   | Disorder–curvature crossover | Show the predicted scaling curve, temporal shapes, and essential controls |
+   | Size and recording validation | Establish accuracy, variation, and the observable window |
+
+   Keep the main text focused on the mechanism, assumptions, and evidence needed to assess it. Put the stationary first-order derivation, estimator algebra, coefficient inventories, and numerical checks in appendices. Preserve rejected approaches in the research archive; only failures that constrain the interpretation need substantial manuscript space.
+
+**The next three concrete deliverables should be the feasibility map, the nonuniform EI degree test, and a prospective validation protocol.** They will determine which ambitious claims the paper can support.
+
+I would consider the paper substantially stronger when it has: a precise novelty statement; a verified EI connection; a mechanism test involving more than PR; and a quantitative validity domain. The crossover could then provide its central physical insight. The remaining finite-size theory would have a clearly defined role instead of becoming an open-ended prerequisite.
