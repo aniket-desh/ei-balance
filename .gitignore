@@ -35,3 +35,13 @@ tmp/
 /paper/main.log
 /paper/bibtex.log
 /paper/build_*.log
+
+/experiments/paper_campaign/theory_cache/
+
+# Paper campaign: per-network records and arrays stay local (about 125 MB).
+# The tables behind the figures (networks.csv, windows.csv, summary.json) are tracked.
+/experiments/paper_campaign/arrays/
+/experiments/paper_campaign/records/
+/experiments/paper_campaign/spectral/measurements/
+/experiments/paper_campaign/spectral/runs/
+/experiments/paper_campaign/spectral/spectra/

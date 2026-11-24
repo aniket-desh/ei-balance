@@ -1,0 +1,110 @@
+{
+ "account": "CBAI team account (verified with get-account before the first create)",
+ "flavor": "cpu5c, 32 vCPU, 64 GB RAM, 120 GB container disk, no volume",
+ "data_center": "EUR-IS-1",
+ "image": "runpod/base:1.0.2-ubuntu2404",
+ "environment": {
+  "python": "3.12.3",
+  "numpy": "2.5.5",
+  "scipy": "1.18.1",
+  "compiler": "g++ 13.3.0",
+  "cpu": "AMD EPYC 9575F"
+ },
+ "source_archive_sha256": "0d19d4a9ff1b652e396bb202e96edada1b6c165470b37b717a17868586a215b8",
+ "manifest_sha256": "e4ca9a3298d48684078bb3ae4c0d14554121ca63b374f5f899955e305c8fe35c",
+ "pods": [
+  {
+   "name": "aniket-eibalance-pc-01",
+   "pod_id": "6pwc09nyyomaoa",
+   "created_utc": "2026-11-24T18:13:08Z",
+   "uptime_seconds_at_stop": 2660,
+   "role": "main stripe 1/7",
+   "compute_usd_per_hour": 1.12,
+   "compute_estimate_usd": 0.828,
+   "status_after_stop": "EXITED"
+  },
+  {
+   "name": "aniket-eibalance-pc-02",
+   "pod_id": "cu0czhk55ujbk3",
+   "created_utc": "2026-11-24T18:13:30Z",
+   "uptime_seconds_at_stop": 926,
+   "role": "main stripe 2/7; host about five times slower, stopped with no records kept",
+   "compute_usd_per_hour": 1.12,
+   "compute_estimate_usd": 0.288,
+   "status_after_stop": "EXITED"
+  },
+  {
+   "name": "aniket-eibalance-pc-03",
+   "pod_id": "a4js4z1s95ymco",
+   "created_utc": "2026-11-24T18:13:32Z",
+   "uptime_seconds_at_stop": 5619,
+   "role": "main stripe 3/7, then N = 16,000 part 4/4",
+   "compute_usd_per_hour": 1.12,
+   "compute_estimate_usd": 1.748,
+   "status_after_stop": "EXITED"
+  },
+  {
+   "name": "aniket-eibalance-pc-04",
+   "pod_id": "n7o5xvt9oh9pv0",
+   "created_utc": "2026-11-24T18:13:33Z",
+   "uptime_seconds_at_stop": 5617,
+   "role": "main stripe 4/7, then N = 16,000 part 1/4",
+   "compute_usd_per_hour": 1.12,
+   "compute_estimate_usd": 1.748,
+   "status_after_stop": "EXITED"
+  },
+  {
+   "name": "aniket-eibalance-pc-06",
+   "pod_id": "mjma91moxpny47",
+   "created_utc": "2026-11-24T18:13:35Z",
+   "uptime_seconds_at_stop": 5626,
+   "role": "main stripe 5/7, then N = 16,000 part 3/4",
+   "compute_usd_per_hour": 1.12,
+   "compute_estimate_usd": 1.75,
+   "status_after_stop": "EXITED"
+  },
+  {
+   "name": "aniket-eibalance-pc-07",
+   "pod_id": "3u6cbqj0zornr7",
+   "created_utc": "2026-11-24T18:13:36Z",
+   "uptime_seconds_at_stop": 5614,
+   "role": "main stripe 6/7, then N = 16,000 part 2/4",
+   "compute_usd_per_hour": 1.12,
+   "compute_estimate_usd": 1.747,
+   "status_after_stop": "EXITED"
+  },
+  {
+   "name": "aniket-eibalance-pc-08",
+   "pod_id": "d66lqephp59tse",
+   "created_utc": "2026-11-24T18:13:37Z",
+   "uptime_seconds_at_stop": 5513,
+   "role": "main stripe 7/7, then the spectral cohort",
+   "compute_usd_per_hour": 1.12,
+   "compute_estimate_usd": 1.715,
+   "status_after_stop": "EXITED"
+  },
+  {
+   "name": "aniket-eibalance-pc-09",
+   "pod_id": "ttveiutsxcjojs",
+   "created_utc": "2026-11-24T18:29:22Z",
+   "uptime_seconds_at_stop": 1681,
+   "role": "main stripe 2/7 (replacement)",
+   "compute_usd_per_hour": 1.12,
+   "compute_estimate_usd": 0.523,
+   "status_after_stop": "EXITED"
+  }
+ ],
+ "total_uptime_hours": 9.238,
+ "total_compute_estimate_usd": 10.35,
+ "cost_basis": "uptime reported by the provider at the stop call times the catalog rate of $0.035 per vCPU-hour; excludes the seconds between creation and container start",
+ "verification": {
+  "main_campaign_files": 3364,
+  "extension_files": 24,
+  "spectral_files": 283,
+  "sha256_mismatches": 0,
+  "failed_networks": 0,
+  "spectral_timed_out": 3
+ },
+ "self_stop_timers": "a 9,000 s on-pod timer calling `runpodctl stop pod`; armed at launch on pc-01 only because of a launch-script bug, armed and verified on the other running pods 40 minutes after launch; every pod was stopped by hand before its timer fired",
+ "disposition": "all eight pods stopped (not deleted); CPU pods have only a container disk, which is cleared on stop, so they hold no data"
+}

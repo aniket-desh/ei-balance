@@ -1,0 +1,77 @@
+{
+ "replay_archived_network": {
+  "name": "dense_degree_0_N2000_seed5101",
+  "same_connectivity": true,
+  "max_abs_difference_d_and_block_energy": 0.0,
+  "host": {
+   "node": "Anikets-MacBook-Pro.local",
+   "platform": "macOS-27.2.1-arm64-arm-64bit",
+   "python": "3.11.4",
+   "numpy": "1.26.4"
+  },
+  "archived_backend": "compiled_constant_CSR",
+  "new_backend": "compiled_constant_CSR"
+ },
+ "whole_population_readout": {
+  "trace_error": 7.105427357601002e-15,
+  "energy_error": 7.105427357601002e-15,
+  "trace": 15.010839665325944,
+  "energy": 17.108348998711236
+ },
+ "lag_estimator_vs_brute_force": {
+  "max_abs_error": 5.119483287817361e-11,
+  "map_scale": 0.0004418758035171777,
+  "note": "maps are stored in float32"
+ },
+ "theory": {
+  "degree_archive_abs_errors": {
+   "chi=0": {
+    "d": 3.0531133177191805e-16,
+    "mean_inputs": 4.440892098500626e-16
+   },
+   "chi=0.5": {
+    "d": 2.7755575615628914e-16,
+    "mean_inputs": 4.440892098500626e-16
+   },
+   "chi=1": {
+    "d": 3.2612801348363973e-16,
+    "mean_inputs": 4.440892098500626e-16
+   },
+   "chi=2": {
+    "d": 1.3530843112619095e-16,
+    "mean_inputs": 4.440892098500626e-16
+   }
+  },
+  "readout_ratio_0p80_and_0p88": [
+   [
+    28.437554776512485,
+    30.242512202671396
+   ],
+   [
+    28.89981140235984,
+    29.07609978487076
+   ]
+  ],
+  "readout_theory_table": [
+   [
+    28.438,
+    30.243
+   ],
+   [
+    28.9,
+    29.076
+   ]
+  ],
+  "averaging_controls": {
+   "d_spectra": 0.07645082719945988,
+   "overlap_spectra": 0.7876639734947809,
+   "overlap_gains": 0.3513802508744722,
+   "manuscript": {
+    "d_spectra": 0.07645,
+    "overlap_spectra": 0.78766,
+    "overlap_gains": 0.35138
+   }
+  },
+  "lag_map_zero_lag_minus_pair_energy": 5.322647878003295e-10
+ }
+}

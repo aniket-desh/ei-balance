@@ -1,0 +1,770 @@
+[
+ {
+  "name": "pc_size_chi0_N16000_seed42001",
+  "family": "size",
+  "cell": {
+   "chi": 0,
+   "fraction_e": 0.8,
+   "scale": 1.0,
+   "rate": 0.3
+  },
+  "seed_index": 0,
+  "config": {
+   "g": 4.0,
+   "dt": 0.05,
+   "burn": 500.0,
+   "duration": 8000.0,
+   "sample_dt": 0.25,
+   "n": 16000,
+   "seed": 42001,
+   "fraction_e": 0.8,
+   "mean_rate": 0.3,
+   "ensemble": "degree",
+   "degree_dispersion": 0,
+   "variance_profile": [
+    [
+     16.0,
+     9.0
+    ],
+    [
+     25.0,
+     12.0
+    ]
+   ],
+   "mean_connectivity": [
+    [
+     1.0,
+     -6.0
+    ],
+    [
+     2.0,
+     -10.0
+    ]
+   ]
+  },
+  "mean_input": [
+   -2.135361054901021,
+   -2.5317224347376497
+  ],
+  "blocks": [
+   500.0
+  ],
+  "prefixes": [
+   4000.0,
+   8000.0
+  ],
+  "extras": {
+   "readout_sizes": [
+    100
+   ],
+   "lag": true,
+   "spectrum": false,
+   "tangent": false
+  },
+  "cost": 14565.870119269028
+ },
+ {
+  "name": "pc_size_chi0_N16000_seed42002",
+  "family": "size",
+  "cell": {
+   "chi": 0,
+   "fraction_e": 0.8,
+   "scale": 1.0,
+   "rate": 0.3
+  },
+  "seed_index": 1,
+  "config": {
+   "g": 4.0,
+   "dt": 0.05,
+   "burn": 500.0,
+   "duration": 8000.0,
+   "sample_dt": 0.25,
+   "n": 16000,
+   "seed": 42002,
+   "fraction_e": 0.8,
+   "mean_rate": 0.3,
+   "ensemble": "degree",
+   "degree_dispersion": 0,
+   "variance_profile": [
+    [
+     16.0,
+     9.0
+    ],
+    [
+     25.0,
+     12.0
+    ]
+   ],
+   "mean_connectivity": [
+    [
+     1.0,
+     -6.0
+    ],
+    [
+     2.0,
+     -10.0
+    ]
+   ]
+  },
+  "mean_input": [
+   -2.135361054901021,
+   -2.5317224347376497
+  ],
+  "blocks": [
+   500.0
+  ],
+  "prefixes": [
+   4000.0,
+   8000.0
+  ],
+  "extras": {
+   "readout_sizes": [
+    100
+   ],
+   "lag": true,
+   "spectrum": false,
+   "tangent": false
+  },
+  "cost": 14565.870119269028
+ },
+ {
+  "name": "pc_size_chi0_N16000_seed42003",
+  "family": "size",
+  "cell": {
+   "chi": 0,
+   "fraction_e": 0.8,
+   "scale": 1.0,
+   "rate": 0.3
+  },
+  "seed_index": 2,
+  "config": {
+   "g": 4.0,
+   "dt": 0.05,
+   "burn": 500.0,
+   "duration": 8000.0,
+   "sample_dt": 0.25,
+   "n": 16000,
+   "seed": 42003,
+   "fraction_e": 0.8,
+   "mean_rate": 0.3,
+   "ensemble": "degree",
+   "degree_dispersion": 0,
+   "variance_profile": [
+    [
+     16.0,
+     9.0
+    ],
+    [
+     25.0,
+     12.0
+    ]
+   ],
+   "mean_connectivity": [
+    [
+     1.0,
+     -6.0
+    ],
+    [
+     2.0,
+     -10.0
+    ]
+   ]
+  },
+  "mean_input": [
+   -2.135361054901021,
+   -2.5317224347376497
+  ],
+  "blocks": [
+   500.0
+  ],
+  "prefixes": [
+   4000.0,
+   8000.0
+  ],
+  "extras": {
+   "readout_sizes": [
+    100
+   ],
+   "lag": true,
+   "spectrum": false,
+   "tangent": false
+  },
+  "cost": 14565.870119269028
+ },
+ {
+  "name": "pc_size_chi0_N16000_seed42004",
+  "family": "size",
+  "cell": {
+   "chi": 0,
+   "fraction_e": 0.8,
+   "scale": 1.0,
+   "rate": 0.3
+  },
+  "seed_index": 3,
+  "config": {
+   "g": 4.0,
+   "dt": 0.05,
+   "burn": 500.0,
+   "duration": 8000.0,
+   "sample_dt": 0.25,
+   "n": 16000,
+   "seed": 42004,
+   "fraction_e": 0.8,
+   "mean_rate": 0.3,
+   "ensemble": "degree",
+   "degree_dispersion": 0,
+   "variance_profile": [
+    [
+     16.0,
+     9.0
+    ],
+    [
+     25.0,
+     12.0
+    ]
+   ],
+   "mean_connectivity": [
+    [
+     1.0,
+     -6.0
+    ],
+    [
+     2.0,
+     -10.0
+    ]
+   ]
+  },
+  "mean_input": [
+   -2.135361054901021,
+   -2.5317224347376497
+  ],
+  "blocks": [
+   500.0
+  ],
+  "prefixes": [
+   4000.0,
+   8000.0
+  ],
+  "extras": {
+   "readout_sizes": [
+    100
+   ],
+   "lag": true,
+   "spectrum": false,
+   "tangent": false
+  },
+  "cost": 14565.870119269028
+ },
+ {
+  "name": "pc_size_chi1_N16000_seed42001",
+  "family": "size",
+  "cell": {
+   "chi": 1,
+   "fraction_e": 0.8,
+   "scale": 1.0,
+   "rate": 0.3
+  },
+  "seed_index": 0,
+  "config": {
+   "g": 4.0,
+   "dt": 0.05,
+   "burn": 500.0,
+   "duration": 8000.0,
+   "sample_dt": 0.25,
+   "n": 16000,
+   "seed": 42001,
+   "fraction_e": 0.8,
+   "mean_rate": 0.3,
+   "ensemble": "degree",
+   "degree_dispersion": 1,
+   "variance_profile": [
+    [
+     16.0,
+     9.0
+    ],
+    [
+     25.0,
+     12.0
+    ]
+   ],
+   "mean_connectivity": [
+    [
+     1.0,
+     -6.0
+    ],
+    [
+     2.0,
+     -10.0
+    ]
+   ]
+  },
+  "mean_input": [
+   -2.6712782365825896,
+   -3.218974921285835
+  ],
+  "blocks": [
+   500.0
+  ],
+  "prefixes": [
+   4000.0,
+   8000.0
+  ],
+  "extras": {
+   "readout_sizes": [
+    100
+   ],
+   "lag": true,
+   "spectrum": false,
+   "tangent": false
+  },
+  "cost": 14565.870119269028
+ },
+ {
+  "name": "pc_size_chi1_N16000_seed42002",
+  "family": "size",
+  "cell": {
+   "chi": 1,
+   "fraction_e": 0.8,
+   "scale": 1.0,
+   "rate": 0.3
+  },
+  "seed_index": 1,
+  "config": {
+   "g": 4.0,
+   "dt": 0.05,
+   "burn": 500.0,
+   "duration": 8000.0,
+   "sample_dt": 0.25,
+   "n": 16000,
+   "seed": 42002,
+   "fraction_e": 0.8,
+   "mean_rate": 0.3,
+   "ensemble": "degree",
+   "degree_dispersion": 1,
+   "variance_profile": [
+    [
+     16.0,
+     9.0
+    ],
+    [
+     25.0,
+     12.0
+    ]
+   ],
+   "mean_connectivity": [
+    [
+     1.0,
+     -6.0
+    ],
+    [
+     2.0,
+     -10.0
+    ]
+   ]
+  },
+  "mean_input": [
+   -2.6712782365825896,
+   -3.218974921285835
+  ],
+  "blocks": [
+   500.0
+  ],
+  "prefixes": [
+   4000.0,
+   8000.0
+  ],
+  "extras": {
+   "readout_sizes": [
+    100
+   ],
+   "lag": true,
+   "spectrum": false,
+   "tangent": false
+  },
+  "cost": 14565.870119269028
+ },
+ {
+  "name": "pc_size_chi1_N16000_seed42003",
+  "family": "size",
+  "cell": {
+   "chi": 1,
+   "fraction_e": 0.8,
+   "scale": 1.0,
+   "rate": 0.3
+  },
+  "seed_index": 2,
+  "config": {
+   "g": 4.0,
+   "dt": 0.05,
+   "burn": 500.0,
+   "duration": 8000.0,
+   "sample_dt": 0.25,
+   "n": 16000,
+   "seed": 42003,
+   "fraction_e": 0.8,
+   "mean_rate": 0.3,
+   "ensemble": "degree",
+   "degree_dispersion": 1,
+   "variance_profile": [
+    [
+     16.0,
+     9.0
+    ],
+    [
+     25.0,
+     12.0
+    ]
+   ],
+   "mean_connectivity": [
+    [
+     1.0,
+     -6.0
+    ],
+    [
+     2.0,
+     -10.0
+    ]
+   ]
+  },
+  "mean_input": [
+   -2.6712782365825896,
+   -3.218974921285835
+  ],
+  "blocks": [
+   500.0
+  ],
+  "prefixes": [
+   4000.0,
+   8000.0
+  ],
+  "extras": {
+   "readout_sizes": [
+    100
+   ],
+   "lag": true,
+   "spectrum": false,
+   "tangent": false
+  },
+  "cost": 14565.870119269028
+ },
+ {
+  "name": "pc_size_chi1_N16000_seed42004",
+  "family": "size",
+  "cell": {
+   "chi": 1,
+   "fraction_e": 0.8,
+   "scale": 1.0,
+   "rate": 0.3
+  },
+  "seed_index": 3,
+  "config": {
+   "g": 4.0,
+   "dt": 0.05,
+   "burn": 500.0,
+   "duration": 8000.0,
+   "sample_dt": 0.25,
+   "n": 16000,
+   "seed": 42004,
+   "fraction_e": 0.8,
+   "mean_rate": 0.3,
+   "ensemble": "degree",
+   "degree_dispersion": 1,
+   "variance_profile": [
+    [
+     16.0,
+     9.0
+    ],
+    [
+     25.0,
+     12.0
+    ]
+   ],
+   "mean_connectivity": [
+    [
+     1.0,
+     -6.0
+    ],
+    [
+     2.0,
+     -10.0
+    ]
+   ]
+  },
+  "mean_input": [
+   -2.6712782365825896,
+   -3.218974921285835
+  ],
+  "blocks": [
+   500.0
+  ],
+  "prefixes": [
+   4000.0,
+   8000.0
+  ],
+  "extras": {
+   "readout_sizes": [
+    100
+   ],
+   "lag": true,
+   "spectrum": false,
+   "tangent": false
+  },
+  "cost": 14565.870119269028
+ },
+ {
+  "name": "pc_size_chi2_N16000_seed42001",
+  "family": "size",
+  "cell": {
+   "chi": 2,
+   "fraction_e": 0.8,
+   "scale": 1.0,
+   "rate": 0.3
+  },
+  "seed_index": 0,
+  "config": {
+   "g": 4.0,
+   "dt": 0.05,
+   "burn": 500.0,
+   "duration": 8000.0,
+   "sample_dt": 0.25,
+   "n": 16000,
+   "seed": 42001,
+   "fraction_e": 0.8,
+   "mean_rate": 0.3,
+   "ensemble": "degree",
+   "degree_dispersion": 2,
+   "variance_profile": [
+    [
+     16.0,
+     9.0
+    ],
+    [
+     25.0,
+     12.0
+    ]
+   ],
+   "mean_connectivity": [
+    [
+     1.0,
+     -6.0
+    ],
+    [
+     2.0,
+     -10.0
+    ]
+   ]
+  },
+  "mean_input": [
+   -3.001289520343916,
+   -3.6379189939395666
+  ],
+  "blocks": [
+   500.0
+  ],
+  "prefixes": [
+   4000.0,
+   8000.0
+  ],
+  "extras": {
+   "readout_sizes": [
+    100
+   ],
+   "lag": true,
+   "spectrum": false,
+   "tangent": false
+  },
+  "cost": 14565.870119269028
+ },
+ {
+  "name": "pc_size_chi2_N16000_seed42002",
+  "family": "size",
+  "cell": {
+   "chi": 2,
+   "fraction_e": 0.8,
+   "scale": 1.0,
+   "rate": 0.3
+  },
+  "seed_index": 1,
+  "config": {
+   "g": 4.0,
+   "dt": 0.05,
+   "burn": 500.0,
+   "duration": 8000.0,
+   "sample_dt": 0.25,
+   "n": 16000,
+   "seed": 42002,
+   "fraction_e": 0.8,
+   "mean_rate": 0.3,
+   "ensemble": "degree",
+   "degree_dispersion": 2,
+   "variance_profile": [
+    [
+     16.0,
+     9.0
+    ],
+    [
+     25.0,
+     12.0
+    ]
+   ],
+   "mean_connectivity": [
+    [
+     1.0,
+     -6.0
+    ],
+    [
+     2.0,
+     -10.0
+    ]
+   ]
+  },
+  "mean_input": [
+   -3.001289520343916,
+   -3.6379189939395666
+  ],
+  "blocks": [
+   500.0
+  ],
+  "prefixes": [
+   4000.0,
+   8000.0
+  ],
+  "extras": {
+   "readout_sizes": [
+    100
+   ],
+   "lag": true,
+   "spectrum": false,
+   "tangent": false
+  },
+  "cost": 14565.870119269028
+ },
+ {
+  "name": "pc_size_chi2_N16000_seed42003",
+  "family": "size",
+  "cell": {
+   "chi": 2,
+   "fraction_e": 0.8,
+   "scale": 1.0,
+   "rate": 0.3
+  },
+  "seed_index": 2,
+  "config": {
+   "g": 4.0,
+   "dt": 0.05,
+   "burn": 500.0,
+   "duration": 8000.0,
+   "sample_dt": 0.25,
+   "n": 16000,
+   "seed": 42003,
+   "fraction_e": 0.8,
+   "mean_rate": 0.3,
+   "ensemble": "degree",
+   "degree_dispersion": 2,
+   "variance_profile": [
+    [
+     16.0,
+     9.0
+    ],
+    [
+     25.0,
+     12.0
+    ]
+   ],
+   "mean_connectivity": [
+    [
+     1.0,
+     -6.0
+    ],
+    [
+     2.0,
+     -10.0
+    ]
+   ]
+  },
+  "mean_input": [
+   -3.001289520343916,
+   -3.6379189939395666
+  ],
+  "blocks": [
+   500.0
+  ],
+  "prefixes": [
+   4000.0,
+   8000.0
+  ],
+  "extras": {
+   "readout_sizes": [
+    100
+   ],
+   "lag": true,
+   "spectrum": false,
+   "tangent": false
+  },
+  "cost": 14565.870119269028
+ },
+ {
+  "name": "pc_size_chi2_N16000_seed42004",
+  "family": "size",
+  "cell": {
+   "chi": 2,
+   "fraction_e": 0.8,
+   "scale": 1.0,
+   "rate": 0.3
+  },
+  "seed_index": 3,
+  "config": {
+   "g": 4.0,
+   "dt": 0.05,
+   "burn": 500.0,
+   "duration": 8000.0,
+   "sample_dt": 0.25,
+   "n": 16000,
+   "seed": 42004,
+   "fraction_e": 0.8,
+   "mean_rate": 0.3,
+   "ensemble": "degree",
+   "degree_dispersion": 2,
+   "variance_profile": [
+    [
+     16.0,
+     9.0
+    ],
+    [
+     25.0,
+     12.0
+    ]
+   ],
+   "mean_connectivity": [
+    [
+     1.0,
+     -6.0
+    ],
+    [
+     2.0,
+     -10.0
+    ]
+   ]
+  },
+  "mean_input": [
+   -3.001289520343916,
+   -3.6379189939395666
+  ],
+  "blocks": [
+   500.0
+  ],
+  "prefixes": [
+   4000.0,
+   8000.0
+  ],
+  "extras": {
+   "readout_sizes": [
+    100
+   ],
+   "lag": true,
+   "spectrum": false,
+   "tangent": false
+  },
+  "cost": 14565.870119269028
+ }
+]
