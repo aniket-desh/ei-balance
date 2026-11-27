@@ -1,0 +1,342 @@
+{
+ "generator": {
+  "scalar_vs_pair_identical": true,
+  "lo": {
+   "drive": [
+    11.545351466452813,
+    19.321646298348202
+   ],
+   "max_error_vs_hand": 0.0,
+   "connectivity_identical_to_reference": true
+  },
+  "hi": {
+   "drive": [
+    -6.078223182988271,
+    -15.374125932949205
+   ],
+   "max_error_vs_hand": 0.0,
+   "connectivity_identical_to_reference": true
+  },
+  "passed": true
+ },
+ "check_networks": {
+  "networks": [
+   {
+    "name": "check_ref_f0.85_N2000_seed59001",
+    "targets": [
+     0.3,
+     0.3
+    ],
+    "measured": [
+     0.3050361915416624,
+     0.30338249553497826
+    ],
+    "max_abs_deviation": 0.005036191541662405,
+    "state": "fluctuating"
+   },
+   {
+    "name": "check_ref_f0.85_N2000_seed59002",
+    "targets": [
+     0.3,
+     0.3
+    ],
+    "measured": [
+     0.2921180776458878,
+     0.2960342916669121
+    ],
+    "max_abs_deviation": 0.00788192235411217,
+    "state": "fluctuating"
+   },
+   {
+    "name": "check_lo_f0.79_N2000_seed59003",
+    "targets": [
+     0.2,
+     0.4
+    ],
+    "measured": [
+     0.2016781355135204,
+     0.40156030413289634
+    ],
+    "max_abs_deviation": 0.0016781355135203901,
+    "state": "fluctuating"
+   },
+   {
+    "name": "check_lo_f0.79_N2000_seed59004",
+    "targets": [
+     0.2,
+     0.4
+    ],
+    "measured": [
+     0.2067976026390654,
+     0.40535982626983
+    ],
+    "max_abs_deviation": 0.006797602639065398,
+    "state": "fluctuating"
+   },
+   {
+    "name": "check_hi_f0.9_N2000_seed59005",
+    "targets": [
+     0.4,
+     0.2
+    ],
+    "measured": [
+     0.39870973845878993,
+     0.19915743471702615
+    ],
+    "max_abs_deviation": 0.0012902615412100915,
+    "state": "fluctuating"
+   },
+   {
+    "name": "check_hi_f0.9_N2000_seed59006",
+    "targets": [
+     0.4,
+     0.2
+    ],
+    "measured": [
+     0.38798101359323783,
+     0.1923047844422822
+    ],
+    "max_abs_deviation": 0.012018986406762189,
+    "state": "fluctuating"
+   },
+   {
+    "name": "check_lo_f0.94_N2000_seed59007",
+    "targets": [
+     0.2,
+     0.4
+    ],
+    "measured": [
+     0.2416655130493826,
+     0.42968435567214736
+    ],
+    "max_abs_deviation": 0.041665513049382596,
+    "state": "fluctuating"
+   },
+   {
+    "name": "check_lo_f0.94_N2000_seed59008",
+    "targets": [
+     0.2,
+     0.4
+    ],
+    "measured": [
+     0.22887673985120446,
+     0.42213797957446864
+    ],
+    "max_abs_deviation": 0.028876739851204453,
+    "state": "fluctuating"
+   },
+   {
+    "name": "check_hi_f0.6_N2000_seed59009",
+    "targets": [
+     0.4,
+     0.2
+    ],
+    "measured": [
+     0.3831270771532394,
+     0.18776753968874246
+    ],
+    "max_abs_deviation": 0.01687292284676062,
+    "state": "fluctuating"
+   },
+   {
+    "name": "check_hi_f0.6_N2000_seed59010",
+    "targets": [
+     0.4,
+     0.2
+    ],
+    "measured": [
+     0.39197905420098794,
+     0.19524254869778296
+    ],
+    "max_abs_deviation": 0.00802094579901208,
+    "state": "fluctuating"
+   }
+  ],
+  "threshold": 0.02,
+  "within_threshold": 8,
+  "total": 10,
+  "note": "Both misses are (0.2, 0.4) at f = 0.94; see EXPERIMENT.md, 'Results of the checks run before freezing'."
+ },
+ "estimator": {
+  "noiseless": {
+   "noiseless_ref": {
+    "max_T_error": 3.885780586188048e-16,
+    "f_star_error": -4.884981308350689e-15,
+    "max_chi2": null
+   },
+   "noiseless_lo": {
+    "max_T_error": 2.220446049250313e-16,
+    "f_star_error": -3.6637359812630166e-15,
+    "max_chi2": null
+   },
+   "noiseless_hi": {
+    "max_T_error": 1.942890293094024e-16,
+    "f_star_error": -1.887379141862766e-15,
+    "max_chi2": null
+   }
+  },
+  "designs": [
+   {
+    "design": "N2000_n64",
+    "sd_shift_lo": 0.011226748602367902,
+    "sd_shift_hi": 0.013545118492157678,
+    "by_rate": {
+     "ref": {
+      "bias": 0.00046031306631622027,
+      "sd": 0.008402728903663855,
+      "coverage_95": 0.9233333333333333
+     },
+     "lo": {
+      "bias": 0.0006858621381207186,
+      "sd": 0.006842725887925535,
+      "coverage_95": 0.94
+     },
+     "hi": {
+      "bias": 0.00023855384282445158,
+      "sd": 0.009847259854319678,
+      "coverage_95": 0.9166666666666666
+     }
+    }
+   },
+   {
+    "design": "N4000_n16",
+    "sd_shift_lo": 0.014741269628136402,
+    "sd_shift_hi": 0.01769708175881547,
+    "by_rate": {
+     "ref": {
+      "bias": 1.822625971359404e-05,
+      "sd": 0.01256533901442832,
+      "coverage_95": 0.8966666666666666
+     },
+     "lo": {
+      "bias": -0.00016042104260216572,
+      "sd": 0.0088648831109373,
+      "coverage_95": 0.96
+     },
+     "hi": {
+      "bias": 0.0002199745844965184,
+      "sd": 0.013378693855786166,
+      "coverage_95": 0.9466666666666667
+     }
+    }
+   },
+   {
+    "design": "N8000_n10_s0.30",
+    "sd_shift_lo": 0.00750851325288268,
+    "sd_shift_hi": 0.008904995602844376,
+    "by_rate": {
+     "ref": {
+      "bias": 1.641157812348748e-05,
+      "sd": 0.006046799929693183,
+      "coverage_95": 0.91
+     },
+     "lo": {
+      "bias": -9.366643014252496e-05,
+      "sd": 0.00487384083838856,
+      "coverage_95": 0.9166666666666666
+     },
+     "hi": {
+      "bias": 0.0010424985408878928,
+      "sd": 0.006758864387809222,
+      "coverage_95": 0.9166666666666666
+     }
+    }
+   },
+   {
+    "design": "N8000_n10_s0.45",
+    "sd_shift_lo": 0.011588320497460584,
+    "sd_shift_hi": 0.014171509238372076,
+    "by_rate": {
+     "ref": {
+      "bias": 0.00019967057599268312,
+      "sd": 0.008941085945739537,
+      "coverage_95": 0.92
+     },
+     "lo": {
+      "bias": 0.0003094774549716739,
+      "sd": 0.0077012439436849114,
+      "coverage_95": 0.9066666666666666
+     },
+     "hi": {
+      "bias": 0.0006797409605663329,
+      "sd": 0.010150885810372183,
+      "coverage_95": 0.9366666666666666
+     }
+    }
+   },
+   {
+    "design": "N8000_n6_s0.45",
+    "sd_shift_lo": 0.016924506623043366,
+    "sd_shift_hi": 0.01870681780217994,
+    "by_rate": {
+     "ref": {
+      "bias": 0.00036511890382395773,
+      "sd": 0.012440889533662696,
+      "coverage_95": 0.865
+     },
+     "lo": {
+      "bias": 0.0013258431961163941,
+      "sd": 0.009607543987515028,
+      "coverage_95": 0.9
+     },
+     "hi": {
+      "bias": 0.002096767638044672,
+      "sd": 0.01351555158370729,
+      "coverage_95": 0.94
+     }
+    }
+   }
+  ]
+ },
+ "replay": {
+  "network": "pc_composition_f0.86_N2000_seed43020",
+  "connectivity_identical": true,
+  "max_abs_difference": 0.0,
+  "arrays_byte_identical": true,
+  "replay_host": {
+   "node": "f7bfb5a77016",
+   "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+   "python": "3.12.3",
+   "numpy": "2.5.5"
+  },
+  "archive_host": {
+   "node": "4c88cdfcfeda",
+   "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+   "python": "3.12.3",
+   "numpy": "2.5.5"
+  },
+  "passed": true
+ },
+ "collection": {
+  "cohort_files_compared": 5984,
+  "mismatches": 0,
+  "method": "sha256sum on the pod vs shasum -a 256 locally, every record, array and audit json, before stopping",
+  "replay": "pod aniket-eibalance-val-04 (replay): remote files 2, mismatches 0 (record 107c7bbb09c04d12615cfe561f2dfba334d0d3ecaec3dde0b2f22007c2d02f9c, arrays 625583c5a4b1cfb0b78d15e5f1905763ce1777300dd7f5be4c57e63191c56d47), checked 2026-11-27T16:10:50Z before stop",
+  "passed": true,
+  "at_stop": "each pod: remote vs local SHA-256 of every record, array and audit json, just before its stop",
+  "global_after_collection": {
+   "files": 5958,
+   "unique_files": 5932,
+   "unique_files_matching_local": 5932,
+   "files_on_two_pods": 26,
+   "networks_on_two_pods": [
+    "cv_hi_f0.6_N2000_seed51318",
+    "cv_hi_f0.75_N2000_seed51414",
+    "cv_hi_f0.7_N2000_seed51366",
+    "cv_lo_f0.79_N2000_seed50886",
+    "cv_lo_f0.82_N2000_seed50934",
+    "cv_lo_f0.85_N2000_seed50982",
+    "cv_lo_f0.88_N2000_seed51030",
+    "cv_lo_f0.88_N2000_seed51077",
+    "cv_lo_f0.88_N2000_seed51078",
+    "cv_lo_f0.92_N2000_seed51174",
+    "cv_lo_f0.94_N2000_seed51222",
+    "cv_lo_f0.94_N2000_seed51270",
+    "cv_lo_f0.9_N2000_seed51126"
+   ],
+   "duplicate_arrays_byte_identical": true,
+   "duplicate_records_local_matches_a_copy": true,
+   "note": "Records of a network run twice differ in bytes (host name and timestamps inside the gzip JSON); their arrays (per-neuron statistics) are byte-identical, so the simulations agree. The local record is the copy pulled last."
+  }
+ }
+}

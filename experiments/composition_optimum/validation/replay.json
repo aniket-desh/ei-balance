@@ -1,0 +1,69 @@
+[
+ {
+  "name": "pc_composition_f0.86_N2000_seed43020",
+  "family": "composition",
+  "cell": {
+   "chi": 1,
+   "fraction_e": 0.86,
+   "scale": 1.0,
+   "rate": 0.3,
+   "bernoulli": true
+  },
+  "seed_index": 19,
+  "config": {
+   "g": 4.0,
+   "dt": 0.05,
+   "burn": 500.0,
+   "duration": 8000.0,
+   "sample_dt": 0.25,
+   "n": 2000,
+   "seed": 43020,
+   "fraction_e": 0.86,
+   "mean_rate": 0.3,
+   "ensemble": "bernoulli",
+   "variance_profile": [
+    [
+     14.88372093023256,
+     12.857142857142858
+    ],
+    [
+     23.255813953488374,
+     17.142857142857142
+    ]
+   ],
+   "mean_connectivity": [
+    [
+     0.930232558139535,
+     -8.571428571428571
+    ],
+    [
+     1.86046511627907,
+     -14.285714285714286
+    ]
+   ]
+  },
+  "mean_input": [
+   -2.6712782365825896,
+   -3.218974921285835
+  ],
+  "blocks": [
+   500.0
+  ],
+  "prefixes": [
+   4000.0,
+   8000.0
+  ],
+  "extras": {
+   "readout_sizes": [
+    25,
+    50,
+    100,
+    200
+   ],
+   "lag": false,
+   "spectrum": false,
+   "tangent": false
+  },
+  "cost": 145.0
+ }
+]

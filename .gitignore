@@ -45,3 +45,8 @@ tmp/
 /experiments/paper_campaign/spectral/measurements/
 /experiments/paper_campaign/spectral/runs/
 /experiments/paper_campaign/spectral/spectra/
+
+# Composition-optimum validation: per-network records and arrays stay local (about 250 MB).
+/experiments/composition_optimum/validation/records/
+/experiments/composition_optimum/validation/arrays/
+/experiments/composition_optimum/*.log

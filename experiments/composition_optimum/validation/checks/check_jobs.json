@@ -1,0 +1,686 @@
+[
+ {
+  "name": "check_ref_f0.85_N2000_seed59001",
+  "family": "check",
+  "cell": {
+   "rates": "ref",
+   "mean_rates": [
+    0.3,
+    0.3
+   ],
+   "fraction_e": 0.85,
+   "n": 2000,
+   "chi": 1,
+   "bernoulli": true
+  },
+  "seed_index": 0,
+  "config": {
+   "g": 4.0,
+   "dt": 0.05,
+   "burn": 500.0,
+   "duration": 8000.0,
+   "sample_dt": 0.25,
+   "n": 2000,
+   "seed": 59001,
+   "fraction_e": 0.85,
+   "mean_rate": 0.3,
+   "ensemble": "bernoulli",
+   "variance_profile": [
+    [
+     15.058823529411766,
+     12.0
+    ],
+    [
+     23.529411764705884,
+     16.0
+    ]
+   ],
+   "mean_connectivity": [
+    [
+     0.9411764705882354,
+     -8.0
+    ],
+    [
+     1.8823529411764708,
+     -13.333333333333332
+    ]
+   ]
+  },
+  "mean_input": [
+   -2.6712782365825896,
+   -3.218974921285835
+  ],
+  "blocks": [
+   500.0
+  ],
+  "prefixes": [
+   4000.0,
+   8000.0
+  ],
+  "extras": {
+   "readout_sizes": [],
+   "lag": false,
+   "spectrum": false,
+   "tangent": false
+  },
+  "cost": 145.0
+ },
+ {
+  "name": "check_ref_f0.85_N2000_seed59002",
+  "family": "check",
+  "cell": {
+   "rates": "ref",
+   "mean_rates": [
+    0.3,
+    0.3
+   ],
+   "fraction_e": 0.85,
+   "n": 2000,
+   "chi": 1,
+   "bernoulli": true
+  },
+  "seed_index": 1,
+  "config": {
+   "g": 4.0,
+   "dt": 0.05,
+   "burn": 500.0,
+   "duration": 8000.0,
+   "sample_dt": 0.25,
+   "n": 2000,
+   "seed": 59002,
+   "fraction_e": 0.85,
+   "mean_rate": 0.3,
+   "ensemble": "bernoulli",
+   "variance_profile": [
+    [
+     15.058823529411766,
+     12.0
+    ],
+    [
+     23.529411764705884,
+     16.0
+    ]
+   ],
+   "mean_connectivity": [
+    [
+     0.9411764705882354,
+     -8.0
+    ],
+    [
+     1.8823529411764708,
+     -13.333333333333332
+    ]
+   ]
+  },
+  "mean_input": [
+   -2.6712782365825896,
+   -3.218974921285835
+  ],
+  "blocks": [
+   500.0
+  ],
+  "prefixes": [
+   4000.0,
+   8000.0
+  ],
+  "extras": {
+   "readout_sizes": [],
+   "lag": false,
+   "spectrum": false,
+   "tangent": false
+  },
+  "cost": 145.0
+ },
+ {
+  "name": "check_lo_f0.79_N2000_seed59003",
+  "family": "check",
+  "cell": {
+   "rates": "lo",
+   "mean_rates": [
+    0.2,
+    0.4
+   ],
+   "fraction_e": 0.79,
+   "n": 2000,
+   "chi": 1,
+   "bernoulli": true
+  },
+  "seed_index": 0,
+  "config": {
+   "g": 4.0,
+   "dt": 0.05,
+   "burn": 500.0,
+   "duration": 8000.0,
+   "sample_dt": 0.25,
+   "n": 2000,
+   "seed": 59003,
+   "fraction_e": 0.79,
+   "mean_rate": [
+    0.2,
+    0.4
+   ],
+   "ensemble": "bernoulli",
+   "variance_profile": [
+    [
+     16.20253164556962,
+     8.571428571428573
+    ],
+    [
+     25.31645569620253,
+     11.42857142857143
+    ]
+   ],
+   "mean_connectivity": [
+    [
+     1.0126582278481013,
+     -5.714285714285715
+    ],
+    [
+     2.0253164556962027,
+     -9.523809523809526
+    ]
+   ]
+  },
+  "mean_input": [
+   -2.7654835895458394,
+   -2.144606285649771
+  ],
+  "blocks": [
+   500.0
+  ],
+  "prefixes": [
+   4000.0,
+   8000.0
+  ],
+  "extras": {
+   "readout_sizes": [],
+   "lag": false,
+   "spectrum": false,
+   "tangent": false
+  },
+  "cost": 145.0
+ },
+ {
+  "name": "check_lo_f0.79_N2000_seed59004",
+  "family": "check",
+  "cell": {
+   "rates": "lo",
+   "mean_rates": [
+    0.2,
+    0.4
+   ],
+   "fraction_e": 0.79,
+   "n": 2000,
+   "chi": 1,
+   "bernoulli": true
+  },
+  "seed_index": 1,
+  "config": {
+   "g": 4.0,
+   "dt": 0.05,
+   "burn": 500.0,
+   "duration": 8000.0,
+   "sample_dt": 0.25,
+   "n": 2000,
+   "seed": 59004,
+   "fraction_e": 0.79,
+   "mean_rate": [
+    0.2,
+    0.4
+   ],
+   "ensemble": "bernoulli",
+   "variance_profile": [
+    [
+     16.20253164556962,
+     8.571428571428573
+    ],
+    [
+     25.31645569620253,
+     11.42857142857143
+    ]
+   ],
+   "mean_connectivity": [
+    [
+     1.0126582278481013,
+     -5.714285714285715
+    ],
+    [
+     2.0253164556962027,
+     -9.523809523809526
+    ]
+   ]
+  },
+  "mean_input": [
+   -2.7654835895458394,
+   -2.144606285649771
+  ],
+  "blocks": [
+   500.0
+  ],
+  "prefixes": [
+   4000.0,
+   8000.0
+  ],
+  "extras": {
+   "readout_sizes": [],
+   "lag": false,
+   "spectrum": false,
+   "tangent": false
+  },
+  "cost": 145.0
+ },
+ {
+  "name": "check_hi_f0.9_N2000_seed59005",
+  "family": "check",
+  "cell": {
+   "rates": "hi",
+   "mean_rates": [
+    0.4,
+    0.2
+   ],
+   "fraction_e": 0.9,
+   "n": 2000,
+   "chi": 1,
+   "bernoulli": true
+  },
+  "seed_index": 0,
+  "config": {
+   "g": 4.0,
+   "dt": 0.05,
+   "burn": 500.0,
+   "duration": 8000.0,
+   "sample_dt": 0.25,
+   "n": 2000,
+   "seed": 59005,
+   "fraction_e": 0.9,
+   "mean_rate": [
+    0.4,
+    0.2
+   ],
+   "ensemble": "bernoulli",
+   "variance_profile": [
+    [
+     14.222222222222223,
+     18.000000000000004
+    ],
+    [
+     22.222222222222225,
+     24.000000000000007
+    ]
+   ],
+   "mean_connectivity": [
+    [
+     0.888888888888889,
+     -12.000000000000004
+    ],
+    [
+     1.777777777777778,
+     -20.000000000000004
+    ]
+   ]
+  },
+  "mean_input": [
+   -2.5005144189886037,
+   -4.640999640950207
+  ],
+  "blocks": [
+   500.0
+  ],
+  "prefixes": [
+   4000.0,
+   8000.0
+  ],
+  "extras": {
+   "readout_sizes": [],
+   "lag": false,
+   "spectrum": false,
+   "tangent": false
+  },
+  "cost": 145.0
+ },
+ {
+  "name": "check_hi_f0.9_N2000_seed59006",
+  "family": "check",
+  "cell": {
+   "rates": "hi",
+   "mean_rates": [
+    0.4,
+    0.2
+   ],
+   "fraction_e": 0.9,
+   "n": 2000,
+   "chi": 1,
+   "bernoulli": true
+  },
+  "seed_index": 1,
+  "config": {
+   "g": 4.0,
+   "dt": 0.05,
+   "burn": 500.0,
+   "duration": 8000.0,
+   "sample_dt": 0.25,
+   "n": 2000,
+   "seed": 59006,
+   "fraction_e": 0.9,
+   "mean_rate": [
+    0.4,
+    0.2
+   ],
+   "ensemble": "bernoulli",
+   "variance_profile": [
+    [
+     14.222222222222223,
+     18.000000000000004
+    ],
+    [
+     22.222222222222225,
+     24.000000000000007
+    ]
+   ],
+   "mean_connectivity": [
+    [
+     0.888888888888889,
+     -12.000000000000004
+    ],
+    [
+     1.777777777777778,
+     -20.000000000000004
+    ]
+   ]
+  },
+  "mean_input": [
+   -2.5005144189886037,
+   -4.640999640950207
+  ],
+  "blocks": [
+   500.0
+  ],
+  "prefixes": [
+   4000.0,
+   8000.0
+  ],
+  "extras": {
+   "readout_sizes": [],
+   "lag": false,
+   "spectrum": false,
+   "tangent": false
+  },
+  "cost": 145.0
+ },
+ {
+  "name": "check_lo_f0.94_N2000_seed59007",
+  "family": "check",
+  "cell": {
+   "rates": "lo",
+   "mean_rates": [
+    0.2,
+    0.4
+   ],
+   "fraction_e": 0.94,
+   "n": 2000,
+   "chi": 1,
+   "bernoulli": true
+  },
+  "seed_index": 0,
+  "config": {
+   "g": 4.0,
+   "dt": 0.05,
+   "burn": 500.0,
+   "duration": 8000.0,
+   "sample_dt": 0.25,
+   "n": 2000,
+   "seed": 59007,
+   "fraction_e": 0.94,
+   "mean_rate": [
+    0.2,
+    0.4
+   ],
+   "ensemble": "bernoulli",
+   "variance_profile": [
+    [
+     13.617021276595747,
+     29.99999999999997
+    ],
+    [
+     21.276595744680854,
+     39.999999999999964
+    ]
+   ],
+   "mean_connectivity": [
+    [
+     0.8510638297872342,
+     -19.999999999999982
+    ],
+    [
+     1.7021276595744683,
+     -33.3333333333333
+    ]
+   ]
+  },
+  "mean_input": [
+   -2.7654835895458394,
+   -2.144606285649771
+  ],
+  "blocks": [
+   500.0
+  ],
+  "prefixes": [
+   4000.0,
+   8000.0
+  ],
+  "extras": {
+   "readout_sizes": [],
+   "lag": false,
+   "spectrum": false,
+   "tangent": false
+  },
+  "cost": 145.0
+ },
+ {
+  "name": "check_lo_f0.94_N2000_seed59008",
+  "family": "check",
+  "cell": {
+   "rates": "lo",
+   "mean_rates": [
+    0.2,
+    0.4
+   ],
+   "fraction_e": 0.94,
+   "n": 2000,
+   "chi": 1,
+   "bernoulli": true
+  },
+  "seed_index": 1,
+  "config": {
+   "g": 4.0,
+   "dt": 0.05,
+   "burn": 500.0,
+   "duration": 8000.0,
+   "sample_dt": 0.25,
+   "n": 2000,
+   "seed": 59008,
+   "fraction_e": 0.94,
+   "mean_rate": [
+    0.2,
+    0.4
+   ],
+   "ensemble": "bernoulli",
+   "variance_profile": [
+    [
+     13.617021276595747,
+     29.99999999999997
+    ],
+    [
+     21.276595744680854,
+     39.999999999999964
+    ]
+   ],
+   "mean_connectivity": [
+    [
+     0.8510638297872342,
+     -19.999999999999982
+    ],
+    [
+     1.7021276595744683,
+     -33.3333333333333
+    ]
+   ]
+  },
+  "mean_input": [
+   -2.7654835895458394,
+   -2.144606285649771
+  ],
+  "blocks": [
+   500.0
+  ],
+  "prefixes": [
+   4000.0,
+   8000.0
+  ],
+  "extras": {
+   "readout_sizes": [],
+   "lag": false,
+   "spectrum": false,
+   "tangent": false
+  },
+  "cost": 145.0
+ },
+ {
+  "name": "check_hi_f0.6_N2000_seed59009",
+  "family": "check",
+  "cell": {
+   "rates": "hi",
+   "mean_rates": [
+    0.4,
+    0.2
+   ],
+   "fraction_e": 0.6,
+   "n": 2000,
+   "chi": 1,
+   "bernoulli": true
+  },
+  "seed_index": 0,
+  "config": {
+   "g": 4.0,
+   "dt": 0.05,
+   "burn": 500.0,
+   "duration": 8000.0,
+   "sample_dt": 0.25,
+   "n": 2000,
+   "seed": 59009,
+   "fraction_e": 0.6,
+   "mean_rate": [
+    0.4,
+    0.2
+   ],
+   "ensemble": "bernoulli",
+   "variance_profile": [
+    [
+     21.333333333333336,
+     4.5
+    ],
+    [
+     33.333333333333336,
+     6.0
+    ]
+   ],
+   "mean_connectivity": [
+    [
+     1.3333333333333335,
+     -3.0
+    ],
+    [
+     2.666666666666667,
+     -5.0
+    ]
+   ]
+  },
+  "mean_input": [
+   -2.5005144189886037,
+   -4.640999640950207
+  ],
+  "blocks": [
+   500.0
+  ],
+  "prefixes": [
+   4000.0,
+   8000.0
+  ],
+  "extras": {
+   "readout_sizes": [],
+   "lag": false,
+   "spectrum": false,
+   "tangent": false
+  },
+  "cost": 145.0
+ },
+ {
+  "name": "check_hi_f0.6_N2000_seed59010",
+  "family": "check",
+  "cell": {
+   "rates": "hi",
+   "mean_rates": [
+    0.4,
+    0.2
+   ],
+   "fraction_e": 0.6,
+   "n": 2000,
+   "chi": 1,
+   "bernoulli": true
+  },
+  "seed_index": 1,
+  "config": {
+   "g": 4.0,
+   "dt": 0.05,
+   "burn": 500.0,
+   "duration": 8000.0,
+   "sample_dt": 0.25,
+   "n": 2000,
+   "seed": 59010,
+   "fraction_e": 0.6,
+   "mean_rate": [
+    0.4,
+    0.2
+   ],
+   "ensemble": "bernoulli",
+   "variance_profile": [
+    [
+     21.333333333333336,
+     4.5
+    ],
+    [
+     33.333333333333336,
+     6.0
+    ]
+   ],
+   "mean_connectivity": [
+    [
+     1.3333333333333335,
+     -3.0
+    ],
+    [
+     2.666666666666667,
+     -5.0
+    ]
+   ]
+  },
+  "mean_input": [
+   -2.5005144189886037,
+   -4.640999640950207
+  ],
+  "blocks": [
+   500.0
+  ],
+  "prefixes": [
+   4000.0,
+   8000.0
+  ],
+  "extras": {
+   "readout_sizes": [],
+   "lag": false,
+   "spectrum": false,
+   "tangent": false
+  },
+  "cost": 145.0
+ }
+]

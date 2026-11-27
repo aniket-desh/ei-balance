@@ -1,0 +1,39 @@
+{
+ "part": "17/24",
+ "manifest": "jobs.json",
+ "selected": 24,
+ "pending_at_start": 24,
+ "workers": 1,
+ "memory_gib": 56.0,
+ "scratch_gib": 400.0,
+ "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.39",
+ "python": "3.12.3 (main, Mar  3 2026, 12:15:18) [GCC 13.3.0]",
+ "cpu_count": 32,
+ "compile_command": [
+  "/usr/bin/c++",
+  "-O3",
+  "-std=c++11",
+  "-fPIC",
+  "-shared",
+  "-ffast-math",
+  "-march=native",
+  "/root/research/ei/experiments/runtime/constant_csr.cpp",
+  "-o",
+  "/root/research/ei/experiments/composition_optimum/validation/tmp/kernel_488365bce591_17of24_1277/constant_csr.so"
+ ],
+ "library_sha256": "b0320fb8c5babce9e2b7e50a0b2d4b21d68061e88fcc9e9997dcc2ab156afc4b",
+ "source_sha256": {
+  "run.py": "cf62a58b6cd295eae90140454957d1cb2cb5fdfe27a5384b9f3b11e34ed956bd",
+  "extras.py": "18855653b66f2b6dfa62f0d1768bee27620926f3357f3d6f4ababad2cd6453cd",
+  "jobs.json": "ddd34e7bf70cb8e74b1b0b35918e64f1a57eba0d43422591c560a4f2a637b05f",
+  "engine_v4.py": "117f57b8341a1e36fa351f37d96cd779879b5c037aa11d52f7d44a4bd923f546",
+  "native_action.py": "d6db5986f1da791b79971908160b34a87b987338f346ee5216a826346ba16abc",
+  "constant_csr.cpp": "0676acffdbbbfb34816f093d8980a08a343fc70470e8b7c04a46910951dd1216",
+  "measure.py": "3e5b01c817fea8d4b4ce6b1b08d7f1c11ae435692166924fbec4e22e7b5a3a7a",
+  "network.py": "4fb0b526380727ac9eb5a80172270f5aa2dfaa1416f60853290b3432d2407899",
+  "degree.py": "c6bac9219aaecd8f76cb1f212eff27b0035def399d043f449fe72137f4a24f57"
+ },
+ "start_unix": 1795799400.7445543,
+ "failures": [],
+ "max_rss_gib": 0.0
+}

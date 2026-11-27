@@ -1,0 +1,48 @@
+{
+ "part": "1/1",
+ "manifest": "check_jobs.json",
+ "selected": 10,
+ "pending_at_start": 10,
+ "workers": 10,
+ "memory_gib": 20.0,
+ "scratch_gib": 20.0,
+ "platform": "macOS-27.2.1-arm64-arm-64bit",
+ "python": "3.11.4 (v3.11.4:d2340ef257, Jun  6 2023, 19:15:51) [Clang 13.0.0 (clang-1300.0.29.30)]",
+ "cpu_count": 18,
+ "compile_command": [
+  "/usr/bin/c++",
+  "-O3",
+  "-std=c++11",
+  "-fPIC",
+  "-dynamiclib",
+  "-ffast-math",
+  "/Users/aniket/Documents/research/ei-balance/experiments/runtime/constant_csr.cpp",
+  "-o",
+  "/Users/aniket/Documents/research/ei-balance/experiments/composition_optimum/validation/tmp/kernel_Anikets-MacBook-Pro.local_1of1_68957/constant_csr.dylib"
+ ],
+ "library_sha256": "f001e56c29162899cdfea209b90fcfc22576f1198a237f4e06cb7866b6750a93",
+ "source_sha256": {
+  "run.py": "cf62a58b6cd295eae90140454957d1cb2cb5fdfe27a5384b9f3b11e34ed956bd",
+  "extras.py": "18855653b66f2b6dfa62f0d1768bee27620926f3357f3d6f4ababad2cd6453cd",
+  "check_jobs.json": "c9af8ec03c962243d25d1b4d5b65abdb25118ebbe07580a270c9f9cf96a043f9",
+  "engine_v4.py": "117f57b8341a1e36fa351f37d96cd779879b5c037aa11d52f7d44a4bd923f546",
+  "native_action.py": "d6db5986f1da791b79971908160b34a87b987338f346ee5216a826346ba16abc",
+  "constant_csr.cpp": "0676acffdbbbfb34816f093d8980a08a343fc70470e8b7c04a46910951dd1216",
+  "measure.py": "3e5b01c817fea8d4b4ce6b1b08d7f1c11ae435692166924fbec4e22e7b5a3a7a",
+  "network.py": "4fb0b526380727ac9eb5a80172270f5aa2dfaa1416f60853290b3432d2407899",
+  "degree.py": "c6bac9219aaecd8f76cb1f212eff27b0035def399d043f449fe72137f4a24f57"
+ },
+ "start_unix": 1795795041.1842182,
+ "failures": [],
+ "max_rss_gib": 5.2389984130859375,
+ "last_unix": 1795795161.948401,
+ "active": [
+  "check_hi_f0.6_N2000_seed59009",
+  "check_hi_f0.6_N2000_seed59010"
+ ],
+ "pending": 0,
+ "free_scratch_gib": 604.5836181640625,
+ "available_ram_gib": 18.16033935546875,
+ "finished_unix": 1795795177.009266,
+ "complete": 10
+}

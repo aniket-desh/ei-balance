@@ -1,0 +1,555 @@
+{
+ "account": {
+  "team": "CBAI",
+  "note": "verified with get-account before any pod was created; list-pods never called"
+ },
+ "image": "runpod/base:1.0.2-ubuntu2404",
+ "disk_gb": 120,
+ "ports": [
+  "22/tcp"
+ ],
+ "self_stop_timer_seconds": 21600,
+ "final_readback": {
+  "utc": "2026-11-27T18:16Z",
+  "method": "get-pod on all 25 pod ids after the last stop",
+  "all_exited": true
+ },
+ "wall_clock": {
+  "first_create_utc": "2026-11-27T16:01:33Z",
+  "last_stop_utc": "2026-11-27T18:13:27Z"
+ },
+ "pods": [
+  {
+   "name": "aniket-eibalance-val-01",
+   "id": "sy9h2m0fcayrtd",
+   "cpu_type": "cpu3c",
+   "vcpu": 32,
+   "rate_usd_per_hour": 0.96,
+   "cloud": "SECURE",
+   "data_center": "EUR-IS-1",
+   "created_utc": "2026-11-27T16:01:33.545Z",
+   "role": "cohort stripe 1/24",
+   "stopped_utc": "2026-11-27T17:51:32Z",
+   "uptime_seconds_at_stop": 6555,
+   "final_status": "EXITED",
+   "estimated_cost_usd": 1.748,
+   "collection": {
+    "line": "stripe 1 (aniket-eibalance-val-01): remote files      308, mismatches 0, exit_code 0",
+    "remote_files": 308,
+    "mismatches": 0
+   }
+  },
+  {
+   "name": "aniket-eibalance-val-02",
+   "id": "krmcjn5xi9b1vu",
+   "cpu_type": "cpu3c",
+   "vcpu": 32,
+   "rate_usd_per_hour": 0.96,
+   "cloud": "SECURE",
+   "data_center": "EUR-IS-1",
+   "created_utc": "2026-11-27T16:01:47.708Z",
+   "role": "cohort stripe 2/24",
+   "stopped_utc": "2026-11-27T18:13:27Z",
+   "uptime_seconds_at_stop": 7860,
+   "final_status": "EXITED",
+   "estimated_cost_usd": 2.096,
+   "collection": {
+    "line": "stripe 2 (aniket-eibalance-val-02): remote files      296, mismatches 0, exit_code 0",
+    "remote_files": 296,
+    "mismatches": 0
+   }
+  },
+  {
+   "name": "aniket-eibalance-val-03",
+   "id": "znoko0aooanskx",
+   "cpu_type": "cpu5c",
+   "vcpu": 16,
+   "rate_usd_per_hour": 0.56,
+   "cloud": "SECURE",
+   "data_center": "EUR-IS-1",
+   "created_utc": "2026-11-27T16:02:35.363Z",
+   "role": "cohort stripe 3/24",
+   "stopped_utc": "2026-11-27T18:13:27Z",
+   "uptime_seconds_at_stop": 7812,
+   "final_status": "EXITED",
+   "estimated_cost_usd": 1.215,
+   "collection": {
+    "line": "stripe 3 (aniket-eibalance-val-03): remote files      241, mismatches 0, exit_code 0",
+    "remote_files": 241,
+    "mismatches": 0
+   }
+  },
+  {
+   "name": "aniket-eibalance-val-04",
+   "id": "61p1gyx4avuntu",
+   "cpu_type": "cpu3c",
+   "vcpu": 16,
+   "rate_usd_per_hour": 0.48,
+   "cloud": "SECURE",
+   "data_center": "EUR-IS-1",
+   "created_utc": "2026-11-27T16:02:36.673Z",
+   "role": "replay check (control 4)",
+   "stopped_utc": "2026-11-27T16:11:01Z",
+   "uptime_seconds_at_stop": 471,
+   "final_status": "EXITED",
+   "estimated_cost_usd": 0.063,
+   "collection": null
+  },
+  {
+   "name": "aniket-eibalance-val-05",
+   "id": "nv04pcsqjngg3v",
+   "cpu_type": "cpu5c",
+   "vcpu": 16,
+   "rate_usd_per_hour": 0.56,
+   "cloud": "SECURE",
+   "data_center": "EUR-IS-1",
+   "created_utc": "2026-11-27T16:03:13.44Z",
+   "role": "cohort stripe 4/24",
+   "stopped_utc": "2026-11-27T18:01:54Z",
+   "uptime_seconds_at_stop": 7086,
+   "final_status": "EXITED",
+   "estimated_cost_usd": 1.102,
+   "collection": {
+    "line": "stripe 4 (aniket-eibalance-val-05): remote files      280, mismatches 0, exit_code 0",
+    "remote_files": 280,
+    "mismatches": 0
+   }
+  },
+  {
+   "name": "aniket-eibalance-val-06",
+   "id": "6vc4t76m8y7sqz",
+   "cpu_type": "cpu5c",
+   "vcpu": 16,
+   "rate_usd_per_hour": 0.56,
+   "cloud": "SECURE",
+   "data_center": "EUR-IS-1",
+   "created_utc": "2026-11-27T16:03:14.6Z",
+   "role": "cohort stripe 5/24",
+   "stopped_utc": "2026-11-27T17:30:41Z",
+   "uptime_seconds_at_stop": 5222,
+   "final_status": "EXITED",
+   "estimated_cost_usd": 0.812,
+   "collection": {
+    "line": "stripe 5 (aniket-eibalance-val-06): remote files      311, mismatches 0, exit_code 0",
+    "remote_files": 311,
+    "mismatches": 0
+   }
+  },
+  {
+   "name": "aniket-eibalance-val-07",
+   "id": "xf0dioxo6sipal",
+   "cpu_type": "cpu5c",
+   "vcpu": 16,
+   "rate_usd_per_hour": 0.56,
+   "cloud": "SECURE",
+   "data_center": "EUR-IS-1",
+   "created_utc": "2026-11-27T16:03:15.948Z",
+   "role": "cohort stripe 6/24",
+   "stopped_utc": "2026-11-27T18:01:54Z",
+   "uptime_seconds_at_stop": 7082,
+   "final_status": "EXITED",
+   "estimated_cost_usd": 1.102,
+   "collection": {
+    "line": "stripe 6 (aniket-eibalance-val-07): remote files      242, mismatches 0, exit_code 0",
+    "remote_files": 242,
+    "mismatches": 0
+   }
+  },
+  {
+   "name": "aniket-eibalance-val-08",
+   "id": "pzlytdhtwfuj6d",
+   "cpu_type": "cpu5c",
+   "vcpu": 16,
+   "rate_usd_per_hour": 0.56,
+   "cloud": "SECURE",
+   "data_center": "EUR-IS-1",
+   "created_utc": "2026-11-27T16:03:17.223Z",
+   "role": "cohort stripe 7/24",
+   "stopped_utc": "2026-11-27T17:41:59Z",
+   "uptime_seconds_at_stop": 5901,
+   "final_status": "EXITED",
+   "estimated_cost_usd": 0.918,
+   "collection": {
+    "line": "stripe 7 (aniket-eibalance-val-08): remote files      315, mismatches 0, exit_code 0",
+    "remote_files": 315,
+    "mismatches": 0
+   }
+  },
+  {
+   "name": "aniket-eibalance-val-09",
+   "id": "9lj0ebz9ps7u01",
+   "cpu_type": "cpu5c",
+   "vcpu": 16,
+   "rate_usd_per_hour": 0.56,
+   "cloud": "SECURE",
+   "data_center": "EUR-IS-1",
+   "created_utc": "2026-11-27T16:03:18.6Z",
+   "role": "cohort stripe 8/24",
+   "stopped_utc": "2026-11-27T18:01:54Z",
+   "uptime_seconds_at_stop": 7100,
+   "final_status": "EXITED",
+   "estimated_cost_usd": 1.104,
+   "collection": {
+    "line": "stripe 8 (aniket-eibalance-val-09): remote files      242, mismatches 0, exit_code 0",
+    "remote_files": 242,
+    "mismatches": 0
+   }
+  },
+  {
+   "name": "aniket-eibalance-val-10",
+   "id": "pqzkpayxww6u18",
+   "cpu_type": "cpu5c",
+   "vcpu": 16,
+   "rate_usd_per_hour": 0.56,
+   "cloud": "SECURE",
+   "data_center": "EUR-IS-1",
+   "created_utc": "2026-11-27T16:03:19.772Z",
+   "role": "cohort stripe 9/24",
+   "stopped_utc": "2026-11-27T17:20:25Z",
+   "uptime_seconds_at_stop": 4599,
+   "final_status": "EXITED",
+   "estimated_cost_usd": 0.715,
+   "collection": {
+    "line": "stripe 9 (aniket-eibalance-val-10): remote files      323, mismatches 0, exit_code 0",
+    "remote_files": 323,
+    "mismatches": 0
+   }
+  },
+  {
+   "name": "aniket-eibalance-val-11",
+   "id": "1pe2vchpxaeddv",
+   "cpu_type": "cpu5c",
+   "vcpu": 16,
+   "rate_usd_per_hour": 0.56,
+   "cloud": "SECURE",
+   "data_center": "EUR-IS-1",
+   "created_utc": "2026-11-27T16:03:21.135Z",
+   "role": "cohort stripe 10/24",
+   "stopped_utc": "2026-11-27T17:51:32Z",
+   "uptime_seconds_at_stop": 6453,
+   "final_status": "EXITED",
+   "estimated_cost_usd": 1.004,
+   "collection": {
+    "line": "stripe 10 (aniket-eibalance-val-11): remote files      222, mismatches 0, exit_code 0",
+    "remote_files": 222,
+    "mismatches": 0
+   }
+  },
+  {
+   "name": "aniket-eibalance-val-12",
+   "id": "ix1t3fyhei6vzs",
+   "cpu_type": "cpu5c",
+   "vcpu": 16,
+   "rate_usd_per_hour": 0.56,
+   "cloud": "SECURE",
+   "data_center": "EUR-IS-1",
+   "created_utc": "2026-11-27T16:03:47.059Z",
+   "role": "cohort stripe 11/24",
+   "stopped_utc": "2026-11-27T18:01:54Z",
+   "uptime_seconds_at_stop": 7038,
+   "final_status": "EXITED",
+   "estimated_cost_usd": 1.095,
+   "collection": {
+    "line": "stripe 11 (aniket-eibalance-val-12): remote files      208, mismatches 0, exit_code 0",
+    "remote_files": 208,
+    "mismatches": 0
+   }
+  },
+  {
+   "name": "aniket-eibalance-val-13",
+   "id": "wu2g6y8tvpfohz",
+   "cpu_type": "cpu5c",
+   "vcpu": 16,
+   "rate_usd_per_hour": 0.56,
+   "cloud": "SECURE",
+   "data_center": "EUR-IS-1",
+   "created_utc": "2026-11-27T16:03:48.527Z",
+   "role": "cohort stripe 12/24",
+   "stopped_utc": "2026-11-27T17:51:32Z",
+   "uptime_seconds_at_stop": 6412,
+   "final_status": "EXITED",
+   "estimated_cost_usd": 0.997,
+   "collection": {
+    "line": "stripe 12 (aniket-eibalance-val-13): remote files      206, mismatches 0, exit_code 0",
+    "remote_files": 206,
+    "mismatches": 0
+   }
+  },
+  {
+   "name": "aniket-eibalance-val-14",
+   "id": "32ot9jlu03d78q",
+   "cpu_type": "cpu5c",
+   "vcpu": 16,
+   "rate_usd_per_hour": 0.56,
+   "cloud": "SECURE",
+   "data_center": "EUR-IS-1",
+   "created_utc": "2026-11-27T16:03:49.772Z",
+   "role": "cohort stripe 13/24",
+   "stopped_utc": "2026-11-27T17:41:59Z",
+   "uptime_seconds_at_stop": 5849,
+   "final_status": "EXITED",
+   "estimated_cost_usd": 0.91,
+   "collection": {
+    "line": "stripe 13 (aniket-eibalance-val-14): remote files      246, mismatches 0, exit_code 0",
+    "remote_files": 246,
+    "mismatches": 0
+   }
+  },
+  {
+   "name": "aniket-eibalance-val-15",
+   "id": "lsx8dq4yoh68go",
+   "cpu_type": "cpu5c",
+   "vcpu": 16,
+   "rate_usd_per_hour": 0.56,
+   "cloud": "SECURE",
+   "data_center": "EUR-IS-1",
+   "created_utc": "2026-11-27T16:03:51.254Z",
+   "role": "cohort stripe 14/24",
+   "stopped_utc": "2026-11-27T17:41:59Z",
+   "uptime_seconds_at_stop": 5849,
+   "final_status": "EXITED",
+   "estimated_cost_usd": 0.91,
+   "collection": {
+    "line": "stripe 14 (aniket-eibalance-val-15): remote files      210, mismatches 0, exit_code 0",
+    "remote_files": 210,
+    "mismatches": 0
+   }
+  },
+  {
+   "name": "aniket-eibalance-val-16",
+   "id": "tsyb73n9j55mkw",
+   "cpu_type": "cpu5c",
+   "vcpu": 16,
+   "rate_usd_per_hour": 0.56,
+   "cloud": "SECURE",
+   "data_center": "EUR-IS-1",
+   "created_utc": "2026-11-27T16:03:53.639Z",
+   "role": "cohort stripe 15/24",
+   "stopped_utc": "2026-11-27T17:51:32Z",
+   "uptime_seconds_at_stop": 6422,
+   "final_status": "EXITED",
+   "estimated_cost_usd": 0.999,
+   "collection": {
+    "line": "stripe 15 (aniket-eibalance-val-16): remote files      287, mismatches 0, exit_code 0",
+    "remote_files": 287,
+    "mismatches": 0
+   }
+  },
+  {
+   "name": "aniket-eibalance-val-17",
+   "id": "3h01wxgqvk62m9",
+   "cpu_type": "cpu5c",
+   "vcpu": 16,
+   "rate_usd_per_hour": 0.56,
+   "cloud": "SECURE",
+   "data_center": "EUR-IS-1",
+   "created_utc": "2026-11-27T16:03:54.818Z",
+   "role": "cohort stripe 16/24",
+   "stopped_utc": "2026-11-27T17:30:41Z",
+   "uptime_seconds_at_stop": 5178,
+   "final_status": "EXITED",
+   "estimated_cost_usd": 0.805,
+   "collection": {
+    "line": "stripe 16 (aniket-eibalance-val-17): remote files      272, mismatches 0, exit_code 0",
+    "remote_files": 272,
+    "mismatches": 0
+   }
+  },
+  {
+   "name": "aniket-eibalance-val-18",
+   "id": "kf0v6oag63uizj",
+   "cpu_type": "cpu5c",
+   "vcpu": 16,
+   "rate_usd_per_hour": 0.56,
+   "cloud": "SECURE",
+   "data_center": "EUR-IS-1",
+   "created_utc": "2026-11-27T16:03:55.893Z",
+   "role": "cohort stripe 17/24",
+   "stopped_utc": "2026-11-27T18:01:54Z",
+   "uptime_seconds_at_stop": 7040,
+   "final_status": "EXITED",
+   "estimated_cost_usd": 1.095,
+   "collection": {
+    "line": "stripe 17 (aniket-eibalance-val-18): remote files      169, mismatches 0, exit_code 0",
+    "remote_files": 169,
+    "mismatches": 0
+   }
+  },
+  {
+   "name": "aniket-eibalance-val-19",
+   "id": "we9l6mm2dl6ggo",
+   "cpu_type": "cpu5c",
+   "vcpu": 16,
+   "rate_usd_per_hour": 0.56,
+   "cloud": "SECURE",
+   "data_center": "EUR-IS-1",
+   "created_utc": "2026-11-27T16:04:21.37Z",
+   "role": "cohort stripe 18/24",
+   "stopped_utc": "2026-11-27T17:20:25Z",
+   "uptime_seconds_at_stop": 4544,
+   "final_status": "EXITED",
+   "estimated_cost_usd": 0.707,
+   "collection": {
+    "line": "stripe 18 (aniket-eibalance-val-19): remote files      252, mismatches 0, exit_code 0",
+    "remote_files": 252,
+    "mismatches": 0
+   }
+  },
+  {
+   "name": "aniket-eibalance-val-20",
+   "id": "mhhscvat5dj2d6",
+   "cpu_type": "cpu5c",
+   "vcpu": 16,
+   "rate_usd_per_hour": 0.56,
+   "cloud": "SECURE",
+   "data_center": "EUR-IS-1",
+   "created_utc": "2026-11-27T16:04:23.393Z",
+   "role": "cohort stripe 19/24",
+   "stopped_utc": "2026-11-27T17:41:59Z",
+   "uptime_seconds_at_stop": 5813,
+   "final_status": "EXITED",
+   "estimated_cost_usd": 0.904,
+   "collection": {
+    "line": "stripe 19 (aniket-eibalance-val-20): remote files      190, mismatches 0, exit_code 0",
+    "remote_files": 190,
+    "mismatches": 0
+   }
+  },
+  {
+   "name": "aniket-eibalance-val-21",
+   "id": "b483hci0py4hch",
+   "cpu_type": "cpu5c",
+   "vcpu": 16,
+   "rate_usd_per_hour": 0.56,
+   "cloud": "SECURE",
+   "data_center": "EUR-IS-1",
+   "created_utc": "2026-11-27T16:04:24.787Z",
+   "role": "cohort stripe 20/24",
+   "stopped_utc": "2026-11-27T17:20:25Z",
+   "uptime_seconds_at_stop": 4541,
+   "final_status": "EXITED",
+   "estimated_cost_usd": 0.706,
+   "collection": {
+    "line": "stripe 20 (aniket-eibalance-val-21): remote files      217, mismatches 0, exit_code 0",
+    "remote_files": 217,
+    "mismatches": 0
+   }
+  },
+  {
+   "name": "aniket-eibalance-val-22",
+   "id": "veh8jqghqkya33",
+   "cpu_type": "cpu5c",
+   "vcpu": 16,
+   "rate_usd_per_hour": 0.56,
+   "cloud": "SECURE",
+   "data_center": "EUR-IS-1",
+   "created_utc": "2026-11-27T16:04:26.068Z",
+   "role": "cohort stripe 21/24",
+   "stopped_utc": "2026-11-27T17:41:59Z",
+   "uptime_seconds_at_stop": 5810,
+   "final_status": "EXITED",
+   "estimated_cost_usd": 0.904,
+   "collection": {
+    "line": "stripe 21 (aniket-eibalance-val-22): remote files      188, mismatches 0, exit_code 0",
+    "remote_files": 188,
+    "mismatches": 0
+   }
+  },
+  {
+   "name": "aniket-eibalance-val-23",
+   "id": "gcub0jih78lgqz",
+   "cpu_type": "cpu5c",
+   "vcpu": 16,
+   "rate_usd_per_hour": 0.56,
+   "cloud": "SECURE",
+   "data_center": "EUR-IS-1",
+   "created_utc": "2026-11-27T16:04:27.316Z",
+   "role": "cohort stripe 22/24",
+   "stopped_utc": "2026-11-27T18:01:54Z",
+   "uptime_seconds_at_stop": 7035,
+   "final_status": "EXITED",
+   "estimated_cost_usd": 1.094,
+   "collection": {
+    "line": "stripe 22 (aniket-eibalance-val-23): remote files      174, mismatches 0, exit_code 0",
+    "remote_files": 174,
+    "mismatches": 0
+   }
+  },
+  {
+   "name": "aniket-eibalance-val-24",
+   "id": "5v47bzcfymp2is",
+   "cpu_type": "cpu5c",
+   "vcpu": 16,
+   "rate_usd_per_hour": 0.56,
+   "cloud": "SECURE",
+   "data_center": "EUR-IS-1",
+   "created_utc": "2026-11-27T16:04:28.629Z",
+   "role": "cohort stripe 23/24",
+   "stopped_utc": "2026-11-27T17:20:25Z",
+   "uptime_seconds_at_stop": 4532,
+   "final_status": "EXITED",
+   "estimated_cost_usd": 0.705,
+   "collection": {
+    "line": "stripe 23 (aniket-eibalance-val-24): remote files      333, mismatches 0, exit_code 0",
+    "remote_files": 333,
+    "mismatches": 0
+   }
+  },
+  {
+   "name": "aniket-eibalance-val-25",
+   "id": "f4kcp6xlxf3bej",
+   "cpu_type": "cpu5c",
+   "vcpu": 16,
+   "rate_usd_per_hour": 0.56,
+   "cloud": "SECURE",
+   "data_center": "EUR-IS-1",
+   "created_utc": "2026-11-27T16:04:30.006Z",
+   "role": "cohort stripe 24/24",
+   "stopped_utc": "2026-11-27T17:41:59Z",
+   "uptime_seconds_at_stop": 5817,
+   "final_status": "EXITED",
+   "estimated_cost_usd": 0.905,
+   "collection": {
+    "line": "stripe 24 (aniket-eibalance-val-25): remote files      252, mismatches 0, exit_code 0",
+    "remote_files": 252,
+    "mismatches": 0
+   }
+  }
+ ],
+ "total_rate_usd_per_hour": 14.72,
+ "estimated_total_cost_usd": 24.61,
+ "pod_hours": 41.12,
+ "cost_note": "uptime at stop (from get-pod) times the on-demand rate quoted at creation; stopped pods keep billing for their container disk",
+ "checksums": {
+  "cohort_files_compared": 5984,
+  "mismatches": 0,
+  "method": "sha256sum on the pod vs shasum -a 256 locally, every record, array and audit json, before stopping",
+  "replay": "pod aniket-eibalance-val-04 (replay): remote files 2, mismatches 0 (record 107c7bbb09c04d12615cfe561f2dfba334d0d3ecaec3dde0b2f22007c2d02f9c, arrays 625583c5a4b1cfb0b78d15e5f1905763ce1777300dd7f5be4c57e63191c56d47), checked 2026-11-27T16:10:50Z before stop",
+  "passed": true,
+  "at_stop": "each pod: remote vs local SHA-256 of every record, array and audit json, just before its stop",
+  "global_after_collection": {
+   "files": 5958,
+   "unique_files": 5932,
+   "unique_files_matching_local": 5932,
+   "files_on_two_pods": 26,
+   "networks_on_two_pods": [
+    "cv_hi_f0.6_N2000_seed51318",
+    "cv_hi_f0.75_N2000_seed51414",
+    "cv_hi_f0.7_N2000_seed51366",
+    "cv_lo_f0.79_N2000_seed50886",
+    "cv_lo_f0.82_N2000_seed50934",
+    "cv_lo_f0.85_N2000_seed50982",
+    "cv_lo_f0.88_N2000_seed51030",
+    "cv_lo_f0.88_N2000_seed51077",
+    "cv_lo_f0.88_N2000_seed51078",
+    "cv_lo_f0.92_N2000_seed51174",
+    "cv_lo_f0.94_N2000_seed51222",
+    "cv_lo_f0.94_N2000_seed51270",
+    "cv_lo_f0.9_N2000_seed51126"
+   ],
+   "duplicate_arrays_byte_identical": true,
+   "duplicate_records_local_matches_a_copy": true,
+   "note": "Records of a network run twice differ in bytes (host name and timestamps inside the gzip JSON); their arrays (per-neuron statistics) are byte-identical, so the simulations agree. The local record is the copy pulled last."
+  }
+ }
+}
